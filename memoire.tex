@@ -1,17 +1,46 @@
-\documentclass[12pt]{report}
-\usepackage[french]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\documentclass[12pt , a4paper]{report}
 
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{graphicx}  %utiliser le package graphics pour les figures
+\usepackage[utf8]{inputenc} %changer au jeu de caractères UTF-8
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{shadow}
+
+\frenchbsetup{StandardLists=true}
+
+\textwidth 14.5cm
+\textheight 24.7cm
+
+\hoffset -0.21in
+\voffset -0.724in
+
+%\topmargin 0in
+\headheight 0.5cm
+\headsep 0cm
+\parskip 6pt
+
+
+%\usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+
+
 
 \begin{document}
+
+\include{Cover/cover}
+
+\include{General/remerciement}
 
 
 \include{General/introGeneral}
 
+
 \include{Chap1/chap1}
+
 
 \end{document}
 
