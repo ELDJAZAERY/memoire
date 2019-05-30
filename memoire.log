@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  30 MAY 2019 02:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  30 MAY 2019 02:56
 entering extended mode
 **./memoire.tex
 (memoire.tex
@@ -353,6 +353,24 @@ Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.tex"
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 ))
+("C:\Program Files\MiKTeX 2.9\tex/latex/apacite\apacite.sty"
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count193
+\bibleftmargin=\skip60
+\bibindent=\skip61
+\bibparsep=\skip62
+\bibitemsep=\skip63
+\biblabelsep=\skip64
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip65
+\bibsep=\skip66
+LaTeX Info: Redefining \cite on input line 694.
+LaTeX Info: Redefining \citeauthor on input line 712.
+LaTeX Info: Redefining \citeyear on input line 735.
+\c@NAT@ctr=\count194
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -375,7 +393,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count193
+\c@float@type=\count195
 \float@exts=\toks20
 \float@box=\box49
 \@float@everytoks=\toks21
@@ -445,19 +463,28 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 LaTeX Info: Redefining \degres on input line 72.
 LaTeX Info: Redefining \dots on input line 72.
+
+Package french.ldf Warning: Please load the "natbib" package
+(french.ldf)                BEFORE babel/french; reported on input line 72.
+
 LaTeX Info: Redefining \up on input line 72.
+\c@maskedRefs=\count196
+("C:\Program Files\MiKTeX 2.9\tex/latex/apacite\french.apc"
+LaTeX Info: Redefining \BPBI on input line 130.
+LaTeX Info: Redefining \BHBI on input line 131.
+)
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count194
+\scratchcounter=\count197
 \scratchdimen=\dimen162
 \scratchbox=\box51
-\nofMPsegments=\count195
-\nofMParguments=\count196
+\nofMPsegments=\count198
+\nofMParguments=\count199
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count197
+\MPscratchCnt=\count266
 \MPscratchDim=\dimen163
-\MPnumerator=\count198
-\makeMPintoPDFobject=\count199
+\MPnumerator=\count267
+\makeMPintoPDFobject=\count268
 \everyMPtoPDFconversion=\toks23
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -657,38 +684,41 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [9] [10]) [11]
 \openout2 = `General/bibliography.aux'.
 
- (General/bibliography.tex (memoire.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 24.
-
-)) [12
+ (General/bibliography.tex (memoire.bbl)) [12
 
 
 
-] (memoire.aux (Cover/cover.aux) (Intro/remerciement.aux)
-(General/tableContents.aux) (General/listFigures.aux) (Intro/introGeneral.aux)
-(Chap1/chap1.aux) (General/bibliography.aux))
+] (memoire.aux
+(Cover/cover.aux) (Intro/remerciement.aux) (General/tableContents.aux)
+(General/listFigures.aux) (Intro/introGeneral.aux) (Chap1/chap1.aux)
+(General/bibliography.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13652 strings out of 492895
- 251468 string characters out of 3133479
+ 14402 strings out of 492895
+ 260747 string characters out of 3133479
  447565 words of memory out of 3000000
- 17394 multiletter control sequences out of 15000+200000
- 582251 words of font info for 54 fonts, out of 3000000 for 9000
+ 18132 multiletter control sequences out of 15000+200000
+ 586513 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,63p,1787b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 r12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmsy10.pfb>
-Output written on memoire.pdf (16 pages, 243930 bytes).
+fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmsy10.pfb>
+Output written on memoire.pdf (16 pages, 258688 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
