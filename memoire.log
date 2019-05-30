@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  30 MAY 2019 02:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  30 MAY 2019 17:10
 entering extended mode
 **./memoire.tex
 (memoire.tex
@@ -624,24 +624,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
-<Chap1/chap1.png, id=27, 233.37187pt x 120.45pt>
-File: Chap1/chap1.png Graphic file (type png)
-<use Chap1/chap1.png>
-Package pdftex.def Info: Chap1/chap1.png  used on input line 25.
+<Chap1/1.png, id=27, 233.37187pt x 120.45pt>
+File: Chap1/1.png Graphic file (type png)
+<use Chap1/1.png>
+Package pdftex.def Info: Chap1/1.png  used on input line 25.
 (pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
 [3
 
 
 
- <./Chap1/chap1.png>]
-File: Chap1/chap1.png Graphic file (type png)
-<use Chap1/chap1.png>
-Package pdftex.def Info: Chap1/chap1.png  used on input line 34.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
-File: Chap1/chap1.png Graphic file (type png)
-<use Chap1/chap1.png>
-Package pdftex.def Info: Chap1/chap1.png  used on input line 45.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
+ <./Chap1/1.png>]
+<Chap1/2.png, id=32, 645.91313pt x 258.21469pt>
+File: Chap1/2.png Graphic file (type png)
+<use Chap1/2.png>
+Package pdftex.def Info: Chap1/2.png  used on input line 34.
+(pdftex.def)             Requested size: 398.33315pt x 170.72165pt.
+<Chap1/3.png, id=33, 579.66562pt x 274.02374pt>
+File: Chap1/3.png Graphic file (type png)
+<use Chap1/3.png>
+Package pdftex.def Info: Chap1/3.png  used on input line 45.
+(pdftex.def)             Requested size: 398.34222pt x 170.72086pt.
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 51.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -654,61 +656,66 @@ Overfull \hbox (39.44868pt too wide) in paragraph at lines 51--53
 ,numérique).
  []
 
-[4]
-File: Chap1/chap1.png Graphic file (type png)
-<use Chap1/chap1.png>
-Package pdftex.def Info: Chap1/chap1.png  used on input line 59.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
-File: Chap1/chap1.png Graphic file (type png)
-<use Chap1/chap1.png>
-Package pdftex.def Info: Chap1/chap1.png  used on input line 69.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
- [5] [6] [7]
-File: Chap1/chap1.png Graphic file (type png)
-<use Chap1/chap1.png>
-Package pdftex.def Info: Chap1/chap1.png  used on input line 114.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
-File: Chap1/chap1.png Graphic file (type png)
-<use Chap1/chap1.png>
-Package pdftex.def Info: Chap1/chap1.png  used on input line 123.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
- [8]
-File: Chap1/chap1.png Graphic file (type png)
-<use Chap1/chap1.png>
-Package pdftex.def Info: Chap1/chap1.png  used on input line 132.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
+[4 <./Chap1/2.png> <./Chap1/3.png>]
+<Chap1/4.png, id=39, 562.35094pt x 291.33844pt>
+File: Chap1/4.png Graphic file (type png)
+<use Chap1/4.png>
+Package pdftex.def Info: Chap1/4.png  used on input line 59.
+(pdftex.def)             Requested size: 398.33665pt x 170.71902pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9] [10]) [11]
+<Chap1/5.png, id=40, 404.51125pt x 492.84125pt>
+File: Chap1/5.png Graphic file (type png)
+<use Chap1/5.png>
+Package pdftex.def Info: Chap1/5.png  used on input line 69.
+(pdftex.def)             Requested size: 312.98683pt x 199.17096pt.
+[5] [6 <./Chap1/4.png> <./Chap1/5.png>] [7]
+<Chap1/6.png, id=53, 309.40594pt x 221.32687pt>
+File: Chap1/6.png Graphic file (type png)
+<use Chap1/6.png>
+Package pdftex.def Info: Chap1/6.png  used on input line 114.
+(pdftex.def)             Requested size: 256.0987pt x 113.81404pt.
+ [8]
+<Chap1/7.png, id=57, 304.88907pt x 219.06844pt>
+File: Chap1/7.png Graphic file (type png)
+<use Chap1/7.png>
+Package pdftex.def Info: Chap1/7.png  used on input line 123.
+(pdftex.def)             Requested size: 341.44551pt x 113.8126pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Chap1/8.png, id=58, 644.4075pt x 343.2825pt>
+File: Chap1/8.png Graphic file (type png)
+<use Chap1/8.png>
+Package pdftex.def Info: Chap1/8.png  used on input line 132.
+(pdftex.def)             Requested size: 341.44585pt x 170.71368pt.
+[9 <./Chap1/6.png>] [10 <./Chap1/7.png> <./Chap1/8.png>] [11]) [12]
 \openout2 = `General/bibliography.aux'.
 
- (General/bibliography.tex (memoire.bbl)) [12
+
+(General/bibliography.tex (memoire.bbl [13
 
 
 
-] (memoire.aux
+])) [14] (memoire.aux
 (Cover/cover.aux) (Intro/remerciement.aux) (General/tableContents.aux)
 (General/listFigures.aux) (Intro/introGeneral.aux) (Chap1/chap1.aux)
-(General/bibliography.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-))
+(General/bibliography.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14402 strings out of 492895
- 260747 string characters out of 3133479
+ 14489 strings out of 492895
+ 262510 string characters out of 3133479
  447565 words of memory out of 3000000
- 18132 multiletter control sequences out of 15000+200000
+ 18211 multiletter control sequences out of 15000+200000
  586513 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,63p,1787b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,63p,1827b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
@@ -716,9 +723,9 @@ r12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmsy10.pfb>
-Output written on memoire.pdf (16 pages, 258688 bytes).
+Output written on memoire.pdf (18 pages, 1510114 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
