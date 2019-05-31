@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  31 MAY 2019 04:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  31 MAY 2019 19:58
 entering extended mode
 **./memoire.tex
 (memoire.tex
@@ -473,22 +473,28 @@ LaTeX Warning: Label `fig:CSF' multiply defined.
 
 LaTeX Warning: Label `fig:CSF' multiply defined.
 
+
+LaTeX Warning: Label `fig:CSF' multiply defined.
+
+
+LaTeX Warning: Label `fig:CSF' multiply defined.
+
 ) (General/bibliography.aux))
 \openout1 = `memoire.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 82.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -527,13 +533,13 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 81.
-LaTeX Info: Redefining \dots on input line 81.
+LaTeX Info: Redefining \degres on input line 82.
+LaTeX Info: Redefining \dots on input line 82.
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 81.
+(french.ldf)                BEFORE babel/french; reported on input line 82.
 
-LaTeX Info: Redefining \up on input line 81.
+LaTeX Info: Redefining \up on input line 82.
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count268
@@ -647,11 +653,11 @@ hb.png>])
  (General/tableContents.tex
 (memoire.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 11.
+(Font)              <14.4> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 11.
+(Font)              <10> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 11.
+(Font)              <7> on input line 12.
 )
 \tf@toc=\write3
 \openout3 = `memoire.toc'.
@@ -777,13 +783,13 @@ File: Chap1/1.png Graphic file (type png)
 Package pdftex.def Info: Chap1/1.png  used on input line 37.
 (pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
 [14]
-Overfull \hbox (0.79678pt too wide) in paragraph at lines 47--48
+Overfull \hbox (0.79678pt too wide) in paragraph at lines 47--49
 []\T1/lmr/m/n/14.4 Ces mé-thodes sont dites com-plètes ou exactes car elles per
 -mettent
  []
 
 
-Overfull \hbox (23.63368pt too wide) in paragraph at lines 51--53
+Overfull \hbox (23.63368pt too wide) in paragraph at lines 52--54
 []\T1/lmr/bx/n/14.4 La mé-thode sé-pa-ra-tion et éva-lua-tion (Branch and Bound
 ) :
  []
@@ -791,33 +797,312 @@ Overfull \hbox (23.63368pt too wide) in paragraph at lines 51--53
 [15] [16]
 File: Chap1/1.png Graphic file (type png)
 <use Chap1/1.png>
-Package pdftex.def Info: Chap1/1.png  used on input line 83.
+Package pdftex.def Info: Chap1/1.png  used on input line 84.
 (pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 88--102
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 110.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 110.
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 89--110
 $[]$ 
  []
 
 [17]
-
-Package natbib Warning: Citation `glover1986future' on page 18 undefined on inp
-ut line 104.
-
 File: Chap1/1.png Graphic file (type png)
 <use Chap1/1.png>
-Package pdftex.def Info: Chap1/1.png  used on input line 112.
+Package pdftex.def Info: Chap1/1.png  used on input line 120.
 (pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
-[18]
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 117--131
+ [18]
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 155.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 155.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 155.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 155.
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 125--156
+$[]$ 
+ []
+
+[19] [20]
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 172.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 172.
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 160--173
 $[]$ 
  []
 
 
-Overfull \hbox (148.83157pt too wide) in paragraph at lines 133--148
-\T1/lmr/m/n/14.4 la re-cherche lo-cale : $[]$ 
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 193.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 193.
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 178--196
+$[]$ 
  []
 
-[19]) [20]
+[21]
+File: Chap1/1.png Graphic file (type png)
+<use Chap1/1.png>
+Package pdftex.def Info: Chap1/1.png  used on input line 208.
+(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
+ [22]
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 218--231
+$[]$ 
+ []
+
+File: Chap1/1.png Graphic file (type png)
+<use Chap1/1.png>
+Package pdftex.def Info: Chap1/1.png  used on input line 236.
+(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
+[23]
+Overfull \hbox (4.7894pt too wide) in paragraph at lines 248--249
+\T1/lmr/m/n/14.4 de nom-breux opé-ra-teurs de croi-se-ment. Une mé-thode simple
+
+ []
+
+[24]
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 264--283
+$[]$ 
+ []
+
+[25] [26]
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 301--309
+$[]$ 
+ []
+
+
+! LaTeX Error: \begin{enumerate} on input line 215 ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.312 \end{itemize}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.314 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.314 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.314 \end{enumerate}
+                     
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.314 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.314 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.314 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.314 \end{enumerate}
+                     
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: \begin{document} ended by \end{enumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 \end{enumerate}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.314 \end{enumerate}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+) [27]
 \openout2 = `General/bibliography.aux'.
 
  (General/bibliography.tex (memoire.bbl
@@ -826,15 +1111,16 @@ Underfull \hbox (badness 1931) in paragraph at lines 42--46
 /dspace.univ-
  []
 
-[21
+[28
 
 
 
-] [22] [23])) [24]
+] [29] [30]
+Underfull \hbox (badness 1874) in paragraph at lines 214--217
+[]\T1/lmr/m/n/14.4 Johann Dréo, Alain Pé-trowski, Pa-trick Siarry, and Eric
+ []
 
-Package natbib Warning: There were undefined citations.
-
-(memoire.aux (Cover/cover.aux) (Intro/remerciement.aux)
+)) [31] (memoire.aux (Cover/cover.aux) (Intro/remerciement.aux)
 (General/tableContents.aux) (General/listFigures.aux) (Intro/introGeneral.aux)
 (Chap1/chap1.aux) (Chap3/chap3.aux) (General/bibliography.aux))
 
@@ -842,25 +1128,27 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15410 strings out of 492895
- 279450 string characters out of 3133479
- 447565 words of memory out of 3000000
- 19110 multiletter control sequences out of 15000+200000
- 586513 words of font info for 55 fonts, out of 3000000 for 9000
+ 15637 strings out of 492895
+ 283658 string characters out of 3133479
+ 449564 words of memory out of 3000000
+ 19336 multiletter control sequences out of 15000+200000
+ 589508 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,63p,1827b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
-.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on memoire.pdf (28 pages, 1537841 bytes).
+ 41i,23n,63p,1827b,705s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
+.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on memoire.pdf (35 pages, 1608694 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

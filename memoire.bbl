@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -190,10 +190,52 @@ Ren{\'e}~VV Vidal.
 \newblock \emph{Applied simulated annealing}, volume 396.
 \newblock Springer, 1993.
 
+\bibitem[Glover(1986)]{glover1986future}
+Fred Glover.
+\newblock Future paths for integer programming and links to artificial
+  intelligence.
+\newblock \emph{Computers \& operations research}, 13\penalty0 (5):\penalty0
+  533--549, 1986.
+
 \bibitem[Battiti and Tecchiolli(1994)]{battiti1994reactive}
 Roberto Battiti and Giampietro Tecchiolli.
 \newblock The reactive tabu search.
 \newblock \emph{ORSA journal on computing}, 6\penalty0 (2):\penalty0 126--140,
   1994.
+
+\bibitem[Hertz and Kobler(2000)]{hertz2000framework}
+Alain Hertz and Daniel Kobler.
+\newblock A framework for the description of evolutionary algorithms.
+\newblock \emph{European Journal of Operational Research}, 126\penalty0
+  (1):\penalty0 1--12, 2000.
+
+\bibitem[Dr{\'e}o et~al.(2003)Dr{\'e}o, P{\'e}trowski, Siarry, and
+  Taillard]{dreo2003metaheuristiques}
+Johann Dr{\'e}o, Alain P{\'e}trowski, Patrick Siarry, and Eric Taillard.
+\newblock \emph{M{\'e}taheuristiques pour l'optimisation difficile}.
+\newblock Eyrolles, 2003.
+
+\bibitem[Holland(1975)]{holland1975adaptation}
+JH~Holland.
+\newblock Adaptation in natural and artificial systems: an introductory
+  analysis.
+\newblock \emph{Holland, JH}, 1975.
+
+\bibitem[Rechenberg(1973)]{rechenberg1973evolutionsstrategie}
+Ingo Rechenberg.
+\newblock Evolutionsstrategie: Optimierung technischer systeme nach prinzipien
+  der biologischen evolution, frommann--holzboog.
+\newblock \emph{Stuttgart, Germany}, 1973.
+
+\bibitem[Fogel et~al.(1966)Fogel, Owens, and Walsh]{fogel1966artificial}
+Lawrence~J Fogel, Alvin~J Owens, and Michael~J Walsh.
+\newblock Artificial intelligence through simulated evolution.
+\newblock 1966.
+
+\bibitem[Koza(1992)]{koza1992genetic}
+John~R Koza.
+\newblock Genetic programming: On the programming of computers by means of
+  natural selection (complex adaptive systems).
+\newblock \emph{A Bradford Book}, 1:\penalty0 18, 1992.
 
 \end{thebibliography}

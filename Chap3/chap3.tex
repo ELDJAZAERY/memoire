@@ -44,7 +44,8 @@ De nombreuses méthodes de résolution ont été développées par la communaut�
 Ces méthodes sont divisées en deux grandes catégories : les méthodes exactes basées sur l’énumération de toutes les solutions réalisables, chose qui garantie la complétude de la résolution, et les méthodes approchées qui perdent en exactitude pour gagner en efficacité \cite{park2007dominating} . La figure 3.2 illustre un schéma résumant la classification des différentes méthodes discutées le long du chapitre.
 
 \subsection{Méthodes exacte}
-Ces méthodes sont dites complètes ou exactes car elles permettent de trouver la solution optimale pour une instance de taille finie dans un temps limité et de prouver son optimalité \cite{puchinger2005combining} . Ces méthodes se basent généralement sur sur une recherche complètes de l’espace des combinaisons afin de trouver une solution optimale. Les algorithmes exacts les plus réussis dans la littérature: 
+Ces méthodes sont dites complètes ou exactes car elles permettent de trouver la solution optimale pour une instance de taille finie dans un temps limité et de prouver son optimalité \cite{puchinger2005combining} . Ces méthodes se basent généralement sur sur une recherche complètes de l’espace des combinaisons afin de trouver une solution optimale.\\
+Les algorithmes exacts les plus réussis dans la littérature: 
 
 
 \begin{enumerate}[label=\alph*)]
@@ -86,19 +87,26 @@ La popularité du recuit simulé a été incontestable pendant des années. D’
 \end{figure}
 
 \begin{algorithm}[H]
+\caption{Recuit simulé }
+%\KwData{this text}
+%\KwResult{la meilleure combinaison ayant appartenu à la population }
 \SetAlgoLined
-\KwResult{Write here the result }
- initialization\;
- \While{While condition}{
-  instructions\;
-  \eIf{condition}{
-   instructions1\;
-   instructions2\;
-   }{
-   instructions3\;
-  }
+\DontPrintSemicolon
+$ t \gets 0 $ , Initialiser la température T en fonction du schéma de refroidissement \;
+$ s\gets s_0 $ , une solution initiale \;
+$ Best \gets S $ \;
+\While{(Best est la meilleure) $\cap$ (nombre iter=max) $\cap$ ($ t \leq 0 $)}{
+  $ r \gets s’$ où $s’ \in N(s)$ \;
+  $ \rho \gets random(0.1)$ \;
+  $ \triangle E = f(r)-f(s) $  \;
+  \If{ $ f(r) < f(s)  \cup \rho < e^{-\triangle E/t }$ }{
+	$ s \gets r $ \;
+   }
+  \If{f(s)<f(Best)}{
+	$ Best \gets s$ \;
+   }
+   Décrémenter le t \;
  }
- \caption{How to write algorithms}
 \end{algorithm}
 
 	\item \textbf{Recherche tabou: } La méthode de recherche avec tabous, ou simplement recherche tabou (TS :Tabu Search) a été formalisée par Fred Glover en 1986 \cite{glover1986future} . Elle utilise explicitement l’historique de la recherche, à la fois pour échapper aux minimaux locaux et pour mettre en œuvre une stratégie d’exploration. Sa principale caractéristique est en effet basée sur  l’utilisation de mécanismes inspirés de la mémoire humaine. A l'inverse du recuit simulé qui génère de manière aléatoire une seule solution voisine s’ \( \in N(s) \) à chaque itération, la recherche tabou examine un échantillonnage de solutions de \( N(s) \) et retient la meilleure s’ même si s’ est plus mauvaise que s. La recherche tabou ne s'arrête donc pas au premier optimum trouvé. \\
@@ -115,38 +123,200 @@ Une autre amélioration intéressante de la TS est l’utilisation de structure 
 \end{figure}
 
 \begin{algorithm}[H]
+\caption{Recherche Taboue}
 \SetAlgoLined
-\KwResult{Write here the result }
- initialization\;
- \While{While condition}{
-  instructions\;
-  \eIf{condition}{
-   instructions1\;
-   instructions2\;
-   }{
-   instructions3\;
-  }
+\DontPrintSemicolon
+$ l \gets longueur maximale de la liste taboue $  \;
+$ n \gets number of tweaks desired to sample the gradient$ \;
+$ S \gets solution initial $ \;
+$ Best \gets S $ \;
+$ L \gets \{\} $ \;
+Insérer s dans L \;
+
+\While{(Best est la meilleure) $\cap$ (nombre iter=max)}{
+  \If{ $ longueur(L) > l $ }{
+    Défiler un élément de la liste L \;
+   }
+   $r \gets r’$ où  $r’ \in N(s)$  \;  
+   \For{$i\gets1$ \KwTo $N-1$ }{
+     $w \gets w’$ où  $w’ \in N(s)$  \;
+     \If{$ w \notin L  \cap ( f(w)<f(r) \cup r \in L ) $ }{
+		$ e \gets w $ \;
+		\If{$ r \notin L  \cap f(r)<f(s) $}{
+           $ s \gets r $ \;
+           Enfiler r dans L \;
+		}
+		\If{$f(s)<f(Best)$}{
+			$ Best \gets s $			
+		}
+     }
+   }
  }
- \caption{How to write algorithms}
+
 \end{algorithm}
 	
 	\item \textbf{Recherche locale : } Pour cette méthode de recherche il suffit de tester itérativement de nouvelles solutions potentielles dans la région de la solution courante, et de prendre la meilleure dans le voisinage. La méthode est une généralisation de la méthode de la descente de gradient elle consiste à partir d’une solution s à choisir une solution s’ dans un voisinage de s, noté N(s). La nouvelle solution choisie est meilleure que la précédente sous la fonction objective. Cela nous permet d’explorer l’espace des combinaisons  de proche en proche, en partant d’une combinaison initiale et en sélectionnant à chaque itération une combinaison voisine de la combinaison courante, obtenue en lui appliquant une transformation élémentaire jusqu’à la convergence à un optimum local. L’algorithme  décrivant le principe général de la recherche locale:
+
 \begin{algorithm}[H]
+\caption{Recherche Local}
 \SetAlgoLined
-\KwResult{Write here the result }
- initialization\;
- \While{While condition}{
-  instructions\;
-  \eIf{condition}{
-   instructions1\;
-   instructions2\;
-   }{
-   instructions3\;
-  }
- }
- \caption{How to write algorithms}
+\DontPrintSemicolon
+
+$ s \gets solution initial $ \;
+\While{ (Best est la meilleure) $\cap$ (nombre iter=max) }{
+	$ r \gets s’$ où $s’ \in N(s)$ \;
+	\If{ $f(r) < f(s)$ }{
+		$ s \gets r $  \;		
+	}
+}
+
 \end{algorithm}
+	
+	
+	\item \textbf{Recherche à voisinages variables(VNS):} La recherche à voisinage variable (VNS : Variable neighborhood search) est une méta-heuristique proposée par Hansen et Mladenovic en 1997 [28,29]. Elle est basée sur le principe de changement systématique de voisinage durant la recherche (la performance des méthodes de descente).  La procédure de VNS se compose de trois étapes : perturbation (shaking), recherche locale et déplacement. Cet algorithme est efficace si les structures de voisinage sont complémentaires en ce sens qu’un minimum local pour un voisinage n’en n’est pas nécessairement un pour un autre, ce qui veut dire simplement d’utiliser plusieurs voisinages successifs quand on se trouve bloqué dans un minimum local.
+	
+\begin{algorithm}[H]
+\caption{Recherche à voisinages variables(VNS)}
+\SetAlgoLined
+\DontPrintSemicolon
+
+$ s \gets solution initial $ \;
+\Repeat{$ K = K_{Max} $}{
+	générer $s’$ ,tel que $s’ \in N(s)$ \;
+	$s'' \gets Appel$(Recherche Locale) \;
+	\eIf{$f(s'') < f(s)$}{
+		$ s \gets s'' $ \;
+		$ K \gets 1 $ \;		
+	}{
+		$ K = K + 1 $ \;
+	}
+}
+	
+
+\end{algorithm}
+
+	
 \end{enumerate}
 
 
 
+\subsubsection{Méthodes évolutives (A population):}
+Depuis le début des années 90, une autre famille d’ heuristiques est devenue très populaire : les Méthodes Évolutives \cite{hertz2000framework} , s’inspirant de la théorie de l’évolution «darwinienne»  tels que le croisement, la mutation et la sélection pour résoudre des problèmes divers. Contrairement à la Recherche Locale qui tente d’ améliorer itérativement une solution courante. Les Méthodes Évolutives travaillent sur une population de solutions en appliquant un processus cyclique composé d’ une phase de coopération et d’ une phase d’adaptation individuelle qui se succèdent à tour de rôle. Dans la phase de coopération, les solutions de la population courante sont comparées entre elles, puis combinées, dans le but de produire de nouvelles solutions qui héritent des bons aspects de chaque membre de la population. Dans la phase d’adaptation individuelle, chaque solution dans la population peut évoluer de manière indépendante. On peut utiliser le même type de critère d’ arrêt que dans la Recherche Locale, ou alors on peut décider de stopper une Méthode Évolutive dès que les solutions dans la population sont jugées trop similaires. Une description générale des Méthodes Évolutives est donnée ci-dessous:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=7cm,height=3.7cm]{Chap1/1.png}
+	\caption{Principe d’un algorithme évolutionnaire (EA) \cite{dreo2003metaheuristiques}.}
+	\label{fig:CSF}
+\end{figure}
+
+Le terme Evolutionary Computation englobe une classe assez large de méta-heuristiques qui ont été développés au début des années soixante, telles que les algorithmes génétiques \cite{holland1975adaptation}, les stratégies d’évolution \cite{rechenberg1973evolutionsstrategie} , la programmation évolutive \cite{fogel1966artificial}, et la programmation génétique \cite{koza1992genetic}
+
+\begin{enumerate}[label=\alph*)]
+	\item \textbf{Algorithmes génétiques(AG):} développées par J. Holland en 1975 comme outils de modélisation de l’adaptation et qui travaillent dans un espace de chaînes de bits. Elles ont été largement utilisé et développé par D.E. Goldberg en 1989. Cette classe s’inspire de la théorie de l’évolution et des règles de la génétique qui expliquent la capacité des espèces de s’adapter à leurs environnement à l’ aide de l’ opérateur de mutation, alors que l’ échange               	d’information est gouverné par un opérateur de reproduction et un opérateur de combinaison (ou croisement). L’algorithme ci-dessous décrit ce principe général, dont les principales étapes sont détaillées ci-après.
+
+\begin{algorithm}[H]
+\caption{Algorithme génétique}
+\KwResult{la meilleure combinaison ayant appartenu à la population }
+\SetAlgoLined
+\DontPrintSemicolon
+
+Initialiser la population avec un ensemble de combinaisons de E \;
+\While{critères d’arrêt non atteints}{
+	Sélectionner des combinaisons de la population \;
+	Créer de nouvelles combinaisons par croisement et mutation \;
+	Mettre à jour la population  \;
+}
+
+\end{algorithm}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=7cm,height=3.7cm]{Chap1/1.png}
+	\caption{Principe d’un algorithme évolutionnaire (EA) \cite{dreo2003metaheuristiques}.}
+	\label{fig:CSF}
+\end{figure}
+	
+\begin{itemize}
+	\item \textbf{Initialisation de la population: }en général, la population initiale est générée de façon aléatoire, selon une distribution uniforme assurant une bonne diversité des combinaisons. Une solution initiale est de bonne qualité, celle qui nous permet de converger vers un optimum global dans le plus court délai possible.
+	
+Il est à noter que cette méthode est utilisée dans toutes les méta-heuristiques avec population.
+
+	\item \textbf{Sélection: } cette étape consiste à choisir les combinaisons de la population qui seront ensuite croisées et mutées. Il s’agit là de favoriser la sélection des meilleures combinaisons, tout en laissant une petite chance aux moins bonnes combinaisons. Il existe de nombreuses façons de procéder à cette étape de sélection. Par exemple, la sélection par tournoi consiste à choisir aléatoirement deux combinaisons et à sélectionner la meilleure des deux (ou bien à sélectionner une des deux selon une probabilité dépendant de la fonction objectif).
+	
+	\item \textbf{Croisement:} est une opération de diversification. cette opération consiste à générer de nouvelles combinaisons, à partir des deux individus sélectionnés. Là encore, il existe de nombreux opérateurs de croisement. Une méthode simple consiste à choisir aléatoirement un point de croisement, à couper chaque combinaison parente en ce point, puis à reformer deux enfants en échangeant les parties composant les parents de part et d’autre du point de croisement.
+	
+	\item \textbf{Mutation: } cette opération consiste à modifier de façon aléatoire certains composants des combinaisons obtenues par croisement.
+	
+	\item \textbf{Mise à jour de la population: } cette étape consiste à remplacer certaines combinaisons de la génération précédente par certaines combinaisons issues des opérations de croisement et de mutation, formant de la sorte une nouvelle génération. Là encore, il existe différentes stratégies de remplacement, favorisant plus ou moins la diversité, et plus ou moins élitistes. On peut par exemple choisir de ne garder que les meilleurs individus, qu’ils soient issus de la nouvelle génération ou de l’ancienne, ou bien ne garder que les individus de la nouvelle génération, indépendamment de leur qualité.
+	
+	\item \textbf{Critères d’arrêt: } le processus d’évolution est itéré, de génération en génération, jusqu’à ce qu’une combinaison de qualité suffisante soit générée, ou bien jusqu’à ce qu’une limite de temps soit atteinte. On peut également utiliser des indicateurs de diversité (comme par exemple le taux de ré-échantillonnage ou la distance pair-à-pair) pour arrêter le processus lorsque la population est devenue trop uniforme. On peut aussi limiter le nombre d’itération possible ou encore les probabilités d’application des opérateurs de croisement et de 
+mutation.
+ 
+\end{itemize}	
+
+	
+	\item \textbf{L’optimisation des colonies de fourmis (ACO): }est une technique d’intelligence artificielle qui s'inspire du comportement intelligent des fourmis lors de la recherche de nourriture. Cette méta-heuristique permet de trouver des solutions de haute qualité aux problèmes d’optimisation combinatoire. 
+
+En raison de leur comportement de recherche de nourriture, les fourmis trouvent les chemins les plus courts entre leur nid et leur source de nourriture, en déposant sur la terre une substance chimique appelée phéromone. Cela forme une traînée de phéromone qui est utilisée pour la communication stigmergique. La présence d'une telle phéromone sur les trajectoires affecte la prise de décision des fourmis concernant les trajectoires choisies par elles. Les fourmis sélectionnent de manière probabiliste les chemins marqués par de fortes concentrations de phéromones ce qui permet aux fourmis de trouver le chemin le plus court vers la source de nourriture.
+
+\begin{algorithm}[H]
+\caption{L’optimisation des colonies de fourmis (ACO)}
+\KwResult{la meilleure solution trouvée}
+\SetAlgoLined
+\DontPrintSemicolon
+
+Initialisation : initialisation de phéromones et les paramètre avec des valeurs constantes \;
+Construction de la solution initiale \;
+\While{condition d’arrêt non atteinte }{
+	\While{nombre de fourmis non atteint}{
+		Construction d’une solution selon la concentration de phéromone \;
+		Mise à jour en ligne de  la table des phéromones \;
+	}
+	\If{la meilleure solution trouvée par l’itération courante est meilleure que celles des 	itérations précédente}{
+		Mise à jour de l a solution courante \;
+	}
+	Mise à jour hors ligne de  la table des phéromones \;	
+}
+
+\end{algorithm}
+
+\begin{itemize}
+	\item \textbf{Solution initiale:} en général, la solution initiale est générée de façon aléatoire.Une solution est composée de plusieurs attributs définis selon la nature du problème.
+	
+	\item \textbf{Initialisation de la table de phéromone:} la table de phéromone contient  la concentration de phéromone pour tous les attributs possible d’une solution. Au départ tous les attributs ont une même concentration de phéromone. 
+	
+	\item \textbf{Mise à jour de phéromone:}
+		\begin{itemize}
+			\item \textbf{En ligne:} les attributs communs entre la solution courante et la meilleure solution vont être favoriser par une valeur constante supplémentaire.
+			\item \textbf{Hors ligne:} les attributs appartenant à la meilleure solution vont être favoriser par la valeur constante. 
+		\end{itemize}
+\end{itemize}
+	
+	\item \textbf{L’algorithme à base de biogéographie (BBO)} BBO est un algorithme inspiré de la biogéographie, qui étudie la répartition géographique des organismes biologiques. 
+
+Tout comme GA et PSO qui sont basés sur la biologie, BBO est un algorithme basé sur une population dans lequel chaque population de solutions candidates est utilisée dans la procédure de recherche d’un optima global. BBO présente certaines caractéristiques communes avec l’algorithme d'optimisation, le GA. En GA, un individu de la population s'appelle un chromosome et a sa propre valeur de condition physique. De même, dans BBO, chaque individu est qualifié d'habitat et a son indice de qualité de l'habitat (HSI) pour évaluer sa qualité en tant que solution. Comme nous avons affaire à un problème de minimisation, un habitat à faible indice de sécurité d'impact représente une bonne solution et un habitat à haut indice de faiblesse est plutôt une solution médiocre. Chaque chromosome de GA est constitué de gènes, tandis que, pour BBO, chaque habitat est caractérisé par des variables d'indice de pertinence (SIV). L'AG compte deux opérateurs principaux: le croisement et la mutation. Pendant ce temps, chez BBO, les principaux opérateurs sont la migration et la mutation. L'opérateur de migration est composé d'émigration et d'immigration. Il est utilisé pour améliorer et faire évoluer les habitats (solutions au problème d'optimisation) de la population. Les fonctionnalités de solution (SIV) émigrent d'habitats à faible HSI (habitats d'émigration) vers des habitats à haut HSI (habitats d'immigration). Il existe différentes alternatives pour les processus de migration et de mutation de BBO. La manière dont nous implémentons ces deux opérateurs est expliquée en détail dans le prochain chapitre. 
+
+\begin{algorithm}[H]
+\caption{L’algorithme à base de biogéographie (BBO)}
+\KwResult{la meilleure solution ayant appartenu à la population }
+\SetAlgoLined
+\DontPrintSemicolon
+
+Générer aléatoirement un ensemble de solutions initiales (îles) \;
+\While{le critère d’arrêt n’est pas atteint}{
+	Évaluer la fitness (HSI) de chaque solution \;
+	Calculer le nombre d’espèce S, le taux d’immigration \lambda et d’émigration \mu pour chaque solution \;
+	Migration  \;
+	Mutation : muter les individus au taux de mutation \;
+	Remplacement de la population par les descendants \;
+	Implémenter l’élitisme \;
+}
+
+\end{algorithm}
+		
+	
+\end{itemize}
+	
+\end{enumerate}
