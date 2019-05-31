@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -124,5 +124,76 @@ Shyam Sundar.
 \newblock A steady-state genetic algorithm for the dominating tree problem.
 \newblock In \emph{Asia-Pacific Conference on Simulated Evolution and
   Learning}, pages 48--57. Springer, 2014.
+
+\bibitem[Zidi(2006)]{zidi2006systeme}
+Kamel Zidi.
+\newblock \emph{Syst{\`e}me interactif d'aide au d{\'e}placement multimodal
+  (SIADM)}.
+\newblock PhD thesis, Ecole Centrale de Lille; Universit{\'e} des Sciences et
+  Technologie de Lille-Lille I, 2006.
+
+\bibitem[Hao et~al.(1999)Hao, Galinier, and Habib]{hao1999metaheuristiques}
+Jin-Kao Hao, Philippe Galinier, and Michel Habib.
+\newblock M{\'e}taheuristiques pour l’optimisation combinatoire et
+  l’affectation sous contraintes.
+\newblock \emph{Revue d’intelligence artificielle}, 13\penalty0 (2):\penalty0
+  283--324, 1999.
+
+\bibitem[Puchinger and Raidl(2005)]{puchinger2005combining}
+Jakob Puchinger and G{\"u}nther~R Raidl.
+\newblock Combining metaheuristics and exact algorithms in combinatorial
+  optimization: A survey and classification.
+\newblock In \emph{International Work-Conference on the Interplay Between
+  Natural and Artificial Computation}, pages 41--53. Springer, 2005.
+
+\bibitem[Schrijver(1986)]{schrijver1986theory}
+Alexander Schrijver.
+\newblock Theory of linear and integer programming. johnwiley \& sons.
+\newblock \emph{New York}, 1986.
+
+\bibitem[Padberg and Rinaldi(1991)]{padberg1991branch}
+Manfred Padberg and Giovanni Rinaldi.
+\newblock A branch-and-cut algorithm for the resolution of large-scale
+  symmetric traveling salesman problems.
+\newblock \emph{SIAM review}, 33\penalty0 (1):\penalty0 60--100, 1991.
+
+\bibitem[Padberg and Rinaldi(1987)]{padberg1987optimization}
+Manfred Padberg and Giovanni Rinaldi.
+\newblock Optimization of a 532-city symmetric traveling salesman problem by
+  branch and cut.
+\newblock \emph{Operations Research Letters}, 6\penalty0 (1):\penalty0 1--7,
+  1987.
+
+\bibitem[Zlochin et~al.(2004)Zlochin, Birattari, Meuleau, and
+  Dorigo]{zlochin2004model}
+Mark Zlochin, Mauro Birattari, Nicolas Meuleau, and Marco Dorigo.
+\newblock Model-based search for combinatorial optimization: A critical survey.
+\newblock \emph{Annals of Operations Research}, 131\penalty0 (1-4):\penalty0
+  373--395, 2004.
+
+\bibitem[Metropolis et~al.(1953)Metropolis, Rosenbluth, Rosenbluth, Teller, and
+  Teller]{metropolis1953equation}
+Nicholas Metropolis, Arianna~W Rosenbluth, Marshall~N Rosenbluth, Augusta~H
+  Teller, and Edward Teller.
+\newblock Equation of state calculations by fast computing machines.
+\newblock \emph{The journal of chemical physics}, 21\penalty0 (6):\penalty0
+  1087--1092, 1953.
+
+\bibitem[Bonomi and Lutton(1984)]{bonomi1984n}
+Ernesto Bonomi and Jean-Luc Lutton.
+\newblock The n-city travelling salesman problem: Statistical mechanics and the
+  metropolis algorithm.
+\newblock \emph{SIAM review}, 26\penalty0 (4):\penalty0 551--568, 1984.
+
+\bibitem[Vidal(1993)]{vidal1993applied}
+Ren{\'e}~VV Vidal.
+\newblock \emph{Applied simulated annealing}, volume 396.
+\newblock Springer, 1993.
+
+\bibitem[Battiti and Tecchiolli(1994)]{battiti1994reactive}
+Roberto Battiti and Giampietro Tecchiolli.
+\newblock The reactive tabu search.
+\newblock \emph{ORSA journal on computing}, 6\penalty0 (2):\penalty0 126--140,
+  1994.
 
 \end{thebibliography}

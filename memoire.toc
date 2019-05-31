@@ -21,3 +21,11 @@
 \contentsline {subsection}{\numberline {1.5.4}Domaine commercial}{10}% 
 \contentsline {section}{\numberline {1.6}Le probl\IeC {\`e}me majeur d\IeC {\textquoteright }un r\IeC {\'e}seau de capteurs sans fil et le challenge:}{11}% 
 \contentsline {section}{\numberline {1.7}Conclusion:}{11}% 
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }3eme chapiter}{13}% 
+\contentsline {section}{\numberline {3.1}Introduction}{13}% 
+\contentsline {section}{\numberline {3.2}Techniques d\IeC {\textquoteright }optimisation combinatoire:}{13}% 
+\contentsline {subsection}{\numberline {3.2.1}M\IeC {\'e}thodes exacte}{15}% 
+\contentsline {subsection}{\numberline {3.2.2}Les m\IeC {\'e}thodes approch\IeC {\'e}es:}{16}% 
+\contentsline {subsubsection}{\numberline {3.2.2.1}Heuristiques:}{16}% 
+\contentsline {subsubsection}{\numberline {3.2.2.2}Meta-Heuristiques:}{16}% 
+\contentsline {subsubsection}{\numberline {3.2.2.3}M\IeC {\'e}thodes de voisinage (A solution unique):}{17}% 
