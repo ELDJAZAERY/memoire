@@ -1,5 +1,10 @@
 \documentclass[12pt , a4paper]{report}
 
+
+%% hyper References
+\usepackage[hidelinks]{hyperref}
+
+
 %%% for the cover page
 \usepackage{array}
 \usepackage{fancyhdr}
@@ -89,6 +94,8 @@
 
 \include{General/listFigures}
 
+\include{General/listOfAlgos}
+
 
 \setcounter{page}{1} % Resest Page Counter
 
@@ -98,6 +105,11 @@
 \include{Chap1/chap1}
 
 \include{Chap3/chap3}
+
+
+%% simple table 
+% https://www.youtube.com/watch?v=gpzeV-N7wfk&list=PLNnwglGGYoTtW7o4PHFOSWGevcdFa3v3D&index=6 
+
 
 \include{General/bibliography}
 \end{document}

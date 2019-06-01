@@ -25,17 +25,17 @@ Un problème d’optimisation combinatoire est exprimé sous forme d’une fonct
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=7cm,height=3.7cm]{Chap1/1.png}
+	\includegraphics[width=15cm,height=5cm]{Chap3/1.png}
 	\caption{Différence entre un optimum global et des optima locaux}
 	\label{fig:CSF}
 \end{figure}
 
 L’élégance des problèmes d’optimisation combinatoire réside dans la possibilité de les modéliser en problèmes de la théorie des graphes et ainsi profiter des outils de cette dernière.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm,height=3.7cm]{Chap1/1.png}
-	\caption{Différence entre un optimum global et des optima locaux}
+	\includegraphics[width=15cm,height=13cm]{Chap3/2.png}
+	\caption{Classification des méthodes de résolution d’optimisation combinatoire}
 	\label{fig:CSF}
 \end{figure}
 
@@ -176,7 +176,7 @@ $ s \gets solution initial $ \;
 	\item \textbf{Recherche à voisinages variables(VNS):} La recherche à voisinage variable (VNS : Variable neighborhood search) est une méta-heuristique proposée par Hansen et Mladenovic en 1997 [28,29]. Elle est basée sur le principe de changement systématique de voisinage durant la recherche (la performance des méthodes de descente).  La procédure de VNS se compose de trois étapes : perturbation (shaking), recherche locale et déplacement. Cet algorithme est efficace si les structures de voisinage sont complémentaires en ce sens qu’un minimum local pour un voisinage n’en n’est pas nécessairement un pour un autre, ce qui veut dire simplement d’utiliser plusieurs voisinages successifs quand on se trouve bloqué dans un minimum local.
 	
 \begin{algorithm}[H]
-\caption{Recherche à voisinages variables(VNS)}
+\caption{Recherche à voisinages variables (VNS)}
 \SetAlgoLined
 \DontPrintSemicolon
 
@@ -307,7 +307,7 @@ Tout comme GA et PSO qui sont basés sur la biologie, BBO est un algorithme bas�
 Générer aléatoirement un ensemble de solutions initiales (îles) \;
 \While{le critère d’arrêt n’est pas atteint}{
 	Évaluer la fitness (HSI) de chaque solution \;
-	Calculer le nombre d’espèce S, le taux d’immigration \lambda et d’émigration \mu pour chaque solution \;
+	Calculer le nombre d’espèce S, le taux d’immigration $\lambda$ et d’émigration $\mu$ pour chaque solution \;
 	Migration  \;
 	Mutation : muter les individus au taux de mutation \;
 	Remplacement de la population par les descendants \;
@@ -315,8 +315,45 @@ Générer aléatoirement un ensemble de solutions initiales (îles) \;
 }
 
 \end{algorithm}
-		
 	
-\end{itemize}
+	\item \textbf{Algorithmes mémétiques (algorithme de colonies de fourmis \& d’essaim de particules) : }
+Le terme «algorithmes mémétiques»  est apparu pour la première fois dans [38], introduit par Moscato en 1986. L’idée principale de ce genre d’algorithme est de rendre plus agressif un algorithme génétique par l’ajout d’une recherche locale en plus de la mutation.
+
+La faible vitesse de convergence est la première observation provenant de l’implémentation de l’algorithme génétique. Pour cet effet Moscoto a pensé d’ajouter une recherche locale  qui peut être une méthode de descente ou une recherche locale plus évoluée (recuit simulé ou recherche tabou par exemple). Cette recherche locale sera appliquée à tout nouvel individu obtenu au cours de la recherche.
+
+D’une vue globale, l’application de cette simple modification n’influe en rien sur le comportement de l’algorithme, mais  cela peut apporter de profondes changement en ce dernier. Après avoir créé un nouvel individu à partir de deux parents sélectionnés, on applique une recherche locale et sous certaines conditions on applique un opérateur de mutation à cet individu. Les conditions peuvent être une certaine probabilité. Il est aussi possible d’ajouter un critère d’aspiration ou d’autres techniques plus évoluées à cet endroit.\\
+
+
+\begin{algorithm}[H]
+\caption{Simple Algorithme mémétique}
+\KwResult{la meilleure solution ayant appartenu à la population }
+\SetAlgoLined
+\DontPrintSemicolon
+
+Initialisation : générer une population initiale $P$ de solutions de taille $| P | = n$  \;
+\Repeat{critère d'arrêt satisfait}{
+	Sélection: choisissez 2 solutions s et $s’$ avec la technique volue \;
+	Croisement: combinez les solutions parentes s et $s’$ pour former une solution enfant $y$ \;
+	Recherche locale: appliquer une procédure de recherche locale sur y sous certaines conditions \;
+	Mutation: appliquer un opérateur de mutation sur y dans des conditions \;
+	Choisir un individu y’ à remplacer dans la population \;
+	remplacer y’ par y dans la population \;	
+}
+
+\end{algorithm}
+
+\paragraph{•}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=15cm,height=9cm]{Chap3/7.png}
+	\caption{Schéma explicatif d’un algorithme mémétique}
+	\label{fig:CSF}
+\end{figure}
 	
 \end{enumerate}
+
+
+\section{Conclusion}
+Nous avons présenté dans ce chapitre l’état de l’art des méta-heuristiques pour l’optimisation des problèmes Np-difficile. Plus de détails sur le problème de l’arbre dominant qui en est un, ainsi que les méthodes utilisées pour sa résolution seront mis au clair dans le prochain chapitre.
+

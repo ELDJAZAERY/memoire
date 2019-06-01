@@ -1,15 +1,21 @@
-\BOOKMARK [0][-]{chapter*.5}{Intro}{}% 1
-\BOOKMARK [0][-]{section*.8}{Preeemiiiiier chapiter}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Introduction}{section*.8}% 3
-\BOOKMARK [1][-]{section.1.2}{Un r\351seau de capteur sans-fil}{section*.8}% 4
-\BOOKMARK [1][-]{section.1.3}{Architecture d\220un capteur sans-fil}{section*.8}% 5
-\BOOKMARK [1][-]{section.1.4}{Architecture d\220un r\351seau de capteurs sans-fil}{section*.8}% 6
+\BOOKMARK [0][-]{chapter*.6}{Intro}{}% 1
+\BOOKMARK [0][-]{section*.9}{Preeemiiiiier chapiter}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Introduction}{section*.9}% 3
+\BOOKMARK [1][-]{section.1.2}{Un r\351seau de capteur sans-fil}{section*.9}% 4
+\BOOKMARK [1][-]{section.1.3}{Architecture d\220un capteur sans-fil}{section*.9}% 5
+\BOOKMARK [1][-]{section.1.4}{Architecture d\220un r\351seau de capteurs sans-fil}{section*.9}% 6
 \BOOKMARK [2][-]{subsection.1.4.1}{Les couches WSN OSI}{section.1.4}% 7
 \BOOKMARK [2][-]{subsection.1.4.2}{Les plans de gestion de la pile protocolaire:}{section.1.4}% 8
-\BOOKMARK [1][-]{section.1.5}{Domaines d'application des r\351seaux de capteurs}{section*.8}% 9
+\BOOKMARK [1][-]{section.1.5}{Domaines d'application des r\351seaux de capteurs}{section*.9}% 9
 \BOOKMARK [2][-]{subsection.1.5.1}{Domaine militaire}{section.1.5}% 10
 \BOOKMARK [2][-]{subsection.1.5.2}{Domaine m\351dicale}{section.1.5}% 11
 \BOOKMARK [2][-]{subsection.1.5.3}{Domaine environnementale}{section.1.5}% 12
 \BOOKMARK [2][-]{subsection.1.5.4}{Domaine commercial}{section.1.5}% 13
-\BOOKMARK [1][-]{section.1.6}{Le probl\350me majeur d\220un r\351seau de capteurs sans fil et le challenge:}{section*.8}% 14
-\BOOKMARK [1][-]{section.1.7}{Conclusion:}{section*.8}% 15
+\BOOKMARK [1][-]{section.1.6}{Le probl\350me majeur d\220un r\351seau de capteurs sans fil et le challenge:}{section*.9}% 14
+\BOOKMARK [1][-]{section.1.7}{Conclusion:}{section*.9}% 15
+\BOOKMARK [0][-]{section.1.7}{3eme chapiter}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Introduction}{section.1.7}% 17
+\BOOKMARK [1][-]{section.3.2}{Techniques d\220optimisation combinatoire:}{section.1.7}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{M\351thodes exacte}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.2}{Les m\351thodes approch\351es:}{section.3.2}% 20
+\BOOKMARK [1][-]{section.3.3}{Conclusion}{section.1.7}% 21
