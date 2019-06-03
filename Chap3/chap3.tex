@@ -23,7 +23,7 @@ L’importance de l’optimisation combinatoire se justifie d’un coté par la 
 
 Un problème d’optimisation combinatoire est exprimé sous forme d’une fonction objectif ; qui est à maximiser, ou à minimiser, selon le type de problème traité. La résolution d’un tel problème revient à chercher la meilleure solution (optimum global) dans l’ensemble des solutions réalisables, sans pour autant être coincé dans des solutions intermédiaires (optimum locaux), propres à un sous-espace de recherche (voir Figure 3.1).
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm,height=5cm]{Chap3/1.png}
 	\caption{Différence entre un optimum global et des optima locaux}
@@ -77,14 +77,8 @@ Les méthodes de voisinage se basent sur la notion de voisinage. Elle a plusieur
 \begin{enumerate}[label=\alph*)]
 	\item \textbf{Recuit simulé: } La recherche recuit simulé a été introduite en 1983 par Kirkpatrick et al.[24]. Cette méthode originale est basée sur les travaux bien antérieurs de Metropolis et al. \cite{metropolis1953equation} et elle est considérée comme la plus ancienne méta-heuristique.\\
 Le principe de fonctionnement s’inspire d’un processus d’amélioration de la qualité d’un métal solide par recherche d’un état d’énergie minimum correspondant à une structure stable de ce métal. L’état optimal correspondrait à une structure moléculaire régulière parfaite. En partant d’une température élevée où le métal serait liquide, on refroidit le métal progressivement en tentant de trouver le meilleur équilibre thermodynamique.\\
-La popularité du recuit simulé a été incontestable pendant des années. D’abord cette méthode est facile à implémenter et elle a permis de résoudre de nombreux problèmes NP-difficiles \cite{bonomi1984n,vidal1993applied}.
+La popularité du recuit simulé a été incontestable pendant des années. D’abord cette méthode est facile à implémenter et elle a permis de résoudre de nombreux problèmes NP-difficiles \cite{bonomi1984n,vidal1993applied}.\\
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=7cm,height=3.7cm]{Chap1/1.png}
-	\caption{Différence entre un optimum global et des optima locaux}
-	\label{fig:CSF}
-\end{figure}
 
 \begin{algorithm}[H]
 \caption{Recuit simulé }
@@ -109,19 +103,20 @@ $ Best \gets S $ \;
  }
 \end{algorithm}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=9cm,height=10cm]{Chap3/3.png}
+	\caption{Organigramme  illustrant le fonctionnement  de la recherche Recuit simulé}
+	\label{fig:CSF}
+\end{figure}
+
+
 	\item \textbf{Recherche tabou: } La méthode de recherche avec tabous, ou simplement recherche tabou (TS :Tabu Search) a été formalisée par Fred Glover en 1986 \cite{glover1986future} . Elle utilise explicitement l’historique de la recherche, à la fois pour échapper aux minimaux locaux et pour mettre en œuvre une stratégie d’exploration. Sa principale caractéristique est en effet basée sur  l’utilisation de mécanismes inspirés de la mémoire humaine. A l'inverse du recuit simulé qui génère de manière aléatoire une seule solution voisine s’ \( \in N(s) \) à chaque itération, la recherche tabou examine un échantillonnage de solutions de \( N(s) \) et retient la meilleure s’ même si s’ est plus mauvaise que s. La recherche tabou ne s'arrête donc pas au premier optimum trouvé. \\
 	La méthode TS utilise une liste tabou, qui mémorise les dernières solutions rencontrées (ou des caractéristiques de solutions) vers lesquelles il est interdit de se déplacer. Ce procédé simple de mémoire permet de choisir le meilleur voisin non tabou, même si celui-ci dégrade la fonction-objectif f. Cependant, dans certains cas, les interdictions occasionnées par la liste tabou peuvent être jugées trop radicales. En effet, on risque d’éliminer (en les rendant tabous), certains mouvements particulièrement utiles. Pour éviter cela, on incorpore dans l’algorithme un mécanisme d’aspiration
 qui détermine des critères selon lesquels un mouvement, bien que tabou, peut quand même être
 accepté, s’il permet d’obtenir une meilleure solution que toutes celles déjà parcourues. \\
 La taille de la liste tabou contrôle la mémoire du processus de recherche. Pour favoriser l’intensification, il suffit de diminuer la taille de la liste tabou. En revanche, augmenter la taille de la liste tabou, forcera le processus de recherche à explorer des régions plus vastes, favorisant ainsi la diversification. La taille de la liste tabou peut être modifiée au cours de la recherche \cite{battiti1994reactive} .\\
 Une autre amélioration intéressante de la TS est l’utilisation de structure de mémoire à moyen et à long terme afin d’approfondir les notions d’intensification et de diversification.\\
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=7cm,height=3.7cm]{Chap1/1.png}
-	\caption{Différence entre un optimum global et des optima locaux}
-	\label{fig:CSF}
-\end{figure}
-
 \begin{algorithm}[H]
 \caption{Recherche Taboue}
 \SetAlgoLined
@@ -154,8 +149,18 @@ Insérer s dans L \;
  }
 
 \end{algorithm}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm,height=10cm]{Chap3/4.png}
+	\caption{Organigramme illustrant le  Fonctionnement de l’algorithme TS}
+	\label{fig:CSF}
+\end{figure}
+
+
 	
-	\item \textbf{Recherche locale : } Pour cette méthode de recherche il suffit de tester itérativement de nouvelles solutions potentielles dans la région de la solution courante, et de prendre la meilleure dans le voisinage. La méthode est une généralisation de la méthode de la descente de gradient elle consiste à partir d’une solution s à choisir une solution s’ dans un voisinage de s, noté N(s). La nouvelle solution choisie est meilleure que la précédente sous la fonction objective. Cela nous permet d’explorer l’espace des combinaisons  de proche en proche, en partant d’une combinaison initiale et en sélectionnant à chaque itération une combinaison voisine de la combinaison courante, obtenue en lui appliquant une transformation élémentaire jusqu’à la convergence à un optimum local. L’algorithme  décrivant le principe général de la recherche locale:
+	\item \textbf{Recherche locale : } Pour cette méthode de recherche il suffit de tester itérativement de nouvelles solutions potentielles dans la région de la solution courante, et de prendre la meilleure dans le voisinage. La méthode est une généralisation de la méthode de la descente de gradient elle consiste à partir d’une solution s à choisir une solution s’ dans un voisinage de s, noté N(s). La nouvelle solution choisie est meilleure que la précédente sous la fonction objective. Cela nous permet d’explorer l’espace des combinaisons  de proche en proche, en partant d’une combinaison initiale et en sélectionnant à chaque itération une combinaison voisine de la combinaison courante, obtenue en lui appliquant une transformation élémentaire jusqu’à la convergence à un optimum local. L’algorithme  décrivant le principe général de la recherche locale:\\
 
 \begin{algorithm}[H]
 \caption{Recherche Local}
@@ -173,7 +178,7 @@ $ s \gets solution initial $ \;
 \end{algorithm}
 	
 	
-	\item \textbf{Recherche à voisinages variables(VNS):} La recherche à voisinage variable (VNS : Variable neighborhood search) est une méta-heuristique proposée par Hansen et Mladenovic en 1997 [28,29]. Elle est basée sur le principe de changement systématique de voisinage durant la recherche (la performance des méthodes de descente).  La procédure de VNS se compose de trois étapes : perturbation (shaking), recherche locale et déplacement. Cet algorithme est efficace si les structures de voisinage sont complémentaires en ce sens qu’un minimum local pour un voisinage n’en n’est pas nécessairement un pour un autre, ce qui veut dire simplement d’utiliser plusieurs voisinages successifs quand on se trouve bloqué dans un minimum local.
+	\item \textbf{Recherche à voisinages variables(VNS):} La recherche à voisinage variable (VNS : Variable neighborhood search) est une méta-heuristique proposée par Hansen et Mladenovic en 1997 [28,29]. Elle est basée sur le principe de changement systématique de voisinage durant la recherche (la performance des méthodes de descente).  La procédure de VNS se compose de trois étapes : perturbation (shaking), recherche locale et déplacement. Cet algorithme est efficace si les structures de voisinage sont complémentaires en ce sens qu’un minimum local pour un voisinage n’en n’est pas nécessairement un pour un autre, ce qui veut dire simplement d’utiliser plusieurs voisinages successifs quand on se trouve bloqué dans un minimum local.\\
 	
 \begin{algorithm}[H]
 \caption{Recherche à voisinages variables (VNS)}
@@ -203,9 +208,9 @@ $ s \gets solution initial $ \;
 \subsubsection{Méthodes évolutives (A population):}
 Depuis le début des années 90, une autre famille d’ heuristiques est devenue très populaire : les Méthodes Évolutives \cite{hertz2000framework} , s’inspirant de la théorie de l’évolution «darwinienne»  tels que le croisement, la mutation et la sélection pour résoudre des problèmes divers. Contrairement à la Recherche Locale qui tente d’ améliorer itérativement une solution courante. Les Méthodes Évolutives travaillent sur une population de solutions en appliquant un processus cyclique composé d’ une phase de coopération et d’ une phase d’adaptation individuelle qui se succèdent à tour de rôle. Dans la phase de coopération, les solutions de la population courante sont comparées entre elles, puis combinées, dans le but de produire de nouvelles solutions qui héritent des bons aspects de chaque membre de la population. Dans la phase d’adaptation individuelle, chaque solution dans la population peut évoluer de manière indépendante. On peut utiliser le même type de critère d’ arrêt que dans la Recherche Locale, ou alors on peut décider de stopper une Méthode Évolutive dès que les solutions dans la population sont jugées trop similaires. Une description générale des Méthodes Évolutives est donnée ci-dessous:
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm,height=3.7cm]{Chap1/1.png}
+	\includegraphics[width=15cm,height=7cm]{Chap3/5.png}
 	\caption{Principe d’un algorithme évolutionnaire (EA) \cite{dreo2003metaheuristiques}.}
 	\label{fig:CSF}
 \end{figure}
@@ -213,7 +218,14 @@ Depuis le début des années 90, une autre famille d’ heuristiques est devenue
 Le terme Evolutionary Computation englobe une classe assez large de méta-heuristiques qui ont été développés au début des années soixante, telles que les algorithmes génétiques \cite{holland1975adaptation}, les stratégies d’évolution \cite{rechenberg1973evolutionsstrategie} , la programmation évolutive \cite{fogel1966artificial}, et la programmation génétique \cite{koza1992genetic}
 
 \begin{enumerate}[label=\alph*)]
-	\item \textbf{Algorithmes génétiques(AG):} développées par J. Holland en 1975 comme outils de modélisation de l’adaptation et qui travaillent dans un espace de chaînes de bits. Elles ont été largement utilisé et développé par D.E. Goldberg en 1989. Cette classe s’inspire de la théorie de l’évolution et des règles de la génétique qui expliquent la capacité des espèces de s’adapter à leurs environnement à l’ aide de l’ opérateur de mutation, alors que l’ échange               	d’information est gouverné par un opérateur de reproduction et un opérateur de combinaison (ou croisement). L’algorithme ci-dessous décrit ce principe général, dont les principales étapes sont détaillées ci-après.
+	\item \textbf{Algorithmes génétiques(AG):} développées par J. Holland en 1975 comme outils de modélisation de l’adaptation et qui travaillent dans un espace de chaînes de bits. Elles ont été largement utilisé et développé par D.E. Goldberg en 1989. Cette classe s’inspire de la théorie de l’évolution et des règles de la génétique qui expliquent la capacité des espèces de s’adapter à leurs environnement à l’ aide de l’ opérateur de mutation, alors que l’ échange               	d’information est gouverné par un opérateur de reproduction et un opérateur de combinaison (ou croisement). L’algorithme ci-dessous décrit ce principe général, dont les principales étapes sont détaillées ci-après.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=9cm,height=15cm]{Chap3/6.png}
+	\caption{Organigramme d’un algorithme génétique}
+	\label{fig:CSF}
+\end{figure}
 
 \begin{algorithm}[H]
 \caption{Algorithme génétique}
@@ -230,13 +242,6 @@ Initialiser la population avec un ensemble de combinaisons de E \;
 
 \end{algorithm}
 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=7cm,height=3.7cm]{Chap1/1.png}
-	\caption{Principe d’un algorithme évolutionnaire (EA) \cite{dreo2003metaheuristiques}.}
-	\label{fig:CSF}
-\end{figure}
 	
 \begin{itemize}
 	\item \textbf{Initialisation de la population: }en général, la population initiale est générée de façon aléatoire, selon une distribution uniforme assurant une bonne diversité des combinaisons. Une solution initiale est de bonne qualité, celle qui nous permet de converger vers un optimum global dans le plus court délai possible.
@@ -259,7 +264,8 @@ mutation.
 	
 	\item \textbf{L’optimisation des colonies de fourmis (ACO): }est une technique d’intelligence artificielle qui s'inspire du comportement intelligent des fourmis lors de la recherche de nourriture. Cette méta-heuristique permet de trouver des solutions de haute qualité aux problèmes d’optimisation combinatoire. 
 
-En raison de leur comportement de recherche de nourriture, les fourmis trouvent les chemins les plus courts entre leur nid et leur source de nourriture, en déposant sur la terre une substance chimique appelée phéromone. Cela forme une traînée de phéromone qui est utilisée pour la communication stigmergique. La présence d'une telle phéromone sur les trajectoires affecte la prise de décision des fourmis concernant les trajectoires choisies par elles. Les fourmis sélectionnent de manière probabiliste les chemins marqués par de fortes concentrations de phéromones ce qui permet aux fourmis de trouver le chemin le plus court vers la source de nourriture.
+En raison de leur comportement de recherche de nourriture, les fourmis trouvent les chemins les plus courts entre leur nid et leur source de nourriture, en déposant sur la terre une substance chimique appelée phéromone. Cela forme une traînée de phéromone qui est utilisée pour la communication stigmergique. La présence d'une telle phéromone sur les trajectoires affecte la prise de décision des fourmis concernant les trajectoires choisies par elles. Les fourmis sélectionnent de manière probabiliste les chemins marqués par de fortes concentrations de phéromones ce qui permet aux fourmis de trouver le chemin le plus court vers la source de nourriture.\\
+
 
 \begin{algorithm}[H]
 \caption{L’optimisation des colonies de fourmis (ACO)}
@@ -294,9 +300,10 @@ Construction de la solution initiale \;
 		\end{itemize}
 \end{itemize}
 	
-	\item \textbf{L’algorithme à base de biogéographie (BBO)} BBO est un algorithme inspiré de la biogéographie, qui étudie la répartition géographique des organismes biologiques. 
+	\item \textbf{L’algorithme à base de biogéographie (BBO)} BBO est un algorithme inspiré de la biogéographie, qui étudie la répartition géographique des organismes biologiques.
 
-Tout comme GA et PSO qui sont basés sur la biologie, BBO est un algorithme basé sur une population dans lequel chaque population de solutions candidates est utilisée dans la procédure de recherche d’un optima global. BBO présente certaines caractéristiques communes avec l’algorithme d'optimisation, le GA. En GA, un individu de la population s'appelle un chromosome et a sa propre valeur de condition physique. De même, dans BBO, chaque individu est qualifié d'habitat et a son indice de qualité de l'habitat (HSI) pour évaluer sa qualité en tant que solution. Comme nous avons affaire à un problème de minimisation, un habitat à faible indice de sécurité d'impact représente une bonne solution et un habitat à haut indice de faiblesse est plutôt une solution médiocre. Chaque chromosome de GA est constitué de gènes, tandis que, pour BBO, chaque habitat est caractérisé par des variables d'indice de pertinence (SIV). L'AG compte deux opérateurs principaux: le croisement et la mutation. Pendant ce temps, chez BBO, les principaux opérateurs sont la migration et la mutation. L'opérateur de migration est composé d'émigration et d'immigration. Il est utilisé pour améliorer et faire évoluer les habitats (solutions au problème d'optimisation) de la population. Les fonctionnalités de solution (SIV) émigrent d'habitats à faible HSI (habitats d'émigration) vers des habitats à haut HSI (habitats d'immigration). Il existe différentes alternatives pour les processus de migration et de mutation de BBO. La manière dont nous implémentons ces deux opérateurs est expliquée en détail dans le prochain chapitre. 
+Tout comme GA et PSO qui sont basés sur la biologie, BBO est un algorithme basé sur une population dans lequel chaque population de solutions candidates est utilisée dans la procédure de recherche d’un optima global. BBO présente certaines caractéristiques communes avec l’algorithme d'optimisation, le GA. En GA, un individu de la population s'appelle un chromosome et a sa propre valeur de condition physique. De même, dans BBO, chaque individu est qualifié d'habitat et a son indice de qualité de l'habitat (HSI) pour évaluer sa qualité en tant que solution. Comme nous avons affaire à un problème de minimisation, un habitat à faible indice de sécurité d'impact représente une bonne solution et un habitat à haut indice de faiblesse est plutôt une solution médiocre. Chaque chromosome de GA est constitué de gènes, tandis que, pour BBO, chaque habitat est caractérisé par des variables d'indice de pertinence (SIV). L'AG compte deux opérateurs principaux: le croisement et la mutation. Pendant ce temps, chez BBO, les principaux opérateurs sont la migration et la mutation. L'opérateur de migration est composé d'émigration et d'immigration. Il est utilisé pour améliorer et faire évoluer les habitats (solutions au problème d'optimisation) de la population. Les fonctionnalités de solution (SIV) émigrent d'habitats à faible HSI (habitats d'émigration) vers des habitats à haut HSI (habitats d'immigration). Il existe différentes alternatives pour les processus de migration et de mutation de BBO. La manière dont nous implémentons ces deux opérateurs est expliquée en détail dans le prochain chapitre. \\
+
 
 \begin{algorithm}[H]
 \caption{L’algorithme à base de biogéographie (BBO)}
@@ -307,14 +314,57 @@ Tout comme GA et PSO qui sont basés sur la biologie, BBO est un algorithme bas�
 Générer aléatoirement un ensemble de solutions initiales (îles) \;
 \While{le critère d’arrêt n’est pas atteint}{
 	Évaluer la fitness (HSI) de chaque solution \;
-	Calculer le nombre d’espèce S, le taux d’immigration $\lambda$ et d’émigration $\mu$ pour chaque solution \;
-	Migration  \;
-	Mutation : muter les individus au taux de mutation \;
+	Calculer le nombre d’espèce $S$, le taux d’immigration $\lambda$ et d’émigration $\mu$ pour chaque solution \;
+	\textbf{Migration}  \;
+	\textbf{Mutation} : muter les individus au taux de mutation \;
 	Remplacement de la population par les descendants \;
-	Implémenter l’élitisme \;
+	Implémenter l’\textbf{élitisme}  \;
 }
 
 \end{algorithm}
+
+Dans le processus de migration (algorithme 7), quand une solution est sélectionnée pour être changée, nous utilisons le taux d'immigration $\lambda$ pour décider si un SIV sera changé. Dans ce cas, nous utilisons le taux d'émigration $\mu$ pour décider quelle bonne solution migrera son SIV.\\
+Cette algorithme  sera suivit d’une figure qui ellustre le fonctionnement de ce processus (figure 3.7) \\
+
+
+
+\begin{algorithm}[H]
+\caption{migration}
+\SetAlgoLined
+\DontPrintSemicolon
+
+\For{$i\gets1$ \KwTo $N$}{
+	Utiliser $\lambda_i$ pour décider, de manière probabiliste, d’immigrer à $X_i$ \;
+	\If{$rand(0,1) < \lambda_i $}{
+		\For{$j \gets 1$ \KwTo $N$}{
+			Sélectionner un habitat d’émigration $X_j$ avec une probabilité $\alpha \mu_j $ \;
+			\If{$rand(0,1) < \mu_j$}{
+				Remplacer une variable de décision (SIV) choisie aléatoirement dans par la variable correspondante dans $X_j$ \;				
+			}
+		}
+	}
+}
+
+\end{algorithm}
+
+
+
+Où : \\
+$\lambda_k$ : est le taux d'immigration dans un habitat de k espèces \\
+$\mu_k $ : est le taux d'émigration dans un habitat de k espèces. \\
+$E$ : est le taux maximal d'émigration.\\
+$I$ : est le taux maximal d'immigration. Supposons que nous avons une population de solutions candidates à un problème, représentées par des vecteurs (habitats $H_i , i = 1...n $)\\
+$N$ : est le nombre maximum d'espèces.\\
+$k$ : est le nombre d'espèces.\\
+\textbf{Mutation:} c’est le même principe qui est utilié pour l’algorithme génétique.\\
+\textbf{Elitisme:} cette méthode consiste à garder les meilleurs individus de chaque population. La méthode d’élitisme risque d’élaguer les individus de mauvaise qualité mais ça n’empêche pas de produire une population avec des résultats meilleurs ou au moins de créer des individus qui auront pu apporter de quoi créer de très bonnes solution dans les populations suivantes. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,height=6cm]{Chap3/7.png}
+	\caption{Schéma explicatif d’un algorithme mémétique}
+	\label{fig:CSF}
+\end{figure}	
 	
 	\item \textbf{Algorithmes mémétiques (algorithme de colonies de fourmis \& d’essaim de particules) : }
 Le terme «algorithmes mémétiques»  est apparu pour la première fois dans [38], introduit par Moscato en 1986. L’idée principale de ce genre d’algorithme est de rendre plus agressif un algorithme génétique par l’ajout d’une recherche locale en plus de la mutation.
@@ -342,11 +392,9 @@ Initialisation : générer une population initiale $P$ de solutions de taille $|
 
 \end{algorithm}
 
-\paragraph{•}
-
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm,height=9cm]{Chap3/7.png}
+	\includegraphics[width=15cm,height=10cm]{Chap3/8.png}
 	\caption{Schéma explicatif d’un algorithme mémétique}
 	\label{fig:CSF}
 \end{figure}

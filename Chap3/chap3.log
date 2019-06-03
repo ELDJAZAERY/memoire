@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  31 MAY 2019 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  1 JUN 2019 18:17
 entering extended mode
 **./chap3.tex
 (chap3.tex
@@ -2765,17 +2765,17 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.26 \begin{figure}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.28 	\includegraphics
-                      [width=7cm,height=3.7cm]{Chap1/1.png}
+                      [width=15cm,height=5cm]{Chap3/1.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2789,7 +2789,8 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 7 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -2800,9 +2801,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 7 in font nullfont!
+Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no ] in font nullfont!
@@ -2810,7 +2809,7 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no p in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 Missing character: There is no / in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -3097,17 +3096,17 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.35 \begin{figure}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.37 	\includegraphics
-                      [width=7cm,height=3.7cm]{Chap1/1.png}
+                      [width=15cm,height=13cm]{Chap3/2.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3121,7 +3120,8 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 7 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -3132,9 +3132,8 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
 Missing character: There is no 3 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 7 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no ] in font nullfont!
@@ -3142,9 +3141,9 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no p in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -3157,56 +3156,71 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.38 	\caption
-              {Différence entre un optimum global et des optima locaux}
+              {Classification des méthodes de résolution d’optimisation ...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no D in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no g in font nullfont!
+Missing character: There is no C in font nullfont!
 Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{figure}.
 
@@ -3228,6 +3242,16 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 35--41
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 35--41
 \/cmr/m/n/10 e
+ []
+
+
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 35--41
+\/cmr/m/n/10 e
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 35--41
+\/cmr/m/n/10 '
  []
 
 Missing character: There is no D in font nullfont!
@@ -9199,7 +9223,7 @@ Missing character: There is no [ in font nullfont!
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
 l.80 ...iciles \cite{bonomi1984n,vidal1993applied}
-                                                  .
+                                                  .\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9215,7 +9239,7 @@ Missing character: There is no , in font nullfont!
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
 l.80 ...iciles \cite{bonomi1984n,vidal1993applied}
-                                                  .
+                                                  .\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9236,17 +9260,17 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.82 \begin{figure}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.84 	\includegraphics
-                      [width=7cm,height=3.7cm]{Chap1/1.png}
+                      [width=9cm,height=11cm]{Chap3/3.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9260,7 +9284,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 7 in font nullfont!
+Missing character: There is no 9 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -9271,9 +9295,8 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 7 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no ] in font nullfont!
@@ -9281,9 +9304,9 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no p in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -9296,56 +9319,73 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.85 	\caption
-              {Différence entre un optimum global et des optima locaux}
+              {Organigramme  illustrant le fonctionnement  de la recherche R...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no D in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no O in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no l in font nullfont!
 
 ! LaTeX Error: \begin{enumerate} on input line 77 ended by \end{figure}.
 
@@ -9399,7 +9439,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no l in font nullfont!
 ! Undefined control sequence.
-l.91 \SetAlgoLined
+l.93 \SetAlgoLined
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9408,7 +9448,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.92 \DontPrintSemicolon
+l.94 \DontPrintSemicolon
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9417,9 +9457,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 93.
+(Font)              <7> on input line 95.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 93.
+(Font)              <5> on input line 95.
 Missing character: There is no , in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -9482,7 +9522,7 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.93 ... fonction du schéma de refroidissement \;
+l.95 ... fonction du schéma de refroidissement \;
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -9491,7 +9531,7 @@ Missing character: There is no s in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.94 $ s\gets
+l.96 $ s\gets
               s_0 $ , une solution initiale \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -9519,7 +9559,7 @@ Missing character: There is no e in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.94 $ s\gets s_0 $ , une solution initiale \;
+l.96 $ s\gets s_0 $ , une solution initiale \;
                                               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -9531,7 +9571,7 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.95 $ Best \gets
+l.97 $ Best \gets
                   S $ \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -9539,13 +9579,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.95 $ Best \gets S $ \;
+l.97 $ Best \gets S $ \;
                         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.96 \While
+l.98 \While
            {(Best est la meilleure) $\cap$ (nombre iter=max) $\cap$ ($ t \le...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9556,7 +9596,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.96 \While{(Best est la meilleure) $
+l.98 \While{(Best est la meilleure) $
                                      \cap$ (nombre iter=max) $\cap$ ($ t \le...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -9567,7 +9607,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.96 \While{(Best est la meilleure) $\cap
+l.98 \While{(Best est la meilleure) $\cap
                                          $ (nombre iter=max) $\cap$ ($ t \le...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -9591,7 +9631,7 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no ( in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Extra }, or forgotten \endgroup.
-l.96 ...$ (nombre iter=max) $\cap$ ($ t \leq 0 $)}
+l.98 ...$ (nombre iter=max) $\cap$ ($ t \leq 0 $)}
                                                   {
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -9600,22 +9640,22 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 97.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 99.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 97.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 99.
 
 Missing character: There is no o in font nullfont!
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 97.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 99.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 97.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 99.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.97   $ r \gets s’$ où $s’ \in N(s)$ \;
+l.99   $ r \gets s’$ où $s’ \in N(s)$ \;
                                              
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -9623,38 +9663,38 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.98   $ \rho
-              \gets random(0.1)$ \;
+l.100   $ \rho
+               \gets random(0.1)$ \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.98   $ \rho \gets random(0.1)$ \;
-                                   
+l.100   $ \rho \gets random(0.1)$ \;
+                                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.99   $ \triangle
-                   E = f(r)-f(s) $  \;
+l.101   $ \triangle
+                    E = f(r)-f(s) $  \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.99   $ \triangle E = f(r)-f(s) $  \;
-                                      
+l.101   $ \triangle E = f(r)-f(s) $  \;
+                                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.100   \If
-           { $ f(r) < f(s)  \cup \rho < e$ \up{$-\triangle E/t $} }{
+l.102   \If
+           { $ f(r) < f(s)  \cup \rho < e^{-\triangle E/t }$ }{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9664,8 +9704,8 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.100   \If{ $
-               f(r) < f(s)  \cup \rho < e$ \up{$-\triangle E/t $} }{
+l.102   \If{ $
+               f(r) < f(s)  \cup \rho < e^{-\triangle E/t }$ }{
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -9684,30 +9724,21 @@ Missing character: There is no ) in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.100   \If{ $ f(r) < f(s)  \cup
-                                 \rho < e$ \up{$-\triangle E/t $} }{
+l.102   \If{ $ f(r) < f(s)  \cup
+                                 \rho < e^{-\triangle E/t }$ }{
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.100   \If{ $ f(r) < f(s)  \cup \rho < e$ \up
-                                              {$-\triangle E/t $} }{
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.101 	$ s \gets r $ \;
+l.103 	$ s \gets r $ \;
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.102    }
+l.104    }
           
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -9716,7 +9747,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.103   \If
+l.105   \If
            {f(s)<f(Best)}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9727,7 +9758,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.104 	$
+l.106 	$
          Best \gets s$ \;
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -9742,7 +9773,7 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.104 	$ Best \gets
+l.106 	$ Best \gets
                     s$ \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -9750,13 +9781,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.104 	$ Best \gets s$ \;
+l.106 	$ Best \gets s$ \;
                          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.105    }
+l.107    }
           
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -9765,15 +9796,15 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 106.
+LaTeX Warning: Command \' invalid in math mode on input line 108.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 106.
+LaTeX Warning: Command \' invalid in math mode on input line 108.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.106    Dé
+l.108    Dé
             crémenter le t \;
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -9781,7 +9812,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \edef 
-l.106    Dé
+l.108    Dé
             crémenter le t \;
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -9791,7 +9822,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.106    Dé
+l.108    Dé
             crémenter le t \;
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -9799,12 +9830,12 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 106.
+LaTeX Warning: Command \' invalid in math mode on input line 108.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.106    Décré
+l.108    Décré
                 menter le t \;
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -9812,7 +9843,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.106    Décré
+l.108    Décré
                 menter le t \;
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -9826,7 +9857,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.108 \end{algorithm}
+l.110 \end{algorithm}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -9835,7 +9866,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.108 \end{algorithm}
+l.110 \end{algorithm}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -9848,7 +9879,7 @@ Missing character: There is no � in font cmex10!
 ! Missing } inserted.
 <inserted text> 
                 }
-l.108 \end{algorithm}
+l.110 \end{algorithm}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -9863,7 +9894,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.110 	\item \textbf
+l.112 	\item \textbf
                     {Recherche tabou: } La méthode de recherche avec tabous...
 
 Try typing  <return>  to proceed.
@@ -9876,7 +9907,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.110 	\item \textbf
+l.112 	\item \textbf
                     {Recherche tabou: } La méthode de recherche avec tabous...
 
 Try typing  <return>  to proceed.
@@ -9889,7 +9920,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.110 	\item \textbf
+l.112 	\item \textbf
                     {Recherche tabou: } La méthode de recherche avec tabous...
 
 Try typing  <return>  to proceed.
@@ -10001,7 +10032,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.110 ...ed Glover en 1986 \cite{glover1986future}
+l.112 ...ed Glover en 1986 \cite{glover1986future}
                                                    . Elle utilise explicitem...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10010,7 +10041,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `glover1986future' on page  undefined on input line 110
+LaTeX Warning: Citation `glover1986future' on page  undefined on input line 112
 .
 
 Missing character: There is no ] in font nullfont!
@@ -11427,7 +11458,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.114 ...e la recherche \cite{battiti1994reactive}
+l.116 ...e la recherche \cite{battiti1994reactive}
                                                    .\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11437,7 +11468,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Citation `battiti1994reactive' on page  undefined on input line 
-114.
+116.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -11596,18 +11627,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 \begin{figure}
-                    [h]
+l.118 \begin{figure}
+                    [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.118 	\includegraphics
-                       [width=7cm,height=3.7cm]{Chap1/1.png}
+l.120 	\includegraphics
+                       [width=12cm,height=13cm]{Chap3/4.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -11621,7 +11652,8 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 7 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -11632,9 +11664,8 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
 Missing character: There is no 3 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 7 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no ] in font nullfont!
@@ -11642,9 +11673,9 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no p in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no 4 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -11656,57 +11687,65 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.119 	\caption
-               {Différence entre un optimum global et des optima locaux}
+l.121 	\caption
+               {Organigramme illustrant le  Fonctionnement de l’algorithme...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no D in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no O in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no m in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
+Missing character: There is no g in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no S in font nullfont!
 
 ! LaTeX Error: \begin{enumerate} on input line 77 ended by \end{figure}.
 
@@ -11714,7 +11753,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 \end{figure}
+l.123 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -11727,7 +11766,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.123 \begin{algorithm}
+l.125 \begin{algorithm}
                        [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -11743,7 +11782,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.124 \caption
+l.126 \caption
               {Recherche Taboue}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -11764,7 +11803,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.125 \SetAlgoLined
+l.127 \SetAlgoLined
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11773,7 +11812,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.126 \DontPrintSemicolon
+l.128 \DontPrintSemicolon
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11784,7 +11823,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.127 ...ongueur maximale de la liste taboue $  \;
+l.129 ...ongueur maximale de la liste taboue $  \;
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -11793,7 +11832,7 @@ Missing character: There is no n in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.128 $ n \gets
+l.130 $ n \gets
                 number of tweaks desired to sample the gradient$ \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -11801,7 +11840,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.128 ...tweaks desired to sample the gradient$ \;
+l.130 ...tweaks desired to sample the gradient$ \;
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -11810,7 +11849,7 @@ Missing character: There is no S in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.129 $ S \gets
+l.131 $ S \gets
                 solution initial $ \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -11818,7 +11857,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.129 $ S \gets solution initial $ \;
+l.131 $ S \gets solution initial $ \;
                                      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -11830,7 +11869,7 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.130 $ Best \gets
+l.132 $ Best \gets
                    S $ \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -11838,7 +11877,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.130 $ Best \gets S $ \;
+l.132 $ Best \gets S $ \;
                          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -11847,7 +11886,7 @@ Missing character: There is no L in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.131 $ L \gets
+l.133 $ L \gets
                 \{\} $ \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -11855,21 +11894,21 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.131 $ L \gets \{\} $ \;
+l.133 $ L \gets \{\} $ \;
                          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 132.
+LaTeX Warning: Command \' invalid in math mode on input line 134.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 132.
+LaTeX Warning: Command \' invalid in math mode on input line 134.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.132 Insé
+l.134 Insé
            rer s dans L \;
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -11877,7 +11916,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \edef 
-l.132 Insé
+l.134 Insé
            rer s dans L \;
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -11887,7 +11926,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.132 Insé
+l.134 Insé
            rer s dans L \;
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -11895,7 +11934,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! Undefined control sequence.
-l.134 \While
+l.136 \While
             {(Best est la meilleure) $\cap$ (nombre iter=max)}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11906,7 +11945,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.134 \While{(Best est la meilleure) $
+l.136 \While{(Best est la meilleure) $
                                       \cap$ (nombre iter=max)}{
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -11917,7 +11956,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.134 \While{(Best est la meilleure) $
+l.136 \While{(Best est la meilleure) $
                                       \cap$ (nombre iter=max)}{
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -11929,7 +11968,7 @@ Missing character: There is no � in font cmex10!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.134 \While{(Best est la meilleure) $\cap
+l.136 \While{(Best est la meilleure) $\cap
                                           $ (nombre iter=max)}{
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -11951,7 +11990,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Extra }, or forgotten \endgroup.
-l.134 ...t la meilleure) $\cap$ (nombre iter=max)}
+l.136 ...t la meilleure) $\cap$ (nombre iter=max)}
                                                   {
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -11960,7 +11999,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.135   \If
+l.137   \If
            { $ longueur(L) > l $ }{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11994,13 +12033,13 @@ Missing character: There is no L in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.136     Défiler un élément de la liste L \;
+l.138     Défiler un élément de la liste L \;
                                                 
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.137    }
+l.139    }
           
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -12012,34 +12051,34 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.138    $r \gets
+l.140    $r \gets
                   r’$ où  $r’ \in N(s)$  \;
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 138.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 138.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 140.
 
 Missing character: There is no o in font nullfont!
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 138.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 140.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 138.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 140.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.138    $r \gets r’$ où  $r’ \in N(s)$  \;
+l.140    $r \gets r’$ où  $r’ \in N(s)$  \;
                                                 
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.139    \For
+l.141    \For
              {$i\gets1$ \KwTo $N-1$ }{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12050,7 +12089,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.139    \For{$
+l.141    \For{$
                i\gets1$ \KwTo $N-1$ }{
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -12062,13 +12101,13 @@ Missing character: There is no i in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.139    \For{$i\gets
+l.141    \For{$i\gets
                      1$ \KwTo $N-1$ }{
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.139    \For{$i\gets1$ \KwTo
+l.141    \For{$i\gets1$ \KwTo
                               $N-1$ }{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12077,28 +12116,28 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 140.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 142.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 140.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 142.
 
 Missing character: There is no o in font nullfont!
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 140.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 142.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 140.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 142.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.140      $w \gets w’$ où  $w’ \in N(s)$  \;
+l.142      $w \gets w’$ où  $w’ \in N(s)$  \;
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.141      \If
+l.143      \If
               {$ w \notin L  \cap ( f(w)<f(r) \cup r \in L ) $ }{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12109,7 +12148,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.141      \If{$
+l.143      \If{$
                  w \notin L  \cap ( f(w)<f(r) \cup r \in L ) $ }{
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -12121,7 +12160,7 @@ Missing character: There is no w in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.141      \If{$ w \notin
+l.143      \If{$ w \notin
                           L  \cap ( f(w)<f(r) \cup r \in L ) $ }{
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -12129,13 +12168,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.142 		$ e \gets w $ \;
+l.144 		$ e \gets w $ \;
                         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.143 		\If
+l.145 		\If
            {$ r \notin L  \cap f(r)<f(s) $}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12146,7 +12185,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.143 		\If{$
+l.145 		\If{$
               r \notin L  \cap f(r)<f(s) $}{
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -12158,7 +12197,7 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.143 		\If{$ r \notin
+l.145 		\If{$ r \notin
                        L  \cap f(r)<f(s) $}{
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -12166,13 +12205,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.144            $ s \gets r $ \;
+l.146            $ s \gets r $ \;
                                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.146 		}
+l.148 		}
          
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -12181,7 +12220,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.147 		\If
+l.149 		\If
            {$f(s)<f(Best)$}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12192,7 +12231,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.147 		\If{$
+l.149 		\If{$
              f(s)<f(Best)$}{
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -12215,13 +12254,24 @@ Missing character: There is no ) in font nullfont!
 ! Extra }, or forgotten $.
 <recently read> }
                  
-l.147 		\If{$f(s)<f(Best)$}
+l.149 		\If{$f(s)<f(Best)$}
                            {
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.150 			$
+           Best \gets s $			
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
  40 strings out of 492895
  539 string characters out of 3133479
- 69598 words of memory out of 3000000
+ 69599 words of memory out of 3000000
  4052 multiletter control sequences out of 15000+200000
  3948 words of font info for 15 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191

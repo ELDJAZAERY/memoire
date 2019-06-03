@@ -1,4 +1,9 @@
-\documentclass[12pt , a4paper]{report}
+\documentclass[12pt,a4paper]{report}
+
+% encodage
+% default font encoding (OT1) 
+\usepackage[T1]{fontenc} % T1 font encoding
+\usepackage[utf8]{inputenc} % UTF-8 chars encoding UTF-8
 
 
 %% hyper References
@@ -7,30 +12,95 @@
 
 %%% for the cover page
 \usepackage{array}
-\usepackage{fancyhdr}
-\usepackage{lmodern}
 \usepackage{shadow}
 %
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%% mis en page %%%% 
-\setcounter{secnumdepth}{3} % to refer the subsubSection
-\usepackage[margin=1in,left=1.5in,includefoot]{geometry}
-%\usepackage[lmargin=3.81cm,tmargin=2.54cm,rmargin=2.54cm,bmargin=2.52cm]{geometry}
+\usepackage[
+        a4paper,% other options: a3paper, a5paper, etc
+        left=2.5cm,
+        right=2.5cm,
+        top=3cm,
+        bottom=3cm,
+        % use vmargin=2cm to make vertical margins equal to 2cm.
+        % us  hmargin=3cm to make horizontal margins equal to 3cm.
+        % use margin=3cm to make all margins  equal to 3cm.
+]
+{geometry}
+
+
+% paragraph espacing
 \parskip 6pt
 
-%\hoffset -0.21in
-%\voffset -0.724in
 
-%\topmargin 0in
-%\headheight 0.5cm
-%\headsep 0cm
+% Text & Familly font
+% langue
+\usepackage[french]{babel}
+\selectlanguage{french} 
+\frenchbsetup{StandardLists=true}
 
+% font
+\usepackage{lmodern}
+%\textwidth 14.5cm
+%\textheight 24.7cm
+%\usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+
+
+
+% to refer the subsubSection
+\setcounter{secnumdepth}{4} 
+
+% list style
+\usepackage{enumitem}
+
+% algorithm style
+\usepackage[ruled,vlined,onelanguage,french]{algorithm2e}
+
+
+% Bibliography
+\usepackage[numbers,compress]{natbib}
+%\usepackage{apacite} % OR IEEE
+
+
+%%% Graphics and figures %%%
+\usepackage[pdftex]{graphicx}  %utiliser le package graphics pour les figures
+\usepackage{graphicx}
+\usepackage{float} % to position the figures
 %
 
-% Header and Footer Stuff
+
+%%% Math font %%%%
+\usepackage{amsmath}
+\usepackage{relsize}
+\usepackage{chngcntr}
+\counterwithout{equation}{chapter} % remove the chapter number
+% \counterwithin{equation}{chapter}  % add the chapter number
+
+
+% Text generator
+\usepackage{lipsum} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Futuer %%%%%
+
+%%%% Page header chap %%%
+
+%\usepackage{fancyhdr}
+ 
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{Overleaf}
+%\lhead{Guides and tutorials}
+%\rfoot{Page \thepage}
+
+
+
+%%%%% Header and Footer Stuff %%%%%
+
 %\usepackage{fancyhdr}
 %\pagestyle{fancy}
 %\fancyhead{}
@@ -38,48 +108,10 @@
 %\fancyfoot[R]{\thepage\}
 %\renewcommand{\headrulewidth}{0pt}
 %\renewcommand{\footrulewidth}{0pt}
-%
 
 
-% Text & Familly font
-\usepackage[french]{babel}
-\selectlanguage{french} 
-\usepackage[utf8]{inputenc} %changer au jeu de caractères UTF-8
-\usepackage[T1]{fontenc}
-\textwidth 14.5cm
-\textheight 24.7cm
-\frenchbsetup{StandardLists=true}
-\usepackage{lipsum} % Text generator
-%\usepackage{helvet}
-% \renewcommand{\familydefault}{\sfdefault}
-%
-
-% list style
-\usepackage{enumitem}
-
-% algorithm style
-\usepackage[linesnumbered,ruled,vlined,onelanguage,french]{algorithm2e}
-
-% Bibliography
-%\usepackage{apacite}
-\usepackage[numbers,compress]{natbib}
-%\usepackage[number compress]{natbib}
-%\usepackage{hyperref}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-%%% Graphics and figures %%%
-\usepackage[pdftex]{graphicx}  %utiliser le package graphics pour les figures
-\usepackage{graphicx}
-\usepackage{float}
-%
-
-
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -105,6 +137,8 @@
 \include{Chap1/chap1}
 
 \include{Chap3/chap3}
+
+\include{Chap4/chap4}
 
 
 %% simple table 

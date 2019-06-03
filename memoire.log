@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  1 JUN 2019 02:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  3 JUN 2019 02:09
 entering extended mode
 **./memoire.tex
 (memoire.tex
@@ -20,6 +20,18 @@ File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1enc.def"
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
@@ -66,7 +78,7 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
 ("C:\Program Files\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
@@ -141,24 +153,85 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen107
 \ar@mcellbox=\box27
 \extrarowheight=\dimen108
-\NC@list=\toks15
+\NC@list=\toks17
 \extratabsurround=\skip44
 \backup@length=\skip45
 \ar@cellbox=\box28
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty"
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip46
-\f@nch@O@elh=\skip47
-\f@nch@O@erh=\skip48
-\f@nch@O@olh=\skip49
-\f@nch@O@orh=\skip50
-\f@nch@O@elf=\skip51
-\f@nch@O@erf=\skip52
-\f@nch@O@olf=\skip53
-\f@nch@O@orf=\skip54
+("C:\Program Files\MiKTeX 2.9\tex/latex/shadow\shadow.sty"
+Package: shadow 2003/02/19 v1.3 shadow boxes (M.O.)
+\txtwdth=\dimen109
+\sht=\dimen110
+\shw=\dimen111
+\shbox=\box29
+\sboxsep=\dimen112
+\sboxrule=\dimen113
+\sdim=\dimen114
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+\Gm@cnth=\count99
+\Gm@cntv=\count100
+\c@Gm@tempcnt=\count101
+\Gm@bindingoffset=\dimen115
+\Gm@wd@mp=\dimen116
+\Gm@odd@mp=\dimen117
+\Gm@even@mp=\dimen118
+\Gm@layoutwidth=\dimen119
+\Gm@layoutheight=\dimen120
+\Gm@layouthoffset=\dimen121
+\Gm@layoutvoffset=\dimen122
+\Gm@dimlist=\toks18
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2019/05/04 3.31 The Babel package
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
+File: switch.def 2019/05/04 3.31 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel-french\french.ldf"
+Language: french 2019/03/30 v3.5e French support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2019/05/04 3.31 Babel common definitions
+\babel@savecnt=\count102
+\U@D=\dimen123
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
+\bbl@dirlevel=\count103
+)
+\l@acadian = a dialect from \language\l@french 
+\FB@nonchar=\count104
+Package babel Info: Making : an active character on input line 414.
+Package babel Info: Making ; an active character on input line 415.
+Package babel Info: Making ! an active character on input line 416.
+Package babel Info: Making ? an active character on input line 417.
+\FBguill@level=\count105
+\FBold@everypar=\toks19
+\FB@Mht=\dimen124
+\mc@charclass=\count106
+\mc@charfam=\count107
+\mc@charslot=\count108
+\std@mcc=\count109
+\dec@mcc=\count110
+\c@FBcaption@count=\count111
+\listindentFB=\dimen125
+\descindentFB=\dimen126
+\labelindentFB=\dimen127
+\labelwidthFB=\dimen128
+\leftmarginFB=\dimen129
+\parindentFFN=\dimen130
+\FBfnindent=\dimen131
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/carlisle\scalefnt.sty")
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -194,286 +267,27 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/shadow\shadow.sty"
-Package: shadow 2003/02/19 v1.3 shadow boxes (M.O.)
-\txtwdth=\dimen109
-\sht=\dimen110
-\shw=\dimen111
-\shbox=\box29
-\sboxsep=\dimen112
-\sboxrule=\dimen113
-\sdim=\dimen114
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
-Package: geometry 2018/04/16 v5.8 Page Geometry
-\Gm@cnth=\count99
-\Gm@cntv=\count100
-\c@Gm@tempcnt=\count101
-\Gm@bindingoffset=\dimen115
-\Gm@wd@mp=\dimen116
-\Gm@odd@mp=\dimen117
-\Gm@even@mp=\dimen118
-\Gm@layoutwidth=\dimen119
-\Gm@layoutheight=\dimen120
-\Gm@layouthoffset=\dimen121
-\Gm@layoutvoffset=\dimen122
-\Gm@dimlist=\toks16
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2019/05/04 3.31 The Babel package
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2019/05/04 3.31 Babel switching mechanism
-)
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel-french\french.ldf"
-Language: french 2019/03/30 v3.5e French support from the babel system
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2019/05/04 3.31 Babel common definitions
-\babel@savecnt=\count102
-\U@D=\dimen123
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count103
-)
-\l@acadian = a dialect from \language\l@french 
-\FB@nonchar=\count104
-Package babel Info: Making : an active character on input line 414.
-Package babel Info: Making ; an active character on input line 415.
-Package babel Info: Making ! an active character on input line 416.
-Package babel Info: Making ? an active character on input line 417.
-\FBguill@level=\count105
-\FBold@everypar=\toks17
-\FB@Mht=\dimen124
-\mc@charclass=\count106
-\mc@charfam=\count107
-\mc@charslot=\count108
-\std@mcc=\count109
-\dec@mcc=\count110
-\c@FBcaption@count=\count111
-\listindentFB=\dimen125
-\descindentFB=\dimen126
-\labelindentFB=\dimen127
-\labelwidthFB=\dimen128
-\leftmarginFB=\dimen129
-\parindentFFN=\dimen130
-\FBfnindent=\dimen131
-))
-("C:\Program Files\MiKTeX 2.9\tex/latex/carlisle\scalefnt.sty")
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1enc.def"
-File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty"
-("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2019-05-09 L3 programming layer (loader) 
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3-code.tex"
-Package: expl3 2019-05-09 L3 programming layer (code)
-\c_max_int=\count112
-\l_tmpa_int=\count113
-\l_tmpb_int=\count114
-\g_tmpa_int=\count115
-\g_tmpb_int=\count116
-\g__kernel_prg_map_int=\count117
-\c__ior_term_ior=\count118
-\c_log_iow=\count119
-\l_iow_line_count_int=\count120
-\l__iow_line_target_int=\count121
-\l__iow_one_indent_int=\count122
-\l__iow_indent_int=\count123
-\c_zero_dim=\dimen132
-\c_max_dim=\dimen133
-\l_tmpa_dim=\dimen134
-\l_tmpb_dim=\dimen135
-\g_tmpa_dim=\dimen136
-\g_tmpb_dim=\dimen137
-\c_zero_skip=\skip55
-\c_max_skip=\skip56
-\l_tmpa_skip=\skip57
-\l_tmpb_skip=\skip58
-\g_tmpa_skip=\skip59
-\g_tmpb_skip=\skip60
-\c_zero_muskip=\muskip11
-\c_max_muskip=\muskip12
-\l_tmpa_muskip=\muskip13
-\l_tmpb_muskip=\muskip14
-\g_tmpa_muskip=\muskip15
-\g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count124
-\l__intarray_loop_int=\count125
-\c__intarray_sp_dim=\dimen138
-\g__intarray_font_int=\count126
-\c__fp_leading_shift_int=\count127
-\c__fp_middle_shift_int=\count128
-\c__fp_trailing_shift_int=\count129
-\c__fp_big_leading_shift_int=\count130
-\c__fp_big_middle_shift_int=\count131
-\c__fp_big_trailing_shift_int=\count132
-\c__fp_Bigg_leading_shift_int=\count133
-\c__fp_Bigg_middle_shift_int=\count134
-\c__fp_Bigg_trailing_shift_int=\count135
-\c__kernel_randint_max_int=\count136
-\g__fp_array_int=\count137
-\l__fp_array_loop_int=\count138
-\l__sort_length_int=\count139
-\l__sort_min_int=\count140
-\l__sort_top_int=\count141
-\l__sort_max_int=\count142
-\l__sort_true_max_int=\count143
-\l__sort_block_int=\count144
-\l__sort_begin_int=\count145
-\l__sort_end_int=\count146
-\l__sort_A_int=\count147
-\l__sort_B_int=\count148
-\l__sort_C_int=\count149
-\l__tl_analysis_normal_int=\count150
-\l__tl_analysis_index_int=\count151
-\l__tl_analysis_nesting_int=\count152
-\l__tl_analysis_type_int=\count153
-\l__regex_internal_a_int=\count154
-\l__regex_internal_b_int=\count155
-\l__regex_internal_c_int=\count156
-\l__regex_balance_int=\count157
-\l__regex_group_level_int=\count158
-\l__regex_mode_int=\count159
-\c__regex_cs_in_class_mode_int=\count160
-\c__regex_cs_mode_int=\count161
-\l__regex_catcodes_int=\count162
-\l__regex_default_catcodes_int=\count163
-\c__regex_catcode_D_int=\count164
-\c__regex_catcode_S_int=\count165
-\c__regex_catcode_L_int=\count166
-\c__regex_catcode_O_int=\count167
-\c__regex_catcode_A_int=\count168
-\c__regex_all_catcodes_int=\count169
-\l__regex_show_lines_int=\count170
-\l__regex_min_state_int=\count171
-\l__regex_max_state_int=\count172
-\l__regex_left_state_int=\count173
-\l__regex_right_state_int=\count174
-\l__regex_capturing_group_int=\count175
-\l__regex_min_pos_int=\count176
-\l__regex_max_pos_int=\count177
-\l__regex_curr_pos_int=\count178
-\l__regex_start_pos_int=\count179
-\l__regex_success_pos_int=\count180
-\l__regex_curr_char_int=\count181
-\l__regex_curr_catcode_int=\count182
-\l__regex_last_char_int=\count183
-\l__regex_case_changed_char_int=\count184
-\l__regex_curr_state_int=\count185
-\l__regex_step_int=\count186
-\l__regex_min_active_int=\count187
-\l__regex_max_active_int=\count188
-\l__regex_replacement_csnames_int=\count189
-\l__regex_match_count_int=\count190
-\l__regex_min_submatch_int=\count191
-\l__regex_submatch_int=\count192
-\l__regex_zeroth_submatch_int=\count193
-\g__regex_trace_regex_int=\count194
-\c_empty_box=\box30
-\l_tmpa_box=\box31
-\l_tmpb_box=\box32
-\g_tmpa_box=\box33
-\g_tmpb_box=\box34
-\l__box_top_dim=\dimen139
-\l__box_bottom_dim=\dimen140
-\l__box_left_dim=\dimen141
-\l__box_right_dim=\dimen142
-\l__box_top_new_dim=\dimen143
-\l__box_bottom_new_dim=\dimen144
-\l__box_left_new_dim=\dimen145
-\l__box_right_new_dim=\dimen146
-\l__box_internal_box=\box35
-\l__coffin_internal_box=\box36
-\l__coffin_internal_dim=\dimen147
-\l__coffin_offset_x_dim=\dimen148
-\l__coffin_offset_y_dim=\dimen149
-\l__coffin_x_dim=\dimen150
-\l__coffin_y_dim=\dimen151
-\l__coffin_x_prime_dim=\dimen152
-\l__coffin_y_prime_dim=\dimen153
-\c_empty_coffin=\box37
-\l__coffin_aligned_coffin=\box38
-\l__coffin_aligned_internal_coffin=\box39
-\l_tmpa_coffin=\box40
-\l_tmpb_coffin=\box41
-\g_tmpa_coffin=\box42
-\g_tmpb_coffin=\box43
-\l__coffin_bounding_shift_dim=\dimen154
-\l__coffin_left_corner_dim=\dimen155
-\l__coffin_right_corner_dim=\dimen156
-\l__coffin_bottom_corner_dim=\dimen157
-\l__coffin_top_corner_dim=\dimen158
-\l__coffin_scaled_total_height_dim=\dimen159
-\l__coffin_scaled_width_dim=\dimen160
-\c__coffin_empty_coffin=\box44
-\l__coffin_display_coffin=\box45
-\l__coffin_display_coord_coffin=\box46
-\l__coffin_display_pole_coffin=\box47
-\l__coffin_display_offset_dim=\dimen161
-\l__coffin_display_x_dim=\dimen162
-\l__coffin_display_y_dim=\dimen163
-\g__file_internal_ior=\read1
-\l__seq_internal_a_int=\count195
-\l__seq_internal_b_int=\count196
-\c__deprecation_minus_one=\count197
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\l3pdfmode.def"
-File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
-\l__driver_internal_box=\box48
-\l__driver_color_stack_int=\count198
-))
-("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
-Package: xparse 2019-05-03 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count199
-\g__xparse_grabber_int=\count266
-\l__xparse_m_args_int=\count267
-\l__xparse_v_nesting_int=\count268
-)
-Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.tex"
-File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/enumitem\enumitem.sty"
 Package: enumitem 2019/02/04 v3.8 Customized lists
-\labelindent=\skip61
-\enit@outerparindent=\dimen164
+\labelindent=\skip46
+\enit@outerparindent=\dimen132
 \enit@toks=\toks20
-\enit@inbox=\box49
-\enit@count@id=\count269
-\enitdp@description=\count270
+\enit@inbox=\box30
+\enit@count@id=\count112
+\enitdp@description=\count113
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/algorithm2e\algorithm2e.sty"
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count271
+\c@AlgoLine=\count114
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip62
+\algocf@hangindent=\skip47
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count272
+\c@checkoddpage=\count115
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -481,48 +295,48 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/relsize\relsize.sty"
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip63
-\skiplinenumber=\skip64
-\skiprule=\skip65
-\skiphlne=\skip66
-\skiptext=\skip67
-\skiplength=\skip68
-\algomargin=\skip69
-\skipalgocfslide=\skip70
-\algowidth=\dimen165
-\inoutsize=\dimen166
-\inoutindent=\dimen167
-\interspacetitleruled=\dimen168
-\interspacealgoruled=\dimen169
-\interspacetitleboxruled=\dimen170
-\algocf@ruledwidth=\skip71
-\algocf@inoutbox=\box50
-\algocf@inputbox=\box51
-\AlCapSkip=\skip72
-\AlCapHSkip=\skip73
-\algoskipindent=\skip74
-\algocf@nlbox=\box52
-\algocf@hangingbox=\box53
-\algocf@untilbox=\box54
-\algocf@skipuntil=\skip75
-\algocf@capbox=\box55
-\algocf@lcaptionbox=\skip76
-\algoheightruledefault=\skip77
-\algoheightrule=\skip78
-\algotitleheightruledefault=\skip79
-\algotitleheightrule=\skip80
-\c@algocfline=\count273
-\c@algocfproc=\count274
-\c@algocf=\count275
-\algocf@algoframe=\box56
-\algocf@algobox=\box57
+\skiptotal=\skip48
+\skiplinenumber=\skip49
+\skiprule=\skip50
+\skiphlne=\skip51
+\skiptext=\skip52
+\skiplength=\skip53
+\algomargin=\skip54
+\skipalgocfslide=\skip55
+\algowidth=\dimen133
+\inoutsize=\dimen134
+\inoutindent=\dimen135
+\interspacetitleruled=\dimen136
+\interspacealgoruled=\dimen137
+\interspacetitleboxruled=\dimen138
+\algocf@ruledwidth=\skip56
+\algocf@inoutbox=\box31
+\algocf@inputbox=\box32
+\AlCapSkip=\skip57
+\AlCapHSkip=\skip58
+\algoskipindent=\skip59
+\algocf@nlbox=\box33
+\algocf@hangingbox=\box34
+\algocf@untilbox=\box35
+\algocf@skipuntil=\skip60
+\algocf@capbox=\box36
+\algocf@lcaptionbox=\skip61
+\algoheightruledefault=\skip62
+\algoheightrule=\skip63
+\algotitleheightruledefault=\skip64
+\algotitleheightrule=\skip65
+\c@algocfline=\count116
+\c@algocfproc=\count117
+\c@algocf=\count118
+\algocf@algoframe=\box37
+\algocf@algobox=\box38
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip81
-\bibsep=\skip82
+\bibhang=\skip66
+\bibsep=\skip67
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count276
+\c@NAT@ctr=\count119
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -541,17 +355,253 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen171
-\Gin@req@width=\dimen172
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count277
+\c@float@type=\count120
 \float@exts=\toks21
-\float@box=\box58
+\float@box=\box39
 \@float@everytoks=\toks22
-\@floatcapt=\box59
-) (memoire.aux
+\@floatcapt=\box40
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip68
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen141
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count121
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count122
+\leftroot@=\count123
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count124
+\DOTSCASE@=\count125
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box41
+\strutbox@=\box42
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count126
+\c@MaxMatrixCols=\count127
+\dotsspace@=\muskip11
+\c@parentequation=\count128
+\dspbrk@lvl=\count129
+\tag@help=\toks24
+\row@=\count130
+\column@=\count131
+\maxfields@=\count132
+\andhelp@=\toks25
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks26
+\multlinegap=\skip69
+\multlinetaggap=\skip70
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/chngcntr\chngcntr.sty"
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2019-05-09 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3-code.tex"
+Package: expl3 2019-05-09 L3 programming layer (code)
+\c_max_int=\count133
+\l_tmpa_int=\count134
+\l_tmpb_int=\count135
+\g_tmpa_int=\count136
+\g_tmpb_int=\count137
+\g__kernel_prg_map_int=\count138
+\c__ior_term_ior=\count139
+\c_log_iow=\count140
+\l_iow_line_count_int=\count141
+\l__iow_line_target_int=\count142
+\l__iow_one_indent_int=\count143
+\l__iow_indent_int=\count144
+\c_zero_dim=\dimen150
+\c_max_dim=\dimen151
+\l_tmpa_dim=\dimen152
+\l_tmpb_dim=\dimen153
+\g_tmpa_dim=\dimen154
+\g_tmpb_dim=\dimen155
+\c_zero_skip=\skip71
+\c_max_skip=\skip72
+\l_tmpa_skip=\skip73
+\l_tmpb_skip=\skip74
+\g_tmpa_skip=\skip75
+\g_tmpb_skip=\skip76
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count145
+\l__intarray_loop_int=\count146
+\c__intarray_sp_dim=\dimen156
+\g__intarray_font_int=\count147
+\c__fp_leading_shift_int=\count148
+\c__fp_middle_shift_int=\count149
+\c__fp_trailing_shift_int=\count150
+\c__fp_big_leading_shift_int=\count151
+\c__fp_big_middle_shift_int=\count152
+\c__fp_big_trailing_shift_int=\count153
+\c__fp_Bigg_leading_shift_int=\count154
+\c__fp_Bigg_middle_shift_int=\count155
+\c__fp_Bigg_trailing_shift_int=\count156
+\c__kernel_randint_max_int=\count157
+\g__fp_array_int=\count158
+\l__fp_array_loop_int=\count159
+\l__sort_length_int=\count160
+\l__sort_min_int=\count161
+\l__sort_top_int=\count162
+\l__sort_max_int=\count163
+\l__sort_true_max_int=\count164
+\l__sort_block_int=\count165
+\l__sort_begin_int=\count166
+\l__sort_end_int=\count167
+\l__sort_A_int=\count168
+\l__sort_B_int=\count169
+\l__sort_C_int=\count170
+\l__tl_analysis_normal_int=\count171
+\l__tl_analysis_index_int=\count172
+\l__tl_analysis_nesting_int=\count173
+\l__tl_analysis_type_int=\count174
+\l__regex_internal_a_int=\count175
+\l__regex_internal_b_int=\count176
+\l__regex_internal_c_int=\count177
+\l__regex_balance_int=\count178
+\l__regex_group_level_int=\count179
+\l__regex_mode_int=\count180
+\c__regex_cs_in_class_mode_int=\count181
+\c__regex_cs_mode_int=\count182
+\l__regex_catcodes_int=\count183
+\l__regex_default_catcodes_int=\count184
+\c__regex_catcode_D_int=\count185
+\c__regex_catcode_S_int=\count186
+\c__regex_catcode_L_int=\count187
+\c__regex_catcode_O_int=\count188
+\c__regex_catcode_A_int=\count189
+\c__regex_all_catcodes_int=\count190
+\l__regex_show_lines_int=\count191
+\l__regex_min_state_int=\count192
+\l__regex_max_state_int=\count193
+\l__regex_left_state_int=\count194
+\l__regex_right_state_int=\count195
+\l__regex_capturing_group_int=\count196
+\l__regex_min_pos_int=\count197
+\l__regex_max_pos_int=\count198
+\l__regex_curr_pos_int=\count199
+\l__regex_start_pos_int=\count266
+\l__regex_success_pos_int=\count267
+\l__regex_curr_char_int=\count268
+\l__regex_curr_catcode_int=\count269
+\l__regex_last_char_int=\count270
+\l__regex_case_changed_char_int=\count271
+\l__regex_curr_state_int=\count272
+\l__regex_step_int=\count273
+\l__regex_min_active_int=\count274
+\l__regex_max_active_int=\count275
+\l__regex_replacement_csnames_int=\count276
+\l__regex_match_count_int=\count277
+\l__regex_min_submatch_int=\count278
+\l__regex_submatch_int=\count279
+\l__regex_zeroth_submatch_int=\count280
+\g__regex_trace_regex_int=\count281
+\c_empty_box=\box43
+\l_tmpa_box=\box44
+\l_tmpb_box=\box45
+\g_tmpa_box=\box46
+\g_tmpb_box=\box47
+\l__box_top_dim=\dimen157
+\l__box_bottom_dim=\dimen158
+\l__box_left_dim=\dimen159
+\l__box_right_dim=\dimen160
+\l__box_top_new_dim=\dimen161
+\l__box_bottom_new_dim=\dimen162
+\l__box_left_new_dim=\dimen163
+\l__box_right_new_dim=\dimen164
+\l__box_internal_box=\box48
+\l__coffin_internal_box=\box49
+\l__coffin_internal_dim=\dimen165
+\l__coffin_offset_x_dim=\dimen166
+\l__coffin_offset_y_dim=\dimen167
+\l__coffin_x_dim=\dimen168
+\l__coffin_y_dim=\dimen169
+\l__coffin_x_prime_dim=\dimen170
+\l__coffin_y_prime_dim=\dimen171
+\c_empty_coffin=\box50
+\l__coffin_aligned_coffin=\box51
+\l__coffin_aligned_internal_coffin=\box52
+\l_tmpa_coffin=\box53
+\l_tmpb_coffin=\box54
+\g_tmpa_coffin=\box55
+\g_tmpb_coffin=\box56
+\l__coffin_bounding_shift_dim=\dimen172
+\l__coffin_left_corner_dim=\dimen173
+\l__coffin_right_corner_dim=\dimen174
+\l__coffin_bottom_corner_dim=\dimen175
+\l__coffin_top_corner_dim=\dimen176
+\l__coffin_scaled_total_height_dim=\dimen177
+\l__coffin_scaled_width_dim=\dimen178
+\c__coffin_empty_coffin=\box57
+\l__coffin_display_coffin=\box58
+\l__coffin_display_coord_coffin=\box59
+\l__coffin_display_pole_coffin=\box60
+\l__coffin_display_offset_dim=\dimen179
+\l__coffin_display_x_dim=\dimen180
+\l__coffin_display_y_dim=\dimen181
+\g__file_internal_ior=\read1
+\l__seq_internal_a_int=\count282
+\l__seq_internal_b_int=\count283
+\c__deprecation_minus_one=\count284
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\l3pdfmode.def"
+File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
+\l__driver_internal_box=\box61
+\l__driver_color_stack_int=\count285
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
+Package: xparse 2019-05-03 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count286
+\g__xparse_grabber_int=\count287
+\l__xparse_m_args_int=\count288
+\l__xparse_v_nesting_int=\count289
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.tex"
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+)) (memoire.aux
 (Cover/cover.aux) (Intro/remerciement.aux) (General/tableContents.aux)
 (General/listFigures.aux) (General/listOfAlgos.aux) (Intro/introGeneral.aux)
 (Chap1/chap1.aux
@@ -583,30 +633,37 @@ LaTeX Warning: Label `fig:CSF' multiply defined.
 
 LaTeX Warning: Label `fig:CSF' multiply defined.
 
+
+LaTeX Warning: Label `fig:CSF' multiply defined.
+
+) (Chap4/chap4.aux
+
+LaTeX Warning: Label `fig:CSF' multiply defined.
+
 ) (General/bibliography.aux))
 \openout1 = `memoire.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 87.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 119.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 87.
+\AtBeginShipoutBox=\box62
+Package hyperref Info: Link coloring OFF on input line 119.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -614,11 +671,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count278
+\c@section@level=\count290
 )
-LaTeX Info: Redefining \ref on input line 87.
-LaTeX Info: Redefining \pageref on input line 87.
-LaTeX Info: Redefining \nameref on input line 87.
+LaTeX Info: Redefining \ref on input line 119.
+LaTeX Info: Redefining \pageref on input line 119.
+LaTeX Info: Redefining \nameref on input line 119.
 
 (memoire.out) (memoire.out)
 \@outlinefile=\write3
@@ -632,16 +689,16 @@ LaTeX Info: Redefining \nameref on input line 87.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: includefoot 
-* h-part:(L,W,R)=(108.405pt, 416.83289pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=412.56496pt
-* \textheight=702.78297pt
-* \oddsidemargin=36.13501pt
-* \evensidemargin=36.13501pt
-* \topmargin=-37.0pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -659,26 +716,26 @@ LaTeX Info: Redefining \nameref on input line 87.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 87.
-LaTeX Info: Redefining \dots on input line 87.
+LaTeX Info: Redefining \degres on input line 119.
+LaTeX Info: Redefining \dots on input line 119.
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 87.
+(french.ldf)                BEFORE babel/french; reported on input line 119.
 
-LaTeX Info: Redefining \up on input line 87.
+LaTeX Info: Redefining \up on input line 119.
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
-\scratchdimen=\dimen173
-\scratchbox=\box61
-\nofMPsegments=\count280
-\nofMParguments=\count281
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count282
-\MPscratchDim=\dimen174
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count291
+\scratchdimen=\dimen182
+\scratchbox=\box63
+\nofMPsegments=\count292
+\nofMParguments=\count293
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen183
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
+\everyMPtoPDFconversion=\toks29
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -695,7 +752,7 @@ G,.JBIG2,.JB2,.eps]
 \openout2 = `Cover/cover.aux'.
 
  (Cover/cover.tex
-<Cover/usthb.png, id=86, 240.9pt x 240.9pt>
+<Cover/usthb.png, id=117, 240.9pt x 240.9pt>
 File: Cover/usthb.png Graphic file (type png)
 <use Cover/usthb.png>
 Package pdftex.def Info: Cover/usthb.png  used on input line 13.
@@ -727,24 +784,20 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 33.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 33.
-
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 38--43
- [] 
- []
-
-[1
+ [1
 
 
 {C:/Users/eldja/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Cover/ust
 hb.png>])
 \openout2 = `Intro/remerciement.aux'.
 
- (Intro/remerciement.tex)pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.1}) has been already used, duplicate ignored
+
+(Intro/remerciement.tex)pdfTeX warning (ext4): destination with the same identi
+fier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 \include{Intro/remerciement}
-                                  [1
+l.123 \include{Intro/remerciement}
+                                   [1
 
 
 ]
@@ -757,33 +810,39 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 12.
-)
+
+[2
+
+
+])
 \tf@toc=\write4
 \openout4 = `memoire.toc'.
 
-) [2
-
-
-]
+) [3]
 \openout2 = `General/listFigures.aux'.
 
- (General/listFigures.tex (memoire.lof)
+ (General/listFigures.tex (memoire.lof
+Overfull \hbox (5.6694pt too wide) in paragraph at lines 14--14
+ [][] [][]\T1/lmr/m/n/14.4 Classification des mé-thodes de ré-so-lu-tion d'op-t
+i-mi-sa-tion com- 
+ []
+
+)
 \tf@lof=\write5
 \openout5 = `memoire.lof'.
 
-) [3
+) [4
 
 
 
 ]
 \openout2 = `General/listOfAlgos.aux'.
 
- (General/listOfAlgos.tex
-(memoire.loa)
+ (General/listOfAlgos.tex (memoire.loa)
 \tf@loa=\write6
 \openout6 = `memoire.loa'.
 
-) [4
+) [5
 
 
 
@@ -802,7 +861,7 @@ l.14
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.102 \include{Intro/introGeneral}
+l.134 \include{Intro/introGeneral}
                                    [2]
 \openout2 = `Chap1/chap1.aux'.
 
@@ -811,130 +870,149 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
-<Chap1/1.png, id=212, 233.37187pt x 120.45pt>
+<Chap1/1.png, id=262, 233.37187pt x 120.45pt>
 File: Chap1/1.png Graphic file (type png)
 <use Chap1/1.png>
 Package pdftex.def Info: Chap1/1.png  used on input line 25.
 (pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.31 
-      [3
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.31 
-      <./Chap1/1.png>]
-<Chap1/2.png, id=216, 645.91313pt x 258.21469pt>
+<Chap1/2.png, id=263, 645.91313pt x 258.21469pt>
 File: Chap1/2.png Graphic file (type png)
 <use Chap1/2.png>
 Package pdftex.def Info: Chap1/2.png  used on input line 34.
 (pdftex.def)             Requested size: 398.33315pt x 170.72165pt.
-<Chap1/3.png, id=218, 579.66562pt x 274.02374pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 
+      [3
+
+
+
+]
+<Chap1/3.png, id=268, 579.66562pt x 274.02374pt>
 File: Chap1/3.png Graphic file (type png)
 <use Chap1/3.png>
 Package pdftex.def Info: Chap1/3.png  used on input line 45.
 (pdftex.def)             Requested size: 398.34222pt x 170.72086pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 51.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <14.4> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 51.
-
-Overfull \hbox (39.44868pt too wide) in paragraph at lines 51--53
-\T1/lmr/m/n/14.4 uni-tés : un cap-teur et un conver-tis-seur(ADC) (ana-lo-gique
-,numérique).
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 
-      [4pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.1.2}) has been already used, duplicate ignored
+l.55 	\item \textbf
+                   {UnitÃ© de communication: }cette unitÃ© est responsable d...
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.53 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.3}) has been already used, duplicate ignored
+l.55 	\item \textbf
+                   {UnitÃ© de communication: }cette unitÃ© est responsable d...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.53 
-      <./Chap1/2.png> <./Chap1/3.png>]
-<Chap1/4.png, id=228, 292.09125pt x 156.585pt>
+l.55 	\item \textbf
+                   {UnitÃ© de communication: }cette unitÃ© est responsable d...
+ <./Chap1/1.png> <./Chap1/2.png>]
+<Chap1/4.png, id=279, 292.09125pt x 156.585pt>
 File: Chap1/4.png Graphic file (type png)
 <use Chap1/4.png>
 Package pdftex.def Info: Chap1/4.png  used on input line 59.
 (pdftex.def)             Requested size: 398.37534pt x 170.72205pt.
- [5]
-<Chap1/5.png, id=238, 404.51125pt x 492.84125pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.63 \end{itemize}
+                   [5pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.1.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 \end{itemize}
+                   <./Chap1/3.png>]
+<Chap1/5.png, id=287, 404.51125pt x 492.84125pt>
 File: Chap1/5.png Graphic file (type png)
 <use Chap1/5.png>
 Package pdftex.def Info: Chap1/5.png  used on input line 69.
-(pdftex.def)             Requested size: 312.98683pt x 199.17096pt.
+(pdftex.def)             Requested size: 256.0779pt x 284.53961pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.78 	
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-1.5}) has been already used, duplicate ignored
+l.73 
+      <./Chap1/4.png>] [7pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.1.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.78 	
-       <./Chap1/4.png> <./Chap1/5.png>] [7]
-<Chap1/6.png, id=261, 309.40594pt x 221.32687pt>
+l.82 		\item F
+              ournir une fiabilitÃ© entre ces nÅ“uds voisins. <./Chap1/5.png>]
+[8]
+<Chap1/6.png, id=315, 309.40594pt x 221.32687pt>
 File: Chap1/6.png Graphic file (type png)
 <use Chap1/6.png>
 Package pdftex.def Info: Chap1/6.png  used on input line 114.
 (pdftex.def)             Requested size: 256.0987pt x 113.81404pt.
- [8]
-<Chap1/7.png, id=267, 304.88907pt x 219.06844pt>
+<Chap1/7.png, id=316, 304.88907pt x 219.06844pt>
 File: Chap1/7.png Graphic file (type png)
 <use Chap1/7.png>
 Package pdftex.def Info: Chap1/7.png  used on input line 123.
 (pdftex.def)             Requested size: 341.44551pt x 113.8126pt.
 
+Overfull \hbox (4.89267pt too wide) in paragraph at lines 120--127
+\T1/lmr/m/n/14.4 cal, in-cluant des ap-pli-ca-tions comme : col-lec-ter des in-
+for-ma-tions de meilleure
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Chap1/8.png, id=268, 644.4075pt x 343.2825pt>
-File: Chap1/8.png Graphic file (type png)
-<use Chap1/8.png>
-Package pdftex.def Info: Chap1/8.png  used on input line 132.
-(pdftex.def)             Requested size: 341.44585pt x 170.71368pt.
 [9pdfTeX warning (ext4): destination with the same identifier (name{figure.1.6}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.136 
-       <./Chap1/6.png>] [10pdfTeX warning (ext4): destination with the same ide
-ntifier (name{figure.1.7}) has been already used, duplicate ignored
+l.127 
+       <./Chap1/6.png>]
+<Chap1/8.png, id=322, 644.4075pt x 343.2825pt>
+File: Chap1/8.png Graphic file (type png)
+<use Chap1/8.png>
+Package pdftex.def Info: Chap1/8.png  used on input line 132.
+(pdftex.def)             Requested size: 341.44585pt x 170.71368pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.1.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.139 
+       <./Chap1/7.png>] [11pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.1.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.145 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-1.8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.145 
-       <./Chap1/7.png> <./Chap1/8.png>] [11]) [12]
+       <./Chap1/8.png>]) [12]
 \openout2 = `Chap3/chap3.aux'.
 
  (Chap3/chap3.tex [13
@@ -942,313 +1020,387 @@ l.145
 
 
 ]
-<Chap3/1.png, id=303, 684.30656pt x 237.88875pt>
+<Chap3/1.png, id=353, 684.30656pt x 237.88875pt>
 File: Chap3/1.png Graphic file (type png)
 <use Chap3/1.png>
 Package pdftex.def Info: Chap3/1.png  used on input line 28.
 (pdftex.def)             Requested size: 426.80301pt x 142.26971pt.
-
-Overfull \hbox (14.23805pt too wide) in paragraph at lines 28--29
- [][] 
- []
-
-
-Overfull \hbox (0.83722pt too wide) in paragraph at lines 33--34
-[]\T1/lmr/m/n/14.4 L'élégance des pro-blèmes d'op-ti-mi-sa-tion com-bi-na-toire
- ré-side dans
- []
-
-<Chap3/2.png, id=304, 437.38406pt x 374.90062pt>
+<Chap3/2.png, id=354, 437.38406pt x 374.90062pt>
 File: Chap3/2.png Graphic file (type png)
 <use Chap3/2.png>
 Package pdftex.def Info: Chap3/2.png  used on input line 37.
 (pdftex.def)             Requested size: 426.79811pt x 369.90569pt.
-
-Overfull \hbox (14.23315pt too wide) in paragraph at lines 37--38
- [][] 
- []
-
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
-}) has been already used, duplicate ignored
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.41 
-      <./Chap3/1.png>]
-Overfull \hbox (0.79678pt too wide) in paragraph at lines 47--49
-[]\T1/lmr/m/n/14.4 Ces mé-thodes sont dites com-plètes ou exactes car elles per
--mettent
- []
-
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-}) has been already used, duplicate ignored
+      <./Chap3/1.png>] [15pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.49 
-      <./Chap3/2.png>]
-Overfull \hbox (23.63368pt too wide) in paragraph at lines 52--54
-[]\T1/lmr/bx/n/14.4 La mé-thode sé-pa-ra-tion et éva-lua-tion (Branch and Bound
-) :
+      <./Chap3/2.png>] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
+
  []
 
-[16] [17]
-File: Chap1/1.png Graphic file (type png)
-<use Chap1/1.png>
-Package pdftex.def Info: Chap1/1.png  used on input line 84.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 104.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 110.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 104.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 110.
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 89--110
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 83--104
 $[]$ 
  []
 
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
-}) has been already used, duplicate ignored
+<Chap3/3.png, id=395, 374.14781pt x 622.57594pt>
+File: Chap3/3.png Graphic file (type png)
+<use Chap3/3.png>
+Package pdftex.def Info: Chap3/3.png  used on input line 108.
+(pdftex.def)             Requested size: 256.08417pt x 284.52646pt.
+[18]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.112 	\item \textbf
-                    {Recherche tabou: } La mÃ©thode de recherche avec tabous...
-]
-File: Chap1/1.png Graphic file (type png)
-<use Chap1/1.png>
-Package pdftex.def Info: Chap1/1.png  used on input line 120.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{algocf.1}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.124 
-      ]
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 155.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 150.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 155.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 150.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 155.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 150.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 155.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 150.
 
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 125--156
-$[]$ 
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 114--151
+[]$[]$ 
  []
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.158 	\item \textbf
-                    {Recherche locale : } Pour cette mÃ©thode de recherche i...
-] [21pdfTeX warning (ext4): destination with the same identifier (name{algocf.2
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.159 
-      ]
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 172.
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 160--173
-$[]$ 
- []
-
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 193.
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 178--196
-$[]$ 
- []
-
-[22pdfTeX warning (ext4): destination with the same identifier (name{algocf.3})
+[19pdfTeX warning (ext4): destination with the same identifier (name{algocf.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.205 
+l.151 \end{algorithm}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.3.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.151 \end{algorithm}
+                      <./Chap3/3.png>]
+<Chap3/4.png, id=418, 606.76688pt x 540.51938pt>
+File: Chap3/4.png Graphic file (type png)
+<use Chap3/4.png>
+Package pdftex.def Info: Chap3/4.png  used on input line 156.
+(pdftex.def)             Requested size: 341.43515pt x 284.5357pt.
+ [20] [21pdfTeX warning (ext4): destination with the same identifier (name{algo
+cf.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.160 
+      ]
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 177.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 177.
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 165--178
+$[]$ 
+ []
+
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.181 	\item \textbf
+                    {Recherche Ã  voisinages variables(VNS):} La recherche Ã...
+ <./Chap3/4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 198.
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 183--201
+$[]$ 
+ []
+
+[23pdfTeX warning (ext4): destination with the same identifier (name{algocf.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.210 
       pdfTeX warning (ext4): destination with the same identifier (name{algocf.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.205 
+l.210 
       ]
-File: Chap1/1.png Graphic file (type png)
-<use Chap1/1.png>
-Package pdftex.def Info: Chap1/1.png  used on input line 208.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
- [23pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-5}) has been already used, duplicate ignored
+<Chap3/5.png, id=445, 643.6547pt x 244.66406pt>
+File: Chap3/5.png Graphic file (type png)
+<use Chap3/5.png>
+Package pdftex.def Info: Chap3/5.png  used on input line 213.
+(pdftex.def)             Requested size: 426.80714pt x 199.17357pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.217 
-      ]
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 218--231
+l.222 
+       <./Chap3/5.png>]
+<Chap3/6.png, id=462, 302.63063pt x 624.83438pt>
+File: Chap3/6.png Graphic file (type png)
+<use Chap3/6.png>
+Package pdftex.def Info: Chap3/6.png  used on input line 225.
+(pdftex.def)             Requested size: 256.07819pt x 426.79813pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 230--243
 $[]$ 
  []
 
-File: Chap1/1.png Graphic file (type png)
-<use Chap1/1.png>
-Package pdftex.def Info: Chap1/1.png  used on input line 236.
-(pdftex.def)             Requested size: 199.17891pt x 105.27768pt.
-[24pdfTeX warning (ext4): destination with the same identifier (name{algocf.5})
- has been already used, duplicate ignored
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.247 	
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.3.6}) has been already used, duplicate ignored
+l.247 	\item \textbf
+                    {Initialisation de la population: }en gÃ©nÃ©ral, la popu...
+ <./Chap3/6.png>] [26pdfTeX warning (ext4): destination with the same identifie
+r (name{algocf.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.247 	
+l.258 	
        ]
-Overfull \hbox (4.7894pt too wide) in paragraph at lines 248--249
-\T1/lmr/m/n/14.4 de nom-breux opé-ra-teurs de croi-se-ment. Une mé-thode simple
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
-[25]
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 264--283
-$[]$ 
- []
 
-[26pdfTeX warning (ext4): destination with the same identifier (name{algocf.6})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.289 	
-       ]
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 301--317
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 270--289
 $[]$ 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
-
+Overfull \hbox (5.62837pt too wide) in paragraph at lines 298--299
+\T1/lmr/m/n/14.4 la meilleure so-lu-tion vont être fa-vo-ri-ser par une va-leur
+ constante
  []
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 341.
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
+ []
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 341.
+[28pdfTeX warning (ext4): destination with the same identifier (name{algocf.6})
+ has been already used, duplicate ignored
 
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 327--343
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.306 
+      ]
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 308--324
 $[]$ 
  []
 
-[28pdfTeX warning (ext4): destination with the same identifier (name{algocf.7})
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
+
+ []
+
+[29pdfTeX warning (ext4): destination with the same identifier (name{algocf.7})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.345 \paragraph
-                {â€¢}]
-<Chap3/7.png, id=518, 489.32813pt x 336.50719pt>
+l.328 
+      ]
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 331--348
+$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--361
+
+ []
+
+[30pdfTeX warning (ext4): destination with the same identifier (name{algocf.8})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.361 
+      ]
+<Chap3/7.png, id=496, 682.04813pt x 249.93375pt>
 File: Chap3/7.png Graphic file (type png)
 <use Chap3/7.png>
-Package pdftex.def Info: Chap3/7.png  used on input line 349.
-(pdftex.def)             Requested size: 426.80214pt x 256.07672pt.
+Package pdftex.def Info: Chap3/7.png  used on input line 364.
+(pdftex.def)             Requested size: 426.7994pt x 170.72305pt.
 
-Overfull \hbox (14.23718pt too wide) in paragraph at lines 349--350
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
+
  []
 
-[29pdfTeX warning (ext4): destination with the same identifier (name{algocf.8})
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.375 
+       <./Chap3/7.png>]
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 391.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 391.
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 377--393
+$[]$ 
+ []
+
+<Chap3/8.png, id=504, 489.32813pt x 336.50719pt>
+File: Chap3/8.png Graphic file (type png)
+<use Chap3/8.png>
+Package pdftex.def Info: Chap3/8.png  used on input line 397.
+(pdftex.def)             Requested size: 426.80214pt x 284.52798pt.
+
+Overfull \hbox (0.41399pt too wide) in paragraph at lines 406--407
+[]\T1/lmr/m/n/14.4 Nous avons pré-senté dans ce cha-pitre l'état de l'art des m
+éta-heuristiques
+ []
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{algocf.9})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.359 
+l.407 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3.7}) has been already used, duplicate ignored
+3.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.359 
-       <./Chap3/7.png>]) [30]
+l.407 
+       <./Chap3/8.png>]) [33]
+\openout2 = `Chap4/chap4.aux'.
+
+ (Chap4/chap4.tex
+Overfull \hbox (2.82599pt too wide) in paragraph at lines 18--18
+[]\T1/lmr/bx/n/17.28 Représentation du graphe mo-dé-li-sant le pro-blème 
+ []
+
+[34
+
+
+
+] [35] [36]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 86.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <20.74> on input line 86.
+ [37]
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+[38] [39pdfTeX warning (ext4): destination with the same identifier (name{algoc
+f.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.141 
+      ]
+<Chap4/1.png, id=552, 414.04688pt x 303.38344pt>
+File: Chap4/1.png Graphic file (type png)
+<use Chap4/1.png>
+Package pdftex.def Info: Chap4/1.png  used on input line 144.
+(pdftex.def)             Requested size: 341.44125pt x 184.94325pt.
+) [40pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.141 \include{Chap4/chap4}
+                            <./Chap4/1.png>]
 \openout2 = `General/bibliography.aux'.
 
- (General/bibliography.tex (memoire.bbl
-Underfull \hbox (badness 1931) in paragraph at lines 42--46
-\T1/lmr/m/it/14.4 de cap-teurs sans fil.  \T1/lmr/m/n/14.4 PhD the-sis, http :/
-/dspace.univ-
- []
-
-[31
+ (General/bibliography.tex
+(memoire.bbl [41
 
 
 
-] [32] [33]
-Underfull \hbox (badness 1874) in paragraph at lines 214--217
-[]\T1/lmr/m/n/14.4 Johann Dréo, Alain Pé-trowski, Pa-trick Siarry, and Eric
- []
-
-)) [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
- (memoire.aux (Cover/cover.aux) (Intro/remerciement.aux)
-(General/tableContents.aux) (General/listFigures.aux) (General/listOfAlgos.aux)
-(Intro/introGeneral.aux) (Chap1/chap1.aux) (Chap3/chap3.aux)
-(General/bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+] [42] [43])) [44]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+ (memoire.aux (Cover/cover.aux)
+(Intro/remerciement.aux) (General/tableContents.aux) (General/listFigures.aux)
+(General/listOfAlgos.aux) (Intro/introGeneral.aux) (Chap1/chap1.aux)
+(Chap3/chap3.aux) (Chap4/chap4.aux) (General/bibliography.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `memoire.out' has not changed.
-(rerunfilecheck)             Checksum: 8EAD32EC2D4F4E3BEFF895B281BD022A;1602.
+(rerunfilecheck)             Checksum: 62E3A26334036BC76BB3C8C558AA1AD3;2285.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 19351 strings out of 492895
- 339848 string characters out of 3133479
- 536576 words of memory out of 3000000
- 22789 multiletter control sequences out of 15000+200000
- 589508 words of font info for 56 fonts, out of 3000000 for 9000
+ 19802 strings out of 492895
+ 345403 string characters out of 3133479
+ 603567 words of memory out of 3000000
+ 23277 multiletter control sequences out of 15000+200000
+ 596776 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,23n,63p,1827b,759s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
-.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program 
+ 40i,23n,63p,1827b,622s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
+.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on memoire.pdf (39 pages, 1736378 bytes).
+fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on memoire.pdf (50 pages, 1898602 bytes).
 PDF statistics:
- 648 PDF objects out of 1000 (max. 8388607)
- 239 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 656 PDF objects out of 1000 (max. 8388607)
+ 177 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 
