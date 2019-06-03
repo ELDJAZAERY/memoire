@@ -48,6 +48,8 @@ La méthode de résolution du problème de l’arbre dominant que nous avons pro
 \subsubsection{Ant colony optimisation}
 Nous utilisons dans cette première solution, l'algorithme des colonies de Fourmies pour résoudre le DTP. Nous allons décrire dans ce qui suit l'adaptation des operateurs de  cette métaheuristique au problème étudié. 
 
+\begin{enumerate}
+	\item \textbf{Les opérateurs de l’algorithme ACO}\\
 \begin{enumerate}[label=\alph*)]
 	\item \textbf{Recherche locale:}\\
 	Dans la recherche locale que nous proposons, supposons que nous avons une solution. Nous parcourons le vecteur de la solution et on inverse la valeur des élément (si la valeur d’un élément est égale à 1, elle devient 0 ou inversement) . A chaque fois que nous inversons  la valeur  de chaque élément nous faisons une évaluation de la fonction objectif. A tous coups où la solution est améliorée, cette dernière est sauvegardé et la recherche d’une meilleure solution se fera à partir de cette solution.
@@ -65,12 +67,11 @@ il est à noter que la méthode de recherche locale citée ci dessus est utilis�
 		\item \textbf{La sélection par tournoi}\\
 		le principe de cette sélection consiste à choisir deux nœuds aléatoirement, puis de retenir celui ayant la meilleure probabilité 
 	\end{itemize}
-
-
 \end{enumerate}
+	
 
 
-\subsubsection{Fonctionnement de l’algorithme ACO :}
+	\item \textbf{Fonctionnement de l’algorithme ACO}\\
 L’algorithme de colonie de fourmi est une approche métaheuristique basée sur une  population et inspirée du comportement des fourmis réelles. L’idée principale derrière cette méthode provient de l’observation de la capacité des fourmis pour trouver le plus court chemin entre une  source de nourriture et le nid.
 Cette méta-heuristique est composée d’une phase d’initialisation et d’une phase itérative. La première phase consiste à initialiser une solution de départ qui sera décrite ci-dessous. Elle comprend également l’initialisation du vecteur des probabilités et de la table de phéromone.
 
@@ -101,7 +102,7 @@ Après que tous les sommets du graphe soient étiquetés à marqué. Les fonctio
 Le pseudo-code de ACO est donné dans l’algorithme 1 suivant:
 
 \begin{algorithm}[H]
-\caption{ACO de DT }
+\caption{ACO DT}
 \KwData{Un graphe général pondéré non orienté $G = (V, E, w) $}
 \KwResult{Un DT  optimal de G }
 \SetAlgoLined
@@ -120,12 +121,17 @@ Construction de la solution initiale \;
 }
 	
 \end{algorithm}
+	
+\end{enumerate}
 
 
 
 \subsubsection{Algorithme génétique}
 Nous allons décrire dans ce qui suit les opérateurs retenus dans l'approche utilisant les algorithmes génétiques. 
 
+
+\begin{enumerate}
+	\item \textbf{Les opérateurs de l’algorithme ACO}\\
 
 \begin{enumerate}[label=\alph*)]
 	\item \textbf{Génération de la Population initiale:}\\
@@ -136,17 +142,81 @@ Nous allons décrire dans ce qui suit les opérateurs retenus dans l'approche ut
 	Le codage utilisé dans cette approche est celui décrit dans la section II.
 	
 	\item \textbf{La méthode de croisement utilisée:}\\
-	Pour cet algorithme nous avons utilisé la méthode de croisement uniforme. Il opère à l’aide d’un masque construit aléatoirement, pour décider lequel des parents va transmettre  la valeur du gène à l’un ou l’autre des descendants. Si à la même position que le gène, la valeur du masque est égale à 1, le gène du parent 1 passe à celui de l’enfant 1 et le gène du parent 2 passe à l’enfant 2. Sinon, c’est l’inverse qui se produit (figure 4.1). Cette fonction renvoie l’enfant ayant la meilleur qualité (le poids minimal).\\
-La figure 4.1  illustre se processus par un exemple.
+	Pour cet algorithme nous avons utilisé la méthode de croisement uniforme. Il opère à l’aide d’un masque construit aléatoirement, pour décider lequel des parents va transmettre  la valeur du gène à l’un ou l’autre des descendants. Si à la même position que le gène, la valeur du masque est égale à 1, le gène du parent 1 passe à celui de l’enfant 1 et le gène du parent 2 passe à l’enfant 2. Sinon, c’est l’inverse qui se produit (figure \ref{fig:ECU}). Cette fonction renvoie l’enfant ayant la meilleur qualité (le poids minimal).\\
+La figure \ref{fig:ECU} illustre se processus par un exemple.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm,height=6.5cm]{Chap4/1.png}
 	\caption{Exemple de croisement uniforme}
-	\label{fig:CSF}
+	\label{fig:ECU}
 \end{figure}
 	
 
+	\item \textbf{Mutation:}\\
+	La mutation est une autre solution pour créer de nouveaux individus  et de modifier ceux déjà existant. Le hasard dans cette méthode va nous être d’une grande utilité. Dans notre cas, un index généré aléatoirement va décider dans quelle position le gène à muter se trouve. Rien ne nous dit que l’individu muté sera meilleure ou au moins bon, mais il pourrait être efficace pour la création de  bonnes solutions.  Un exemple illustratif sera représenté par  la figure 4.2.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm,height=4cm]{Chap4/2.png}
+	\caption{Représentation schématique de la mutation}
+	\label{fig:RSM}
+\end{figure}
+
+
+	\item \textbf{Élitisme:}\\
+Cet opérateurs permet de garder les meilleurs individus de chaque population. Notre méthode d’élitisme consiste à remplacer les m mauvais individus de la nouvelle population par les m meilleurs individus de la  population précédente. 
+
 \end{enumerate}
 
+
+\item \textbf{Fonctionnement de l’algorithme génétique (GA)}
+
+Après avoir créé une population initiale, l’algorithme GA procède comme suit:
+
+\begin{algorithm}[H]
+\caption{Génétique DT}
+\SetAlgoLined
+\DontPrintSemicolon
+
+Initialiser une population d’une façon aléatoire \;
+
+\While{$ i < $ Nombre d’itération}{
+	\While{$j<PopSize$}{
+		Récupérer deux individu de la population $n_1 , n_2$ \;
+		$Enfant = Croisement(n_1,n_2)$ \;
+		rand = Générer une valeur aléatoire entre 0 et 100\;
+		\If{rand < 5\% }{
+			Mutation(Enfant)\;		
+		}
+		Recherche locale() \;
+		Ajouter le meilleur individu à la nouvelle population \;
+	}
+	Elitisme() \;
+}
+
+\end{algorithm}
+
+
+\end{enumerate}
+
+
+\subsubsection{biogeography based optimimisation (BBO)}
+C’est une méta heuristique qui fait partie des algorithmes évolutionnaire basée sur la biogéographie. Dans ce qui suit, nous allons présenter l’approche BBO développée pour la résolution du problème de l’arbre dominant ainsi que ses opérateurs.
+
+\begin{enumerate}
+	\item \textbf{Les opérateurs de l’algorithme BBO}\\
+	\begin{enumerate}[label=\alph*)]
+		\item \textbf{Génération de la Population initiale:}\\
+	\end{enumerate}	
+	
+	\item \textbf{Le fonctionnement de l’algorithme BBO}\\
+	
+	
+\end{enumerate}
+
+
+
+\subsection{Description de l'approche coopérative}
+Nous proposons une approche  coopérative entre les méta-heuristiques pour la résolution du problème de l’arbre dominant où une méta-heuristique maître contrôle plusieurs méta-heuristiques esclaves. Les points forts d'une méta-heuristique esclave compensent les points faibles d'une autre grâce à la notion de rang. Le rang est un moyen de mettre en valeur les points forts des méta-heuristiques esclaves. Il est attribué par le maître et est égale à 0 au départ. Il est mis à jour continûment par la méta-heuristique maître qui augmente le rang des méta-heuristiques esclaves ayant amélioré la solution et diminue le rang de celles qui ne l'auront pas amélioré. Cette mise à jour tend à récompenser les méta-heuristiques esclaves qui auront réussi à améliorer la solution courante. Comme conséquence, les méta-heuristiques esclaves ayant un rang élevé participeront donc davantage au développement de la solution finale.
 
