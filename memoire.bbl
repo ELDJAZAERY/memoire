@@ -5,26 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Raghunathan et~al.(2005)Raghunathan, Kansal, Hsu, Friedman, and
-  Srivastava]{raghunathan2005design}
-Vijay Raghunathan, Aman Kansal, Jason Hsu, Jonathan Friedman, and Mani
-  Srivastava.
-\newblock Design considerations for solar energy harvesting wireless embedded
-  systems.
-\newblock In \emph{Proceedings of the 4th international symposium on
-  Information processing in sensor networks}, page~64. IEEE Press, 2005.
-
-\bibitem[Karl and Willig(2007)]{karl2007protocols}
-Holger Karl and Andreas Willig.
-\newblock \emph{Protocols and architectures for wireless sensor networks}.
-\newblock John Wiley \& Sons, 2007.
-
-\bibitem[Dr{\'e}o et~al.(2003)Dr{\'e}o, P{\'e}trowski, Siarry, and
-  Taillard]{dreo2003metaheuristiques}
-Johann Dr{\'e}o, Alain P{\'e}trowski, Patrick Siarry, and Eric Taillard.
-\newblock \emph{M{\'e}taheuristiques pour l'optimisation difficile}.
-\newblock Eyrolles, 2003.
-
 \bibitem[Yick et~al.(2008)Yick, Mukherjee, and Ghosal]{yick2008wireless}
 Jennifer Yick, Biswanath Mukherjee, and Dipak Ghosal.
 \newblock Wireless sensor network survey.
@@ -63,6 +43,20 @@ Jessica Feng, Farinaz Koushanfar, and Miodrag Potkonjak.
 \newblock System-architectures for sensor networks issues, alternatives, and
   directions.
 \newblock In \emph{null}, page 226. IEEE, 2002.
+
+\bibitem[Raghunathan et~al.(2005)Raghunathan, Kansal, Hsu, Friedman, and
+  Srivastava]{raghunathan2005design}
+Vijay Raghunathan, Aman Kansal, Jason Hsu, Jonathan Friedman, and Mani
+  Srivastava.
+\newblock Design considerations for solar energy harvesting wireless embedded
+  systems.
+\newblock In \emph{Proceedings of the 4th international symposium on
+  Information processing in sensor networks}, page~64. IEEE Press, 2005.
+
+\bibitem[Karl and Willig(2007)]{karl2007protocols}
+Holger Karl and Andreas Willig.
+\newblock \emph{Protocols and architectures for wireless sensor networks}.
+\newblock John Wiley \& Sons, 2007.
 
 \bibitem[Bachir et~al.(2010)Bachir, Dohler, Watteyne, and Leung]{bachir2010mac}
 Abdelmalik Bachir, Mischa Dohler, Thomas Watteyne, and Kin~K Leung.
@@ -214,6 +208,12 @@ Alain Hertz and Daniel Kobler.
 \newblock A framework for the description of evolutionary algorithms.
 \newblock \emph{European Journal of Operational Research}, 126\penalty0
   (1):\penalty0 1--12, 2000.
+
+\bibitem[Dr{\'e}o et~al.(2003)Dr{\'e}o, P{\'e}trowski, Siarry, and
+  Taillard]{dreo2003metaheuristiques}
+Johann Dr{\'e}o, Alain P{\'e}trowski, Patrick Siarry, and Eric Taillard.
+\newblock \emph{M{\'e}taheuristiques pour l'optimisation difficile}.
+\newblock Eyrolles, 2003.
 
 \bibitem[Holland(1975)]{holland1975adaptation}
 JH~Holland.

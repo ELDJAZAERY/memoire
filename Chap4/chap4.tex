@@ -21,24 +21,24 @@ Un WSN est un graphe pondéré non orienté $G=(V,E,w)$, où $V$ est l’ensembl
 Nous utilisons pour représenter le WSN deux vecteurs, un vecteur de taille $|V|$ contenant des entiers représentant chaque nœud et l’autre est de taille $|V-1|$ il contient une structure d’arc (nœud 1, nœud 2 et le poids entre les deux nœuds. Nous allons dans ce qui suit présenter le codage de la solution ainsi que la méthode d'extraction du DT à partir de cette solution.
 
 
-\section{présentation d’une solution:}
+\section{présentation d’une solution}
 Nous proposons de représenter une solution en utilisant le codage binaire qui est considéré dans la littérature comme un bon moyen pour manipuler les différents gène (position(bit) dans une solution) d’une solution pour une population donnée. Si le gène est égale à '1', cela veut dire que le nœud correspondant est actif, s'il vaut '0', il est inactif.
 
 
-\section{Méthode d'extraction d'un arbre dominant à partir du vecteur solution:}
+\section{Méthode d'extraction d'un arbre dominant à partir du vecteur solution}
 Au départ nous avons deux vecteurs $(Vect, DN)$, où, $Vect$ contient tous les nœuds de notre graphe, $DN$ est un vecteur binaire de taille $|V|$ initialement null et contiendra par la suite l’ensemble des nœuds dominant .
 
 L’ajout des nœuds à $DN$ se fait via un processus itératif. A chaque fois un nœud est choisi d’une façon aléatoire,  et est ajouté à $DN$. Ce processus poursuit son fonctionnement tant que les nœuds appartenant à $DN$ ne couvre pas tous le graphe ou ils ne sont pas  connectés. On dit que $DN$ couvre le graphe si et seulement si tous les nœuds de notre graphe sont soit dans $DN$ soit adjacent à un autre nœud qui est dans $DN$.
 
 Pour pouvoir construire un DT, il faut d’abord vérifier  que les nœuds actifs dans $DN$  sont connectés entre eux. Dans le meilleur des cas, les nœuds actifs dans $DN$ sont connectés ; Dans le cas contraire nous devons les rendre connecté en utilisant une méthode de connection décrite si après.
 
-\section{La méthode de connection:}
+\section{La méthode de connection}
 Soit un vecteur DNC initialement vide qui va contenir par la suite ensemble de nœuds connecté. En premier lieu, nous retirons un nœud aléatoirement de DN et nous l’insérons dans DNC. Puis, d’une façon itérative, nous retirons tous les nœuds de DN qui ont au moins un voisin dans DNC et nous l’insérons dans DNV. En second lieu nous, devons insérer tous les nœuds actifs dans DN dans DNC en utilisant une autre fonction. Cette fonction consiste au départ, à choisir un nœud v aléatoirement dans V qui n’est pas dans DNC. Si v a au moins deux voisins un dans DN et l’autre dans DNC, alors nous retirons son voisins dans DN et nous l’insérons  avec v dans DNC. Si aucun nœud n’est trouvé nous procédons à une sélection par pair de nœuds où chaque nœud entre eux a soit un voisin dans DN ou dans DNC et nous refaisions le même processus de recherche daans le cas d’un seul nœud à selectionner. Nous ré-exécutons ce prceossus jusqu'à DN devient null.
 
 Une fois que l’ensemble DN soit null, nous appliquant la méthode d’élagage et MST décrit dans le chapitre 3. Nous aurons au final, un arbre dominant DT, représenté sous forme d’un vecteur de type arc (chaque élément de ce vecteur est composé d’un noeud1, noeud2, et le poids entre ces deux nœuds).
 
 
-\section{Approche proposée:}
+\section{Approche proposée}
 Dans ce mémoire nous avons proposé plusieurs approches pour résoudre le DTP. Nous avons proposé de le résoudre dans un premier temps en utilisant des méta-heuristiques, et en utilisant la coopération de ces méta-heuristiques dans un second temps. Nous allons structurer ce qui suit en deux parties. Dans la première partie, nous présentons chacune des méta-heuristiques utilisées, dans la seconde partie, nous présentons l'approche coopérative.
 
 
@@ -51,13 +51,13 @@ Nous utilisons dans cette première solution, l'algorithme des colonies de Fourm
 \begin{enumerate}
 	\item \textbf{Les opérateurs de l’algorithme ACO}\\
 \begin{enumerate}[label=\alph*)]
-	\item \textbf{Recherche locale:}\\
+	\item \textbf{Recherche locale}\\
 	Dans la recherche locale que nous proposons, supposons que nous avons une solution. Nous parcourons le vecteur de la solution et on inverse la valeur des élément (si la valeur d’un élément est égale à 1, elle devient 0 ou inversement) . A chaque fois que nous inversons  la valeur  de chaque élément nous faisons une évaluation de la fonction objectif. A tous coups où la solution est améliorée, cette dernière est sauvegardé et la recherche d’une meilleure solution se fera à partir de cette solution.
 	
 La recherche se terminera lorsque touts  les nœuds dominants aurons été parcourus.
 il est à noter que la méthode de recherche locale citée ci dessus est utilisée dans toutes les solutions proposées.
 	
-	\item \textbf{Les méthodes de sélection:}\\
+	\item \textbf{Les méthodes de sélection}\\
 	Nous proposons d'utiliser deux méthodes de sélection d’individus. Ces deux méthodes ont été retenues après une série d'expérimentations faisant apparaître les deux méthodes donnant les meilleurs résultats.
 
 	\begin{itemize}
@@ -75,9 +75,10 @@ il est à noter que la méthode de recherche locale citée ci dessus est utilis�
 L’algorithme de colonie de fourmi est une approche métaheuristique basée sur une  population et inspirée du comportement des fourmis réelles. L’idée principale derrière cette méthode provient de l’observation de la capacité des fourmis pour trouver le plus court chemin entre une  source de nourriture et le nid.
 Cette méta-heuristique est composée d’une phase d’initialisation et d’une phase itérative. La première phase consiste à initialiser une solution de départ qui sera décrite ci-dessous. Elle comprend également l’initialisation du vecteur des probabilités et de la table de phéromone.
 
-Ensuite, pour chaque itération, chaque fourmi construit sa solution en choisissant aléatoirement une méthode de sélection (intensification - sélection par tournois). Après avoir construit une solution la recherche locale est lancée pour atteindre un résultat meilleure. La meilleure solution retournée par la fourmi courante va participer à la mise à jour du vecteur de probabilité( mise à jour en ligne ) en appliquant la formule (1). A la fin de chaque itération, la meilleure solution trouvée par la population de fourmis va elle aussi participer à la mise à jour du vecteur de probabilité  (mise à jour hors ligne) avec la formule suivante:
+Ensuite, pour chaque itération, chaque fourmi construit sa solution en choisissant aléatoirement une méthode de sélection (intensification - sélection par tournois). Après avoir construit une solution la recherche locale est lancée pour atteindre un résultat meilleure. La meilleure solution retournée par la fourmi courante va participer à la mise à jour du vecteur de probabilité( mise à jour en ligne ) en appliquant la formule (\ref{eq:ACO1}). A la fin de chaque itération, la meilleure solution trouvée par la population de fourmis va elle aussi participer à la mise à jour du vecteur de probabilité  (mise à jour hors ligne) avec la formule suivante:
 
 \begin{equation}
+	\label{eq:ACO1}
 	\mathlarger{
 		p_{ij}^k = \frac{
 				[T_j]^\alpha \, [n_{ij}]^\beta
@@ -134,11 +135,11 @@ Nous allons décrire dans ce qui suit les opérateurs retenus dans l'approche ut
 	\item \textbf{Les opérateurs de l’algorithme ACO}\\
 
 \begin{enumerate}[label=\alph*)]
-	\item \textbf{Génération de la Population initiale:}\\
+	\item \textbf{Génération de la Population initiale}\\
 	La population initiale est construite avec un ensemble de solutions (individu) définies aléatoirement. La taille de chaque individu est le même nombre de nœuds dans un réseaux de capteurs sans fil.
 
 
-	\item \textbf{Codage des éléments d’une population: }\\
+	\item \textbf{Codage des éléments d’une population}\\
 	Le codage utilisé dans cette approche est celui décrit dans la section II.
 	
 	\item \textbf{La méthode de croisement utilisée:}\\
@@ -153,7 +154,7 @@ La figure \ref{fig:ECU} illustre se processus par un exemple.
 \end{figure}
 	
 
-	\item \textbf{Mutation:}\\
+	\item \textbf{Mutation}\\
 	La mutation est une autre solution pour créer de nouveaux individus  et de modifier ceux déjà existant. Le hasard dans cette méthode va nous être d’une grande utilité. Dans notre cas, un index généré aléatoirement va décider dans quelle position le gène à muter se trouve. Rien ne nous dit que l’individu muté sera meilleure ou au moins bon, mais il pourrait être efficace pour la création de  bonnes solutions.  Un exemple illustratif sera représenté par  la figure 4.2.
 
 \begin{figure}[H]
@@ -164,7 +165,7 @@ La figure \ref{fig:ECU} illustre se processus par un exemple.
 \end{figure}
 
 
-	\item \textbf{Élitisme:}\\
+	\item \textbf{Élitisme}\\
 Cet opérateurs permet de garder les meilleurs individus de chaque population. Notre méthode d’élitisme consiste à remplacer les m mauvais individus de la nouvelle population par les m meilleurs individus de la  population précédente. 
 
 \end{enumerate}
@@ -185,7 +186,7 @@ Initialiser une population d’une façon aléatoire \;
 	\While{$j<PopSize$}{
 		Récupérer deux individu de la population $n_1 , n_2$ \;
 		$Enfant = Croisement(n_1,n_2)$ \;
-		rand = Générer une valeur aléatoire entre 0 et 100\;
+		$rand = Rand(0,100)$ \;
 		\If{rand < 5\% }{
 			Mutation(Enfant)\;		
 		}
@@ -206,12 +207,120 @@ C’est une méta heuristique qui fait partie des algorithmes évolutionnaire ba
 
 \begin{enumerate}
 	\item \textbf{Les opérateurs de l’algorithme BBO}\\
+	Il est à noter que le codage d’une solution et l’initialisation de la population sont les même  que celles décrient pour l’algorithme génétique. BBO utilise principalement deux opérateurs: la migration et la mutation 
 	\begin{enumerate}[label=\alph*)]
-		\item \textbf{Génération de la Population initiale:}\\
+		\item \textbf{Migration}\\
+		Le concept générale de cet opérateur est de décider laquelle des régions de la solution migre ou non vers une autre région. La migration d’une région est le fait qu’un élément d’une solution s’interchange avec un autre élément d’une autre solution. Il est généralement utilisé pour modifier l’individu existant. L’algorithme 3 décrit le fonctionnement de l’opérateur de migration utilisé par BBO . 
+		
+\begin{algorithm}[H]
+\caption{Migration BBO DT}
+\KwData{position d’un individu donnée $j$}
+\SetAlgoLined
+\DontPrintSemicolon
+
+\While{$i<$ taille de population}{
+ $rand = Random(0,1)$\;
+ \If{$rand < \mu(I_i)$}{
+	choisir un sommet de l’individu dans la position j aléatoirement et le     		permuter avec un autre sommet de l’individu dans la position i \; 
+ }
+}
+
+\end{algorithm}		
+
+Où :\\
+$\mu(I_i)$ Probabilité Emigration de l'individu $I_i$ \\
+		
+	\item \textbf{Mutation}\\
+	La mutation est un opérateur probabiliste. Le but de cet opérateur est de maintenir la diversité d’une population.
+	
+\begin{algorithm}[H]
+\caption{Mutation BBO DT}
+\KwData{position d’un individu  $j, PM$}
+\SetAlgoLined
+\DontPrintSemicolon
+
+\While{$i<$ taille de l’individu}{
+ $rand = Random(0,1)$\;
+ \If{$rand < M_i $ }{
+	permuter le nœud courant avec n’importe quel nœud définit dans une position aléatoire \;
+ }
+}
+
+\end{algorithm}
+
+Où:\\
+$M_i$ est la probabilité de mutation.\\
+$M_i = Pmut * ( ( ( 1-Pmut(j))) / PmutMax)$ \\
+dont: $Pmut$ est une constante qui définit  la probabilité de mutation.\\
+$Pmut(j)$ est la probabilité de mutation de l’individu $j$. \\
+$PmutMax$ est la probabilité de mutation maximale des individus de la population.\\
+
+	\item \textbf{Mise à jours des probabilité}\\
+	Les taux d’immigration $(\lambda)$ et d’émigration $(\mu)$ de chaque individu I sont utilisés pour transmettre, de manière probabiliste, les caractéristiques entre les individus.
+Le taux d’immigration, quand il y a S individus dans la population, est donné pasr la formule (\ref{eq:maj1}) décrie si dessous:
+
+\begin{equation}
+	\label{eq:maj1}
+	\mathlarger{
+		\lambda(I_i) = 1 - \frac{nbv}{S}
+	}
+\end{equation}
+
+Où :\\
+$nbv$ est le nombre d’individus qui ont une valeur de la fonction objectif pire que l’individu courant ($I_i$).\\
+
+Le taux d’émigration quand il y a S individus dans la population est donné par:
+
+\begin{equation}
+	\label{eq:maj2}
+	\mathlarger{
+		\mu(I_i) = \frac{nbv}{S}
+	}
+\end{equation}
+
+Quant aux taux de la mutation est calculé en utilisant les résultats des deux formules précédentes et est donné par: 
+
+\begin{equation}
+	\label{eq:maj3}
+	\mathlarger{
+		Pmut(I_i) = \frac{
+			\lambda_i / \mu_i 
+		}{
+			\mathlarger{\sum}_{j=0}^{j=S} \, \lambda_j  \, / \,
+			\mathlarger{\sum}_{j=0}^{j=S} \, \mu_j
+		}
+	}
+\end{equation}
+
 	\end{enumerate}	
+
 	
 	\item \textbf{Le fonctionnement de l’algorithme BBO}\\
-	
+	L’algorithme BBO que nous avons développé peut être décrit globalement par l’algorithme \ref{alg:BBODT}. Les deux opérateurs de base qui régissent le fonctionnement de BBO sont la migration et la mutation et sont les même décries si dessus. En plus, une stratégie d’élitisme est adoptée dans l’algorithme BBO, afin de garder dans la nouvelle population la meilleure solution.
+
+\begin{algorithm}[H]
+\label{alg:BBODT}
+\caption{Algoritme BBO DT}
+\SetAlgoLined
+\DontPrintSemicolon
+
+Initialisation de la population \;
+\While{la condition d’arrêt non vérifiée}{
+	Mise à jours des probabilité (Emigation, Immigration, Mutation) \;
+	\For{chaque Individu $ I_i $ de la population }{
+		$ rand = Rand(0,1) $ \;
+		\eIf{ $rand < \lambda (I_i) $ }{
+			Migration()\;
+		}{
+			Mutation() \;
+		}
+		Recherch Local() \;
+	}
+	Elitisme () \;
+}
+
+\end{algorithm}
+
 	
 \end{enumerate}
 
@@ -220,3 +329,75 @@ C’est une méta heuristique qui fait partie des algorithmes évolutionnaire ba
 \subsection{Description de l'approche coopérative}
 Nous proposons une approche  coopérative entre les méta-heuristiques pour la résolution du problème de l’arbre dominant où une méta-heuristique maître contrôle plusieurs méta-heuristiques esclaves. Les points forts d'une méta-heuristique esclave compensent les points faibles d'une autre grâce à la notion de rang. Le rang est un moyen de mettre en valeur les points forts des méta-heuristiques esclaves. Il est attribué par le maître et est égale à 0 au départ. Il est mis à jour continûment par la méta-heuristique maître qui augmente le rang des méta-heuristiques esclaves ayant amélioré la solution et diminue le rang de celles qui ne l'auront pas amélioré. Cette mise à jour tend à récompenser les méta-heuristiques esclaves qui auront réussi à améliorer la solution courante. Comme conséquence, les méta-heuristiques esclaves ayant un rang élevé participeront donc davantage au développement de la solution finale.
 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm,height=4cm]{Chap4/3.png}
+	\caption{Coopération des méta-heuristiques}
+	\label{fig:CMH}
+\end{figure}
+
+
+Comme le montre la figure \ref{fig:CMH}, nous utilisons comme méta-heuristique maître la recherche taboue, et pour les méta-heuristiques esclaves nous utilisons l’algorithme génétique, ACO ainsi que BBO. Au départ, le maître choisit une méta-heuristique esclave de manière aléatoire. A chaque fois qu' une méta-heuristique esclave améliore sa solution, elle aura comme bonus une valeur supérieure de rang, cela crée une forme de compétition entre les esclaves pour accroître son rang tout en améliorant la solution actuelle.
+
+Lorsqu'une méta-heuristique termine sa recherche, elle communique sa meilleure solution à celle qui la remplace, permettant ainsi à cette dernière de générer un bon voisinage. La sélection de la méta-heuristique remplaçante se fait par rapport à la valeur du rang (c’est-à-dire la méta-heuristique ayant le plus grand rang sera choisie pour l’amélioration de la solution courante). La méta-heuristique esclaves n’ayant pas amélioré la solution après un   nombre d’itération  précis  elle sera mis dans la liste taboue. Lorsque tous les méta heuristique sont dans la lites tabou la méta heuristique maître libère l’esclave ayant un rand élevé pour contribué à la recherche d’une meilleure solution. L'algorithme \ref{alg:MHM} présente le processus de fonctionnement de la méta-heuristique maître :
+
+
+\begin{algorithm}[H]
+\label{alg:MHM}
+\caption{Algorithme de la méta-heuristique maître}
+\SetAlgoLined
+\DontPrintSemicolon
+
+\While{condition d’arrêt non vérifiée}{
+Choisir la méta-heuristique ayant uen rand élevé et qui n’est pas dans la liste taboue \\
+
+\eIf{la méta-heuristique choisi donne une meilleure fitness}{
+	rand = rand + $\alpha$ \;
+	Vider la liste taboue
+}{
+	rand = rand + $\alpha$ \;
+	Mettre la méta-heuristique esclave courante dans la liste taboue \;
+}
+
+}
+\end{algorithm}
+
+
+Où:\\
+$\alpha$ représente: une valeur positive, si la qualité de la solution est améliorée, sinon $\alpha$ sera négatif.
+
+L’algorithme suivant va définir le processus générale de la méthode de coopération 
+
+\begin{algorithm}[H]
+\label{alg:CA}
+\caption{Algorithme de coopération}
+\SetAlgoLined
+\DontPrintSemicolon
+
+\While{condition d’arrêt non vérifiée}{
+
+\eIf{la list taboue est pleine}{
+	récupérer la méta-heuristique ayant un rand elevé \;
+}{	
+	choisir la méta-heuristique ayant un rand élevé et qui n’est pas dans la liste taboue \;
+}
+
+executer la méta choisie et récuperer la solution trouvé S \;
+
+\eIf{S est meilleure que la meilleure solution trouvée SB}{
+	SB $=$ S \;
+	Vider la liste taboue \;
+}{
+	mettre la méta dans la lise taboue
+}
+
+mise à jour du rand \;
+
+}
+\end{algorithm}
+
+
+
+\subsection{Conclusion}
+A travers ce chapitre, nous avons présenté de manière détaillée les méta-heuristiques que nous avons proposé pour la résolution du problème de l’arbre dominant, ainsi que les différentes méthodes et opérateurs contribuant à leurs élaborations. Nous avant aussi proposé une nouvelle approche qui consiste à faire coopérer plusieurs méta-heuristique ( esclaves ) pour travailler dans l’espace des solutions supervisés par la méta-heuristique maître qui travaille dans l’espace des méta-heuristiques. Dans le but d’évaluer la qualité de ces approches, le prochain chapitre portera sur les différents résultats obtenus à travers les expérimentations effectuées.
