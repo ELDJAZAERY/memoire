@@ -23,13 +23,13 @@
 \BOOKMARK [1][-]{section.3.1}{Introduction}{section.2.3}% 23
 \BOOKMARK [1][-]{section.3.2}{D\351finition du probl\350me}{section.2.3}% 24
 \BOOKMARK [1][-]{section.3.3}{Complexit\351 et approximation}{section.2.3}% 25
-\BOOKMARK [0][-]{algocf.12}{4eme chapiter}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Introduction}{algocf.12}% 27
-\BOOKMARK [1][-]{section.4.2}{Repr\351sentation du graphe mod\351lisant le probl\350me}{algocf.12}% 28
-\BOOKMARK [1][-]{section.4.3}{pr\351sentation d\220une solution}{algocf.12}% 29
-\BOOKMARK [1][-]{section.4.4}{M\351thode d'extraction d'un arbre dominant \340 partir du vecteur solution}{algocf.12}% 30
-\BOOKMARK [1][-]{section.4.5}{La m\351thode de connection}{algocf.12}% 31
-\BOOKMARK [1][-]{section.4.6}{Approche propos\351e}{algocf.12}% 32
+\BOOKMARK [0][-]{algocf.23}{4eme chapiter}{}% 26
+\BOOKMARK [1][-]{section.4.1}{Introduction}{algocf.23}% 27
+\BOOKMARK [1][-]{section.4.2}{Repr\351sentation du graphe mod\351lisant le probl\350me}{algocf.23}% 28
+\BOOKMARK [1][-]{section.4.3}{pr\351sentation d\220une solution}{algocf.23}% 29
+\BOOKMARK [1][-]{section.4.4}{M\351thode d'extraction d'un arbre dominant \340 partir du vecteur solution}{algocf.23}% 30
+\BOOKMARK [1][-]{section.4.5}{La m\351thode de connection}{algocf.23}% 31
+\BOOKMARK [1][-]{section.4.6}{Approche propos\351e}{algocf.23}% 32
 \BOOKMARK [2][-]{subsection.4.6.1}{description des m\351ta-heuristiques utilis\351es}{section.4.6}% 33
 \BOOKMARK [2][-]{subsection.4.6.2}{Description de l'approche coop\351rative}{section.4.6}% 34
-\BOOKMARK [1][-]{section.4.7}{Conclusion}{algocf.12}% 35
+\BOOKMARK [1][-]{section.4.7}{Conclusion}{algocf.23}% 35

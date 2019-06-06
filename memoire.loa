@@ -9,11 +9,22 @@
 \contentsline {algocf}{\numberline {9}{\ignorespaces Simple Algorithme m\IeC {\'e}m\IeC {\'e}tique}}{32}{algocf.9}% 
 \contentsline {algocf}{\numberline {10}{\ignorespaces Recuit simul\IeC {\'e}}}{35}{algocf.10}% 
 \contentsline {algocf}{\numberline {11}{\ignorespaces Prim}}{36}{algocf.11}% 
-\contentsline {algocf}{\numberline {12}{\ignorespaces pseudo-code H\_DT}}{38}{algocf.12}% 
-\contentsline {algocf}{\numberline {13}{\ignorespaces ACO DT}}{44}{algocf.13}% 
-\contentsline {algocf}{\numberline {14}{\ignorespaces G\IeC {\'e}n\IeC {\'e}tique DT}}{46}{algocf.14}% 
-\contentsline {algocf}{\numberline {15}{\ignorespaces Migration BBO DT}}{47}{algocf.15}% 
-\contentsline {algocf}{\numberline {16}{\ignorespaces Mutation BBO DT}}{47}{algocf.16}% 
-\contentsline {algocf}{\numberline {17}{\ignorespaces Algoritme BBO DT}}{49}{algocf.17}% 
-\contentsline {algocf}{\numberline {18}{\ignorespaces Algorithme de la m\IeC {\'e}ta-heuristique ma\IeC {\^\i }tre}}{51}{algocf.18}% 
-\contentsline {algocf}{\numberline {19}{\ignorespaces Algorithme de coop\IeC {\'e}ration}}{51}{algocf.19}% 
+\contentsline {algocf}{\numberline {12}{\ignorespaces pseudo-code H\_DT}}{37}{algocf.12}% 
+\contentsline {algocf}{\numberline {13}{\ignorespaces Pseudo-code de ABC }}{38}{algocf.13}% 
+\contentsline {algocf}{\numberline {14}{\ignorespaces Pseudo-code de d\IeC {\'e}termination d'une solution voisine}}{39}{algocf.14}% 
+\contentsline {algocf}{\numberline {15}{\ignorespaces Pseudo-code de l'algorithme SSGA}}{40}{algocf.15}% 
+\contentsline {algocf}{\numberline {16}{\ignorespaces Pseudo-code de la proc\IeC {\'e}dure pruning}}{41}{algocf.16}% 
+\contentsline {algocf}{\numberline {17}{\ignorespaces Pseudo-code de la solution initiale de EA/G-MP}}{42}{algocf.17}% 
+\contentsline {algocf}{\numberline {18}{\ignorespaces Pseudo-code de l'initialisation du vecteur de probabilit\IeC {\'e}s de EA/G-MP.}}{43}{algocf.18}% 
+\contentsline {algocf}{\numberline {19}{\ignorespaces Pseudo-code de la mise \IeC {\`a} jour du vecteur de probabilit\IeC {\'e}s de EA/G-MP.}}{44}{algocf.19}% 
+\contentsline {algocf}{\numberline {20}{\ignorespaces Pseudo-code de GM}}{45}{algocf.20}% 
+\contentsline {algocf}{\numberline {21}{\ignorespaces Pseudo-code de l\IeC {\textquoteright }op\IeC {\'e}rateur de r\IeC {\'e}paration}}{46}{algocf.21}% 
+\contentsline {algocf}{\numberline {22}{\ignorespaces EA/G-MP pour DTP}}{47}{algocf.22}% 
+\contentsline {algocf}{\numberline {23}{\ignorespaces x}}{48}{algocf.23}% 
+\contentsline {algocf}{\numberline {24}{\ignorespaces ACO DT}}{54}{algocf.24}% 
+\contentsline {algocf}{\numberline {25}{\ignorespaces G\IeC {\'e}n\IeC {\'e}tique DT}}{56}{algocf.25}% 
+\contentsline {algocf}{\numberline {26}{\ignorespaces Migration BBO DT}}{57}{algocf.26}% 
+\contentsline {algocf}{\numberline {27}{\ignorespaces Mutation BBO DT}}{57}{algocf.27}% 
+\contentsline {algocf}{\numberline {28}{\ignorespaces Algoritme BBO DT}}{59}{algocf.28}% 
+\contentsline {algocf}{\numberline {29}{\ignorespaces Algorithme de la m\IeC {\'e}ta-heuristique ma\IeC {\^\i }tre}}{61}{algocf.29}% 
+\contentsline {algocf}{\numberline {30}{\ignorespaces Algorithme de coop\IeC {\'e}ration}}{61}{algocf.30}% 
