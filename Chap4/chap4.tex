@@ -30,7 +30,7 @@ Au départ nous avons deux vecteurs $(Vect, DN)$, où, $Vect$ contient tous les 
 
 L’ajout des nœuds à $DN$ se fait via un processus itératif. A chaque fois un nœud est choisi d’une façon aléatoire,  et est ajouté à $DN$. Ce processus poursuit son fonctionnement tant que les nœuds appartenant à $DN$ ne couvre pas tous le graphe ou ils ne sont pas  connectés. On dit que $DN$ couvre le graphe si et seulement si tous les nœuds de notre graphe sont soit dans $DN$ soit adjacent à un autre nœud qui est dans $DN$.
 
-Pour pouvoir construire un DT, il faut d’abord vérifier  que les nœuds actifs dans $DN$  sont connectés entre eux. Dans le meilleur des cas, les nœuds actifs dans $DN$ sont connectés ; Dans le cas contraire nous devons les rendre connecté en utilisant une méthode de connection décrite si après.
+Pour pouvoir construire un DT, il faut d’abord vérifier  que les nœuds actifs dans $DN$  sont connectés entre eux. Dans le meilleur des cas, les nœuds actifs dans $DN$ sont connectés. Dans le cas contraire nous devons les rendre connecté en utilisant une méthode de connection décrite si après.
 
 \section{La méthode de connection}
 Soit un vecteur DNC initialement vide qui va contenir par la suite ensemble de nœuds connecté. En premier lieu, nous retirons un nœud aléatoirement de DN et nous l’insérons dans DNC. Puis, d’une façon itérative, nous retirons tous les nœuds de DN qui ont au moins un voisin dans DNC et nous l’insérons dans DNV. En second lieu nous, devons insérer tous les nœuds actifs dans DN dans DNC en utilisant une autre fonction. Cette fonction consiste au départ, à choisir un nœud v aléatoirement dans V qui n’est pas dans DNC. Si v a au moins deux voisins un dans DN et l’autre dans DNC, alors nous retirons son voisins dans DN et nous l’insérons  avec v dans DNC. Si aucun nœud n’est trouvé nous procédons à une sélection par pair de nœuds où chaque nœud entre eux a soit un voisin dans DN ou dans DNC et nous refaisions le même processus de recherche daans le cas d’un seul nœud à selectionner. Nous ré-exécutons ce prceossus jusqu'à DN devient null.
@@ -120,7 +120,7 @@ Construction de la solution initiale \;
 	}
 	Mise à jour de la table de phéromone Selon la meilleur solution atteinte par les fourmis\;	
 }
-	
+Retourner le DT avec poids minimum dans la liste \;
 \end{algorithm}
 	
 \end{enumerate}
@@ -398,6 +398,5 @@ mise à jour du rand \;
 \end{algorithm}
 
 
-
-\subsection{Conclusion}
+\section{Conclusion}
 A travers ce chapitre, nous avons présenté de manière détaillée les méta-heuristiques que nous avons proposé pour la résolution du problème de l’arbre dominant, ainsi que les différentes méthodes et opérateurs contribuant à leurs élaborations. Nous avant aussi proposé une nouvelle approche qui consiste à faire coopérer plusieurs méta-heuristique ( esclaves ) pour travailler dans l’espace des solutions supervisés par la méta-heuristique maître qui travaille dans l’espace des méta-heuristiques. Dans le but d’évaluer la qualité de ces approches, le prochain chapitre portera sur les différents résultats obtenus à travers les expérimentations effectuées.

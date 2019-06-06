@@ -1,16 +1,19 @@
 \contentsline {algocf}{\numberline {1}{\ignorespaces Recuit simul\IeC {\'e} }}{19}{algocf.1}% 
 \contentsline {algocf}{\numberline {2}{\ignorespaces Recherche Taboue}}{21}{algocf.2}% 
-\contentsline {algocf}{\numberline {3}{\ignorespaces Recherche Local}}{23}{algocf.3}% 
+\contentsline {algocf}{\numberline {3}{\ignorespaces Recherche Local}}{22}{algocf.3}% 
 \contentsline {algocf}{\numberline {4}{\ignorespaces Recherche \IeC {\`a} voisinages variables (VNS)}}{23}{algocf.4}% 
-\contentsline {algocf}{\numberline {5}{\ignorespaces Algorithme g\IeC {\'e}n\IeC {\'e}tique}}{26}{algocf.5}% 
-\contentsline {algocf}{\numberline {6}{\ignorespaces L\IeC {\textquoteright }optimisation des colonies de fourmis (ACO)}}{28}{algocf.6}% 
+\contentsline {algocf}{\numberline {5}{\ignorespaces Algorithme g\IeC {\'e}n\IeC {\'e}tique}}{25}{algocf.5}% 
+\contentsline {algocf}{\numberline {6}{\ignorespaces L\IeC {\textquoteright }optimisation des colonies de fourmis (ACO)}}{27}{algocf.6}% 
 \contentsline {algocf}{\numberline {7}{\ignorespaces L\IeC {\textquoteright }algorithme \IeC {\`a} base de biog\IeC {\'e}ographie (BBO)}}{29}{algocf.7}% 
 \contentsline {algocf}{\numberline {8}{\ignorespaces migration}}{30}{algocf.8}% 
 \contentsline {algocf}{\numberline {9}{\ignorespaces Simple Algorithme m\IeC {\'e}m\IeC {\'e}tique}}{32}{algocf.9}% 
-\contentsline {algocf}{\numberline {10}{\ignorespaces ACO DT}}{39}{algocf.10}% 
-\contentsline {algocf}{\numberline {11}{\ignorespaces G\IeC {\'e}n\IeC {\'e}tique DT}}{41}{algocf.11}% 
-\contentsline {algocf}{\numberline {12}{\ignorespaces Migration BBO DT}}{42}{algocf.12}% 
-\contentsline {algocf}{\numberline {13}{\ignorespaces Mutation BBO DT}}{42}{algocf.13}% 
-\contentsline {algocf}{\numberline {14}{\ignorespaces Algoritme BBO DT}}{44}{algocf.14}% 
-\contentsline {algocf}{\numberline {15}{\ignorespaces Algorithme de la m\IeC {\'e}ta-heuristique ma\IeC {\^\i }tre}}{46}{algocf.15}% 
-\contentsline {algocf}{\numberline {16}{\ignorespaces Algorithme de coop\IeC {\'e}ration}}{46}{algocf.16}% 
+\contentsline {algocf}{\numberline {10}{\ignorespaces Recuit simul\IeC {\'e}}}{35}{algocf.10}% 
+\contentsline {algocf}{\numberline {11}{\ignorespaces Prim}}{36}{algocf.11}% 
+\contentsline {algocf}{\numberline {12}{\ignorespaces pseudo-code H\_DT}}{38}{algocf.12}% 
+\contentsline {algocf}{\numberline {13}{\ignorespaces ACO DT}}{44}{algocf.13}% 
+\contentsline {algocf}{\numberline {14}{\ignorespaces G\IeC {\'e}n\IeC {\'e}tique DT}}{46}{algocf.14}% 
+\contentsline {algocf}{\numberline {15}{\ignorespaces Migration BBO DT}}{47}{algocf.15}% 
+\contentsline {algocf}{\numberline {16}{\ignorespaces Mutation BBO DT}}{47}{algocf.16}% 
+\contentsline {algocf}{\numberline {17}{\ignorespaces Algoritme BBO DT}}{49}{algocf.17}% 
+\contentsline {algocf}{\numberline {18}{\ignorespaces Algorithme de la m\IeC {\'e}ta-heuristique ma\IeC {\^\i }tre}}{51}{algocf.18}% 
+\contentsline {algocf}{\numberline {19}{\ignorespaces Algorithme de coop\IeC {\'e}ration}}{51}{algocf.19}% 

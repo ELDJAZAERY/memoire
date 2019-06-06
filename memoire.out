@@ -1,31 +1,35 @@
 \BOOKMARK [0][-]{chapter*.6}{Intro}{}% 1
-\BOOKMARK [0][-]{section*.9}{Preeemiiiiier chapiter}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Introduction}{section*.9}% 3
-\BOOKMARK [1][-]{section.1.2}{Un r\351seau de capteur sans-fil}{section*.9}% 4
-\BOOKMARK [1][-]{section.1.3}{Architecture d\220un capteur sans-fil}{section*.9}% 5
-\BOOKMARK [1][-]{section.1.4}{Architecture d\220un r\351seau de capteurs sans-fil}{section*.9}% 6
+\BOOKMARK [0][-]{chapter*.6}{Preeemiiiiier chapiter}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter*.6}% 3
+\BOOKMARK [1][-]{section.1.2}{Un r\351seau de capteur sans-fil}{chapter*.6}% 4
+\BOOKMARK [1][-]{section.1.3}{Architecture d\220un capteur sans-fil}{chapter*.6}% 5
+\BOOKMARK [1][-]{section.1.4}{Architecture d\220un r\351seau de capteurs sans-fil}{chapter*.6}% 6
 \BOOKMARK [2][-]{subsection.1.4.1}{Les couches WSN OSI}{section.1.4}% 7
 \BOOKMARK [2][-]{subsection.1.4.2}{Les plans de gestion de la pile protocolaire:}{section.1.4}% 8
-\BOOKMARK [1][-]{section.1.5}{Domaines d'application des r\351seaux de capteurs}{section*.9}% 9
+\BOOKMARK [1][-]{section.1.5}{Domaines d'application des r\351seaux de capteurs}{chapter*.6}% 9
 \BOOKMARK [2][-]{subsection.1.5.1}{Domaine militaire}{section.1.5}% 10
 \BOOKMARK [2][-]{subsection.1.5.2}{Domaine m\351dicale}{section.1.5}% 11
 \BOOKMARK [2][-]{subsection.1.5.3}{Domaine environnementale}{section.1.5}% 12
 \BOOKMARK [2][-]{subsection.1.5.4}{Domaine commercial}{section.1.5}% 13
-\BOOKMARK [1][-]{section.1.6}{Le probl\350me majeur d\220un r\351seau de capteurs sans fil et le challenge:}{section*.9}% 14
-\BOOKMARK [1][-]{section.1.7}{Conclusion:}{section*.9}% 15
-\BOOKMARK [0][-]{section.1.7}{3eme chapiter}{}% 16
-\BOOKMARK [1][-]{section.3.1}{Introduction}{section.1.7}% 17
-\BOOKMARK [1][-]{section.3.2}{Techniques d\220optimisation combinatoire:}{section.1.7}% 18
-\BOOKMARK [2][-]{subsection.3.2.1}{M\351thodes exacte}{section.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.2.2}{Les m\351thodes approch\351es:}{section.3.2}% 20
-\BOOKMARK [1][-]{section.3.3}{Conclusion}{section.1.7}% 21
-\BOOKMARK [0][-]{section.3.3}{4eme chapiter}{}% 22
-\BOOKMARK [1][-]{section.4.1}{Introduction}{section.3.3}% 23
-\BOOKMARK [1][-]{section.4.2}{Repr\351sentation du graphe mod\351lisant le probl\350me}{section.3.3}% 24
-\BOOKMARK [1][-]{section.4.3}{pr\351sentation d\220une solution}{section.3.3}% 25
-\BOOKMARK [1][-]{section.4.4}{M\351thode d'extraction d'un arbre dominant \340 partir du vecteur solution}{section.3.3}% 26
-\BOOKMARK [1][-]{section.4.5}{La m\351thode de connection}{section.3.3}% 27
-\BOOKMARK [1][-]{section.4.6}{Approche propos\351e}{section.3.3}% 28
-\BOOKMARK [2][-]{subsection.4.6.1}{description des m\351ta-heuristiques utilis\351es}{section.4.6}% 29
-\BOOKMARK [2][-]{subsection.4.6.2}{Description de l'approche coop\351rative}{section.4.6}% 30
-\BOOKMARK [2][-]{subsection.4.6.3}{Conclusion}{section.4.6}% 31
+\BOOKMARK [1][-]{section.1.6}{Le probl\350me majeur d\220un r\351seau de capteurs sans fil et le challenge:}{chapter*.6}% 14
+\BOOKMARK [1][-]{section.1.7}{Conclusion:}{chapter*.6}% 15
+\BOOKMARK [0][-]{section.1.7}{2eme chapiter}{}% 16
+\BOOKMARK [1][-]{section.2.1}{Introduction}{section.1.7}% 17
+\BOOKMARK [1][-]{section.2.2}{Techniques d\220optimisation combinatoire:}{section.1.7}% 18
+\BOOKMARK [2][-]{subsection.2.2.1}{M\351thodes exacte}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.2}{Les m\351thodes approch\351es:}{section.2.2}% 20
+\BOOKMARK [1][-]{section.2.3}{Conclusion}{section.1.7}% 21
+\BOOKMARK [0][-]{section.2.3}{3eme chapiter}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Introduction}{section.2.3}% 23
+\BOOKMARK [1][-]{section.3.2}{D\351finition du probl\350me}{section.2.3}% 24
+\BOOKMARK [1][-]{section.3.3}{Complexit\351 et approximation}{section.2.3}% 25
+\BOOKMARK [0][-]{algocf.12}{4eme chapiter}{}% 26
+\BOOKMARK [1][-]{section.4.1}{Introduction}{algocf.12}% 27
+\BOOKMARK [1][-]{section.4.2}{Repr\351sentation du graphe mod\351lisant le probl\350me}{algocf.12}% 28
+\BOOKMARK [1][-]{section.4.3}{pr\351sentation d\220une solution}{algocf.12}% 29
+\BOOKMARK [1][-]{section.4.4}{M\351thode d'extraction d'un arbre dominant \340 partir du vecteur solution}{algocf.12}% 30
+\BOOKMARK [1][-]{section.4.5}{La m\351thode de connection}{algocf.12}% 31
+\BOOKMARK [1][-]{section.4.6}{Approche propos\351e}{algocf.12}% 32
+\BOOKMARK [2][-]{subsection.4.6.1}{description des m\351ta-heuristiques utilis\351es}{section.4.6}% 33
+\BOOKMARK [2][-]{subsection.4.6.2}{Description de l'approche coop\351rative}{section.4.6}% 34
+\BOOKMARK [1][-]{section.4.7}{Conclusion}{algocf.12}% 35
