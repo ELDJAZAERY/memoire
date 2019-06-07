@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  7 JUN 2019 03:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  7 JUN 2019 20:06
 entering extended mode
 **./memoire.tex
 (memoire.tex
@@ -611,34 +611,47 @@ Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.tex"
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) (memoire.aux
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip77
+\f@nch@O@elh=\skip78
+\f@nch@O@erh=\skip79
+\f@nch@O@olh=\skip80
+\f@nch@O@orh=\skip81
+\f@nch@O@elf=\skip82
+\f@nch@O@erf=\skip83
+\f@nch@O@olf=\skip84
+\f@nch@O@orf=\skip85
+) (memoire.aux
 (Cover/cover.aux) (Intro/remerciement.aux) (General/tableContents.aux)
 (General/listFigures.aux) (General/listOfAlgos.aux) (Intro/introGeneral.aux)
 (Chap1/chap1.aux) (Chap2/chap2.aux) (Chap3/chap3.aux) (Chap4/chap4.aux)
 (Chap5/chap5.aux) (General/bibliography.aux))
 \openout1 = `memoire.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 116.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 121.
+Package hyperref Info: Link coloring OFF on input line 116.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -648,9 +661,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count290
 )
-LaTeX Info: Redefining \ref on input line 121.
-LaTeX Info: Redefining \pageref on input line 121.
-LaTeX Info: Redefining \nameref on input line 121.
+LaTeX Info: Redefining \ref on input line 116.
+LaTeX Info: Redefining \pageref on input line 116.
+LaTeX Info: Redefining \nameref on input line 116.
 
 (memoire.out) (memoire.out)
 \@outlinefile=\write3
@@ -691,13 +704,13 @@ LaTeX Info: Redefining \nameref on input line 121.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 121.
-LaTeX Info: Redefining \dots on input line 121.
+LaTeX Info: Redefining \degres on input line 116.
+LaTeX Info: Redefining \dots on input line 116.
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 121.
+(french.ldf)                BEFORE babel/french; reported on input line 116.
 
-LaTeX Info: Redefining \up on input line 121.
+LaTeX Info: Redefining \up on input line 116.
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count291
@@ -727,7 +740,7 @@ G,.JBIG2,.JB2,.eps]
 \openout2 = `Cover/cover.aux'.
 
  (Cover/cover.tex
-<Cover/usthb.png, id=171, 240.9pt x 240.9pt>
+<Cover/usthb.png, id=179, 240.9pt x 240.9pt>
 File: Cover/usthb.png Graphic file (type png)
 <use Cover/usthb.png>
 Package pdftex.def Info: Cover/usthb.png  used on input line 13.
@@ -780,7 +793,7 @@ hb.png>])
 fier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 \include{Intro/remerciement}
+l.120 \include{Intro/remerciement}
                                    [1
 
 
@@ -789,11 +802,11 @@ l.125 \include{Intro/remerciement}
 
  (General/tableContents.tex (memoire.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 9.
+(Font)              <14.4> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 9.
+(Font)              <10> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 9.
+(Font)              <7> on input line 5.
 
 [2
 
@@ -846,7 +859,7 @@ l.16
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.136 \include{Intro/introGeneral}
+l.131 \include{Intro/introGeneral}
                                    [2]
 \openout2 = `Chap1/chap1.aux'.
 
@@ -855,7 +868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
-<Chap1/1.png, id=388, 233.37187pt x 120.45pt>
+<Chap1/1.png, id=397, 233.37187pt x 120.45pt>
 File: Chap1/1.png Graphic file (type png)
 <use Chap1/1.png>
 Package pdftex.def Info: Chap1/1.png  used on input line 24.
@@ -875,7 +888,7 @@ l.28
 
 
 ]
-<Chap1/2.png, id=392, 645.91313pt x 258.21469pt>
+<Chap1/2.png, id=401, 645.91313pt x 258.21469pt>
 File: Chap1/2.png Graphic file (type png)
 <use Chap1/2.png>
 Package pdftex.def Info: Chap1/2.png  used on input line 32.
@@ -885,7 +898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--35
 
  []
 
-<Chap1/3.png, id=394, 579.66562pt x 274.02374pt>
+<Chap1/3.png, id=403, 579.66562pt x 274.02374pt>
 File: Chap1/3.png Graphic file (type png)
 <use Chap1/3.png>
 Package pdftex.def Info: Chap1/3.png  used on input line 42.
@@ -934,7 +947,7 @@ l.53 	\item \textbf
 l.53 	\item \textbf
                    {UnitÃ© de contrÃ´le dâ€™Ã©nergie(batterie): }Câ€™est lâ€...
  <./Chap1/3.png>]
-<Chap1/4.png, id=411, 292.09125pt x 156.585pt>
+<Chap1/4.png, id=420, 292.09125pt x 156.585pt>
 File: Chap1/4.png Graphic file (type png)
 <use Chap1/4.png>
 Package pdftex.def Info: Chap1/4.png  used on input line 56.
@@ -944,7 +957,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--59
 
  []
 
-<Chap1/5.png, id=415, 404.51125pt x 492.84125pt>
+<Chap1/5.png, id=424, 404.51125pt x 492.84125pt>
 File: Chap1/5.png Graphic file (type png)
 <use Chap1/5.png>
 Package pdftex.def Info: Chap1/5.png  used on input line 68.
@@ -999,7 +1012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-<Chap1/7.png, id=444, 742.27313pt x 695.59875pt>
+<Chap1/7.png, id=453, 742.27313pt x 695.59875pt>
 File: Chap1/7.png Graphic file (type png)
 <use Chap1/7.png>
 Package pdftex.def Info: Chap1/7.png  used on input line 124.
@@ -1018,12 +1031,12 @@ l.134
 
 
 ]
-<Chap2/1.png, id=475, 684.30656pt x 237.88875pt>
+<Chap2/1.png, id=484, 684.30656pt x 237.88875pt>
 File: Chap2/1.png Graphic file (type png)
 <use Chap2/1.png>
 Package pdftex.def Info: Chap2/1.png  used on input line 29.
 (pdftex.def)             Requested size: 426.80301pt x 142.26971pt.
-<Chap2/2.png, id=476, 437.38406pt x 374.90062pt>
+<Chap2/2.png, id=485, 437.38406pt x 374.90062pt>
 File: Chap2/2.png Graphic file (type png)
 <use Chap2/2.png>
 Package pdftex.def Info: Chap2/2.png  used on input line 38.
@@ -1041,7 +1054,7 @@ tifier (name{figure.2.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.50 
       <./Chap2/2.png>] [16] [17]
-<Chap2/3.png, id=519, 374.14781pt x 622.57594pt>
+<Chap2/3.png, id=528, 374.14781pt x 622.57594pt>
 File: Chap2/3.png Graphic file (type png)
 <use Chap2/3.png>
 Package pdftex.def Info: Chap2/3.png  used on input line 84.
@@ -1062,7 +1075,7 @@ $[]$
  []
 
 [18]
-<Chap2/4.png, id=530, 606.76688pt x 540.51938pt>
+<Chap2/4.png, id=539, 606.76688pt x 540.51938pt>
 File: Chap2/4.png Graphic file (type png)
 <use Chap2/4.png>
 Package pdftex.def Info: Chap2/4.png  used on input line 121.
@@ -1149,7 +1162,7 @@ $[]$
                                                   \fi \fi 
 l.202 \end{enumerate}
                      ]
-<Chap2/5.png, id=564, 643.6547pt x 244.66406pt>
+<Chap2/5.png, id=573, 643.6547pt x 244.66406pt>
 File: Chap2/5.png Graphic file (type png)
 <use Chap2/5.png>
 Package pdftex.def Info: Chap2/5.png  used on input line 211.
@@ -1165,7 +1178,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-<Chap2/6.png, id=578, 302.63063pt x 624.83438pt>
+<Chap2/6.png, id=587, 302.63063pt x 624.83438pt>
 File: Chap2/6.png Graphic file (type png)
 <use Chap2/6.png>
 Package pdftex.def Info: Chap2/6.png  used on input line 223.
@@ -1246,7 +1259,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--358
 
  []
 
-<Chap2/7.png, id=619, 682.04813pt x 249.93375pt>
+<Chap2/7.png, id=628, 682.04813pt x 249.93375pt>
 File: Chap2/7.png Graphic file (type png)
 <use Chap2/7.png>
 Package pdftex.def Info: Chap2/7.png  used on input line 361.
@@ -1273,7 +1286,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 374--390
 $[]$ 
  []
 
-<Chap2/8.png, id=624, 489.32813pt x 336.50719pt>
+<Chap2/8.png, id=633, 489.32813pt x 336.50719pt>
 File: Chap2/8.png Graphic file (type png)
 <use Chap2/8.png>
 Package pdftex.def Info: Chap2/8.png  used on input line 394.
@@ -1427,22 +1440,14 @@ as been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.435 \cleardoublepage
-                      ] [47
+                      ]) [47
 
 pdfTeX warning (ext4): destination with the same identifier (name{algocf.22}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.469 \cleardoublepage
-                      ]) [48
-
-pdfTeX warning (ext4): destination with the same identifier (name{algocf.23}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.144 \include{Chap3/chap3}
+l.147 \include{Chap3/chap3}
                            ]
 \openout2 = `Chap4/chap4.aux'.
 
@@ -1451,16 +1456,16 @@ Overfull \hbox (2.82599pt too wide) in paragraph at lines 18--18
 []\T1/lmr/bx/n/17.28 Représentation du graphe mo-dé-li-sant le pro-blème 
  []
 
-[49
+[48
 
 
 
-] [50]
+] [49]
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-[51] [52]
+[50] [51]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1480,29 +1485,29 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 105--124
 $[]$ 
  []
 
-[53]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[54pdfTeX warning (ext4): destination with the same identifier (name{algocf.24}
+[53pdfTeX warning (ext4): destination with the same identifier (name{algocf.23}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.148 
       ]
-<Chap4/1.png, id=769, 414.04688pt x 303.38344pt>
+<Chap4/1.png, id=773, 414.04688pt x 303.38344pt>
 File: Chap4/1.png Graphic file (type png)
 <use Chap4/1.png>
 Package pdftex.def Info: Chap4/1.png  used on input line 151.
 (pdftex.def)             Requested size: 341.44125pt x 184.94325pt.
-<Chap4/2.png, id=770, 574.39594pt x 228.855pt>
+<Chap4/2.png, id=774, 574.39594pt x 228.855pt>
 File: Chap4/2.png Graphic file (type png)
 <use Chap4/2.png>
 Package pdftex.def Info: Chap4/2.png  used on input line 162.
 (pdftex.def)             Requested size: 369.89091pt x 113.80911pt.
- [55pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [54pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1519,7 +1524,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 178--199
 $[]$ 
  []
 
-[56pdfTeX warning (ext4): destination with the same identifier (name{algocf.25}
+[55pdfTeX warning (ext4): destination with the same identifier (name{algocf.24}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1545,14 +1550,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--257
 
  []
 
-[57pdfTeX warning (ext4): destination with the same identifier (name{algocf.26}
+[56pdfTeX warning (ext4): destination with the same identifier (name{algocf.25}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.257 
       pdfTeX warning (ext4): destination with the same identifier (name{algocf.
-27}) has been already used, duplicate ignored
+26}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1567,51 +1572,51 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 301--322
 $[]$ 
  []
 
-[58]
+[57]
 Overfull \hbox (0.4236pt too wide) in paragraph at lines 330--331
 \T1/lmr/m/n/14.4 pour la ré-so-lu-tion du pro-blème de l'arbre do-mi-nant où un
 e méta-heuristique
  []
 
-<Chap4/3.png, id=807, 554.07pt x 244.66406pt>
+<Chap4/3.png, id=811, 554.07pt x 244.66406pt>
 File: Chap4/3.png Graphic file (type png)
 <use Chap4/3.png>
 Package pdftex.def Info: Chap4/3.png  used on input line 335.
 (pdftex.def)             Requested size: 369.88918pt x 113.81241pt.
-[59pdfTeX warning (ext4): destination with the same identifier (name{algocf.28}
+[58pdfTeX warning (ext4): destination with the same identifier (name{algocf.27}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.339 
-      ] [60pdfTeX warning (ext4): destination with the same identifier (name{fi
+      ] [59pdfTeX warning (ext4): destination with the same identifier (name{fi
 gure.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.367 O
-       Ã¹:\\ <./Chap4/3.png>]) [61pdfTeX warning (ext4): destination with the s
-ame identifier (name{algocf.29}) has been already used, duplicate ignored
+       Ã¹:\\ <./Chap4/3.png>]) [60pdfTeX warning (ext4): destination with the s
+ame identifier (name{algocf.28}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.146 \include{Chap4/chap4}
+l.149 \include{Chap4/chap4}
                            pdfTeX warning (ext4): destination with the same ide
-ntifier (name{algocf.30}) has been already used, duplicate ignored
+ntifier (name{algocf.29}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.146 \include{Chap4/chap4}
-                           ] [62]
+l.149 \include{Chap4/chap4}
+                           ] [61]
 \openout2 = `Chap5/chap5.aux'.
 
  (Chap5/chap5.tex
-<Chap5/1.png, id=830, 510.40688pt x 165.61874pt>
+<Chap5/1.png, id=834, 510.40688pt x 165.61874pt>
 File: Chap5/1.png Graphic file (type png)
 <use Chap5/1.png>
 Package pdftex.def Info: Chap5/1.png  used on input line 35.
 (pdftex.def)             Requested size: 455.26537pt x 199.17868pt.
- [63
+ [62
 
 
 
@@ -1621,8 +1626,8 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.42 
-      <./Chap5/1.png>] [64]
-<Chap5/t1.png, id=844, 917.67844pt x 324.46219pt>
+      <./Chap5/1.png>] [63]
+<Chap5/t1.png, id=848, 917.67844pt x 324.46219pt>
 File: Chap5/t1.png Graphic file (type png)
 <use Chap5/t1.png>
 Package pdftex.def Info: Chap5/t1.png  used on input line 70.
@@ -1632,121 +1637,179 @@ Overfull \hbox (28.46265pt too wide) in paragraph at lines 70--71
 [][]
  []
 
-[65]
+[64]
 Overfull \hbox (10.79543pt too wide) in paragraph at lines 80--82
 \T1/lmr/m/n/14.4 meilleure so-lu-tion (BS) ob-te-nue par l' ap-proche co-opé-ra
 -tive est meilleure
  []
 
-<Chap5/t2.png, id=853, 710.655pt x 377.15906pt>
+<Chap5/t2.png, id=856, 710.655pt x 377.15906pt>
 File: Chap5/t2.png Graphic file (type png)
 <use Chap5/t2.png>
 Package pdftex.def Info: Chap5/t2.png  used on input line 84.
 (pdftex.def)             Requested size: 426.7975pt x 227.62082pt.
-[66pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}
+[65pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.88 
       <./Chap5/t1.png>]
-<Chap5/2.png, id=863, 725.71124pt x 258.9675pt>
+<Chap5/2.png, id=867, 725.71124pt x 258.9675pt>
 File: Chap5/2.png Graphic file (type png)
 <use Chap5/2.png>
 Package pdftex.def Info: Chap5/2.png  used on input line 91.
 (pdftex.def)             Requested size: 455.25157pt x 199.17638pt.
-<Chap5/t3.png, id=864, 663.22781pt x 323.70938pt>
-File: Chap5/t3.png Graphic file (type png)
-<use Chap5/t3.png>
-Package pdftex.def Info: Chap5/t3.png  used on input line 98.
-(pdftex.def)             Requested size: 426.79196pt x 227.6224pt.
- [67pdfTeX warning (ext4): destination with the same identifier (name{table.5.2
+ [66pdfTeX warning (ext4): destination with the same identifier (name{table.5.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.102 
+l.101 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.102 
+l.101 
        <./Chap5/t2.png> <./Chap5/2.png>]
-<Chap5/3.png, id=872, 543.53062pt x 243.91125pt>
+<Chap5/t3.png, id=876, 663.22781pt x 323.70938pt>
+File: Chap5/t3.png Graphic file (type png)
+<use Chap5/t3.png>
+Package pdftex.def Info: Chap5/t3.png  used on input line 103.
+(pdftex.def)             Requested size: 426.79196pt x 227.6224pt.
+<Chap5/3.png, id=877, 543.53062pt x 243.91125pt>
 File: Chap5/3.png Graphic file (type png)
 <use Chap5/3.png>
-Package pdftex.def Info: Chap5/3.png  used on input line 105.
+Package pdftex.def Info: Chap5/3.png  used on input line 110.
 (pdftex.def)             Requested size: 455.2605pt x 199.17111pt.
- [68pdfTeX warning (ext4): destination with the same identifier (name{table.5.3
-}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.115 	\item \textbf
-                    {Avec lâ€™approche GA}pdfTeX warning (ext4): destination wi
-th the same identifier (name{figure.5.3}) has been already used, duplicate igno
-red
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.115 	\item \textbf
-                    {Avec lâ€™approche GA} <./Chap5/t3.png> <./Chap5/3.png>]
-<Chap5/t4.png, id=880, 648.92438pt x 353.82187pt>
-File: Chap5/t4.png Graphic file (type png)
-<use Chap5/t4.png>
-Package pdftex.def Info: Chap5/t4.png  used on input line 117.
-(pdftex.def)             Requested size: 426.79625pt x 227.62218pt.
-<Chap5/4.png, id=881, 524.71031pt x 268.00125pt>
-File: Chap5/4.png Graphic file (type png)
-<use Chap5/4.png>
-Package pdftex.def Info: Chap5/4.png  used on input line 124.
-(pdftex.def)             Requested size: 455.26129pt x 199.1684pt.
-
-Overfull \hbox (7.66214pt too wide) in paragraph at lines 129--130
+Overfull \hbox (7.66214pt too wide) in paragraph at lines 115--117
 \T1/lmr/m/n/14.4 meilleure so-lu-tion (BS) ob-te-nue par l'ap-proche co-opé-ra-
 tive est meilleure
  []
 
-[69pdfTeX warning (ext4): destination with the same identifier (name{table.5.4}
+[67pdfTeX warning (ext4): destination with the same identifier (name{table.5.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.130 
+l.117 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.117 
+       <./Chap5/t3.png> <./Chap5/3.png>]
+<Chap5/t4.png, id=889, 648.92438pt x 353.82187pt>
+File: Chap5/t4.png Graphic file (type png)
+<use Chap5/t4.png>
+Package pdftex.def Info: Chap5/t4.png  used on input line 119.
+(pdftex.def)             Requested size: 426.79625pt x 227.62218pt.
+<Chap5/4.png, id=890, 524.71031pt x 268.00125pt>
+File: Chap5/4.png Graphic file (type png)
+<use Chap5/4.png>
+Package pdftex.def Info: Chap5/4.png  used on input line 126.
+(pdftex.def)             Requested size: 455.26129pt x 199.1684pt.
+ [68pdfTeX warning (ext4): destination with the same identifier (name{table.5.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.137 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.130 
-       <./Chap5/t4.png> <./Chap5/4.png>]) [70]
+l.137 
+       <./Chap5/t4.png> <./Chap5/4.png>]
+<Chap5/t5.png, id=899, 554.82281pt x 353.06906pt>
+File: Chap5/t5.png Graphic file (type png)
+<use Chap5/t5.png>
+Package pdftex.def Info: Chap5/t5.png  used on input line 144.
+(pdftex.def)             Requested size: 426.7916pt x 227.62274pt.
+ [69pdfTeX warning (ext4): destination with the same identifier (name{table.5.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.151 	
+        <./Chap5/t5.png>]
+<Chap5/t6.png, id=911, 554.07pt x 353.06906pt>
+File: Chap5/t6.png Graphic file (type png)
+<use Chap5/t6.png>
+Package pdftex.def Info: Chap5/t6.png  used on input line 153.
+(pdftex.def)             Requested size: 426.79585pt x 227.62274pt.
+<Chap5/t7.png, id=913, 470.50781pt x 300.3722pt>
+File: Chap5/t7.png Graphic file (type png)
+<use Chap5/t7.png>
+Package pdftex.def Info: Chap5/t7.png  used on input line 166.
+(pdftex.def)             Requested size: 426.7915pt x 227.6298pt.
+ [70pdfTeX warning (ext4): destination with the same identifier (name{table.5.6
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.170 
+       <./Chap5/t6.png>]
+<Chap5/5.png, id=922, 552.56438pt x 240.14719pt>
+File: Chap5/5.png Graphic file (type png)
+<use Chap5/5.png>
+Package pdftex.def Info: Chap5/5.png  used on input line 183.
+(pdftex.def)             Requested size: 455.23888pt x 199.17184pt.
+ [71pdfTeX warning (ext4): destination with the same identifier (name{table.5.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.187 
+       <./Chap5/t7.png>]
+<Chap5/6.png, id=931, 542.77782pt x 243.15843pt>
+File: Chap5/6.png Graphic file (type png)
+<use Chap5/6.png>
+Package pdftex.def Info: Chap5/6.png  used on input line 197.
+(pdftex.def)             Requested size: 455.2594pt x 199.16858pt.
+ [72pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.201 
+       <./Chap5/5.png>]) [73pdfTeX warning (ext4): destination with the same id
+entifier (name{figure.5.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.151 \include{Chap5/chap5}
+                            <./Chap5/6.png>]
 \openout2 = `General/bibliography.aux'.
 
  (General/bibliography.tex
-(memoire.bbl [71
+(memoire.bbl [74
 
 
 
-] [72] [73])) [74]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+] [75] [76])) [77]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
  (memoire.aux (Cover/cover.aux)
 (Intro/remerciement.aux) (General/tableContents.aux) (General/listFigures.aux)
 (General/listOfAlgos.aux) (Intro/introGeneral.aux) (Chap1/chap1.aux)
 (Chap2/chap2.aux) (Chap3/chap3.aux) (Chap4/chap4.aux) (Chap5/chap5.aux)
 (General/bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
 Package rerunfilecheck Info: File `memoire.out' has not changed.
-(rerunfilecheck)             Checksum: 512EA84D7B24FBFFF5F0F76A6D360471;3261.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
+(rerunfilecheck)             Checksum: 6769B6AD7EF409DF0AB2C59998FB726F;3393.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
  ) 
 Here is how much of TeX's memory you used:
- 20366 strings out of 492895
- 352509 string characters out of 3133479
+ 20532 strings out of 492895
+ 354521 string characters out of 3133479
  601054 words of memory out of 3000000
- 23688 multiletter control sequences out of 15000+200000
+ 23838 multiletter control sequences out of 15000+200000
  610743 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,22n,63p,1827b,685s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1766,9 +1829,9 @@ fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on memoire.pdf (82 pages, 2515577 bytes).
+Output written on memoire.pdf (85 pages, 2656078 bytes).
 PDF statistics:
- 1036 PDF objects out of 1200 (max. 8388607)
- 285 named destinations out of 1000 (max. 500000)
- 475 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1083 PDF objects out of 1200 (max. 8388607)
+ 294 named destinations out of 1000 (max. 500000)
+ 516 words of extra memory for PDF output out of 10000 (max. 10000000)
 

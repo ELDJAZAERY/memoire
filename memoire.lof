@@ -18,11 +18,13 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Sch\IeC {\'e}ma explicatif d\IeC {\textquoteright }un algorithme m\IeC {\'e}m\IeC {\'e}tique}}{32}{figure.2.8}% 
 \textbf {Chapter A3}
 \textbf {Chapter A4}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemple de croisement uniforme}}{55}{figure.4.1}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Repr\IeC {\'e}sentation sch\IeC {\'e}matique de la mutation}}{55}{figure.4.2}% 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Coop\IeC {\'e}ration des m\IeC {\'e}ta-heuristiques}}{60}{figure.4.3}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemple de croisement uniforme}}{54}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Repr\IeC {\'e}sentation sch\IeC {\'e}matique de la mutation}}{54}{figure.4.2}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Coop\IeC {\'e}ration des m\IeC {\'e}ta-heuristiques}}{59}{figure.4.3}% 
 \textbf {Chapter A5}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Caract\IeC {\'e}ristiques de la machine utilis\IeC {\'e}e}}{63}{figure.5.1}% 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode ACO et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{67}{figure.5.2}% 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode BBO et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{68}{figure.5.3}% 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode GA et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{69}{figure.5.4}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Caract\IeC {\'e}ristiques de la machine utilis\IeC {\'e}e}}{62}{figure.5.1}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode ACO et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{66}{figure.5.2}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode BBO et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{67}{figure.5.3}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode GA et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{68}{figure.5.4}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions des approches propos\IeC {\'e}es}}{72}{figure.5.5}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrammes de la Qualit\IeC {\'e} moyenne de la solution AVG de des approches propos\IeC {\'e}es}}{73}{figure.5.6}% 

@@ -93,7 +93,12 @@ Dans ce qui suit nous allons présenter une comparaison entre notre approche coo
 	\label{fig:DEMACOMC}
 \end{figure}
 
-	\item \textbf{Avec l’approche BBO}
+	\item \textbf{Avec l’approche BBO}\\
+D’après le graphe \ref{fig:DEMBBOMC} les deux approches sont similaires. En revanche, en analysant le tableau la meilleure solution (BS) obtenue par la méthode BBO et celle obtenue par l’approche de coopération est pratiquement  la même.
+
+Concernant les moyennes des solutions (AVG), celles obtenues par l’approche coopérative sont de meilleures qualités par rapport à celles obtenues par BBO.
+Pour ce qui est le nombre d’évaluation  celui de l’approche coopérative est négligeable comparé à l’autre approche.
+
 \begin{table}[H]
 	\includegraphics[width=15cm,height=8cm]{Chap5/t3.png}
 	\caption{Résultats d’exécutions de BBO et la méthode de coopération}
@@ -107,12 +112,9 @@ Dans ce qui suit nous allons présenter une comparaison entre notre approche coo
 	\label{fig:DEMBBOMC}
 \end{figure}
 
-D’après le graphe les deux approches sont similaires. En revanche, en analysant le tableau la meilleure solution (BS) obtenue par la méthode BBO et celle obtenue par l’approche de coopération est pratiquement  la même.
+	\item \textbf{Avec l’approche GA}\\	
+D’après le graphe \ref{fig:DEMGAMC} et les résultats présentés dans le tableau \ref{tab:4}, les deux approches sont similaires pour les 11 premiers instances la meilleure solution (BS) obtenue par l’approche coopérative  est meilleure que celle obtenue par GA pour les sept  (7) derniers instances. Il faut également noter que la qualité moyenne des solutions (AVG) obtenue par la méthode de coopération est de meilleure qualité que celle obtenue par GA pour toutes les instances du problème. Comparé à GA, le nombre d’évaluation donnée par  l’approche de coopération est relativement faible.
 
-Concernant les moyennes des solutions (AVG), celles obtenues par l’approche coopérative sont de meilleures qualités par rapport à celles obtenues par BBO.
-Pour ce qui est le nombre d’évaluation  celui de l’approche coopérative est négligeable comparé à l’autre approche. 
-
-	\item \textbf{Avec l’approche GA}
 \begin{table}[H]
 	\includegraphics[width=15cm,height=8cm]{Chap5/t4.png}
 	\caption{Résultats d’exécutions de GA et la méthode de coopération}
@@ -126,11 +128,80 @@ Pour ce qui est le nombre d’évaluation  celui de l’approche coopérative es
 	\label{fig:DEMGAMC}
 \end{figure}
 
-D’après le graphe \ref{fig:DEMGAMC} et les résultats présentés dans le tableau \ref{tab:4}, les deux approches sont similaires pour les 11 premiers instances la meilleure solution (BS) obtenue par l’approche coopérative  est meilleure que celle obtenue par GA pour les sept  (7) derniers instances. Il faut également noter que la qualité moyenne des solutions (AVG) obtenue par la méthode de coopération est de meilleure qualité que celle obtenue par GA pour toutes les instances du problème. Comparé à GA, le nombre d’évaluation donnée par  l’approche de coopération est relativement faible.
 
 \end{enumerate}
 
 
 \subsubsection{Comparaison de la méthode coopérative avec les travaux liés au DTP}
 Afin de monter l’efficacité et la robustesse de notre approche coopérative, Nous l’avons comparé à deux techniques méta-heuristiques basées sur un essaim dans la littérature, à savoir ACO\_DT [55] et ABC\_DT [54], et une autre méta-heuristique SSGA \cite{sundar2014steady} .
+
+
+\begin{enumerate}[label=\alph*)]
+	\item \textbf{Comparaison de  la méthode coopérative avec ABC\_DTP}\\
+	Dans le tableau \ref{tab:5} notre méthode de coopération est meilleure sur cinq (5) instances et pire pour deux (2) instances et similaire pour les 11 instances restantes en terme de meilleure solution. En termes de solution moyenne, on remarque que la coopération est meilleure sur 8 instances, de moindre qualité pour 8 autres instances et est similaire pour 2 instances.
+	
+\begin{table}[H]
+	\includegraphics[width=15cm,height=8cm]{Chap5/t5.png}
+	\caption{Résultats d’exécutions de ABC\_DTP et la méthode de coopération}
+	\label{tab:5}
+\end{table}
+
+	\item \textbf{Comparaison de  la méthode coopérative avec ACO\_DT}\\
+	D’après le tableau \ref{tab:6}, il est bien clair que la méthode de coopération est la meilleure technique que sa soit en terme de la meilleure solution ou bien la qualité moyenne de la solution. La méthode de coopération a pu générer BS de meilleure qualité que celle d’ACO\_DT pour la plupart des instances (huit instances) et une solution de piètre qualité par rapport à celle d’ACO\_DT. Pour le reste des instances les résultats sont similaires pour les deux techniques. Concernant les moyennes des solutions obtenues (AVG), la coopération donne de meilleurs résultats que ACO\_DT dans 13 instances, et produit une solution de moindre qualité dans une seule instance. Les résultats sont similaires pour le reste des instances (6 instances).
+	
+\begin{table}[H]
+	\includegraphics[width=15cm,height=8cm]{Chap5/t6.png}
+	\caption{Résultats d'exécutions d'ACO\_DT et la méthode de coopération}
+	\label{tab:6}
+\end{table}
+
+
+	\item \textbf{Comparaison de  la méthode coopérative avec SSGA}\\
+	Comme le tableau \ref{tab:7} le montre, Parmi les quatre (18) instances, la meilleure solution (BS) obtenue par la coopération est similaire à celle obtenue par SSGA dans 11 instances et est moins bonne que la BS trouvée par SSGA dans une seule instance (400\_3).
+	
+Concernant les moyennes des solutions (AVG), celles obtenues par la coopération sont similaires à celles obtenues par SSGA dans deux instances (50\_2 et 300\_2) et sont de moindre qualité par rapport à SSGA dans une seule instance (100\_3).
+
+	
+\begin{table}[H]
+	\includegraphics[width=15cm,height=8cm]{Chap5/t7.png}
+	\caption{Résultats d’exécutions de SSGA et la méthode de coopération}
+	\label{tab:7}
+\end{table}
+
+\end{enumerate}
+
+
+\subsection{Analyse graphique}
+
+\subsubsection{Étude comparative entre les différentes approches sur les meilleures solutions (BS) }
+
+La Figure \ref{fig:DEAP} représente graphiquement les valeurs des différentes BS obtenues
+par les méta-heuristiques  ACO\_DT, BBO, GA et la méthode coopérative, pour les 18 instances. On constate que les courbes présentent la même allure pour les instances de complexité moyenne. De plus, pour les instances de 300\_2 à 500\_3, l’approche de coopération  donne des résultats avec un coût inferieur à celui des autres approches. Chose qui prouve l’efficacité de la méthode coopérative permet d’intensifier la recherche et ainsi augmenter le nombre d’évaluations de la fonction objectif.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=16cm,height=7cm]{Chap5/5.png}
+	\caption{Diagrammes d’exécutions des approches proposées}
+	\label{fig:DEAP}
+\end{figure}
+
+
+
+\subsubsection{Comparaison de la qualité moyenne des solutions (AVG) de l’approche coopérative  et des autres approches}
+
+La Figure \ref{fig:DQMSAP} porte sur la qualité moyenne des solutions (AVG) issues de 20 exécutions des différents algorithmes pour l’ensemble des 18 instances. On observe que les valeurs résultantes de l’approche coopérative avoisinent celles de ACO, BBO et GA et il est clairement aperçu que pour toutes les instances la coopération donne de bien meilleurs résultats que les autres approches. Ceci prouve que l’approche de coopération proposée produit des solutions d’une qualité relativement similaire. On peut dire aussi que la nature stochastique de ce genre d’algorithmes ne provoque pas un impact négatif sur la qualité moyenne des solutions générées.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=16cm,height=7cm]{Chap5/6.png}
+	\caption{Diagrammes de la Qualité moyenne de la solution AVG de des approches proposées}
+	\label{fig:DQMSAP}
+\end{figure}
+
+
+
+\section{Conclusion}
+A travers ce dernier chapitre, nous avons étudié les résultats expérimentaux de l’approche proposée et les avons comparés selon quelques paramètres de performances (BS,AVG), avec d’autres travaux élaborés pour la résolution du problème de l’arbre dominant. Dans l’ensemble, les approches que nous avons proposées s’est avéré efficace en offrant de bons résultats malgré la constatation de quelques dégradations de qualité qui peut se justifier par la nature stochastique des méta-heuristiques.
+
 
