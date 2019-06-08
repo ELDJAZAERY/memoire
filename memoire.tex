@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt]{report}
 
 % encodage
 % default font encoding (OT1) 
@@ -7,9 +7,10 @@
 
 
 %% hyper References
-\usepackage[hidelinks]{hyperref}
-
+%\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black, citecolor=blue]{hyperref}
  
+
 %%% for the cover page
 \usepackage{array}
 \usepackage{shadow}
@@ -42,7 +43,10 @@
 \frenchbsetup{StandardLists=true}
 
 % font
-\usepackage{lmodern}
+%\usepackage{lmodern}
+%\usepackage{fontspec}
+\usepackage{mathptmx}
+
 %\textwidth 14.5cm
 %\textheight 24.7cm
 %\usepackage{helvet}
@@ -91,6 +95,7 @@
 
 %%%% Page header chap %%%
 
+\usepackage[Glenn]{fncychap}
 \usepackage{fancyhdr}
  
 
