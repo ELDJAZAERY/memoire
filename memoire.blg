@@ -14,5 +14,6 @@ A level-1 auxiliary file: General/bibliography.aux
 The style file: unsrtnat.bst
 Database file #1: General/References.bib
 Warning--can't use both volume and number fields in hill2000system
+Warning--empty journal in koubaa2005lower
 Warning--empty journal in fogel1966artificial
-(There were 2 warnings)
+(There were 3 warnings)

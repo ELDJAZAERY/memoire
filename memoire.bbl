@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -63,6 +63,21 @@ Jessica Feng, Farinaz Koushanfar, and Miodrag Potkonjak.
 \newblock System-architectures for sensor networks issues, alternatives, and
   directions.
 \newblock In \emph{null}, page 226. IEEE, 2002.
+
+\bibitem[Pereira et~al.(2007)Pereira, Grilo, Rocha, Nunes, Casaca, Chaudet,
+  Almstr{\"o}m, and Johansson]{pereira2007end}
+Paulo~Rog{\'e}rio Pereira, Ant{\'o}nio Grilo, Francisco Rocha,
+  M{\'a}rio~Serafim Nunes, Augusto Casaca, Claude Chaudet, Peter Almstr{\"o}m,
+  and Mikael Johansson.
+\newblock End-to-end reliability in wireless sensor networks: Survey and
+  research challenges.
+\newblock In \emph{EuroFGI Workshop on IP QoS and Traffic Control}, volume~54,
+  pages 67--74. Citeseer, 2007.
+
+\bibitem[Koub{\^a}a et~al.(2005)Koub{\^a}a, Alves, and Tovar]{koubaa2005lower}
+Anis Koub{\^a}a, M{\'a}rio Alves, and Eduardo Tovar.
+\newblock Lower protocol layers for wireless sensor networks: a survey.
+\newblock 2005.
 
 \bibitem[Bachir et~al.(2010)Bachir, Dohler, Watteyne, and Leung]{bachir2010mac}
 Abdelmalik Bachir, Mischa Dohler, Thomas Watteyne, and Kin~K Leung.
@@ -177,6 +192,12 @@ Mark Zlochin, Mauro Birattari, Nicolas Meuleau, and Marco Dorigo.
 \newblock \emph{Annals of Operations Research}, 131\penalty0 (1-4):\penalty0
   373--395, 2004.
 
+\bibitem[Kirkpatrick et~al.(1983)Kirkpatrick, Gelatt, and
+  Vecchi]{kirkpatrick1983optimization}
+Scott Kirkpatrick, C~Daniel Gelatt, and Mario~P Vecchi.
+\newblock Optimization by simulated annealing.
+\newblock \emph{science}, 220\penalty0 (4598):\penalty0 671--680, 1983.
+
 \bibitem[Metropolis et~al.(1953)Metropolis, Rosenbluth, Rosenbluth, Teller, and
   Teller]{metropolis1953equation}
 Nicholas Metropolis, Arianna~W Rosenbluth, Marshall~N Rosenbluth, Augusta~H
@@ -237,6 +258,13 @@ John~R Koza.
 \newblock Genetic programming: On the programming of computers by means of
   natural selection (complex adaptive systems).
 \newblock \emph{A Bradford Book}, 1:\penalty0 18, 1992.
+
+\bibitem[Moscato et~al.(1989)]{moscato1989evolution}
+Pablo Moscato et~al.
+\newblock On evolution, search, optimization, genetic algorithms and martial
+  arts: Towards memetic algorithms.
+\newblock \emph{Caltech concurrent computation program, C3P Report},
+  826:\penalty0 1989, 1989.
 
 \bibitem[Charikar et~al.(1999)Charikar, Chekuri, Cheung, Dai, Goel, Guha, and
   Li]{charikar1999approximation}
