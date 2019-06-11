@@ -242,9 +242,8 @@ Initialiser la population avec un ensemble de combinaisons de E \;
 
 	
 \begin{itemize}
-	\item \textbf{Initialisation de la population: }en général, la population initiale est générée de façon aléatoire, selon une distribution uniforme assurant une bonne diversité des combinaisons. Une solution initiale est de bonne qualité, celle qui nous permet de converger vers un optimum global dans le plus court délai possible.
-	
-Il est à noter que cette méthode est utilisée dans toutes les méta-heuristiques avec population.
+	\item \textbf{Initialisation de la population: }en général, la population initiale est générée de façon aléatoire, selon une distribution uniforme assurant une bonne diversité des combinaisons. Une solution initiale est de bonne qualité, celle qui nous permet de converger vers un optimum global dans le plus court délai possible.\\
+  Il est à noter que cette méthode est utilisée dans toutes les méta-heuristiques avec population.
 
 	\item \textbf{Sélection: } cette étape consiste à choisir les combinaisons de la population qui seront ensuite croisées et mutées. Il s’agit là de favoriser la sélection des meilleures combinaisons, tout en laissant une petite chance aux moins bonnes combinaisons. Il existe de nombreuses façons de procéder à cette étape de sélection. Par exemple, la sélection par tournoi consiste à choisir aléatoirement deux combinaisons et à sélectionner la meilleure des deux (ou bien à sélectionner une des deux selon une probabilité dépendant de la fonction objectif).
 	
@@ -271,7 +270,8 @@ En raison de leur comportement de recherche de nourriture, les fourmis trouvent 
 \SetAlgoLined
 \DontPrintSemicolon
 
-Initialisation : initialisation de phéromones et les paramètre avec des valeurs constantes \;
+\tcp{Initialisation}
+initialisation de phéromones et les paramètre avec des valeurs constantes \;
 Construction de la solution initiale \;
 \While{condition d’arrêt non atteinte }{
 	\While{nombre de fourmis non atteint}{

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  9 JUN 2019 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  11 JUN 2019 21:46
 entering extended mode
 **./memoire.tex
 (memoire.tex
@@ -1248,26 +1248,31 @@ $[]$
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.250 	
+l.249 	
        pdfTeX warning (ext4): destination with the same identifier (name{algocf
 .5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.250 	
+l.249 	
         <./Chap2/6.png>]
-Overfull \hbox (18.49051pt too wide) in paragraph at lines 251--252
+Overfull \hbox (18.49051pt too wide) in paragraph at lines 250--251
 []\T1/ptm/b/n/14.4 Croisement : \T1/ptm/m/n/14.4 est une opé-ra-tion de di-ver-
 si-fi-ca-tion. cette opé-ra-tion consiste
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
 [25]
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 268--287
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 273.
+
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 267--287
 $[]$ 
  []
 
@@ -1322,7 +1327,7 @@ l.358
                                                   \fi \fi 
 l.358 
       ]
-<Chap2/7.png, id=629, 682.04813pt x 249.93375pt>
+<Chap2/7.png, id=630, 682.04813pt x 249.93375pt>
 File: Chap2/7.png Graphic file (type png)
 <use Chap2/7.png>
 Package pdftex.def Info: Chap2/7.png  used on input line 361.
@@ -1350,7 +1355,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 374--390
 $[]$ 
  []
 
-<Chap2/8.png, id=636, 489.32813pt x 336.50719pt>
+<Chap2/8.png, id=637, 489.32813pt x 336.50719pt>
 File: Chap2/8.png Graphic file (type png)
 <use Chap2/8.png>
 Package pdftex.def Info: Chap2/8.png  used on input line 394.
@@ -1395,11 +1400,7 @@ as been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.47 \cleardoublepage
-                     ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 59.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [34
+                     ] [34
 
 pdfTeX warning (ext4): destination with the same identifier (name{algocf.11}) h
 as been already used, duplicate ignored
@@ -1891,7 +1892,7 @@ Here is how much of TeX's memory you used:
  23854 multiletter control sequences out of 15000+200000
  615701 words of font info for 164 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,23n,63p,1827b,706s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,23n,63p,1827b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\eldja\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
 ectt1200.pk> <C:\Users\eldja\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
 ec/dpi600\ectt1440.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
@@ -1903,7 +1904,7 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
 ymbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on memoire.pdf (85 pages, 2509900 bytes).
+Output written on memoire.pdf (85 pages, 2509929 bytes).
 PDF statistics:
  1084 PDF objects out of 1200 (max. 8388607)
  294 named destinations out of 1000 (max. 500000)

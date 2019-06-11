@@ -22,13 +22,13 @@
 \end{center}
 
 \section{Introduction}
-Dans le chapitre précédent, nous avons présenté en détaille les approches que nous avons proposées pour la résolution du problème de l’arbre dominant (DTP). A ce stade nous allons décrire l’environnement de développement de ces approches. Nous allons ainsi présenter une étude expérimentale effectuée pour comparer les résultats des approches proposées avec d’autres approches développées pour la résolution du DTP. Nous effectuant aussi une comparaison entre notre approche de coopération proposée  avec d’autres travaux liés au problème de l’arbre dominant et nous le clôturons avec une conclusion.
+Dans le chapitre précédent, nous avons présenté en détail les approches que nous avons proposées pour la résolution du problème de l’arbre dominant (DTP). Nous allons présenter dans ce qui suit une étude expérimentale effectuée pour comparer les résultats des approches proposées avec d’autres approches développées pour la résolution du DTP. Nous clôturons avec une conclusion.
 
 
 \section{Environnement de travail}
 
 \subsection{Environnement matériel}
-Pour les tests nous avons utilisé une machine pour toutes les instances, les caractéristiques de la machine sont données dans la figure 1
+Pour les tests effectués nous avons utilisé une machine. Les caractéristiques de  machine sont données dans la figure \ref{fig:CMU}.
 
 \begin{figure}[H]
 	\centering
@@ -38,33 +38,31 @@ Pour les tests nous avons utilisé une machine pour toutes les instances, les ca
 \end{figure}
 
 \subsection{Environnement logiciel}
-Nous avons opté pour le langage Java, car il offre une grande flexibilité et facilite l’implémentation qui est due au fait qu’il soit totalement orienté-objet.
+Nous avons opté pour le langage Java pour la programmation, car il offre une grande flexibilité et facilite l’implémentation qui est due au fait qu’il soit totalement orienté-objet.
 
 \textbf{IDE :}
-IntelliJ Idea L’environnement de développement choisit est IntelliJ IDEA, spécialement dédié au développement en utilisant le langage Java. Il est proposé par l’entreprise JetBrains et est caractérisé par sa forte simplicité d’utilisation et les nombreux plugins et extensions qui lui sont dédiées.
+L’environnement de développement choisit est IntelliJ IDEA, spécialement dédié au développement en utilisant le langage Java. Il est proposé par l’entreprise JetBrains et est caractérisé par sa forte simplicité d’utilisation et les nombreux plugins et extensions qui lui sont dédiées.
 
 \section{Jeux de données utilisées}
+Afin de tester l'approche proposée, nous avons opté pour l'utilisation de fichiers benchmark qui vont représenter des instances du problème. Les différentes instances sur lesquelles notre étude s'est portée sont dérivées à partir des mêmes benchmarks de \cite{sundar2013new}. Une instance est considérée comme un graphe de disques, G = ( V, E ) où chaque disque représente la plage de transmission de chaque nœud. Le poids de chaque arête $e_{uv} \in E $ est défini sous la forme w ( u, v ) = $d_{uv}^2$, où $d_{uv}$  est la distance euclidienne entre deux nœuds u et v. L'hypothèse est que tous les nœuds sont répartis de manière aléatoire dans une zone de $500m * 500m $  et la plage de transmission de chaque nœud est de 100 m.
 
-Afin de tester notre solveur nous avons opté pour l’utilisation de fichiers benchmark qui vont représenter des instances du problème. Les différentes instances sur lesquelles notre étude s’est portée, sont dérivées à partir des mêmes benchmarks de \cite{sundar2013new}. Une instance est considérée comme un graphe de disques, G = ( V, E ) où chaque disque représente la plage de transmission de chaque nœud. Le poids de chaque arête $e_{uv} \in E $ est défini sous la forme w ( u, v ) = $d_{uv}^2$ , où $d_{uv}$ est la distance euclidienne entre deux nœuds u et v. L’hypothèse est que tous les nœuds sont répartis de manière aléatoire dans une zone de  $500m * 500m $  et la plage de transmission de chaque nœud est de 100, 125, 150m.
 
 \section{Expérimentation}
-Pour montrer l'efficacité des approches proposées ne se limitent pas à des graphiques ayant une densité particulière, il est nécessaire de prendre en compte différentes valeurs de la portée de transmission. Les valeurs de la plage de transmission que nous avons considérées conduisent à des instances de DTP réalisables difficiles générées aléatoirement (ceux de la plage 100).
 
-Pour ACO, nous avons utilisé une population de 15 fourmis. Nous avons utilisé $\alpha = 1 \, , \, \beta = 1 \, , \, p = 0.05 \, , \, P_0 = 0.1 $. Toutes les valeurs de phéromone sont initialisées à 0,05.Pour BBO, la taille de la population est de 20 individus pour GA .Quant à l’approche de coopération, nous avons utilisé 0.5 comme probabilité initiale, 0,1 pour la valeur de \( \alpha \).
+Pour ACO, nous avons utilisé une population de 15 fourmis. Nous avons utilisé $\alpha = 1 \, , \, \beta = 1 \, , \, p = 0.05 \, , \, P_0 = 0.1 $. Toutes les valeurs de phéromone initiales sont égales à 0,05. Pour BBO et GA, la taille de la population est de 20 individus. Quant à l’approche de coopération,  nous avons utilisé 0.5 comme probabilité initiale et 0,1 pour la valeur de  \( \alpha \).
 
-Pour toutes les instances de test, Nous avons autorisé 100 itérations pour chacune des approches proposées. Nous avons laissé nos approches s’appliquer à autant d’itérations que nécessaire pour une qualité optimale. Donner plus d'itérations à nos approches que celles mentionnées ci-dessus n'aura que peu d'impact sur la qualité de la solution.
+Pour toutes les instances du test, nous avons opté pour 100 itérations pour chacune des approches proposées. Nous avons jugé que ce nombre d'itérations est suffisant pour une qualité quasi optimale de la solution. Donner plus d'itérations à nos approches que celles mentionnées ci- dessus n'aura que peu d'impact sur la qualité de la solution. 
 
-Toutes ces valeurs de paramètres sont choisies empiriquement. Ces valeurs de paramètres donnent de bons résultats bien qu'elles ne soient pas optimales pour toutes les instances de test.
-
+Toutes ces valeurs de paramètres sont choisies empiriquement. Ces valeurs de paramètres donnent de bons résultats pour la majorité des instances de test.
 
 \subsection{Étude comparative}
 Afin de mener à bien une étude comparative entre nos approches et d’autres travaux effectués pour la résolution du DTP, nous avons gardé approximativement le même nombre d’évaluations de la fonction objectif.
+
 Dans le but d’assurer l’intégrité des résultats, nous avons effectué un total de 20 exécutions pour chacune des instances. Les résultats d’exécutions de nos approches (ACO, BBO, GA et la méthode coopérative) sur les instances citées auparavant, sont illustrés dans le Tableau \ref{tab:1}.
 
-Dans le Tableau  \ref{tab:1}, les lignes correspondent aux différentes instances étudiées, quant aux colonnes, elles représentent, pour chaque approche : la meilleure solution obtenue (colonne BS),
-
-la moyenne de toutes les solutions obtenues au fil des 20 exécutions (colonne AVG), le nombre d’évaluations  (colonne NBV) et la colonne qui représente le temps d’exécution de chaque méta en seconde (colonne sec). 
+Dans le Tableau  \ref{tab:1}, les lignes correspondent aux différentes instances étudiées, quant aux colonnes, elles représentent, pour chaque approche : la meilleure solution obtenue (colonne BS), la moyenne de toutes les solutions obtenues sur  les 20 exécutions (colonne AVG), le nombre d’évaluations pour trouver la meilleure solution  (colonne NBV) et la colonne qui représente le temps d’exécution de chaque métaheuristique en seconde (colonne sec). 
 Notez que les meilleures valeurs sont indiquées en gras dans les tableaux comparatifs.
+
 
 \begin{table}[H]
 	\includegraphics[width=17cm,height=7cm]{Chap5/t1.png}
@@ -74,11 +72,11 @@ Notez que les meilleures valeurs sont indiquées en gras dans les tableaux compa
 
 
 \subsubsection{Comparaison de la méthode coopérative avec les autres approches}
-Dans ce qui suit nous allons présenter une comparaison entre notre approche coopérative et les autres approches que nous avons développées. Cette comparaison a pour but de montrer l’efficacité de notre approche coopérative par rapport aux approches développées.
+Dans ce qui suit nous allons présenter une comparaison entre notre approche coopérative et les autres approches que nous avons développées. Cette comparaison a pour but de montrer l’efficacité de notre approche coopérative par rapport aux approches développées. 
 
 \begin{enumerate}[label=\alph*)]
 	\item \textbf{Avec l’approche ACO}\\
-	D’après le graphe \ref{fig:DEMACOMC} et les résultats présentés dans le tableau \ref{tab:2}, les deux approches sont similaires pour les 11 premiers instances la meilleure solution (BS) obtenue par l’ approche coopérative  est meilleure que celle obtenue par ACO pour les sept  (7) derniers instances. Il faut également noter que la qualité moyenne des solutions (AVG) obtenue par la méthode de coopération est pratiquement meilleure que celle d’ACO pour toutes les instances du problème. Comparé à ACO, le nombre d’évaluation donnée par  l’approche de coopération est relativement faible. Enfin, parlant à propos du temps d’exécutions en général ACO pour ce problème consomme moins de ressources nous trouvons ca normal car ACO n’est  qu’une seule méthode qui s’exécute à la fois contrairement plusieurs méthodes qui se met en compétition.
+	D’après le graphe de la figure \ref{fig:DEMACOMC} et les résultats présentés dans le tableau \ref{tab:2}, les résultats des deux approches sont similaires pour les 11 premières instances. La meilleure solution (BS) obtenue par l’ approche coopérative  est meilleure que celle obtenue par ACO pour les sept  (7) dernières instances. Il faut également noter que la qualité moyenne des solutions (AVG) obtenue par la méthode de coopération est  meilleure que celle d’ACO pour la majorité des instances du problème. Comparé à ACO, le nombre d’évaluation donnée par  l’approche de coopération est relativement faible. Enfin,  le temps d’exécutions  d'ACO en général est moins important.
 
 \begin{table}[H]
 	\includegraphics[width=15cm,height=8cm]{Chap5/t2.png}
@@ -94,10 +92,9 @@ Dans ce qui suit nous allons présenter une comparaison entre notre approche coo
 \end{figure}
 
 	\item \textbf{Avec l’approche BBO}\\
-D’après le graphe \ref{fig:DEMBBOMC} les deux approches sont similaires. En revanche, en analysant le tableau la meilleure solution (BS) obtenue par la méthode BBO et celle obtenue par l’approche de coopération est pratiquement  la même.
+D’après le graphe de la figure \ref{fig:DEMBBOMC} les deux approches sont similaires. De même, en analysant le tableau V.3, la meilleure solution (BS) obtenue par la méthode BBO et celle obtenue par l’approche de coopération est pratiquement  la même.
 
 Concernant les moyennes des solutions (AVG), celles obtenues par l’approche coopérative sont de meilleures qualités par rapport à celles obtenues par BBO.
-Pour ce qui est le nombre d’évaluation  celui de l’approche coopérative est négligeable comparé à l’autre approche.
 
 \begin{table}[H]
 	\includegraphics[width=15cm,height=8cm]{Chap5/t3.png}
@@ -113,7 +110,7 @@ Pour ce qui est le nombre d’évaluation  celui de l’approche coopérative es
 \end{figure}
 
 	\item \textbf{Avec l’approche GA}\\	
-D’après le graphe \ref{fig:DEMGAMC} et les résultats présentés dans le tableau \ref{tab:4}, les deux approches sont similaires pour les 11 premiers instances la meilleure solution (BS) obtenue par l’approche coopérative  est meilleure que celle obtenue par GA pour les sept  (7) derniers instances. Il faut également noter que la qualité moyenne des solutions (AVG) obtenue par la méthode de coopération est de meilleure qualité que celle obtenue par GA pour toutes les instances du problème. Comparé à GA, le nombre d’évaluation donnée par  l’approche de coopération est relativement faible.
+D’après le graphe de la figure \ref{fig:DEMGAMC} et les résultats présentés dans le tableau \ref{tab:4}, les deux approches sont similaires pour les 11 premiers instances, la meilleure solution (BS) obtenue par l’ approche coopérative  est meilleure que celle obtenue par GA pour les sept  (7) dernieres instances. Il faut également noter que la qualité moyenne des solutions (AVG) obtenue par la méthode de coopération est de meilleure qualité que celle obtenue par GA pour toutes les instances du problème. Comparé à GA, le nombre d’évaluation donnée par  l’approche de coopération est relativement faible.
 
 \begin{table}[H]
 	\includegraphics[width=15cm,height=8cm]{Chap5/t4.png}
@@ -138,7 +135,7 @@ Afin de monter l’efficacité et la robustesse de notre approche coopérative, 
 
 \begin{enumerate}[label=\alph*)]
 	\item \textbf{Comparaison de  la méthode coopérative avec ABC\_DTP}\\
-	Dans le tableau \ref{tab:5} notre méthode de coopération est meilleure sur cinq (5) instances et pire pour deux (2) instances et similaire pour les 11 instances restantes en terme de meilleure solution. En termes de solution moyenne, on remarque que la coopération est meilleure sur 8 instances, de moindre qualité pour 8 autres instances et est similaire pour 2 instances.
+	Dans le tableau V.5 notre méthode de coopération est meilleure sur 5 instances et similaire pour 11 instances sur 18 instances. En termes de solution moyenne, on remarque que la coopération est meilleure sur 8 instances, de moindre qualité pour 8 autres instances et est similaire pour 2 instances.
 	
 \begin{table}[H]
 	\includegraphics[width=15cm,height=8cm]{Chap5/t5.png}
@@ -147,7 +144,7 @@ Afin de monter l’efficacité et la robustesse de notre approche coopérative, 
 \end{table}
 
 	\item \textbf{Comparaison de  la méthode coopérative avec ACO\_DT}\\
-	D’après le tableau \ref{tab:6}, il est bien clair que la méthode de coopération est la meilleure technique que sa soit en terme de la meilleure solution ou bien la qualité moyenne de la solution. La méthode de coopération a pu générer BS de meilleure qualité que celle d’ACO\_DT pour la plupart des instances (huit instances) et une solution de piètre qualité par rapport à celle d’ACO\_DT. Pour le reste des instances les résultats sont similaires pour les deux techniques. Concernant les moyennes des solutions obtenues (AVG), la coopération donne de meilleurs résultats que ACO\_DT dans 13 instances, et produit une solution de moindre qualité dans une seule instance. Les résultats sont similaires pour le reste des instances (6 instances).
+	D’après le tableau \ref{tab:6}, il est bien clair que la méthode de coopération est la meilleure technique en terme de la meilleure solution ainsi que la qualité moyenne de la solution. La méthode de coopération a pu générer un BS de meilleure qualité que celui d’ACO\_DT pour la plupart des instances (huit instances) et une solution de moindre qualité par rapport à celle d’ACO\_DT. Pour le reste des instances les résultats sont similaires pour les deux techniques. Concernant les moyennes des solutions obtenues (AVG), la coopération donne de meilleurs résultats que ACO\_DT dans 13 instances, et fournit une solution de moindre qualité dans une seule instance. Les résultats sont similaires pour le reste des instances (6 instances).
 	
 \begin{table}[H]
 	\includegraphics[width=15cm,height=8cm]{Chap5/t6.png}
@@ -157,7 +154,7 @@ Afin de monter l’efficacité et la robustesse de notre approche coopérative, 
 
 
 	\item \textbf{Comparaison de  la méthode coopérative avec SSGA}\\
-	Comme le tableau \ref{tab:7} le montre, Parmi les quatre (18) instances, la meilleure solution (BS) obtenue par la coopération est similaire à celle obtenue par SSGA dans 11 instances et est moins bonne que la BS trouvée par SSGA dans une seule instance (400\_3).
+	Comme le tableau \ref{tab:7} le montre, parmi les quatre  instances, la meilleure solution (BS) obtenue par la coopération est similaire à celle obtenue par SSGA dans 11 instances et est moins bonne que le BS trouvé par SSGA dans une seule instance (400\_3).
 	
 Concernant les moyennes des solutions (AVG), celles obtenues par la coopération sont similaires à celles obtenues par SSGA dans deux instances (50\_2 et 300\_2) et sont de moindre qualité par rapport à SSGA dans une seule instance (100\_3).
 
@@ -176,7 +173,7 @@ Concernant les moyennes des solutions (AVG), celles obtenues par la coopération
 \subsubsection{Étude comparative entre les différentes approches sur les meilleures solutions (BS) }
 
 La Figure \ref{fig:DEAP} représente graphiquement les valeurs des différentes BS obtenues
-par les méta-heuristiques  ACO\_DT, BBO, GA et la méthode coopérative, pour les 18 instances. On constate que les courbes présentent la même allure pour les instances de complexité moyenne. De plus, pour les instances de 300\_2 à 500\_3, l’approche de coopération  donne des résultats avec un coût inferieur à celui des autres approches. Chose qui prouve l’efficacité de la méthode coopérative permet d’intensifier la recherche et ainsi augmenter le nombre d’évaluations de la fonction objectif.
+par les méta-heuristiques  ACO\_DT, BBO, GA et la méthode coopérative, pour les 18 instances. On constate que les courbes présentent la même allure pour les instances de complexité moyenne. De plus, pour les instances de 300\_2 à 500\_3, l’approche de coopération  donne des résultats avec un coût inferieur à celui des autres approches. Chose qui prouve l’efficacité de la méthode coopérative.
 
 \begin{figure}[H]
 	\centering
@@ -189,7 +186,8 @@ par les méta-heuristiques  ACO\_DT, BBO, GA et la méthode coopérative, pour l
 
 \subsubsection{Comparaison de la qualité moyenne des solutions (AVG) de l’approche coopérative  et des autres approches}
 
-La Figure \ref{fig:DQMSAP} porte sur la qualité moyenne des solutions (AVG) issues de 20 exécutions des différents algorithmes pour l’ensemble des 18 instances. On observe que les valeurs résultantes de l’approche coopérative avoisinent celles de ACO, BBO et GA et il est clairement aperçu que pour toutes les instances la coopération donne de bien meilleurs résultats que les autres approches. Ceci prouve que l’approche de coopération proposée produit des solutions d’une qualité relativement similaire. On peut dire aussi que la nature stochastique de ce genre d’algorithmes ne provoque pas un impact négatif sur la qualité moyenne des solutions générées.
+La Figure \ref{fig:DQMSAP} porte sur la qualité moyenne des solutions (AVG) issues de 20 exécutions des différents algorithmes pour l’ensemble des 18 instances. On observe
+que les valeurs résultantes de l’approche coopérative avoisinent celles de ACO, BBO  et GA et il est clairement aperçu que pour les grandes instances  la coopération donne de bien meilleurs résultats que les autres approches. Ceci prouve que l’approche de coopération proposée  s'adapte bien pour les grandes instances du problème. 
 
 
 \begin{figure}[H]
@@ -200,8 +198,6 @@ La Figure \ref{fig:DQMSAP} porte sur la qualité moyenne des solutions (AVG) iss
 \end{figure}
 
 
-
 \section{Conclusion}
-A travers ce dernier chapitre, nous avons étudié les résultats expérimentaux de l’approche proposée et les avons comparés selon quelques paramètres de performances (BS,AVG), avec d’autres travaux élaborés pour la résolution du problème de l’arbre dominant. Dans l’ensemble, les approches que nous avons proposées s’est avéré efficace en offrant de bons résultats malgré la constatation de quelques dégradations de qualité qui peut se justifier par la nature stochastique des méta-heuristiques.
-
+A travers ce dernier chapitre, nous avons étudié les résultats expérimentaux de l’approche proposée et les avons comparées selon quelques paramètres de performances (BS,AVG), avec d’autres travaux élaborés pour la résolution du problème de l’arbre dominant. Dans l’ensemble, les approches que nous avons proposées se sont  avéré efficace en offrant de bons résultats malgré la constatation de quelques dégradations de qualité qui peut se justifier par la nature stochastique des méta-heuristiques.
 
