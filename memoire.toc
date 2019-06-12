@@ -1,7 +1,7 @@
 \babel@toc {french}{}
 \babel@toc {french}{}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Intro}{1}{Doc-Start}% 
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }R\IeC {\'e}seaux de capteurs sans fils}{3}{Doc-Start}% 
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Introduction}{1}{Doc-Start}% 
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Notions sur les r\IeC {\'e}seaux de capteurs sans fils}{3}{Doc-Start}% 
 \contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Un r\IeC {\'e}seau de capteur sans-fil}{3}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Architecture d\IeC {\textquoteright }un capteur sans-fil}{4}{section.1.3}% 
@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {1.5.3}Domaine environnementale}{10}{subsection.1.5.3}% 
 \contentsline {subsection}{\numberline {1.5.4}Domaine commercial}{10}{subsection.1.5.4}% 
 \contentsline {section}{\numberline {1.6}Le probl\IeC {\`e}me majeur d\IeC {\textquoteright }un r\IeC {\'e}seau de capteurs sans fil et le challenge:}{11}{section.1.6}% 
-\contentsline {section}{\numberline {1.7}Conclusion:}{12}{section.1.7}% 
+\contentsline {section}{\numberline {1.7}Conclusion:}{11}{section.1.7}% 
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Optimisation combinatoire et m\IeC {\'e}thodes de r\IeC {\'e}solutions }{13}{section.1.7}% 
 \contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Techniques d\IeC {\textquoteright }optimisation combinatoire:}{13}{section.2.2}% 
@@ -23,36 +23,45 @@
 \contentsline {subsubsection}{Heuristiques:}{17}{section*.1}% 
 \contentsline {subsubsection}{Meta-Heuristiques:}{17}{section*.2}% 
 \contentsline {subsubsection}{M\IeC {\'e}thodes de voisinage (A solution unique):}{17}{section*.3}% 
-\contentsline {subsubsection}{M\IeC {\'e}thodes \IeC {\'e}volutives (A population):}{22}{section*.4}% 
-\contentsline {section}{\numberline {2.3}Conclusion}{31}{section.2.3}% 
-\contentsline {chapter}{\hbox to\@tempdima {\hfil } Le probl\IeC {\`e}me de l\IeC {\textquoteright }arbre dominant DTP }{32}{section.2.3}% 
-\contentsline {section}{\numberline {3.1}Introduction}{32}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}D\IeC {\'e}finition du probl\IeC {\`e}me}{32}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Complexit\IeC {\'e} et approximation}{32}{section.3.3}% 
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Approche propos\IeC {\'e}e}{46}{algocf.22}% 
-\contentsline {section}{\numberline {4.1}Introduction}{46}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Repr\IeC {\'e}sentation du graphe mod\IeC {\'e}lisant le probl\IeC {\`e}me}{46}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}pr\IeC {\'e}sentation d\IeC {\textquoteright }une solution}{46}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}M\IeC {\'e}thode d'extraction d'un arbre dominant \IeC {\`a} partir du vecteur solution}{47}{section.4.4}% 
-\contentsline {section}{\numberline {4.5}La m\IeC {\'e}thode de connection}{47}{section.4.5}% 
-\contentsline {section}{\numberline {4.6}Approche propos\IeC {\'e}e}{48}{section.4.6}% 
-\contentsline {subsection}{\numberline {4.6.1}description des m\IeC {\'e}ta-heuristiques utilis\IeC {\'e}es}{48}{subsection.4.6.1}% 
-\contentsline {subsubsection}{Ant colony optimisation}{48}{section*.5}% 
-\contentsline {subsubsection}{Algorithme g\IeC {\'e}n\IeC {\'e}tique}{51}{section*.6}% 
-\contentsline {subsubsection}{biogeography based optimimisation (BBO)}{53}{section*.7}% 
-\contentsline {subsection}{\numberline {4.6.2}Description de l'approche coop\IeC {\'e}rative}{56}{subsection.4.6.2}% 
-\contentsline {section}{\numberline {4.7}Conclusion}{59}{section.4.7}% 
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }\IeC {\'E}tude exp\IeC {\'e}rimentale}{60}{section.4.7}% 
-\contentsline {section}{\numberline {5.1}Introduction}{60}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Environnement de travail}{60}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Environnement mat\IeC {\'e}riel}{60}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Environnement logiciel}{61}{subsection.5.2.2}% 
-\contentsline {section}{\numberline {5.3}Jeux de donn\IeC {\'e}es utilis\IeC {\'e}es}{61}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Exp\IeC {\'e}rimentation}{61}{section.5.4}% 
-\contentsline {subsection}{\numberline {5.4.1}\IeC {\'E}tude comparative}{62}{subsection.5.4.1}% 
-\contentsline {subsubsection}{Comparaison de la m\IeC {\'e}thode coop\IeC {\'e}rative avec les autres approches}{63}{section*.8}% 
-\contentsline {subsubsection}{Comparaison de la m\IeC {\'e}thode coop\IeC {\'e}rative avec les travaux li\IeC {\'e}s au DTP}{67}{section*.9}% 
-\contentsline {subsection}{\numberline {5.4.2}Analyse graphique}{69}{subsection.5.4.2}% 
-\contentsline {subsubsection}{\IeC {\'E}tude comparative entre les diff\IeC {\'e}rentes approches sur les meilleures solutions (BS) }{69}{section*.10}% 
-\contentsline {subsubsection}{Comparaison de la qualit\IeC {\'e} moyenne des solutions (AVG) de l\IeC {\textquoteright }approche coop\IeC {\'e}rative et des autres approches}{70}{section*.11}% 
-\contentsline {section}{\numberline {5.5}Conclusion}{71}{section.5.5}% 
+\contentsline {subsubsection}{M\IeC {\'e}thodes \IeC {\'e}volutives (A population):}{23}{section*.4}% 
+\contentsline {section}{\numberline {2.3}Conclusion}{32}{section.2.3}% 
+\contentsline {chapter}{\hbox to\@tempdima {\hfil } Le probl\IeC {\`e}me de l\IeC {\textquoteright }arbre dominant DTP }{33}{section.2.3}% 
+\contentsline {section}{\numberline {3.1}Introduction}{33}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}D\IeC {\'e}finition du probl\IeC {\`e}me}{33}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Complexit\IeC {\'e} et approximation}{34}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Notions de base}{36}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Arbre couvrant de poids minimal (MST):}{36}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}L\IeC {\textquoteright }\IeC {\'e}lagage (Pruning):}{38}{subsection.3.4.2}% 
+\contentsline {section}{\numberline {3.5}Les travaux relatifs}{39}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}L\IeC {\textquoteright }heuristique pour le probl\IeC {\`e}me de l\IeC {\textquoteright }arbre dominant (H\_DT )}{40}{subsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.5.2}Colonie d'abeilles artificielle pour le DTP (ABC\_DT))}{42}{subsection.3.5.2}% 
+\contentsline {section}{\numberline {3.6}Algorithme g\IeC {\'e}n\IeC {\'e}tique stationnaire }{44}{section.3.6}% 
+\contentsline {section}{\numberline {3.7}L\IeC {\textquoteright }algorithme \IeC {\'e}volutionnaire avec mutation guid\IeC {\'e}e EA/G}{47}{section.3.7}% 
+\contentsline {section}{\numberline {3.8}Conclusion}{54}{section.3.8}% 
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Approche propos\IeC {\'e}e}{56}{section.3.8}% 
+\contentsline {section}{\numberline {4.1}Introduction}{56}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Repr\IeC {\'e}sentation du graphe mod\IeC {\'e}lisant le probl\IeC {\`e}me}{56}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}pr\IeC {\'e}sentation d\IeC {\textquoteright }une solution}{56}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}M\IeC {\'e}thode d'extraction d'un arbre dominant \IeC {\`a} partir du vecteur solution}{57}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}La m\IeC {\'e}thode de connection}{57}{section.4.5}% 
+\contentsline {section}{\numberline {4.6}Approche propos\IeC {\'e}e}{58}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.6.1}description des m\IeC {\'e}ta-heuristiques utilis\IeC {\'e}es}{58}{subsection.4.6.1}% 
+\contentsline {subsubsection}{Ant colony optimisation}{58}{section*.5}% 
+\contentsline {subsubsection}{Algorithme g\IeC {\'e}n\IeC {\'e}tique}{61}{section*.6}% 
+\contentsline {subsubsection}{biogeography based optimimisation (BBO)}{63}{section*.7}% 
+\contentsline {subsection}{\numberline {4.6.2}Description de l'approche coop\IeC {\'e}rative}{66}{subsection.4.6.2}% 
+\contentsline {section}{\numberline {4.7}Conclusion}{69}{section.4.7}% 
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }\IeC {\'E}tude exp\IeC {\'e}rimentale}{70}{section.4.7}% 
+\contentsline {section}{\numberline {5.1}Introduction}{70}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Environnement de travail}{70}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Environnement mat\IeC {\'e}riel}{70}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Environnement logiciel}{70}{subsection.5.2.2}% 
+\contentsline {section}{\numberline {5.3}Jeux de donn\IeC {\'e}es utilis\IeC {\'e}es}{71}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Exp\IeC {\'e}rimentation}{71}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}\IeC {\'E}tude comparative}{72}{subsection.5.4.1}% 
+\contentsline {subsubsection}{Comparaison de la m\IeC {\'e}thode coop\IeC {\'e}rative avec les autres approches}{73}{section*.8}% 
+\contentsline {subsubsection}{Comparaison de la m\IeC {\'e}thode coop\IeC {\'e}rative avec les travaux li\IeC {\'e}s au DTP}{76}{section*.9}% 
+\contentsline {subsection}{\numberline {5.4.2}Analyse graphique}{79}{subsection.5.4.2}% 
+\contentsline {subsubsection}{\IeC {\'E}tude comparative entre les diff\IeC {\'e}rentes approches sur les meilleures solutions (BS) }{79}{section*.10}% 
+\contentsline {subsubsection}{Comparaison de la qualit\IeC {\'e} moyenne des solutions (AVG) de l\IeC {\textquoteright }approche coop\IeC {\'e}rative et des autres approches}{80}{section*.11}% 
+\contentsline {section}{\numberline {5.5}Conclusion}{81}{section.5.5}% 

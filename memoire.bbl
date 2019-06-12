@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{49}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -266,6 +266,13 @@ Pablo Moscato et~al.
 \newblock \emph{Caltech concurrent computation program, C3P Report},
   826:\penalty0 1989, 1989.
 
+\bibitem[Thai et~al.(2007)Thai, Wang, Liu, Zhu, and Du]{thai2007connected}
+My~T Thai, Feng Wang, Dan Liu, Shiwei Zhu, and Ding-Zhu Du.
+\newblock Connected dominating sets in wireless networks with different
+  transmission ranges.
+\newblock \emph{IEEE transactions on mobile computing}, 6\penalty0
+  (7):\penalty0 721--730, 2007.
+
 \bibitem[Charikar et~al.(1999)Charikar, Chekuri, Cheung, Dai, Goel, Guha, and
   Li]{charikar1999approximation}
 Moses Charikar, Chandra Chekuri, To-yat Cheung, Zuo Dai, Ashish Goel, Sudipto
@@ -273,10 +280,45 @@ Moses Charikar, Chandra Chekuri, To-yat Cheung, Zuo Dai, Ashish Goel, Sudipto
 \newblock Approximation algorithms for directed steiner problems.
 \newblock \emph{Journal of Algorithms}, 33\penalty0 (1):\penalty0 73--91, 1999.
 
+\bibitem[Prim(1957)]{prim1957shortest}
+Robert~Clay Prim.
+\newblock Shortest connection networks and some generalizations.
+\newblock \emph{The Bell System Technical Journal}, 36\penalty0 (6):\penalty0
+  1389--1401, 1957.
+
 \bibitem[Sundar and Singh(2013)]{sundar2013new}
 Shyam Sundar and Alok Singh.
 \newblock New heuristic approaches for the dominating tree problem.
 \newblock \emph{Applied Soft Computing}, 13\penalty0 (12):\penalty0 4695--4703,
   2013.
+
+\bibitem[Karaboga(2005)]{karaboga2005idea}
+Dervis Karaboga.
+\newblock An idea based on honey bee swarm for numerical optimization.
+\newblock Technical report, Technical report-tr06, Erciyes university,
+  engineering faculty, computer~…, 2005.
+
+\bibitem[Karaboga and Basturk(2008)]{karaboga2008performance}
+Dervis Karaboga and Bahriye Basturk.
+\newblock On the performance of artificial bee colony (abc) algorithm.
+\newblock \emph{Applied soft computing}, 8\penalty0 (1):\penalty0 687--697,
+  2008.
+
+\bibitem[Davis(1991)]{davis1991handbook}
+Lawrence Davis.
+\newblock Handbook of genetic algorithms.
+\newblock 1991.
+
+\bibitem[Zhang et~al.(2005)Zhang, Sun, and Tsang]{zhang2005evolutionary}
+Qingfu Zhang, Jianyong Sun, and Edward Tsang.
+\newblock An evolutionary algorithm with guided mutation for the maximum clique
+  problem.
+\newblock \emph{IEEE transactions on evolutionary computation}, 9\penalty0
+  (2):\penalty0 192--200, 2005.
+
+\bibitem[Chaurasia and Singh(2016)]{chaurasia2016hybrid}
+Sachchida~Nand Chaurasia and Alok Singh.
+\newblock A hybrid heuristic for dominating tree problem.
+\newblock \emph{Soft Computing}, 20\penalty0 (1):\penalty0 377--397, 2016.
 
 \end{thebibliography}

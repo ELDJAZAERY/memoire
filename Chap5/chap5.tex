@@ -48,6 +48,9 @@ Afin de tester l'approche proposée, nous avons opté pour l'utilisation de fich
 
 
 \section{Expérimentation}
+Pour montrer l'efficacité de l'approches proposées nous ne nous sommes pas limité à des instances de problème ayant un certain nombre de nœuds.
+
+Nous nous avons effectué cela pour une large plage de nombre de nœuds (50 - 500).
 
 Pour ACO, nous avons utilisé une population de 15 fourmis. Nous avons utilisé $\alpha = 1 \, , \, \beta = 1 \, , \, p = 0.05 \, , \, P_0 = 0.1 $. Toutes les valeurs de phéromone initiales sont égales à 0,05. Pour BBO et GA, la taille de la population est de 20 individus. Quant à l’approche de coopération,  nous avons utilisé 0.5 comme probabilité initiale et 0,1 pour la valeur de  \( \alpha \).
 
@@ -60,7 +63,7 @@ Afin de mener à bien une étude comparative entre nos approches et d’autres t
 
 Dans le but d’assurer l’intégrité des résultats, nous avons effectué un total de 20 exécutions pour chacune des instances. Les résultats d’exécutions de nos approches (ACO, BBO, GA et la méthode coopérative) sur les instances citées auparavant, sont illustrés dans le Tableau \ref{tab:1}.
 
-Dans le Tableau  \ref{tab:1}, les lignes correspondent aux différentes instances étudiées, quant aux colonnes, elles représentent, pour chaque approche : la meilleure solution obtenue (colonne BS), la moyenne de toutes les solutions obtenues sur  les 20 exécutions (colonne AVG), le nombre d’évaluations pour trouver la meilleure solution  (colonne NBV) et la colonne qui représente le temps d’exécution de chaque métaheuristique en seconde (colonne sec). 
+Dans le Tableau  \ref{tab:1}, les lignes correspondent aux différentes instances étudiées, quant aux colonnes, elles représentent, pour chaque approche : la meilleure solution obtenue (colonne BS), la moyenne de toutes les solutions obtenues sur les 20 exécutions (colonne AVG), le nombre d’évaluations nécessaire pour trouver la meilleure solution (colonne NBV) et la colonne qui représente le temps d’exécution de chaque métaheuristique en seconde (colonne sec). 
 Notez que les meilleures valeurs sont indiquées en gras dans les tableaux comparatifs.
 
 
@@ -92,9 +95,11 @@ Dans ce qui suit nous allons présenter une comparaison entre notre approche coo
 \end{figure}
 
 	\item \textbf{Avec l’approche BBO}\\
-D’après le graphe de la figure \ref{fig:DEMBBOMC} les deux approches sont similaires. De même, en analysant le tableau V.3, la meilleure solution (BS) obtenue par la méthode BBO et celle obtenue par l’approche de coopération est pratiquement  la même.
+D’après le graphe de la figure \ref{fig:DEMBBOMC} les deux approches sont similaires. De même, en analysant le tableau \ref{tab:3}, la meilleure solution (BS) obtenue par la méthode BBO et celle obtenue par l’approche de coopération est pratiquement la même.
 
 Concernant les moyennes des solutions (AVG), celles obtenues par l’approche coopérative sont de meilleures qualités par rapport à celles obtenues par BBO.
+
+Pour ce qui est du nombre d'évaluations celui de l’approche coopérative est négligeable comparé à l’autre approche.
 
 \begin{table}[H]
 	\includegraphics[width=15cm,height=8cm]{Chap5/t3.png}

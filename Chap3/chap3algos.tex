@@ -1,0 +1,445 @@
+
+\cleardoublepage
+
+
+%% 1
+
+\begin{algorithm}[H]
+\label{alg3:RSDT}
+\caption{Recuit simulé}
+\KwData{un graphe général pondéré non orienté $G=(V, E, w)$}
+\KwResult{Un DT de $G$ }
+\SetAlgoLined
+\DontPrintSemicolon
+
+Initialiser une liste pour sauvegarder le DT et son poids \;
+Trouver un sommet factice u en G avec un degré minimum \;
+Transformer $G$ en $G’ = (V’, E’, w’)$ en utilisant la technique de transformation\;
+\For{chaque nœud $v$ où $(u, v) \in E $}{
+	Exécution de l'algorithme DST \cite{charikar1999approximation} dans G et définir v comme racine r pour obtenir un DT \;
+	Sauvegarder le DT et son poids dans la liste \;	
+}
+ Retourner le DT avec poids minimum dans la liste \;
+\end{algorithm}
+
+
+\cleardoublepage
+
+%% 2
+
+\begin{algorithm}[H]
+\label{alg3:prim}
+\caption{Prim}
+\KwData{un graphe général pondéré non orienté $G=(V, E, w)$}
+\KwResult{Un arbre couvrant de poids minimal T}
+\SetAlgoLined
+\DontPrintSemicolon
+
+\tcp{Initialisation de T}
+sommets $\gets$ un sommet de $G$ qu’on choisit \;
+arêtes $\gets$ aucune 
+
+\Repeat{tous les sommets de G soient dans T}{
+Trouver toutes les arêtes de $G$ qui relient un sommet de T et un sommet extérieur à T \;
+Sélectionner l’arête ayant le plus petit poids parmis l’ensemble des arêtes trouvées \;
+Ajouter à T cette arête et le sommet correspondant \;
+}
+Retourner T \;
+\end{algorithm}
+
+
+
+%% 3
+
+\cleardoublepage
+
+\begin{algorithm}[H]
+\label{alg3:HDT}
+\caption{ pseudo-code H\_DT}
+\KwData{un graphe général pondéré non orienté $G=(V, E, w)$}
+\KwResult{sortie: un arbre dominant $DT \subseteq E$ }
+\SetAlgoLined
+\DontPrintSemicolon
+
+\tcp{Initialise DT}
+$DT \gets \varnothing $  \;
+
+\For{chaque sommet $i \in V$}{
+	Mark$[i] \gets $ 0 \;	
+}
+
+Calcule les chemins les plus courts entre toutes les paires de sommets de G \;
+Triez toutes les arêtes de E en ordre non décroissant en fonction de leur poids \;
+
+\While{tous les sommets de V ne sont pas marqués}{
+Sélectionnez une arête non sélectionnée $e_{ij}$ avec un coût minimal, dont au moins un point d'extrémité n'est pas marqué \;
+
+\For{chaque sommet v adjacent à  $i$ ou $j$ }{
+	Mark$[v] \gets$ 1 \;
+}
+
+\eIf{ DT = $ \varnothing $ ou $e_{ij}$ est adjacent à une arête dans DT}{
+	$ DT \gets DT \cup \{ e_{ij} \} $ \;
+}{
+	Trouver le chemin le plus court ST reliant DT et $\{i, j\}$ \;
+	$ DT \gets DT \cup ST \cup \{ e_{ij} \}$ \;
+}
+
+\For{chaque sommet v en ST}{
+	$ Mark[v] \gets 1$ \;
+	\For{chaque sommet k adjacent à v }{
+		$ Mark[k] \gets 1$ \;
+	}
+}
+
+}
+
+Appliquer la procédure d'élagage sur DT \;
+Reconnectez les sommets dominants de DT en y construisant un arbre couvrent de poids minimal \;
+Appliquer l'élagage sur le DT \; 
+Reconnectez les sommets dominants de DT en y construisant un arbre couvrent de poids minimal \;
+Retourner DT \;
+\end{algorithm}
+
+
+
+\cleardoublepage
+
+%% 4
+
+\begin{algorithm}[H]
+\label{alg3:ABC}
+\caption{ Pseudo-code de ABC }
+\SetAlgoLined
+\DontPrintSemicolon
+
+Générer $ne$ solutions aléatoires $E_1 , E_2 , ..., E_{ne}$ \;
+$MeilleureSol \gets meilleure $ solution parmi $E_1 , E_2 , ..., E_{ne}$ \;
+
+\While{La condition de terminaison est non satisfaite}{
+
+	\For{Chaque abeille employée $i$ dans $ne$ }{
+		$ E' \gets determination\_d\_ une\_solution\_voisine(E_i )$ \;
+		\eIf{E' est  meilleure que $E_i$}{
+			$ E_i \gets E'$ \;		
+		}{
+			\If{$E_i$ n'a pas changé après un nombre limité d'itérations}{
+				Remplacer $E_i$ avec une solution générée aléatoirement \;
+			}
+		}
+		\If{ $E'$ est meilleure que $MeilleureSol$}{
+			$MeilleureSol \gets E_i$ \;
+		}
+	}
+	
+	\For{Chaque abeille onlooker $i$ dans $n_0$}{
+		$s_i \gets méthode$ de sélection de tournoi binaire ($E_1 , E_2 , ..., E_{ne}$) \;
+		$O_{ni} \gets determination\_d\_une\_solution\_voisine(E_{si})$ \;
+		\If{ $O_{ni}$ est meilleure que $MeilleureSol$ }{
+			$MeilleureSol \gets O_{ni} $ \;	
+		}	
+
+		\If{ $O_{ni}$ est meilleure que $E_{si}$ }{
+			$E_{si} \gets O_{ni} $ \;
+		}
+	}
+		
+}
+
+\end{algorithm}
+
+
+
+
+
+\cleardoublepage
+
+%% 5
+
+\begin{algorithm}[H]
+\label{alg3:PCDSV}
+\caption{ Pseudo-code de détermination d'une solution voisine}
+\KwData{Une solution s}
+\KwResult{Une solution voisine s}
+\SetAlgoLined
+\DontPrintSemicolon
+
+Créer une copie s' de s \;
+
+\eIf{$u_{01} < q_1$}{
+	 Appliquer la procédure PDE sur s \;
+}{
+	 Appliquer la procédure PANDV sur s \;
+}
+
+Appliquer la procédure pruning sur s \;
+Reconnecter les sommets dominants de s’ en construisant un arbre de poids minimum sur eux (MST) \;
+Appliquer la procédure pruning sur s \;
+Reconnecter les sommets dominants de s’ en construisant un arbre de poids minimum sur
+eux (MST) \;
+
+\end{algorithm}
+
+
+
+
+
+
+\cleardoublepage
+
+%% 6
+
+\begin{algorithm}[H]
+\label{alg3:PCASSGA}
+\caption{ Pseudo-code de l'algorithme SSGA}
+\SetAlgoLined
+\DontPrintSemicolon
+
+Générer une population (popsize) de solutions $s1 , s2 , ..., s_pop_size$ aléatoirement \;
+
+$MeilleureSol \gets $ La meilleure solution de la population \;
+
+\While{La condition de terminaison est non satisfaite}{
+
+	\eIf{$u_{01} < p_c$}{
+		$ p_1 \gets$ méthode de sélection de tournoi binaire $s1 , s2 , ..., s_pop_size$ \;
+		$ p_2 \gets$ méthode de sélection de tournoi binaire $s1 , s2 , ..., s_pop_size$ \;	
+		Enfant $\gets$ Opérateur de Croisement $( p1, p2 )$ \;	
+	}{
+		$ p_1 \gets$ méthode de sélection de tournoi binaire $s1 , s2 , ..., s_pop_size$ \;
+		Enfant $\gets$ Opérateur de Mutation $(p1)$ \;			
+	}
+
+	\If{Enfant est un DT partiel}{
+		Appliquer procédure de réparation sur Enfant \;
+	} 
+	
+	Appliquer la procédure pruning sur le DT de Enfant \;
+	Appliquer l’algorithme de Prim pour construire un arbre de poids minimal sur le sousgraphe de G induit par l’ensemble des sommets dominants de DT \;
+	Appliquer la procédure pruning sur la DT de Enfant \;
+	
+	\If{Enfant est meilleure que $MeilleureSol$}{
+		$MeilleureSol \gets Enfant$ \;  
+	}
+	
+	Appliquer la politique de remplacement \;	
+}
+
+Retourner $MeilleureSol$ \;
+
+\end{algorithm}
+
+
+
+\cleardoublepage
+
+%% 7
+
+\begin{algorithm}[H]
+\label{alg3:PCPP}
+\caption{Pseudo-code de la procédure pruning}
+\SetAlgoLined
+\DontPrintSemicolon
+
+$R_n \gets  \{ v : v \in DN$ et $|ON ( v ) \cap DN | = 1$ et $CN(v) \subseteq (\cup_{u \in DN  \setminus \{  v  \} } ) \} $ \;
+
+\While{ $R_n \neq \varnothing$ }{
+
+	$DN \gets DN \setminus \{ v \}$ \;
+	$R_n \gets  \{ v : v \in DN$ et $|ON ( v ) \cap DN | = 1$ et $CN(v) \subseteq (\cup_{u \in DN  \setminus \{  v  \} } ) \} $ \;	
+}
+
+Retourner DN \;
+
+\end{algorithm}
+
+
+
+
+\cleardoublepage
+
+%% 8
+
+\begin{algorithm}[H]
+\label{alg3:PCSIEAGMP}
+\caption{Pseudo-code de la solution initiale de EA/G-MP}
+\SetAlgoLined
+\DontPrintSemicolon
+
+Initialement tous les nœuds dans V sont colorés en BLANC \;
+$W n \gets V \, DT \gets \varnothing \, DN \gets \varnothing \, I_u \gets \varnothing $ \;
+
+$v \gets Random(W_n)$ \;
+$ DN \gets DN \cup \{ v \} $ \;
+Mettre v NOIR \;
+$ nb \gets ON( v ) \cap W_n $ \;
+$ W_n \gets W_n \setminus ( nb \cup \{ v \})$ \;
+
+Mettre tous les noeuds $\in$ nb GRIS \;
+$I_u \gets nb$ \;
+
+\While{ $W_n \neq \varnothing$}{
+	Générer un nombre aléatoire $u_{01}$ tel que $0 \leq u_{01} \leq 1$ \;
+	\eIf{$u_{01} < \phi $}{
+		$(v,u) \gets $ argument $ v \in DN, \{ u \in I_u |ON(u) \cap W_n| \, \geq 1 \} w(v,u)$ \;
+	}{
+		$ v \gets Random(DN)$ \;			
+		$ u \gets \{ u:Random(I_u)$ et $|ON(u) \cap W_n| \, \geq 1 \} $
+	}
+	$DT \gets DT \cup \{ e_{v,u}  \} $	\;
+	$DN \gets DN \cup \{ u \} $	\;
+	Mettre u NOIR \;
+	$I_u \gets I_u \setminus \{ u \} $ \;
+	$ nb \gets \{ u: u \in ON(u) \cap W_n \} $ \;
+	Mettre tous les noeuds nb GRIS \;
+	$I_u \gets I_u \cup nb $	\;
+	$W_n \gets W_n \setminus nb$ \;	
+}
+
+Appliquer la procédure pruning sur les nœuds dans DT \;
+Reconnecter les nœuds dans DT via MST \;
+Retourner DT \;
+
+\end{algorithm}
+
+
+
+
+
+\cleardoublepage
+
+%% 9
+
+\begin{algorithm}[H]
+\label{alg3:IVPEAMP}
+\caption{Pseudo-code de l'initialisation du vecteur de probabilités de EA/G-MP.}
+\SetAlgoLined
+\DontPrintSemicolon
+
+$ nv \gets $ nombre de solutions initiales contenant le nœud $v, \forall v \in V$ ;
+
+$ pv \gets$ \( \displaystyle \frac{nv}{Np} \) ,  $\forall v \in V $ \;
+
+
+\end{algorithm}
+
+
+
+\cleardoublepage
+
+%% 10
+
+\begin{algorithm}[H]
+\label{alg3:MAJVPEAMP}
+\caption{Pseudo-code de la mise à jour du vecteur de probabilités de EA/G-MP.}
+\SetAlgoLined
+\DontPrintSemicolon
+
+$ nv \gets $ nombre de solutions initiales contenant le nœud $v, \forall v \in V$ ;
+
+$ pv \gets ( 1 - \lambda ) pv + \lambda \,$ \( \displaystyle \frac{nv}{L} \)  $\, \, , \forall v \in V $ \;
+
+\end{algorithm}
+
+
+
+\cleardoublepage
+
+%% 11
+
+\begin{algorithm}[H]
+\label{alg3:PCGM}
+\caption{Pseudo-code de GM}
+\SetAlgoLined
+\DontPrintSemicolon
+
+Mettre la couleur de tous les nœuds dans V à BLANC \;
+$ DT \gets \varnothing $ \;
+\For{nœud $v \in V$ dans un ordre quelconque}{
+	Générer un nombre aléatoire $r_1$ tel que $ 0 \leq r_1 \leq 1 $ \;
+	\eIf{$ r_1 < \beta $}{
+		Générer un nombre aléatoire $r_2$ tel que $ 0 \leq r_2 \leq 1 $ \;
+		\If{ $r_2 < p v $ Et ((v est BLANC) Ou (v est GRIS avec au moins un voisin BLANC))}{
+		   Trouver le chemin le plus court SP entre le nœud v et un nœud u dans DT\;
+		   Ajouter toutes les arêtes de SP dans DT \;
+		   Colorer en NOIR tous les nœuds dans le chemin SP \;
+		   Colorer en GRIS tous les nœuds voisins BLANCs des nœuds sur le chemin SP\;
+		}
+	}{
+		\If{v est un nœud dominant dans m i et v est GRIS avec au moins un voisin 					BLANC}
+		{
+		   Trouver le chemin le plus court SP entre le nœud v et un nœud u dans DT\;
+		   Ajouter toutes les arêtes de SP dans DT \;
+		   Colorer en NOIR tous les nœuds dans le chemin SP \;
+		   Colorer en GRIS tous les nœuds voisins BLANCs des nœuds sur le chemin SP\;
+		}
+	}
+}
+
+Retourner DT \;
+
+\end{algorithm}
+
+
+
+
+\cleardoublepage
+
+%% 12
+
+\begin{algorithm}[H]
+\label{alg3:PCOR}
+\caption{Pseudo-code de l’opérateur de réparation}
+\SetAlgoLined
+\DontPrintSemicolon
+
+\While{ U cn $ = \varnothing$ }{
+	$v \gets - argmax \, u \in U \, cn (wd(u) > 0) $ \;
+	\If{  $ v \neq \varnothing $ }{
+		Sélectionner un nœud v avec le plus petit index de U cn ;
+	}	
+	
+	Trouver le chemin le plus court SP entre le nœud v et un nœud u dans DT \;
+	Ajouter toutes les arêtes de SP dans DT \;
+	Colorer en NOIR tous les nœuds dans le chemin SP \;
+	Colorer en GRIS tous les nœuds voisins BLANCs des nœuds sur le chemin SP \;
+	Enlever tous les nœuds NOIRs et GRIS de U cn \;
+}
+
+Retourner DT \;
+
+\end{algorithm}
+
+
+\cleardoublepage
+
+%% 13
+
+\begin{algorithm}[H]
+\label{alg3:EAMPDTP}
+\caption{EA/G-MP pour DTP}
+\SetAlgoLined
+\DontPrintSemicolon
+
+A la génération $g \gets 0 $ , une population initiale pop(g) qui consiste en N p solutions est générée aléatoirement \;
+
+Initialiser le vecteur de probabilités p pour tous les nœuds en utilisant l’Algorithme \ref{alg3:IVPEAMP} \;
+
+\While{La condition de terminaison est non satisfaite}{\;
+
+	Sélectionner les L meilleures solutions de pop(g) pour former un ensemble parent
+	parent(g), puis mettre à jour le vecteur de probabilités p en utilisant 				l’Algorithme \ref{alg3:MAJVPEAMP} \;\;
+
+	Appliquer l’opérateur de mutation guidée GM une fois sur chacune des M meilleures
+	solutions. Un opérateur de réparation est appliqué sur chaque solution générée, 		si nécessaire, puis MST, l’opérateur de pruning, MST et l’opérateur de pruning 			sont appliqués sur chaque solution générée pour améliorer sa fitness. Ajouter 			toutes les M nouvelles solutions générées avec N p - M meilleures solutions à 			pop(g) pour former pop(g+1). Si le critère d’arrêt est satisfait, retourner 			l’arbre dominant avec le poids minimum trouvé jusqu’à présent \;\;
+
+	$ g \gets g + 1 $ \;
+
+	\If{la meilleure solution de la population ne s’améliore pas après S générations}		{
+		réinitialiser toute pop(g), sauf la meilleure solution, puis initialiser le 			vecteur de probabilités p pour tous les nœuds en utilisant l’Algorithme 				\ref{alg3:IVPEAMP}	
+	}
+	
+}
+
+
+\end{algorithm}

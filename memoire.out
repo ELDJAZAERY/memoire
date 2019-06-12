@@ -1,5 +1,5 @@
-\BOOKMARK [0][-]{Doc-Start}{Intro}{}% 1
-\BOOKMARK [0][-]{Doc-Start}{R\351seaux de capteurs sans fils}{}% 2
+\BOOKMARK [0][-]{Doc-Start}{Introduction}{}% 1
+\BOOKMARK [0][-]{Doc-Start}{Notions sur les r\351seaux de capteurs sans fils}{}% 2
 \BOOKMARK [1][-]{section.1.1}{Introduction}{Doc-Start}% 3
 \BOOKMARK [1][-]{section.1.2}{Un r\351seau de capteur sans-fil}{Doc-Start}% 4
 \BOOKMARK [1][-]{section.1.3}{Architecture d\220un capteur sans-fil}{Doc-Start}% 5
@@ -23,23 +23,32 @@
 \BOOKMARK [1][-]{section.3.1}{Introduction}{section.2.3}% 23
 \BOOKMARK [1][-]{section.3.2}{D\351finition du probl\350me}{section.2.3}% 24
 \BOOKMARK [1][-]{section.3.3}{Complexit\351 et approximation}{section.2.3}% 25
-\BOOKMARK [0][-]{algocf.22}{Approche propos\351e}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Introduction}{algocf.22}% 27
-\BOOKMARK [1][-]{section.4.2}{Repr\351sentation du graphe mod\351lisant le probl\350me}{algocf.22}% 28
-\BOOKMARK [1][-]{section.4.3}{pr\351sentation d\220une solution}{algocf.22}% 29
-\BOOKMARK [1][-]{section.4.4}{M\351thode d'extraction d'un arbre dominant \340 partir du vecteur solution}{algocf.22}% 30
-\BOOKMARK [1][-]{section.4.5}{La m\351thode de connection}{algocf.22}% 31
-\BOOKMARK [1][-]{section.4.6}{Approche propos\351e}{algocf.22}% 32
-\BOOKMARK [2][-]{subsection.4.6.1}{description des m\351ta-heuristiques utilis\351es}{section.4.6}% 33
-\BOOKMARK [2][-]{subsection.4.6.2}{Description de l'approche coop\351rative}{section.4.6}% 34
-\BOOKMARK [1][-]{section.4.7}{Conclusion}{algocf.22}% 35
-\BOOKMARK [0][-]{section.4.7}{\311tude exp\351rimentale}{}% 36
-\BOOKMARK [1][-]{section.5.1}{Introduction}{section.4.7}% 37
-\BOOKMARK [1][-]{section.5.2}{Environnement de travail}{section.4.7}% 38
-\BOOKMARK [2][-]{subsection.5.2.1}{Environnement mat\351riel}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.2}{Environnement logiciel}{section.5.2}% 40
-\BOOKMARK [1][-]{section.5.3}{Jeux de donn\351es utilis\351es}{section.4.7}% 41
-\BOOKMARK [1][-]{section.5.4}{Exp\351rimentation}{section.4.7}% 42
-\BOOKMARK [2][-]{subsection.5.4.1}{\311tude comparative}{section.5.4}% 43
-\BOOKMARK [2][-]{subsection.5.4.2}{Analyse graphique}{section.5.4}% 44
-\BOOKMARK [1][-]{section.5.5}{Conclusion}{section.4.7}% 45
+\BOOKMARK [1][-]{section.3.4}{Notions de base}{section.2.3}% 26
+\BOOKMARK [2][-]{subsection.3.4.1}{Arbre couvrant de poids minimal \(MST\):}{section.3.4}% 27
+\BOOKMARK [2][-]{subsection.3.4.2}{L\220\351lagage \(Pruning\):}{section.3.4}% 28
+\BOOKMARK [1][-]{section.3.5}{Les travaux relatifs}{section.2.3}% 29
+\BOOKMARK [2][-]{subsection.3.5.1}{L\220heuristique pour le probl\350me de l\220arbre dominant \(H\137DT \)}{section.3.5}% 30
+\BOOKMARK [2][-]{subsection.3.5.2}{Colonie d'abeilles artificielle pour le DTP \(ABC\137DT\)\)}{section.3.5}% 31
+\BOOKMARK [1][-]{section.3.6}{Algorithme g\351n\351tique stationnaire }{section.2.3}% 32
+\BOOKMARK [1][-]{section.3.7}{L\220algorithme \351volutionnaire avec mutation guid\351e EA/G}{section.2.3}% 33
+\BOOKMARK [1][-]{section.3.8}{Conclusion}{section.2.3}% 34
+\BOOKMARK [0][-]{section.3.8}{Approche propos\351e}{}% 35
+\BOOKMARK [1][-]{section.4.1}{Introduction}{section.3.8}% 36
+\BOOKMARK [1][-]{section.4.2}{Repr\351sentation du graphe mod\351lisant le probl\350me}{section.3.8}% 37
+\BOOKMARK [1][-]{section.4.3}{pr\351sentation d\220une solution}{section.3.8}% 38
+\BOOKMARK [1][-]{section.4.4}{M\351thode d'extraction d'un arbre dominant \340 partir du vecteur solution}{section.3.8}% 39
+\BOOKMARK [1][-]{section.4.5}{La m\351thode de connection}{section.3.8}% 40
+\BOOKMARK [1][-]{section.4.6}{Approche propos\351e}{section.3.8}% 41
+\BOOKMARK [2][-]{subsection.4.6.1}{description des m\351ta-heuristiques utilis\351es}{section.4.6}% 42
+\BOOKMARK [2][-]{subsection.4.6.2}{Description de l'approche coop\351rative}{section.4.6}% 43
+\BOOKMARK [1][-]{section.4.7}{Conclusion}{section.3.8}% 44
+\BOOKMARK [0][-]{section.4.7}{\311tude exp\351rimentale}{}% 45
+\BOOKMARK [1][-]{section.5.1}{Introduction}{section.4.7}% 46
+\BOOKMARK [1][-]{section.5.2}{Environnement de travail}{section.4.7}% 47
+\BOOKMARK [2][-]{subsection.5.2.1}{Environnement mat\351riel}{section.5.2}% 48
+\BOOKMARK [2][-]{subsection.5.2.2}{Environnement logiciel}{section.5.2}% 49
+\BOOKMARK [1][-]{section.5.3}{Jeux de donn\351es utilis\351es}{section.4.7}% 50
+\BOOKMARK [1][-]{section.5.4}{Exp\351rimentation}{section.4.7}% 51
+\BOOKMARK [2][-]{subsection.5.4.1}{\311tude comparative}{section.5.4}% 52
+\BOOKMARK [2][-]{subsection.5.4.2}{Analyse graphique}{section.5.4}% 53
+\BOOKMARK [1][-]{section.5.5}{Conclusion}{section.4.7}% 54
