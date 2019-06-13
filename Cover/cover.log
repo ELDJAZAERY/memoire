@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=latex 2019.5.27)  30 MAY 2019 01:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.27)  13 JUN 2019 20:33
 entering extended mode
 **./cover.tex
 (cover.tex
@@ -426,9 +426,9 @@ Missing character: There is no q in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-<recently read> \large 
+<recently read> \Large 
                        
-l.21 \large
+l.21 \Large
            {\textbf{Spécialité: Systèmes Informatiques Intelligents}}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -486,19 +486,14 @@ Overfull \hbox (26.09846pt too wide) in paragraph at lines 21--21
  \OT1/cmr/bx/n/10 gents 
  []
 
-
-! LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.25 \normalsize
-                {\textbf{Thème}}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+! Undefined control sequence.
+l.25 \Huge
+          {\textbf{Thème}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (34.51372pt too wide) in paragraph at lines 25--26
@@ -629,6 +624,7 @@ Missing character: There is no I in font nullfont!
 Missing character: There is no Q in font nullfont!
 Missing character: There is no U in font nullfont!
 Missing character: There is no E in font nullfont!
+Missing character: There is no S in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -796,11 +792,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 27 strings out of 492896
- 387 string characters out of 3133505
- 60114 words of memory out of 3000000
- 4041 multiletter control sequences out of 15000+200000
+ 28 strings out of 492895
+ 392 string characters out of 3133479
+ 60117 words of memory out of 3000000
+ 4042 multiletter control sequences out of 15000+200000
  3948 words of font info for 15 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 20i,9n,18p,145b,235s stack positions out of 5000i,500n,10000p,200000b,50000s
-No pages of output.
+ 20i,9n,18p,146b,235s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[11pt]{report}
 
 % encodage
 % default font encoding (OT1) 
@@ -49,8 +49,8 @@
 
 
 %% table of content
-\setcounter{tocdepth}{2}
-\setcounter{secnumdepth}{2} 
+%\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3} 
 
 
 
@@ -112,6 +112,13 @@
 %%%%%%%%%%%%%%%%%%%%
 
 
+%% defin command for the title of chapters
+\long\def\MemChapter#1{
+	\chapter{ \textbf{#1} }
+	\thispagestyle{empty}
+	\clearpage
+	\setcounter{page}{\the\numexpr\value{page}-1\relax}
+}
 
 
 \begin{document}
@@ -120,14 +127,15 @@
 
 \include{Intro/remerciement}
 
+\include{Intro/dedicase}
+
+\setcounter{page}{1} % Resest Page Counter
+
 \include{General/tableContents}
 
 \include{General/listFigures}
 
 \include{General/listOfAlgos}
-
-
-\setcounter{page}{1} % Resest Page Counter
 
 \include{Intro/introGeneral}
 
@@ -151,7 +159,11 @@
 
 \include{Chap5/chap5}
 
+\include{Conclusion/conclusionGeneral}
 
 \include{General/bibliography}
+
+
+\include{Conclusion/resume}
 \end{document}
 

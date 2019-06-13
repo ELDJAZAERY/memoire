@@ -1,6 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: memoire.aux
 A level-1 auxiliary file: Cover/cover.aux
 A level-1 auxiliary file: Intro/remerciement.aux
+A level-1 auxiliary file: Intro/dedicase.aux
 A level-1 auxiliary file: General/tableContents.aux
 A level-1 auxiliary file: General/listFigures.aux
 A level-1 auxiliary file: General/listOfAlgos.aux
@@ -10,8 +11,10 @@ A level-1 auxiliary file: Chap2/chap2.aux
 A level-1 auxiliary file: Chap3/chap3.aux
 A level-1 auxiliary file: Chap4/chap4.aux
 A level-1 auxiliary file: Chap5/chap5.aux
+A level-1 auxiliary file: Conclusion/conclusionGeneral.aux
 A level-1 auxiliary file: General/bibliography.aux
 The style file: unsrtnat.bst
+A level-1 auxiliary file: Conclusion/resume.aux
 Database file #1: General/References.bib
 Warning--can't use both volume and number fields in hill2000system
 Warning--empty journal in koubaa2005lower
