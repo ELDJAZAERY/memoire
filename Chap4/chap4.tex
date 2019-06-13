@@ -18,7 +18,7 @@ Dans les chapitres précédents, nous avons introduit différentes techniques ut
 \section{Représentation du graphe modélisant le problème}
 Un WSN est un graphe pondéré non orienté $G=(V,E,w)$, où $V$ est l’ensemble des nœuds du réseau, E l’ensemble des arêtes et w un poids non négatif attribué pour chaque arête $e=(u,v)$. 
 
-Nous utilisons pour représenter le WSN deux vecteurs, un vecteur de taille $|V|$ contenant des entiers représentant chaque nœud et l’autre est de taille $|V-1|$ il contient une structure d’arc (nœud 1, nœud 2 et le poids entre les deux nœuds. Nous allons dans ce qui suit présenter le codage de la solution ainsi que la méthode d'extraction du DT à partir de cette solution.
+Nous utilisons pour représenter le WSN deux vecteurs, un vecteur de taille $|V|$ contenant des entiers représentant chaque nœud et l’autre est de taille $|V-1|$ il contient une structure d’arc (nœud 1, nœud 2 et le poids entre les deux nœuds). Nous allons dans ce qui suit présenter le codage de la solution ainsi que la méthode d'extraction du DT à partir de cette solution.
 
 
 \section{présentation d’une solution}
@@ -33,9 +33,11 @@ L’ajout des nœuds à $DN$ se fait via un processus itératif. A chaque fois u
 Pour pouvoir construire un DT, il faut d’abord vérifier  que les nœuds actifs dans $DN$  sont connectés entre eux. Dans le meilleur des cas, les nœuds actifs dans $DN$ sont connectés. Dans le cas contraire nous devons les rendre connecté en utilisant une méthode de connection décrite si après.
 
 \section{La méthode de connection}
-Soit un vecteur DNC initialement vide qui va contenir par la suite ensemble de nœuds connecté. En premier lieu, nous retirons un nœud aléatoirement de DN et nous l’insérons dans DNC. Puis, d’une façon itérative, nous retirons tous les nœuds de DN qui ont au moins un voisin dans DNC et nous l’insérons dans DNV. En second lieu nous, devons insérer tous les nœuds actifs dans DN dans DNC en utilisant une autre fonction. Cette fonction consiste au départ, à choisir un nœud v aléatoirement dans V qui n’est pas dans DNC. Si v a au moins deux voisins un dans DN et l’autre dans DNC, alors nous retirons son voisins dans DN et nous l’insérons  avec v dans DNC. Si aucun nœud n’est trouvé nous procédons à une sélection par pair de nœuds où chaque nœud entre eux a soit un voisin dans DN ou dans DNC et nous refaisions le même processus de recherche daans le cas d’un seul nœud à selectionner. Nous ré-exécutons ce prceossus jusqu'à DN devient null.
+Soit un vecteur DNC initialement vide qui va contenir par la suite ensemble de nœuds connecté. En premier lieu, nous retirons un nœud aléatoirement de DN et nous l’insérons dans DNC. Puis, d’une façon itérative, nous retirons tous les nœuds de DN qui ont au moins un voisin dans DNC et nous l’insérons dans DNV. En second lieu nous, devons insérer tous les nœuds actifs dans DN dans DNC en utilisant une autre fonction. Cette fonction consiste au départ, à choisir un nœud v aléatoirement dans V qui n’est pas dans DNC. S'il y a au moins deux voisins, un dans DN et l’autre dans DNC, alors nous retirons son voisins dans DN et nous l’insérons  avec v dans DNC. Si aucun nœud n’est trouvé nous procédons à une sélection par pair de nœuds où chaque nœud entre eux a soit un voisin dans DN ou dans DNC et nous refaisions le même processus de recherche dans le cas d’un seul nœud à selectionner.\\
+Nous ré-exécutons ce prceossus jusqu'à ce que DN devient null.
 
-Une fois que l’ensemble DN soit null, nous appliquant la méthode d’élagage et MST décrit dans le chapitre 3. Nous aurons au final, un arbre dominant DT, représenté sous forme d’un vecteur de type arc (chaque élément de ce vecteur est composé d’un noeud1, noeud2, et le poids entre ces deux nœuds).
+Une fois que l’ensemble DN soit null, nous appliquons la méthode d’élagage et MST décritent dans le chapitre 3. Nous aurons au final, un arbre dominant DT, représenté sous forme d’un vecteur de type arc (chaque élément de ce vecteur est composé d’un noeud1, noeud2, et le poids entre ces deux nœuds).
+
 
 
 \section{Approche proposée}
@@ -52,9 +54,9 @@ Nous utilisons dans cette première solution, l'algorithme des colonies de Fourm
 	\item \textbf{Les opérateurs de l’algorithme ACO}\\
 \begin{enumerate}[label=\alph*)]
 	\item \textbf{Recherche locale}\\
-	Dans la recherche locale que nous proposons, supposons que nous avons une solution. Nous parcourons le vecteur de la solution et on inverse la valeur des élément (si la valeur d’un élément est égale à 1, elle devient 0 ou inversement) . A chaque fois que nous inversons  la valeur  de chaque élément nous faisons une évaluation de la fonction objectif. A tous coups où la solution est améliorée, cette dernière est sauvegardé et la recherche d’une meilleure solution se fera à partir de cette solution.
+	Dans la recherche locale que nous proposons, supposons que nous avons une solution. Nous parcourons le vecteur de la solution et on inverse la valeur des élément (si la valeur d’un élément est égale à 1, elle devient 0 ou inversement). A chaque fois que nous inversons  la valeur  de chaque élément nous faisons une évaluation de la fonction objectif. A tous coups où la solution est améliorée, cette dernière est sauvegardée et la recherche d’une meilleure solution se fera à partir de cette solution.
 	
-La recherche se terminera lorsque touts  les nœuds dominants aurons été parcourus.
+La recherche se terminera lorsque tous  les nœuds dominants aurons été parcourus.
 il est à noter que la méthode de recherche locale citée ci dessus est utilisée dans toutes les solutions proposées.
 	
 	\item \textbf{Les méthodes de sélection}\\
@@ -340,7 +342,7 @@ Nous proposons une approche  coopérative entre les méta-heuristiques pour la r
 
 Comme le montre la figure \ref{fig:CMH}, nous utilisons comme méta-heuristique maître la recherche taboue, et pour les méta-heuristiques esclaves nous utilisons l’algorithme génétique, ACO ainsi que BBO. Au départ, le maître choisit une méta-heuristique esclave de manière aléatoire. A chaque fois qu' une méta-heuristique esclave améliore sa solution, elle aura comme bonus une valeur supérieure de rang, cela crée une forme de compétition entre les esclaves pour accroître son rang tout en améliorant la solution actuelle.
 
-Lorsqu'une méta-heuristique termine sa recherche, elle communique sa meilleure solution à celle qui la remplace, permettant ainsi à cette dernière de générer un bon voisinage. La sélection de la méta-heuristique remplaçante se fait par rapport à la valeur du rang (c’est-à-dire la méta-heuristique ayant le plus grand rang sera choisie pour l’amélioration de la solution courante). La méta-heuristique esclaves n’ayant pas amélioré la solution après un   nombre d’itération  précis  elle sera mis dans la liste taboue. Lorsque tous les méta heuristique sont dans la lites tabou la méta heuristique maître libère l’esclave ayant un rand élevé pour contribué à la recherche d’une meilleure solution. L'algorithme \ref{alg:MHM} présente le processus de fonctionnement de la méta-heuristique maître :
+Lorsqu'une méta-heuristique termine sa recherche, elle communique sa meilleure solution à celle qui la remplace, permettant ainsi à cette dernière de générer un bon voisinage. La sélection de la méta-heuristique remplaçante se fait par rapport à la valeur du rang (c’est-à-dire la méta-heuristique ayant le plus grand rang sera choisie pour l’amélioration de la solution courante). La méta-heuristique esclaves n’ayant pas amélioré la solution après un nombre d’itération  précis  elle sera mis dans la liste taboue. Lorsque toutes les méta-heuristiques sont dans la listes tabou la méta-heuristique maître libère l’esclave ayant un rand élevé pour contribuer à la recherche d’une meilleure solution. L'algorithme \ref{alg:MHM} présente le processus de fonctionnement de la méta-heuristique maître :
 
 
 \begin{algorithm}[H]
