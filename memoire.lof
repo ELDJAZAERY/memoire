@@ -5,34 +5,34 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Capteur sans fils}}{10}{figure.1.1}% 
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Architecture d\IeC {\textquoteright }un r\IeC {\'e}seau de capteurs sans fil}}{11}{figure.1.2}% 
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Architecture d\IeC {\textquoteright }un n\IeC {\oe }ud capteur}}{11}{figure.1.3}% 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Consommation d\IeC {\textquoteright }\IeC {\'e}nergie dans un n\IeC {\oe }ud capteur. \cite {raghunathan2005design,karl2007protocols}}}{13}{figure.1.4}% 
-\contentsline {figure}{\numberline {1.5}{\ignorespaces L\IeC {\textquoteright }architecture d\IeC {\textquoteright }un WSN}}{14}{figure.1.5}% 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Consommation d\IeC {\textquoteright }\IeC {\'e}nergie dans un n\IeC {\oe }ud capteur. \cite {raghunathan2005design,karl2007protocols}}}{12}{figure.1.4}% 
+\contentsline {figure}{\numberline {1.5}{\ignorespaces L\IeC {\textquoteright }architecture d\IeC {\textquoteright }un WSN}}{13}{figure.1.5}% 
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Les cas d\IeC {\textquoteright }utilisation d\IeC {\textquoteright }un r\IeC {\'e}seau de capteurs sans-fil}}{17}{figure.1.6}% 
 \addvspace {10\p@ }
 \textbf {Optimisation combinatoire et m\IeC {\'e}thodes de r\IeC {\'e}solutions }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Diff\IeC {\'e}rence entre un optimum global et des optima locaux}}{21}{figure.2.1}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Classification des m\IeC {\'e}thodes de r\IeC {\'e}solution d\IeC {\textquoteright }optimisation combinatoire}}{22}{figure.2.2}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Organigramme illustrant le fonctionnement de la recherche Recuit simul\IeC {\'e}}}{25}{figure.2.3}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Organigramme illustrant le Fonctionnement de l\IeC {\textquoteright }algorithme TS}}{27}{figure.2.4}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Principe d\IeC {\textquoteright }un algorithme \IeC {\'e}volutionnaire (EA) \cite {dreo2003metaheuristiques}.}}{30}{figure.2.5}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Organigramme d\IeC {\textquoteright }un algorithme g\IeC {\'e}n\IeC {\'e}tique}}{31}{figure.2.6}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces processus de migration de BBO}}{36}{figure.2.7}% 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Sch\IeC {\'e}ma explicatif d\IeC {\textquoteright }un algorithme m\IeC {\'e}m\IeC {\'e}tique}}{38}{figure.2.8}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diff\IeC {\'e}rence entre un optimum global et des optima locaux}}{20}{figure.2.1}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Classification des m\IeC {\'e}thodes de r\IeC {\'e}solution d\IeC {\textquoteright }optimisation combinatoire}}{21}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Organigramme illustrant le fonctionnement de la recherche Recuit simul\IeC {\'e}}}{24}{figure.2.3}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Organigramme illustrant le Fonctionnement de l\IeC {\textquoteright }algorithme TS}}{26}{figure.2.4}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Principe d\IeC {\textquoteright }un algorithme \IeC {\'e}volutionnaire (EA) \cite {dreo2003metaheuristiques}.}}{29}{figure.2.5}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Organigramme d\IeC {\textquoteright }un algorithme g\IeC {\'e}n\IeC {\'e}tique}}{30}{figure.2.6}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces processus de migration de BBO}}{35}{figure.2.7}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Sch\IeC {\'e}ma explicatif d\IeC {\textquoteright }un algorithme m\IeC {\'e}m\IeC {\'e}tique}}{37}{figure.2.8}% 
 \addvspace {10\p@ }
 \textbf {Le probl\IeC {\`e}me de l\IeC {\textquoteright }arbre dominant (DTP) }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemple de r\IeC {\'e}duction du graphe G en G\IeC {\textquoteright }}}{41}{figure.3.1}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple de r\IeC {\'e}duction du graphe G en G\IeC {\textquoteright }}}{43}{figure.3.2}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces illustration de l\IeC {\textquoteright }algorithme de Prim}}{44}{figure.3.3}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemple de r\IeC {\'e}duction du graphe G en G\IeC {\textquoteright }}}{40}{figure.3.1}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple de r\IeC {\'e}duction du graphe G en G\IeC {\textquoteright }}}{42}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces illustration de l\IeC {\textquoteright }algorithme de Prim}}{43}{figure.3.3}% 
 \addvspace {10\p@ }
 \textbf {Approche propos\IeC {\'e}e}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemple de croisement uniforme}}{67}{figure.4.1}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Repr\IeC {\'e}sentation sch\IeC {\'e}matique de la mutation}}{68}{figure.4.2}% 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Coop\IeC {\'e}ration des m\IeC {\'e}ta-heuristiques}}{72}{figure.4.3}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemple de croisement uniforme}}{63}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Repr\IeC {\'e}sentation sch\IeC {\'e}matique de la mutation}}{64}{figure.4.2}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Coop\IeC {\'e}ration des m\IeC {\'e}ta-heuristiques}}{68}{figure.4.3}% 
 \addvspace {10\p@ }
 \textbf {\IeC {\'E}tude exp\IeC {\'e}rimentale}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Caract\IeC {\'e}ristiques de la machine utilis\IeC {\'e}e}}{75}{figure.5.1}% 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode ACO et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{79}{figure.5.2}% 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode BBO et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{80}{figure.5.3}% 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode GA et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{81}{figure.5.4}% 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions des approches propos\IeC {\'e}es}}{85}{figure.5.5}% 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrammes de la Qualit\IeC {\'e} moyenne de la solution AVG de des approches propos\IeC {\'e}es}}{86}{figure.5.6}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Caract\IeC {\'e}ristiques de la machine utilis\IeC {\'e}e}}{70}{figure.5.1}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode ACO et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{74}{figure.5.2}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode BBO et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{75}{figure.5.3}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions de la m\IeC {\'e}thode GA et la m\IeC {\'e}thode coop\IeC {\'e}rative}}{76}{figure.5.4}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrammes d\IeC {\textquoteright }ex\IeC {\'e}cutions des approches propos\IeC {\'e}es}}{80}{figure.5.5}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrammes de la Qualit\IeC {\'e} moyenne de la solution AVG de des approches propos\IeC {\'e}es}}{81}{figure.5.6}% 

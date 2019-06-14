@@ -93,7 +93,7 @@ Nous allons décrire dans ce qui suit, l'approche de construction de la solution
 
 Après que tous les sommets du graphe soient étiquetés à marqué. Les fonction élagage et MST décrit dans le chapitre 3 sont appliquées.\\
 
-Le pseudo-code de ACO est donné dans l’algorithme 1 suivant:
+Le pseudo-code de ACO est donné dans l’algorithme 1 suivant:\\
 
 \begin{algorithm}[H]
 \caption{ACO DT}
@@ -101,6 +101,8 @@ Le pseudo-code de ACO est donné dans l’algorithme 1 suivant:
 \KwResult{Un DT  optimal de G }
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+\large
 
 Initialiser le vecteur de probabilité ainsi que la table de pheromone \;
 Construction de la solution initiale \;
@@ -166,12 +168,13 @@ Cet opérateurs permet de garder les meilleurs individus de chaque population. N
 
 \item \textbf{Fonctionnement de l’algorithme génétique (GA)}
 
-Après avoir créé une population initiale, l’algorithme GA procède comme suit:
+Après avoir créé une population initiale, l’algorithme GA procède comme suit:\\
 
 \begin{algorithm}[H]
 \caption{Génétique DT}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
 
 Initialiser une population d’une façon aléatoire \;
 
@@ -203,13 +206,14 @@ C’est une méta heuristique qui fait partie des algorithmes évolutionnaire ba
 	Il est à noter que le codage d’une solution et l’initialisation de la population sont les même  que celles décrient pour l’algorithme génétique. BBO utilise principalement deux opérateurs: la migration et la mutation 
 	\begin{enumerate}[label=\alph*)]
 		\item \textbf{Migration}\\
-		Le concept générale de cet opérateur est de décider laquelle des régions de la solution migre ou non vers une autre région. La migration d’une région est le fait qu’un élément d’une solution s’interchange avec un autre élément d’une autre solution. Il est généralement utilisé pour modifier l’individu existant. L’algorithme 3 décrit le fonctionnement de l’opérateur de migration utilisé par BBO . 
+		Le concept générale de cet opérateur est de décider laquelle des régions de la solution migre ou non vers une autre région. La migration d’une région est le fait qu’un élément d’une solution s’interchange avec un autre élément d’une autre solution. Il est généralement utilisé pour modifier l’individu existant. L’algorithme 3 décrit le fonctionnement de l’opérateur de migration utilisé par BBO .\\
 		
 \begin{algorithm}[H]
 \caption{Migration BBO DT}
 \KwData{position d’un individu donnée $j$}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
 
 \While{$i<$ taille de population}{
  $rand = Random(0,1)$\;
@@ -224,13 +228,14 @@ Où :\\
 $\mu(I_i)$ Probabilité Emigration de l'individu $I_i$ \\
 		
 	\item \textbf{Mutation}\\
-	La mutation est un opérateur probabiliste. Le but de cet opérateur est de maintenir la diversité d’une population.
+	La mutation est un opérateur probabiliste. Le but de cet opérateur est de maintenir la diversité d’une population.\\
 	
 \begin{algorithm}[H]
 \caption{Mutation BBO DT}
 \KwData{position d’un individu  $j, PM$}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
 
 \While{$i<$ taille de l’individu}{
  $rand = Random(0,1)$\;
@@ -289,13 +294,14 @@ Quant aux taux de la mutation est calculé en utilisant les résultats des deux 
 
 	
 	\item \textbf{Le fonctionnement de l’algorithme BBO}\\
-	L’algorithme BBO que nous avons développé peut être décrit globalement par l’algorithme \ref{alg:BBODT}. Les deux opérateurs de base qui régissent le fonctionnement de BBO sont la migration et la mutation et sont les même décries si dessus. En plus, une stratégie d’élitisme est adoptée dans l’algorithme BBO, afin de garder dans la nouvelle population la meilleure solution.
+	L’algorithme BBO que nous avons développé peut être décrit globalement par l’algorithme \ref{alg:BBODT}. Les deux opérateurs de base qui régissent le fonctionnement de BBO sont la migration et la mutation et sont les même décries si dessus. En plus, une stratégie d’élitisme est adoptée dans l’algorithme BBO, afin de garder dans la nouvelle population la meilleure solution.\\
 
 \begin{algorithm}[H]
 \label{alg:BBODT}
 \caption{Algoritme BBO DT}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
 
 Initialisation de la population \;
 \While{la condition d’arrêt non vérifiée}{
@@ -333,7 +339,7 @@ Nous proposons une approche  coopérative entre les méta-heuristiques pour la r
 
 Comme le montre la figure \ref{fig:CMH}, nous utilisons comme méta-heuristique maître la recherche taboue, et pour les méta-heuristiques esclaves nous utilisons l’algorithme génétique, ACO ainsi que BBO. Au départ, le maître choisit une méta-heuristique esclave de manière aléatoire. A chaque fois qu' une méta-heuristique esclave améliore sa solution, elle aura comme bonus une valeur supérieure de rang, cela crée une forme de compétition entre les esclaves pour accroître son rang tout en améliorant la solution actuelle.
 
-Lorsqu'une méta-heuristique termine sa recherche, elle communique sa meilleure solution à celle qui la remplace, permettant ainsi à cette dernière de générer un bon voisinage. La sélection de la méta-heuristique remplaçante se fait par rapport à la valeur du rang (c’est-à-dire la méta-heuristique ayant le plus grand rang sera choisie pour l’amélioration de la solution courante). La méta-heuristique esclaves n’ayant pas amélioré la solution après un nombre d’itération  précis  elle sera mis dans la liste taboue. Lorsque toutes les méta-heuristiques sont dans la listes tabou la méta-heuristique maître libère l’esclave ayant un rand élevé pour contribuer à la recherche d’une meilleure solution. L'algorithme \ref{alg:MHM} présente le processus de fonctionnement de la méta-heuristique maître :
+Lorsqu'une méta-heuristique termine sa recherche, elle communique sa meilleure solution à celle qui la remplace, permettant ainsi à cette dernière de générer un bon voisinage. La sélection de la méta-heuristique remplaçante se fait par rapport à la valeur du rang (c’est-à-dire la méta-heuristique ayant le plus grand rang sera choisie pour l’amélioration de la solution courante). La méta-heuristique esclaves n’ayant pas amélioré la solution après un nombre d’itération  précis  elle sera mis dans la liste taboue. Lorsque toutes les méta-heuristiques sont dans la listes tabou la méta-heuristique maître libère l’esclave ayant un rand élevé pour contribuer à la recherche d’une meilleure solution. L'algorithme \ref{alg:MHM} présente le processus de fonctionnement de la méta-heuristique maître :\\
 
 
 \begin{algorithm}[H]
@@ -341,6 +347,7 @@ Lorsqu'une méta-heuristique termine sa recherche, elle communique sa meilleure 
 \caption{Algorithme de la méta-heuristique maître}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
 
 \While{condition d’arrêt non vérifiée}{
 Choisir la méta-heuristique ayant uen rand élevé et qui n’est pas dans la liste taboue \\
@@ -360,13 +367,14 @@ Choisir la méta-heuristique ayant uen rand élevé et qui n’est pas dans la l
 Où:\\
 $\alpha$ représente: une valeur positive, si la qualité de la solution est améliorée, sinon $\alpha$ sera négatif.
 
-L’algorithme suivant va définir le processus générale de la méthode de coopération 
+L’algorithme suivant va définir le processus générale de la méthode de coopération.\\
 
 \begin{algorithm}[H]
 \label{alg:CA}
 \caption{Algorithme de coopération}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
 
 \While{condition d’arrêt non vérifiée}{
 

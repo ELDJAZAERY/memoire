@@ -26,7 +26,7 @@ Le problème de l’arbre dominant (DTP) est une variante récente d’ensemble 
 L’arbre de Steiner est souvent associé à des problème de conception de réseau. Le principe de conception de cet arbre est très proche du principe de conception de l’arbre dominant. Il consiste à construire un arbre de poids minimal r nommé DST, en veillant à ce qu'il y ait au moins un chemin allant de la racine à chaque nœud de l'ensemble D tel que D est un ensemble dominant minimal appartenant à V dans G.
 
 Dans \cite{shin2010approximation} il a été montré que le DTP peut être réduit au problème DST en un temps polynomial. Rappelons que l’algorithme de construction de DST avec la conservation du rapport de performance nous permet de l’ appliquer au DTP de la façons suivante:\\
-Dans le problème DT nous introduisons un sommet factrice v* ( un faux sommet) pour chaque sommet réel $v \in V$,  puis nous ajoutons les arcs pour tous les voisins de v (y compris v lui-même) au nœud factice v, et fixons le poids à zéro pour toute arrête nouvellement ajoutées. De même, pour les arêtes originales, l’arête est bidirectionnelle et le poids identique à celui du graphe original. Dans le nouveau graphe orienté G’ = (V’, E’, w’), si nous choisissons un $v’ \in V’$ arbitraire comme root r, et que tous les sommets factices soient des terminaux, nous pouvons obtenir un DST basé sur un algorithme DST existant \cite{zhang2008new} et obtenir ainsi un DT de G. Il est clair que la réduction est réalisée en temps linéaire. Cette réduction est illustrée sur la Figure \ref{fig:31}.
+Dans le problème DT nous introduisons un sommet factrice v* ( un faux sommet) pour chaque sommet réel $v \in V$,  puis nous ajoutons les arcs pour tous les voisins de v (y compris v lui-même) au nœud factice v, et fixons le poids à zéro pour toute arrête nouvellement ajoutées. De même, pour les arêtes originales, l’arête est bidirectionnelle et le poids identique à celui du graphe original. Dans le nouveau graphe orienté G’ = (V’, E’, w’), si nous choisissons un $v’ \in V’$ arbitraire comme root r, et que tous les sommets factices soient des terminaux, nous pouvons obtenir un DST basé sur un algorithme DST existant \cite{zhang2008new} et obtenir ainsi un DT de G. Il est clair que la réduction est réalisée en temps linéaire. Cette réduction est illustrée sur la Figure \ref{fig:31}.\\
 
 \begin{figure}[H]
 	\centering
@@ -41,7 +41,7 @@ Si r est dans le DT optimal, alors le DT introduit par DST aura le même poids o
 \textbf{Preuve:}
 Supposons qu'il existe une arborescence dominante optimale DT*, nous pouvons faire en sorte que tous les nœuds de DT* apparaissent dans le DST. Puisque r est dans DT*, pour chaque nœud de DT, au moins un de ses voisins doit être dans DT, et pour tout terminal, nous pouvons ajouter un front dirigé depuis ce voisin. Et nous savons que ces arêtes sont pondérées à zéro, de sorte que le poids de cette DST est égal à w (DT*). Supposons qu'il existe un DST optimal ST*, alors nous avons w (DT*) $\geq w$ (ST*). En outre, pour un DST optimal, nous pouvons éliminer toutes ces arêtes pondérées par zéro. Étant donné que tous les nœuds terminaux ont un chemin allant de r à eux, chaque nœud aura au moins un de ses voisins figurant dans cet arbre, ce qui signifie qu’il s’agit d’un DT. Nous avons donc w (ST*) $ \geq w$ (DT*). En conclusion, nous avons w (DT*) = w (ST*). Cela implique à son tour que nous pouvons obtenir le même rapport de performances pour le problème DT que pour le DST \cite{shin2010approximation}.
 
-Une approximation poly-logarithmique a été fourni par les auteurs dans \cite{charikar1999approximation}.  L’algorithme qui  nous permet d’obtenir le rapport de performance est le suivant :
+Une approximation poly-logarithmique a été fourni par les auteurs dans \cite{charikar1999approximation}.  L’algorithme qui  nous permet d’obtenir le rapport de performance est le suivant :\\
 
 \begin{algorithm}[H]
 \label{alg3:RSDT}
@@ -50,6 +50,8 @@ Une approximation poly-logarithmique a été fourni par les auteurs dans \cite{c
 \KwResult{Un DT de $G$ }
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 Initialiser une liste pour sauvegarder le DT et son poids \;
 Trouver un sommet factice u en G avec un degré minimum \;
@@ -68,7 +70,7 @@ L’algorithme \ref{alg3:RSDT} nous permet de transformer le DTP en DST. Puis no
 \section{Notions de base}
 
 \subsection{Arbre couvrant de poids minimal (MST):}
-un graphe pondéré non orienté G=(V,E,w), où V est l’ensemble des nœuds du réseau, E l’ensemble des liaisons de communication du réseau et W un poids non négatif attribué sur chaque arête e=(u,v).
+un graphe pondéré non orienté G=(V,E,w), où V est l’ensemble des nœuds du réseau, E l’ensemble des liaisons de communication du réseau et W un poids non négatif attribué sur chaque arête e=(u,v).\\
 
 
 \begin{enumerate}[label=\alph*)]
@@ -77,7 +79,7 @@ un graphe pondéré non orienté G=(V,E,w), où V est l’ensemble des nœuds du
 	un arbre couvrant d’un graphe G est un arbre qui s'étend à inclure tous les sommets de G.
 
 	\item \textbf{Qu'est-ce qu'un arbre couvrant de poids minimal (MST)?}\\
-	Le coût de l'arbre couvrant est la somme des poids de toutes les arêtes de l'arbre. Il peut y avoir beaucoup d'arbres couvrant. L’arbre couvrant de poids minimal est l'arbre couvrant dont le coût est minimal parmi tous les arbres couvrant. Il peut également y avoir beaucoup d'arbres couvrant minimum.
+	Le coût de l'arbre couvrant est la somme des poids de toutes les arêtes de l'arbre. Il peut y avoir beaucoup d'arbres couvrant. L’arbre couvrant de poids minimal est l'arbre couvrant dont le coût est minimal parmi tous les arbres couvrant. Il peut également y avoir beaucoup d'arbres couvrant minimum.\\
 
 \begin{figure}[H]
 	\centering
@@ -93,7 +95,7 @@ Il existe deux algorithmes les plus réputé pour l construction d’un arbre  c
 
 
 \textbf{Algorithme de Prim:}\\
-C’est un algorithme  glouton qui tente à construire un arbre couvrant de poids minimal dans un graphe non orienté, connexe. Nous allons présenter dans ce qui suit l’algorithme de Prim ainsi qu’un exemple qui illustre le déroulement de ce dernier.
+C’est un algorithme  glouton qui tente à construire un arbre couvrant de poids minimal dans un graphe non orienté, connexe. Nous allons présenter dans ce qui suit l’algorithme de Prim ainsi qu’un exemple qui illustre le déroulement de ce dernier.\\
 
 \begin{algorithm}[H]
 \label{alg3:prim}
@@ -102,6 +104,8 @@ C’est un algorithme  glouton qui tente à construire un arbre couvrant de poid
 \KwResult{Un arbre couvrant de poids minimal T}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 \tcp{Initialisation de T}
 sommets $\gets$ un sommet de $G$ qu’on choisit \;
@@ -140,7 +144,7 @@ En  2010, puisque le problème de l’arbre dominant est NP-hard, Yilin Shen · 
 Nous allons considérer pour la suite un graphe G = (V, E, w), non orienté, pondéré, où : V est l’ensemble des sommets et E est l’ensemble des arêtes du graphe G.
 
 \subsection{L’heuristique pour le problème de l’arbre dominant (H\_DT )}
-En  2013, Shyam Sundar et Alok Singh proposent un nouvel algorithme heuristique (H\_DT) pour la construction d’un arbre dominant DTP \cite{sundar2013new}. Entre autre, un arbre couvrant minimal est construit sur le sous-graphe de G induit par l’ensemble des sommets dominants de DT à l’aide de l’algorithme de Prim \cite{prim1957shortest}. De cette façon, le poids total de DT peut être réduit davantage. La raison  est que même après le pruning, le poids total de DT peut ne pas être minimum en raison de la sélection d'arêtes incorrectes lors de la construction de DT. Sur un ensemble donné de sommets dominants, de nombreux arbres dominants peuvent être construits en G. De toute évidence, un arbre dominant obtenu à l’aide de l’algorithme de Prim aura un coût minimum parmi tous ces arbres dominants. Après cela, la procédure d’élagage est à nouveau appliquée, puis un arbre couvrant minimal est à nouveau construit sur le sous-graphe de G induit par l’ensemble des sommets dominants de DT à l’aide de l’algorithme de Prim. Dans ce qui suit nous allons donner le pseudo-code de l’heuristique H\_DT et expliquer brièvement son fonctionnement:
+En  2013, Shyam Sundar et Alok Singh proposent un nouvel algorithme heuristique (H\_DT) pour la construction d’un arbre dominant DTP \cite{sundar2013new}. Entre autre, un arbre couvrant minimal est construit sur le sous-graphe de G induit par l’ensemble des sommets dominants de DT à l’aide de l’algorithme de Prim \cite{prim1957shortest}. De cette façon, le poids total de DT peut être réduit davantage. La raison  est que même après le pruning, le poids total de DT peut ne pas être minimum en raison de la sélection d'arêtes incorrectes lors de la construction de DT. Sur un ensemble donné de sommets dominants, de nombreux arbres dominants peuvent être construits en G. De toute évidence, un arbre dominant obtenu à l’aide de l’algorithme de Prim aura un coût minimum parmi tous ces arbres dominants. Après cela, la procédure d’élagage est à nouveau appliquée, puis un arbre couvrant minimal est à nouveau construit sur le sous-graphe de G induit par l’ensemble des sommets dominants de DT à l’aide de l’algorithme de Prim. Dans ce qui suit nous allons donner le pseudo-code de l’heuristique H\_DT et expliquer brièvement son fonctionnement:\\
 
 \begin{algorithm}[H]
 \label{alg3:HDT}
@@ -149,6 +153,8 @@ En  2013, Shyam Sundar et Alok Singh proposent un nouvel algorithme heuristique 
 \KwResult{sortie: un arbre dominant $DT \subseteq E$ }
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 \tcp{Initialise DT}
 $DT \gets \varnothing $  \;
@@ -197,7 +203,7 @@ L’ensemble des sommets est étiqueté à "non marqué" et l’ensemble d’ar�
 En outre, Shyam et Alok travaillent sur deux approches méta-heuristiques qui donnent des résultats satisfaisants , et ils ont essayé d’améliorer cet heuristique dans les années qui suivent.
 
 \subsection{Colonie d'abeilles artificielle pour le DTP (ABC\_DT)}
-L’algorithme de colonie d’abeilles artificielles ou Artificial Bee Colony (ABC) a été introduit par Dervis Karaboga en 2005 \cite{karaboga2005idea} et développé depuis 2005 par Karaboga et Basturk \cite{karaboga2008performance} pour les problèmes d’optimisation continue. C’est un algorithme à population, d’inspiration naturaliste, basé sur le butinage des abeilles.
+L’algorithme de colonie d’abeilles artificielles ou Artificial Bee Colony (ABC) a été introduit par Dervis Karaboga en 2005 \cite{karaboga2005idea} et développé depuis 2005 par Karaboga et Basturk \cite{karaboga2008performance} pour les problèmes d’optimisation continue. C’est un algorithme à population, d’inspiration naturaliste, basé sur le butinage des abeilles.\\
 
 
 \begin{enumerate}[label=\alph*)]
@@ -214,6 +220,8 @@ L’algorithme de colonie d’abeilles artificielles ou Artificial Bee Colony (A
 \caption{ Pseudo-code de ABC }
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 Générer $ne$ solutions aléatoires $E_1 , E_2 , ..., E_{ne}$ \;
 $MeilleureSol \gets meilleure $ solution parmi $E_1 , E_2 , ..., E_{ne}$ \;
@@ -252,7 +260,7 @@ $MeilleureSol \gets meilleure $ solution parmi $E_1 , E_2 , ..., E_{ne}$ \;
 
 
 	\item \textbf{Détermination du voisinage d’une source alimentaire:}\\
-	La détermination d’une solution voisine se fait selon deux procédures qui s’excluent mutuellement. Après qu’une solution s soit crée, une copie de cette dernière est affectée à s’. Après cela, Avec une probabilité P, une solution voisine est générée en appliquant la méthode PDE, qui  supprime une arête de façon aléatoire sinon la méthode PANDV est appelée pour ajouter un sommet aléatoirement. L’application de ces deux méthodes fait que la solution devient infaisable, ce qui fait que chacune d’entre elles procède différemment pour la rendre faisable. Le pseudo-code de l’algorithme de détermination de voisinage d’ABC\_DT est représenté dans l’Algorithme \ref{alg3:PCDSV} ci-dessous.
+	La détermination d’une solution voisine se fait selon deux procédures qui s’excluent mutuellement. Après qu’une solution s soit crée, une copie de cette dernière est affectée à s’. Après cela, Avec une probabilité P, une solution voisine est générée en appliquant la méthode PDE, qui  supprime une arête de façon aléatoire sinon la méthode PANDV est appelée pour ajouter un sommet aléatoirement. L’application de ces deux méthodes fait que la solution devient infaisable, ce qui fait que chacune d’entre elles procède différemment pour la rendre faisable. Le pseudo-code de l’algorithme de détermination de voisinage d’ABC\_DT est représenté dans l’Algorithme \ref{alg3:PCDSV} ci-dessous.\\
 
 
 \begin{algorithm}[H]
@@ -262,6 +270,8 @@ $MeilleureSol \gets meilleure $ solution parmi $E_1 , E_2 , ..., E_{ne}$ \;
 \KwResult{Une solution voisine s}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 Créer une copie s' de s \;
 
@@ -283,7 +293,7 @@ eux (MST) \;
 
 
 \section{Algorithme génétique stationnaire }
-C’est un algorithme génétique, dit "stationnaire" (Steady State Genetic Algorithm SSGA) \cite{sundar2014steady}, SSGA utilise la méthode de remplacement de la population à l'état d'équilibre \cite{davis1991handbook}. Cet algorithme commence par la sélection de deux parents, exécute le croisement et la mutation pour générer une solution (enfant) qui remplace le pire individu de la population. Dans ce qui suit, nous allons présenter les principales caractéristiques de cet algorithme.
+C’est un algorithme génétique, dit "stationnaire" (Steady State Genetic Algorithm SSGA) \cite{sundar2014steady}, SSGA utilise la méthode de remplacement de la population à l'état d'équilibre \cite{davis1991handbook}. Cet algorithme commence par la sélection de deux parents, exécute le croisement et la mutation pour générer une solution (enfant) qui remplace le pire individu de la population. Dans ce qui suit, nous allons présenter les principales caractéristiques de cet algorithme.\\
 
 \begin{enumerate}[label=\alph*)]
 
@@ -306,7 +316,7 @@ Les sommets constituant la solution enfant seront choisis, en alternance, des de
 	Cette partie commence par la sélection d’une solution initiale en utilisant la méthode BTS. Un petit ensemble $V_m$ de sommets non dominants est sélectionné aléatoirement de $V / C$.  Itérativement, un sommet $v_s \in V_m$ est de degré 1 dans G et ayant un chemin de coût minimal avec un sommet $v_c \in C$. Cette procédure se poursuit jusqu’à ce que $V_m$  devient vide. L’algorithme de Prim est ensuite appliqué à l’ensemble de sommets dominants de C.
 	
 	\item \textbf{Politique de remplacement:}\\
-	Dans cette politique de remplacement, l’unicité de la solution enfant C, nouvellement créée, est examinée par rapport aux individus de la population. Dans le cas où C se révèle être différent de tous les individus de la population, alors il remplace le plus mauvais d’entre eux, sinon, il est rejeté.
+	Dans cette politique de remplacement, l’unicité de la solution enfant C, nouvellement créée, est examinée par rapport aux individus de la population. Dans le cas où C se révèle être différent de tous les individus de la population, alors il remplace le plus mauvais d’entre eux, sinon, il est rejeté.\\
 	
 
 \begin{algorithm}[H]
@@ -314,6 +324,8 @@ Les sommets constituant la solution enfant seront choisis, en alternance, des de
 \caption{ Pseudo-code de l'algorithme SSGA}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 Générer une population (popsize) de solutions $s1 , s2 , ..., s\_pop\_size$ aléatoirement \;
 
@@ -377,6 +389,8 @@ Pour commencer EA/G-MP, nous devant définir les voisins de chaque nœud $v \in 
 \caption{Pseudo-code de la procédure pruning}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 $R_n \gets  \{ v : v \in DN$ et $|ON ( v ) \cap DN | = 1$ et $CN(v) \subseteq (\cup_{u \in DN  \setminus \{  v  \} } ) \} $ \;
 
@@ -392,7 +406,7 @@ Retourner DN \;
 
 Puisque le rôle de la procédure d’élagage consiste à éliminer les nœuds redondants dans l’arbre dominant. Pour cela, Cette procédure commence tout d’abord à sélectionner tous ces  nœuds où le degré de chaque nœud v dans DN est égal à un et tous les nœuds voisins non dominants du nœud v sont couverts par d'autres nœuds dominants (autres que le nœud v) dans DN. Puis, un processus itératif commence: lors de chaque itération, un nœud de l’ensemble Rn est sélectionné ( la sélection se fait selon l’ordre FIFO) et est supprimé de DN ainsi que de Rn. 
 
-De plus, tout en construisant un arbre dominant, la convention suivie, est celle où : un nœud prend la couleur BLANCHE s’il n’est pas un nœud dominant et n’est pas adjacent à un nœud dominant, GRISE si ce nœud est adjacent à un nœud dominant mais il ne l’est pas ,et un nœud appartenant à l’arbre est supposé avoir la couleur NOIRE. Initialement, tous les nœuds sont supposés avoir la couleur BLANCHE. Lorsque la construction de l’arbre dominant est terminée, les nœuds appartenant à l’arbre auront la couleur NOIRE et tous les autres nœuds (non dominants) auront la couleur GRISE.
+De plus, tout en construisant un arbre dominant, la convention suivie, est celle où : un nœud prend la couleur BLANCHE s’il n’est pas un nœud dominant et n’est pas adjacent à un nœud dominant, GRISE si ce nœud est adjacent à un nœud dominant mais il ne l’est pas ,et un nœud appartenant à l’arbre est supposé avoir la couleur NOIRE. Initialement, tous les nœuds sont supposés avoir la couleur BLANCHE. Lorsque la construction de l’arbre dominant est terminée, les nœuds appartenant à l’arbre auront la couleur NOIRE et tous les autres nœuds (non dominants) auront la couleur GRISE.\\
 
 \begin{enumerate}[label=\alph*)]
 	
@@ -401,13 +415,15 @@ De plus, tout en construisant un arbre dominant, la convention suivie, est celle
 $W_n$ : ensemble de nœuds BLANCs ($W_n$ = V Initialement).
 $I_u$ : l’ensemble des nœuds non dominants.
 $n_b$ : Ensemble de nœuds BLANCs voisins à v i.e. : $nb = ON(v) \cup W_n$.
-La méthode de génération de solution initiale est la même que celle utilisée dans Sundar et Singh (2013)(ABC\_DT) \cite{sundar2013new} en portant deux modifications : La première, est que seuls les arrêtes $e_{vu}$ sont considérés où $u \in I_u$ a au moins un voisin BLANC, c’est-à-dire où | ON(u) $W_n$ | $\geq$ 1. La deuxième modification, est qu'avec la probabilité $1 - \phi $, nous sélectionnons les arrêtes uniformément au hasard au lieu d’utiliser la méthode de sélection de ABC\_DT.
+La méthode de génération de solution initiale est la même que celle utilisée dans Sundar et Singh (2013)(ABC\_DT) \cite{sundar2013new} en portant deux modifications : La première, est que seuls les arrêtes $e_{vu}$ sont considérés où $u \in I_u$ a au moins un voisin BLANC, c’est-à-dire où | ON(u) $W_n$ | $\geq$ 1. La deuxième modification, est qu'avec la probabilité $1 - \phi $, nous sélectionnons les arrêtes uniformément au hasard au lieu d’utiliser la méthode de sélection de ABC\_DT.\\
 
 \begin{algorithm}[H]
 \label{alg3:PCSIEAGMP}
 \caption{Pseudo-code de la solution initiale de EA/G-MP}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 Initialement tous les nœuds dans V sont colorés en BLANC \;
 $W n \gets V \, DT \gets \varnothing \, DN \gets \varnothing \, I_u \gets \varnothing $ \;
@@ -447,13 +463,15 @@ Retourner DT \;
 
 
 	\item \textbf{Initialisation et mise à jour du vecteur de probabilités}\\
-	Le vecteur de probabilité est définit comme suit: p = {p1, p2, ..., p|V|} [0, 1]$^{|V|}$, où | V | est le nombre de nœuds dans l'ensemble V (nombre de nœuds dans le graphe G), p est la probabilité que le nœud $v \in V$ soit présent dans un arbre dominant. Ce vecteur est initialisé  avec le rapport entre le nombre de solutions initiales contenant ce nœud et le nombre total de solutions initiales. Le pseudo-code est présenté dans l'algorithme \ref{alg3:IVPEAMP}.
+	Le vecteur de probabilité est définit comme suit: p = {p1, p2, ..., p|V|} [0, 1]$^{|V|}$, où | V | est le nombre de nœuds dans l'ensemble V (nombre de nœuds dans le graphe G), p est la probabilité que le nœud $v \in V$ soit présent dans un arbre dominant. Ce vecteur est initialisé  avec le rapport entre le nombre de solutions initiales contenant ce nœud et le nombre total de solutions initiales. Le pseudo-code est présenté dans l'algorithme \ref{alg3:IVPEAMP}.\\
 	
 \begin{algorithm}[H]
 \label{alg3:IVPEAMP}
 \caption{Pseudo-code de l'initialisation du vecteur de probabilités de EA/G-MP.}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 $ nv \gets $ nombre de solutions initiales contenant le nœud $v, \forall v \in V$ ;
 
@@ -462,13 +480,15 @@ $ pv \gets$ \( \displaystyle \frac{nv}{Np} \) ,  $\forall v \in V $ \;
 
 \end{algorithm}
 
-A chaque génération g, un ensemble parent "parent (g)" est formé en sélectionnant les meilleures solutions L dans la population actuelle (g). Une fois que le parent (g) est formé, il est utilisé pour mettre à jour le vecteur de probabilité p. Le pseudo-code pour la mise à jour du vecteur de probabilité est donné dans l’algorithme \ref{alg3:MAJVPEAMP}.
+A chaque génération g, un ensemble parent "parent (g)" est formé en sélectionnant les meilleures solutions L dans la population actuelle (g). Une fois que le parent (g) est formé, il est utilisé pour mettre à jour le vecteur de probabilité p. Le pseudo-code pour la mise à jour du vecteur de probabilité est donné dans l’algorithme \ref{alg3:MAJVPEAMP}.\\
 
 \begin{algorithm}[H]
 \label{alg3:MAJVPEAMP}
 \caption{Pseudo-code de la mise à jour du vecteur de probabilités de EA/G-MP.}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 $ nv \gets $ nombre de solutions initiales contenant le nœud $v, \forall v \in V$ ;
 
@@ -486,7 +506,7 @@ nv: Le nombre total de solution contenant dans le parent (g).
 	
 où $\beta \in [0, 1]$ est un paramètre ajustable et DT est un nouvel arbre dominant construit par l'opérateur GM et dont les nœuds sont soit choisi aléatoirement selon le vecteur de probabilité p, soit ils sont copiés à partir  de la solution mi de la population courante. 
 
-Le choix des nœuds à partir de mi peut aider à améliorer la qualité de la solution vu que celle-ci fait parti des meilleures solutions M, cependant, l’utilisation du vecteur de probabilités permet une meilleure diversification en ajoutant les nœuds les moins utilisés a travers les générations.
+Le choix des nœuds à partir de mi peut aider à améliorer la qualité de la solution vu que celle-ci fait parti des meilleures solutions M, cependant, l’utilisation du vecteur de probabilités permet une meilleure diversification en ajoutant les nœuds les moins utilisés a travers les générations.\\
 	
 	
 \begin{algorithm}[H]
@@ -494,6 +514,8 @@ Le choix des nœuds à partir de mi peut aider à améliorer la qualité de la s
 \caption{Pseudo-code de GM}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 Mettre la couleur de tous les nœuds dans V à BLANC \;
 $ DT \gets \varnothing $ \;
@@ -536,6 +558,8 @@ soit $U_{cn}$ l’ensemble des nœuds non couvrants (blancs) restants. Tous d’
 \caption{Pseudo-code de l’opérateur de réparation}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 
 \While{ $U_{cn} = \varnothing$ }{
 	$v \gets - argmax \, u \in U_{cn} (wd(u) > 0) $ \;
@@ -555,13 +579,14 @@ Retourner DT \;
 \end{algorithm}
 
 
-Le pseudo-code de l’approche EA/G-MP pour DTP est donné dans l'algorithme \ref{alg3:EAMPDTP}.
+Le pseudo-code de l’approche EA/G-MP pour DTP est donné dans l'algorithme \ref{alg3:EAMPDTP}.\\
 
 \begin{algorithm}[H]
 \label{alg3:EAMPDTP}
 \caption{EA/G-MP pour DTP}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
 
 A la génération $g \gets 0 $ , une population initiale pop(g) qui consiste en N p solutions est générée aléatoirement \;
 

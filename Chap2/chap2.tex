@@ -110,7 +110,7 @@ La taille de la liste tabou contrôle la mémoire du processus de recherche. Pou
 Une autre amélioration intéressante de la TS est l’utilisation de structure de mémoire à moyen et à long terme afin d’approfondir les notions d’intensification et de diversification.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=12cm,height=8cm]{Chap2/4.png}
+	\includegraphics[width=13cm,height=12cm]{Chap2/4.png}
 	\caption{Organigramme illustrant le  Fonctionnement de l’algorithme TS}
 	\label{fig:OIFA}
 \end{figure}
@@ -208,7 +208,7 @@ Depuis le début des années 90, une autre famille d’ heuristiques est devenue
 Le terme Evolutionary Computation englobe une classe assez large de méta-heuristiques qui ont été développés au début des années soixante, telles que les algorithmes génétiques \cite{holland1975adaptation}, les stratégies d’évolution \cite{rechenberg1973evolutionsstrategie} , la programmation évolutive \cite{fogel1966artificial}, et la programmation génétique \cite{koza1992genetic}
 
 \begin{enumerate}[label=\alph*)]
-	\item \textbf{Algorithmes génétiques(AG):} développées par J. Holland en 1975 \cite{holland1975adaptation} comme outils de modélisation de l’adaptation et qui travaillent dans un espace de chaînes de bits. Elles ont été largement utilisé et développé par [ Moscato en 1989 \cite{moscato1989evolution} ]. Cette classe s’inspire de la théorie de l’évolution et des règles de la génétique qui expliquent la capacité des espèces de s’adapter à leurs environnement à l’ aide de l’ opérateur de mutation, alors que l’ échange d’information est gouverné par un opérateur de reproduction et un opérateur de combinaison (ou croisement). L’algorithme ci-dessous décrit ce principe général, dont les principales étapes sont détaillées ci-après.\\
+	\item \textbf{Algorithmes génétiques(AG):} développées par J. Holland en 1975 \cite{holland1975adaptation} comme outils de modélisation de l’adaptation et qui travaillent dans un espace de chaînes de bits. Elles ont été largement utilisé et développé par Moscato en 1989 \cite{moscato1989evolution}. Cette classe s’inspire de la théorie de l’évolution et des règles de la génétique qui expliquent la capacité des espèces de s’adapter à leurs environnement à l’ aide de l’ opérateur de mutation, alors que l’ échange d’information est gouverné par un opérateur de reproduction et un opérateur de combinaison (ou croisement). L’algorithme ci-dessous décrit ce principe général, dont les principales étapes sont détaillées ci-après.\\
 
 \begin{figure}[H]
 	\centering
@@ -356,7 +356,7 @@ $k$ : est le nombre d'espèces.\\
 \end{figure}	
 	
 	\item \textbf{Algorithmes mémétiques (algorithme de colonies de fourmis \& d’essaim de particules) : }
-Le terme «algorithmes mémétiques»  est apparu pour la première fois dans [38], introduit par Moscato en 1986. L’idée principale de ce genre d’algorithme est de rendre plus agressif un algorithme génétique par l’ajout d’une recherche locale en plus de la mutation.
+Le terme «algorithmes mémétiques»  est apparu pour la première fois dans \cite{moscato1989evolution}, introduit par Moscato en 1986. L’idée principale de ce genre d’algorithme est de rendre plus agressif un algorithme génétique par l’ajout d’une recherche locale en plus de la mutation.
 
 La faible vitesse de convergence est la première observation provenant de l’implémentation de l’algorithme génétique. Pour cet effet Moscoto a pensé d’ajouter une recherche locale  qui peut être une méthode de descente ou une recherche locale plus évoluée (recuit simulé ou recherche tabou par exemple). Cette recherche locale sera appliquée à tout nouvel individu obtenu au cours de la recherche.
 

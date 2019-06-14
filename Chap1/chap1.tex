@@ -43,7 +43,7 @@ Les signaux analogiques mesurés par le capteur sont convertis en signaux numér
 	\item \textbf{Unité de contrôle d’énergie(batterie): }C’est l’unité la plus importante. Son rôle est de distribuer de manière équitable l'énergie disponible entre les différentes unités et de réduire les dépenses en mettant en veille les composants inactifs\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=14cm,height=6cm]{Chap1/4.png}
+	\includegraphics[width=14cm,height=5cm]{Chap1/4.png}
 	\caption{Consommation d’énergie dans un nœud capteur. \cite{raghunathan2005design,karl2007protocols}}
 	\label{fig:CENC}
 \end{figure}
@@ -111,7 +111,7 @@ Les réseaux de capteurs ont prouvé leurs utilité dans le domaine commercial. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=14cm,height=8cm]{Chap1/7.png}
+	\includegraphics[width=14cm,height=9cm]{Chap1/7.png}
 	\caption{Les cas d’utilisation d’un réseau de capteurs sans-fil}
 	\label{fig:CURCSF}
 \end{figure}
@@ -119,7 +119,7 @@ Les réseaux de capteurs ont prouvé leurs utilité dans le domaine commercial. 
 
 \section{Le problème majeur d’un réseau de capteurs sans fil et le challenge:}
 L'un des défis auxquels est confronté un réseau de capteurs sans fil (WSN) est la dissipation d'énergie des nœuds ayant une incidence sur la durée de vie de la batterie du nœud. Cela est dû au fait que les nœuds plus proches de nœud puits supportent des charges de trafic plus lourdes que tout autre nœud. Par conséquent, les nœuds autour du nœud puits épuiseraient leur énergie plus rapidement ce qui cause par la suite ce qu’on appel un trou d’énergie. Après cela, les données ne peuvent plus être transmises, même s'il reste encore de l'énergie dans les nœuds de la région externe, ce qui affecte la durée de vie du réseau. Comme les réseaux de capteur sont utilisés pour des tâches critique, pensé à l’optimisation ou à la conservation de  l’énergie pour chaque nœud capteur est une conséquence très probable.
-Dans la littérature, le concept d’ensemble dominant connecté \cite{guha1998approximation,park2007dominating,thai2008construction,wan2002distributed} a été étudié pour la construction d’une ossature de routage avec une consommation d’énergie minimale dans les WSNs. Ces papiers considèrent le poids sur chaque nœud au lieu du poids sur chaque bord. Ceci a conduit à l'introduction du problème de l’arbre dominant DTP \cite{shin2010approximation,zhang2008new} avec l'objectif de prolonger la durée de vie d’un capteur. \cite{sundar2014steady}
+Dans la littérature, le concept d’ensemble dominant connecté \cite{guha1998approximation,park2007dominating,thai2008construction,wan2002distributed} a été étudié pour la construction d’une ossature de routage avec une consommation d’énergie minimale dans les WSNs. Ces papiers considèrent le poids sur chaque nœud au lieu du poids sur chaque arrête. Ceci a conduit à l'introduction du problème de l’arbre dominant DTP \cite{shin2010approximation,zhang2008new} avec l'objectif de prolonger la durée de vie d’un capteur. \cite{sundar2014steady}
 Le DTP semble résoudre le problème de la consommation de l’énergie mais ce dernier et gourmand en terme de temps d’exécution. Pour ce problème, les chercheurs ont pensé à l’approximation de ce problème en un problème polynomial et ils ont développé des algorithmes  d’optimisation qui visent à construire un arbre dominant dans un temps minimal, nommé les méthodes approchées, tous ces détails seront exploité dans les prochains chapitres.
 
 \section{Conclusion:}

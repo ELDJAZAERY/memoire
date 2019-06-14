@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -43,6 +43,12 @@ Ning Zhang, Incheol Shin, Bo~Li, Cem Boyaci, Ravi Tiwari, and My~T Thai.
   sensor network.
 \newblock In \emph{International Conference on Wireless Algorithms, Systems,
   and Applications}, pages 96--108. Springer, 2008.
+
+\bibitem[Wolpert et~al.(1997)Wolpert, Macready, et~al.]{wolpert1997no}
+David~H Wolpert, William~G Macready, et~al.
+\newblock No free lunch theorems for optimization.
+\newblock \emph{IEEE transactions on evolutionary computation}, 1\penalty0
+  (1):\penalty0 67--82, 1997.
 
 \bibitem[Mekidiche and Rais(2015)]{mekidicheetude}
 Mohemed Mekidiche and Hichem Rais.
@@ -320,5 +326,11 @@ Qingfu Zhang, Jianyong Sun, and Edward Tsang.
 Sachchida~Nand Chaurasia and Alok Singh.
 \newblock A hybrid heuristic for dominating tree problem.
 \newblock \emph{Soft Computing}, 20\penalty0 (1):\penalty0 377--397, 2016.
+
+\bibitem[Sundar et~al.(2015)Sundar, Chaurasia, and Singh]{sundar2015ant}
+Shyam Sundar, Sachchida~Nand Chaurasia, and Alok Singh.
+\newblock An ant colony optimization approach for the dominating tree problem.
+\newblock In \emph{International Conference on Swarm, Evolutionary, and Memetic
+  Computing}, pages 143--153. Springer, 2015.
 
 \end{thebibliography}
