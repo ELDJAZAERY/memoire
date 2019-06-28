@@ -3,7 +3,7 @@
 
 \addtocontents{lof}{\textbf{Le problème de l’arbre dominant (DTP) }}
 
-\section{Introduction}
+\CustomSection{Introduction}
 Comme la gestion de l’énergie dans les réseaux de capteurs sans fil (RCSFs) est très exigeante, plusieurs chercheurs sont actuellement engagés non seulement dans le développement des technologies requises au niveau des différentes couches de la pile protocolaire des réseaux de capteurs, mais aussi pour la conception des méthodes et des algorithmes qui assurent une gestion meilleure.
 
 Au cours de ces dernières années, les chercheurs sont arrivés à représenter un réseau sous forme d’un graphe G, où chaque capteur sera représenté par un nœud et la connexion entre deux nœuds est représentée par une arête. Néanmoins, cela ne résout pas  les problèmes de routage pour la gestion d’énergie dans les RCSFs, alors ils ont pensé à la notion du plus court chemin dans G.  Cette approche a donné naissance à un nouveau problème nommé le problème de ensemble dominant (Connected Dominating Set CDS).
@@ -14,13 +14,13 @@ Le problème de l’arbre dominant (Dominating Tree Problem ou DTP) a donc été
 Dans ce chapitre, nous présenterons le problème de l’arbre dominant, puis nous synthétiserons quelques travaux effectués pour sa résolution, enfin nous clôturerons ceci par une conclusion.
 
 
-\section{Définition du problème}
+\CustomSection{Définition du problème}
 Le problème de l’arbre dominante nous incite à trouver un arbre de poids minimal DT. Le principe est que chaque réseau sans fil sera représenté par un graphe pondéré non orienté G=(V,E,w), où V est l’ensemble des nœuds du réseau, E l’ensemble des liaisons de communication du réseau et w un poids non négatif attribué pour chaque arête e=(u,v). Chaque nœud $v \in V$, est soit dans DT, soit adjacent à un nœud déjà dans DT. La complexité de la construction d’un arbre dominant est Np-hard.
  
 D’autre part, la résolution du DTP peut générer une ossature de routage pour les protocoles de diffusion puisque chaque nœud n’a pas à construire son propre arbre de diffusion, alors ils utilisent l'ossature virtuelle pour réduire la surcharge de message et le poids de l'ossature qui représente la consommation d'énergie minimisée. Comment régler le problème de l’arbre dominant (DTP)? 
 
 
-\section{Complexité et approximation}
+\CustomSection{Complexité et approximation}
 Le problème de l’arbre dominant (DTP) est une variante récente d’ensemble dominants en théorie des graphes. Il est prouvé qu'il est un problème N P-Hard \cite{shin2010approximation,zhang2008new}.
 
 L’arbre de Steiner est souvent associé à des problème de conception de réseau. Le principe de conception de cet arbre est très proche du principe de conception de l’arbre dominant. Il consiste à construire un arbre de poids minimal r nommé DST, en veillant à ce qu'il y ait au moins un chemin allant de la racine à chaque nœud de l'ensemble D tel que D est un ensemble dominant minimal appartenant à V dans G.
@@ -67,11 +67,10 @@ Transformer $G$ en $G’ = (V’, E’, w’)$ en utilisant la technique de tran
 L’algorithme \ref{alg3:RSDT} nous permet de transformer le DTP en DST. Puis nous pouvons appliquer l’algorithme dans \cite{charikar1999approximation} qui va nous permettre par la suite de résoudre le problème DST et de trouver une solution pour le DTP. Cela n’est possible que si le sommet racine r choisie dans l’algorithme \ref{alg3:RSDT} soit le meilleur choix ( r doit être dans le DT optimal). Au final, nous pouvons revenir à l’état initial de  notre graphe de départ en supprimant les nœuds factrices ajoutés ainsi que leurs arêtes. 
 
 
-\section{Notions de base}
+\CustomSection{Notions de base}
 
-\subsection{Arbre couvrant de poids minimal (MST):}
-un graphe pondéré non orienté G=(V,E,w), où V est l’ensemble des nœuds du réseau, E l’ensemble des liaisons de communication du réseau et W un poids non négatif attribué sur chaque arête e=(u,v).\\
-
+\subCustomSection{Arbre couvrant de poids minimal (MST):}
+un graphe pondéré non orienté G=(V,E,w), où V est l’ensemble des nœuds du réseau, E l’ensemble des liaisons de communication du réseau et W un poids non négatif attribué sur chaque arête e=(u,v).
 
 \begin{enumerate}[label=\alph*)]
 
@@ -127,13 +126,13 @@ Retourner T \;
 \end{figure}
 
 
-\subsection{L’élagage (Pruning):}
+\subCustomSection{L’élagage (Pruning):}
 Cette méthode est apparue pour la première fois dans \cite{shin2010approximation,zhang2008new} et a été améliorée dans \cite{sundar2013new}.
 
 Dans \cite{sundar2013new}, la fonction de pruning consiste à vérifié si un sommet $v \in DT$  de degré un peut être élagué  sans  que DT soit non connexe. Si cela est vérifié, ce nœud alors va devenir non dominant et l’arête incidente peut également être retirée de DT, ce qui réduit par la suite le poids de DT. Dans un second lieu, cette fonction vérifie  tous les sommets de DT dans l’ordre FIFO (First In First Out). Si le degré d’un sommet dominant v est égale à un, il est vérifié si tous les sommets adjacents à v sont également adjacents à d’autres sommets dominants dans DT. Si c’est le cas supprimer ce sommet de DT et l’arête incidente aussi. Cette méthode de pruning est largement différente que celle utilisée dans \cite{shin2010approximation} dans laquelle un arbre couvrant est d'abord construit et, par conséquent, tous les sommets feuilles peuvent être élagués sans autre vérification. 
 
 
-\section{Les travaux relatifs}
+\CustomSection{Les travaux relatifs}
 Le problème de l’arbre dominant est apparu récemment (2008). Il a été introduit par \cite{zhang2008new} pour la construction d’une ossature de routage pour les réseaux sans fil avec une consommation d’énergie minimal, ce qui justifie le manque de la littérature pour ce problème. 
 
 La consommation d’énergie est prise en compte qu’au niveau des nœuds et non les arêtes. En réalité, l'énergie consommée par chaque arête affecte directement la consommation d'énergie d'un système de routage. Par conséquent, pour minimiser la consommation d'énergie d'un système de routage, nous devons prendre en compte l'énergie consommée par chaque arête \cite{sundar2013new}.
@@ -143,7 +142,7 @@ Au meilleur de notre connaissance, aucune formulation de programmation en nombre
 En  2010, puisque le problème de l’arbre dominant est NP-hard, Yilin Shen · My T. Thai ont fait l'approximation du DTP au problème DST \cite{shin2010approximation}. Cependant, la complexité temporelle est assez élevée, du fait que la construction d'un DST entraîne généralement une longue durée d'exécution. De ce point de vue, une heuristique peu complexe en temps est souhaitable ce qui a orienté la littérature sur le DTP vers les algorithmes heuristiques, tels que la recherche par voisinage variable (VNS) et des algorithmes méta-heuristiques, tels que les algorithme génétiques, la colonie d'abeilles artificielles et les colonies de fourmis. 
 Nous allons considérer pour la suite un graphe G = (V, E, w), non orienté, pondéré, où : V est l’ensemble des sommets et E est l’ensemble des arêtes du graphe G.
 
-\subsection{L’heuristique pour le problème de l’arbre dominant (H\_DT )}
+\subCustomSection{L’heuristique pour le problème de l’arbre dominant (H\_DT ):}
 En  2013, Shyam Sundar et Alok Singh proposent un nouvel algorithme heuristique (H\_DT) pour la construction d’un arbre dominant DTP \cite{sundar2013new}. Entre autre, un arbre couvrant minimal est construit sur le sous-graphe de G induit par l’ensemble des sommets dominants de DT à l’aide de l’algorithme de Prim \cite{prim1957shortest}. De cette façon, le poids total de DT peut être réduit davantage. La raison  est que même après le pruning, le poids total de DT peut ne pas être minimum en raison de la sélection d'arêtes incorrectes lors de la construction de DT. Sur un ensemble donné de sommets dominants, de nombreux arbres dominants peuvent être construits en G. De toute évidence, un arbre dominant obtenu à l’aide de l’algorithme de Prim aura un coût minimum parmi tous ces arbres dominants. Après cela, la procédure d’élagage est à nouveau appliquée, puis un arbre couvrant minimal est à nouveau construit sur le sous-graphe de G induit par l’ensemble des sommets dominants de DT à l’aide de l’algorithme de Prim. Dans ce qui suit nous allons donner le pseudo-code de l’heuristique H\_DT et expliquer brièvement son fonctionnement:\\
 
 \begin{algorithm}[H]
@@ -202,9 +201,8 @@ L’ensemble des sommets est étiqueté à "non marqué" et l’ensemble d’ar�
     
 En outre, Shyam et Alok travaillent sur deux approches méta-heuristiques qui donnent des résultats satisfaisants , et ils ont essayé d’améliorer cet heuristique dans les années qui suivent.
 
-\subsection{Colonie d'abeilles artificielle pour le DTP (ABC\_DT)}
-L’algorithme de colonie d’abeilles artificielles ou Artificial Bee Colony (ABC) a été introduit par Dervis Karaboga en 2005 \cite{karaboga2005idea} et développé depuis 2005 par Karaboga et Basturk \cite{karaboga2008performance} pour les problèmes d’optimisation continue. C’est un algorithme à population, d’inspiration naturaliste, basé sur le butinage des abeilles.\\
-
+\subCustomSection{Colonie d'abeilles artificielle pour le DTP (ABC\_DT):}
+L’algorithme de colonie d’abeilles artificielles ou Artificial Bee Colony (ABC) a été introduit par Dervis Karaboga en 2005 \cite{karaboga2005idea} et développé depuis 2005 par Karaboga et Basturk \cite{karaboga2008performance} pour les problèmes d’optimisation continue. C’est un algorithme à population, d’inspiration naturaliste, basé sur le butinage des abeilles.
 
 \begin{enumerate}[label=\alph*)]
 	
@@ -292,8 +290,8 @@ eux (MST) \;
 \end{enumerate}
 
 
-\section{Algorithme génétique stationnaire }
-C’est un algorithme génétique, dit "stationnaire" (Steady State Genetic Algorithm SSGA) \cite{sundar2014steady}, SSGA utilise la méthode de remplacement de la population à l'état d'équilibre \cite{davis1991handbook}. Cet algorithme commence par la sélection de deux parents, exécute le croisement et la mutation pour générer une solution (enfant) qui remplace le pire individu de la population. Dans ce qui suit, nous allons présenter les principales caractéristiques de cet algorithme.\\
+\CustomSection{Algorithme génétique stationnaire }
+C’est un algorithme génétique, dit "stationnaire" (Steady State Genetic Algorithm SSGA) \cite{sundar2014steady}, SSGA utilise la méthode de remplacement de la population à l'état d'équilibre \cite{davis1991handbook}. Cet algorithme commence par la sélection de deux parents, exécute le croisement et la mutation pour générer une solution (enfant) qui remplace le pire individu de la population. Dans ce qui suit, nous allons présenter les principales caractéristiques de cet algorithme.
 
 \begin{enumerate}[label=\alph*)]
 
@@ -367,7 +365,7 @@ Retourner $MeilleureSol$ \;
 
 
 
-\section{L’algorithme évolutionnaire avec mutation guidée EA/G}
+\CustomSection{L’algorithme évolutionnaire avec mutation guidée EA/G}
 L’algorithme évolutionnaire avec mutation guidée (Evolutionary algorithm with guided mutation \cite{zhang2005evolutionary} est relativement un nouveau membre de la classe des algorithmes évolutionnaires. Il a été développé par Zhang et al. (2005) \cite{zhang2005evolutionary} pour surmonter les inconvénients de deux algorithmes évolutifs, à savoir algorithmes génétiques (GAs) et estimation d'algorithmes de distribution (EDAs). Il est dit hybride car il utilise les caractéristiques des deux algorithmes cités précédemment. 
 
 En effet, Les GAs génère une progéniture à partir des parents sélectionnés en appliquant les opérateurs génétiques tels que le croisement et la mutation. Ces algorithmes  n’utilisent que les informations de localisation des solutions et ne font pas usage des informations globales sur l’espace de recherche qui peuvent être collectées en gardant la trace de toutes les solutions générées depuis le début de l’algorithme. Dans ce contexte, "l’information de localisation d’une solution" revient à dire,l’information qui peut identifier de façon unique une solution dans l’espace de recherche de toutes les solutions. Par exemple, dans le cas du DTP, l’ensemble des arêtes formant le DT constitue son information de localisation car cette dernière peut l’identifier de façon unique.
@@ -406,7 +404,7 @@ Retourner DN \;
 
 Puisque le rôle de la procédure d’élagage consiste à éliminer les nœuds redondants dans l’arbre dominant. Pour cela, Cette procédure commence tout d’abord à sélectionner tous ces  nœuds où le degré de chaque nœud v dans DN est égal à un et tous les nœuds voisins non dominants du nœud v sont couverts par d'autres nœuds dominants (autres que le nœud v) dans DN. Puis, un processus itératif commence: lors de chaque itération, un nœud de l’ensemble Rn est sélectionné ( la sélection se fait selon l’ordre FIFO) et est supprimé de DN ainsi que de Rn. 
 
-De plus, tout en construisant un arbre dominant, la convention suivie, est celle où : un nœud prend la couleur BLANCHE s’il n’est pas un nœud dominant et n’est pas adjacent à un nœud dominant, GRISE si ce nœud est adjacent à un nœud dominant mais il ne l’est pas ,et un nœud appartenant à l’arbre est supposé avoir la couleur NOIRE. Initialement, tous les nœuds sont supposés avoir la couleur BLANCHE. Lorsque la construction de l’arbre dominant est terminée, les nœuds appartenant à l’arbre auront la couleur NOIRE et tous les autres nœuds (non dominants) auront la couleur GRISE.\\
+De plus, tout en construisant un arbre dominant, la convention suivie, est celle où : un nœud prend la couleur BLANCHE s’il n’est pas un nœud dominant et n’est pas adjacent à un nœud dominant, GRISE si ce nœud est adjacent à un nœud dominant mais il ne l’est pas ,et un nœud appartenant à l’arbre est supposé avoir la couleur NOIRE. Initialement, tous les nœuds sont supposés avoir la couleur BLANCHE. Lorsque la construction de l’arbre dominant est terminée, les nœuds appartenant à l’arbre auront la couleur NOIRE et tous les autres nœuds (non dominants) auront la couleur GRISE.
 
 \begin{enumerate}[label=\alph*)]
 	
@@ -423,7 +421,6 @@ La méthode de génération de solution initiale est la même que celle utilisé
 \SetAlgoLined
 \DontPrintSemicolon
 \large
-
 
 Initialement tous les nœuds dans V sont colorés en BLANC \;
 $W n \gets V \, DT \gets \varnothing \, DN \gets \varnothing \, I_u \gets \varnothing $ \;
@@ -506,30 +503,44 @@ nv: Le nombre total de solution contenant dans le parent (g).
 	
 où $\beta \in [0, 1]$ est un paramètre ajustable et DT est un nouvel arbre dominant construit par l'opérateur GM et dont les nœuds sont soit choisi aléatoirement selon le vecteur de probabilité p, soit ils sont copiés à partir  de la solution mi de la population courante. 
 
-Le choix des nœuds à partir de mi peut aider à améliorer la qualité de la solution vu que celle-ci fait parti des meilleures solutions M, cependant, l’utilisation du vecteur de probabilités permet une meilleure diversification en ajoutant les nœuds les moins utilisés a travers les générations.\\
-	
-	
+Le choix des nœuds à partir de mi peut aider à améliorer la qualité de la solution vu que celle-ci fait parti des meilleures solutions M, cependant, l’utilisation du vecteur de probabilités permet une meilleure diversification en ajoutant les nœuds les moins utilisés a travers les générations.
+
 \begin{algorithm}[H]
-\label{alg3:PCGM}
 \caption{Pseudo-code de GM}
-\SetAlgoLined
-\DontPrintSemicolon
+\label{alg3:PCGM}
 \large
+\SetKwFor{For}{pour}{faire}{}
+\SetKwFor{SSi}{si}{alors}{}
+\SetKwFor{Si}{si}{alors}{fin}
 
 
 Mettre la couleur de tous les nœuds dans V à BLANC \;
 $ DT \gets \varnothing $ \;
+
 \For{nœud $v \in V$ dans un ordre quelconque}{
 	Générer un nombre aléatoire $r_1$ tel que $ 0 \leq r_1 \leq 1 $ \;
-	\eIf{$ r_1 < \beta $}{
-		Générer un nombre aléatoire $r_2$ tel que $ 0 \leq r_2 \leq 1 $ \;
-		\If{ $r_2 < p v $ Et ((v est BLANC) Ou (v est GRIS avec au moins un voisin BLANC))}{
+	\SSi{$ r_1 < \beta $}{
+		 Générer un nombre aléatoire $r_2$ tel que $ 0 \leq r_2 \leq 1 $ \;
+		 \Si{ $r_2 < p v $ Et v est BLANC Ou v est GRIS avec au moins un voisin BLANC}{
 		   Trouver le chemin le plus court SP entre le nœud v et un nœud u dans DT\;
 		   Ajouter toutes les arêtes de SP dans DT \;
 		   Colorer en NOIR tous les nœuds dans le chemin SP \;
 		   Colorer en GRIS tous les nœuds voisins BLANCs des nœuds sur le chemin SP\;
 		}
-	}{
+	 }{}
+}
+\end{algorithm}
+
+
+\SetNlSty{texttt}{(}{)}
+\begin{algorithm*}
+%\caption{Pseudo-code de GM (suite) }
+\large
+\SetKwBlock{For}{}{end}
+\SetKwBlock{eIf}{sinon}{end}
+
+\For{
+	\eIf{
 		\If{v est un nœud dominant dans m i et v est GRIS avec au moins un voisin 					BLANC}
 		{
 		   Trouver le chemin le plus court SP entre le nœud v et un nœud u dans DT\;
@@ -538,11 +549,11 @@ $ DT \gets \varnothing $ \;
 		   Colorer en GRIS tous les nœuds voisins BLANCs des nœuds sur le chemin SP\;
 		}
 	}
+	
 }
-
 Retourner DT \;
 
-\end{algorithm}
+\end{algorithm*}
 
 
 L’opérateur de mutation GM ne garanti pas la faisabilité de la. Pour cette raison,  toutes les solutions infaisables générées par cet opérateur sont traitées par un opérateur de réparation de façon à ce qu’elles deviennent réalisables.
@@ -551,7 +562,7 @@ L’opérateur de mutation GM ne garanti pas la faisabilité de la. Pour cette r
 \item \textbf{Opérateur de réparation:}
 L’opérateur de réparation s’applique uniquement sur une solution infaisable générée par l’opérateur GM. Car de l'application de ce dernier, peut résulter des nœuds non couvrants. Pour résoudre ce problème,  l’opérateur de correction procède comme suit:
   
-soit $U_{cn}$ l’ensemble des nœuds non couvrants (blancs) restants. Tous d’abord, un nœud contenant le nombre  le plus élevé de nœuds voisins blancs dans la liste $U_{cn}$ est sélectionné. Si aucun des nœuds de l’ensemble $U_{cn}$ n’a des nœuds voisins BLANCS, le nœud ayant l’indice le plus bas est sélectionné à partir de $U_{cn}$ , ce nœud est nommé i. Après cela, le chemin le plus court entre le nœud i et l’arbre partiellement construit DT est calculé, et toutes les arêtes de ce dernier sont ajoutées dans DT. De même, les nœuds de ce chemin sont recolorés en NOIR (si ce n’est pas déjà fait) et leurs nœuds voisins en GRIS. Tous ces nœuds NOIR et GRIS sont ensuite supprimés de l’ensemble $U_{cn}$ . Ce processus itératif  est répété jusqu’à ce que $U_{cn}$ devient vide. Le pseudo-code de l’opérateur de réparation est donné dans l’Algorithme \ref{alg3:PCOR} suivant:
+soit $U_{cn}$ l’ensemble des nœuds non couvrants (blancs) restants. Tous d’abord, un nœud contenant le nombre  le plus élevé de nœuds voisins blancs dans la liste $U_{cn}$ est sélectionné. Si aucun des nœuds de l’ensemble $U_{cn}$ n’a des nœuds voisins BLANCS, le nœud ayant l’indice le plus bas est sélectionné à partir de $U_{cn}$ , ce nœud est nommé i. Après cela, le chemin le plus court entre le nœud i et l’arbre partiellement construit DT est calculé, et toutes les arêtes de ce dernier sont ajoutées dans DT. De même, les nœuds de ce chemin sont recolorés en NOIR (si ce n’est pas déjà fait) et leurs nœuds voisins en GRIS. Tous ces nœuds NOIR et GRIS sont ensuite supprimés de l’ensemble $U_{cn}$ . Ce processus itératif  est répété jusqu’à ce que $U_{cn}$ devient vide. Le pseudo-code de l’opérateur de réparation est donné dans l’Algorithme 21 suivant: \\
 
 \begin{algorithm}[H]
 \label{alg3:PCOR}
@@ -579,7 +590,7 @@ Retourner DT \;
 \end{algorithm}
 
 
-Le pseudo-code de l’approche EA/G-MP pour DTP est donné dans l'algorithme \ref{alg3:EAMPDTP}.\\
+Le pseudo-code de l’approche EA/G-MP pour DTP est donné dans l'algorithme 22.\\
 
 \begin{algorithm}[H]
 \label{alg3:EAMPDTP}
@@ -602,7 +613,7 @@ Initialiser le vecteur de probabilités p pour tous les nœuds en utilisant l’
 
 	$ g \gets g + 1 $ \;
 
-	\If{la meilleure solution de la population ne s’améliore pas après S générations}		{
+	\If{la meilleure solution de la population ne s’améliore pas après S générations}{
 		réinitialiser toute pop(g), sauf la meilleure solution, puis initialiser le 			vecteur de probabilités p pour tous les nœuds en utilisant l’Algorithme 				\ref{alg3:IVPEAMP}	
 	}
 	
@@ -614,7 +625,7 @@ Initialiser le vecteur de probabilités p pour tous les nœuds en utilisant l’
 \end{enumerate}
 
 
-\section{Conclusion}
+\CustomSection{Conclusion}
 Dans ce chapitre nous avons présenté le problème de l’arbre dominant, qui est une des approches utilisées pour la résolution du problème de consommation de l’énergie dans les réseaux de capteurs sans fil. Comme la construction de DT est NP-hard, Shin et Thai ont proposé une approximation de ce dernier en DST pour optimiser le temps de construction de l’arbre dominant \cite{shin2010approximation}, et d’autre chercheurs ont opté pour le développement des méta-heuristiques pour la même raison. Cependant, on ne peut pas tout avoir dans une méta-heuristique (c’est à dire qu’une méta-heuristique peut donner des meilleurs résultats en terme temps de calcul et d’autre en terme de qualité de solution) pourquoi ne pas penser à combiner des méta-heuristiques pour des résultats plus fiables?.
 
  

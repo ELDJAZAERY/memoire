@@ -1,6 +1,46 @@
 
 \thispagestyle{empty}
 
-\LARGE\textbf{Résumé}
 
-\Large{}
+
+\textbf{Résumé}
+
+\small
+
+Il s’agit dans ce mémoire de minimiser l’énergie consommée par des capteurs dans un WSN. L’idée est de calculer l’arbre dominant pour ces réseaux. Ce problème est connu sous le nom du problème de l’arbre dominant (Dominating Tree Problem ou DTP) qui est un problème NP-difficile. Le problème peut s’énoncer comme suit :
+Étant donné un graphe connexe pondéré G (V, E, w), où V est l’ensemble de nœuds,  E est l’ensemble des arêtes et w une fonction de poids $w : E \to R+$  associée aux arêtes de G.
+
+DTP consiste à trouver dans G un arbre DT de telle sorte que chaque nœud $v \in V$ , est soit dans DT soit adjacent à un nœud de DT. Chaque nœud dans DT est appelé nœud Dominant alors que chaque nœud qui n’appartient pas à DT est appelé nœud non dominant.
+
+Une solution de DTP offre une ossature pour le routage dans WSN. Puisqu’un nœud non dominant est au moins adjacent à un nœud dominant de DT dans WSN, on peut sauvegarder DT et l’utiliser pour le routage. De cette manière, un message peut être envoyé d’une source à une destination en l’envoyant au plus proche nœud non dominant de DT, puis en utilisant DT, ce message est envoyé au nœud dominant le plus proche du récepteur. Chaque nœud non dominant doit connaître le plus proche nœud dominant. DT peut servir d’ossature à un routage pour un protocole broadcaste. 
+Notre travail consiste à étudier différentes techniques d’optimisation combinatoire élaborées dans le but de la résolution du DTP puis à proposer notre propre solution. Nous avons cherché à amélioré des résultats de la fonction objectif en utilisant des approches déjà développées pour ce problème, nous  avons ainsi proposé une solution stratégique qui tente à coopérer entre les différentes approches que nous avons développé  et qui a donné des résultats satisfaisants en comparaison aux travaux antérieurs.\\
+
+\vspace*{0.3cm}
+\large
+\textbf{Mot clés :} méta-heuristiques, WSN, cooperation, optimisation combinatoire.\\
+
+
+\vspace*{1.5cm}
+
+
+
+\Large
+\textbf{Abstract}
+
+\small 
+
+This memory is about how to minimize the energy consumed by sensors in a WSN. The idea is to calculate the dominant tree for these networks. This problem is known as the Dominating Tree Problem (DTP) problem which is an NP-hard problem. The problem can be stated as follows Given an undirected, weighted and connected graph G = (V,E,w), where V is a set of vertices, E is a set of edges, and w is a non-negative weight function $w : E \to R+$ associated with the edges of G.
+
+DTP consists in finding a tree, say dominant tree (DT) , with minimum total edge weight on G such that for each vertex  $v \in V$ , v is either in DT or adjacent to a vertex in DT . Every vertex in DT is called a dominating vertex, whereas every vertex not in DT is called a non-dominating vertex.
+
+A solution to the DTP offers an application in providing a virtual backbone for routing in WSNs. Since a non-dominating node is at least adjacent to one of dominating nodes of dominating tree in the WSN, the routing information can be stored only on dominating nodes of DT. In this scheme, a message can be sent from one source to destination by first forwarding this message to its nearest dominating node of DT , then with the help of DT , this message is further routed to one of its dominating nodes nearest to the receiver and then, finally destined to the receiver. 
+
+Our work focuses on the study of various combinatorial optimization techniques developed in order to solve such problem and then propose our own solution. We have sought to improve results of the objective function by using approaches already developed for this problem, we have proposed a strategic solution that tries to cooperate between the different approaches to take advantage of the benefits that each of them offers and which has given satisfactory results in comparison with the Previous works.\\
+
+
+\vspace*{0.3cm}
+
+\large
+\textbf{Key words : }metaheuristics, WSN, cooperation, combinatorial optimization.
+
+\normalsize

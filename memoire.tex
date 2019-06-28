@@ -59,6 +59,8 @@
 
 % algorithm style
 \usepackage[ruled,vlined,onelanguage,french]{algorithm2e}
+%\thealgocf{} algorithm number
+
 
 
 % Bibliography
@@ -90,10 +92,11 @@
 %%%%%%% Futuer %%%%%
 
 %%%% Page header chap %%%
-
 \usepackage[Glenn]{fncychap}
-%\usepackage{fancyhdr}
+\usepackage{fancyhdr}
 
+
+%\usepackage{fancyhdr}
 
 
 
@@ -120,6 +123,32 @@
 	\setcounter{page}{\the\numexpr\value{page}-1\relax}
 }
 
+\long\def\CustomSection#1{	
+	%\vspace*{-2mm}
+	\section{#1}
+	\vspace*{-4mm}
+}
+
+                                   
+\long\def\subCustomSection#1{
+	%\vspace*{-2mm}
+	\subsection{#1}
+	\vspace*{-4mm}
+}
+
+\long\def\subsubCustomSection#1{
+	\subsubsection{#1}
+	\vspace*{-4mm}
+}
+
+
+\usepackage{titlesec}
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\Large\bfseries}
+\titleformat*{\paragraph}{\Large\bfseries}
+\titleformat*{\subparagraph}{\Large\bfseries}
+
 
 \begin{document}
 
@@ -128,6 +157,7 @@
 \include{Intro/remerciement}
 
 \include{Intro/dedicase}
+
 
 \setcounter{page}{1} % Resest Page Counter
 
@@ -138,6 +168,14 @@
 \include{General/listOfAlgos}
 
 \include{Intro/introGeneral}
+
+
+%% set chapter title as page header
+\pagestyle{fancy}   
+\fancyhead{}
+\fancyhead[C]{\leftmark}
+\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
 
 
 \include{Chap1/chap1}
@@ -154,7 +192,7 @@
 
 \include{General/bibliography}
 
-
 \include{Conclusion/resume}
+
 \end{document}
 

@@ -1,24 +1,24 @@
 \BOOKMARK [0][-]{Doc-Start}{Table des figures}{}% 1
 \BOOKMARK [0][-]{Doc-Start}{Liste des algorithmes}{}% 2
-\BOOKMARK [0][-]{Doc-Start}{Introduction g\351n\351ral}{}% 3
+\BOOKMARK [0][-]{Doc-Start}{Introduction g\351n\351rale}{}% 3
 \BOOKMARK [0][-]{chapter.1}{ Notions sur les r\351seaux de capteurs sans fils }{}% 4
 \BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Un r\351seau de capteur sans-fil}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.3}{Architecture d\220un capteur sans-fil}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.4}{Architecture d\220un r\351seau de capteurs sans-fil}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.4.1}{Les couches WSN OSI}{section.1.4}% 9
+\BOOKMARK [2][-]{subsection.1.4.1}{Les couches WSN OSI:}{section.1.4}% 9
 \BOOKMARK [2][-]{subsection.1.4.2}{Les plans de gestion de la pile protocolaire:}{section.1.4}% 10
 \BOOKMARK [1][-]{section.1.5}{Domaines d'application des r\351seaux de capteurs}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.5.1}{Domaine militaire}{section.1.5}% 12
-\BOOKMARK [2][-]{subsection.1.5.2}{Domaine m\351dicale}{section.1.5}% 13
-\BOOKMARK [2][-]{subsection.1.5.3}{Domaine environnementale}{section.1.5}% 14
-\BOOKMARK [2][-]{subsection.1.5.4}{Domaine commercial}{section.1.5}% 15
-\BOOKMARK [1][-]{section.1.6}{Le probl\350me majeur d\220un r\351seau de capteurs sans fil et le challenge:}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.5.1}{Domaine militaire:}{section.1.5}% 12
+\BOOKMARK [2][-]{subsection.1.5.2}{Domaine m\351dicale:}{section.1.5}% 13
+\BOOKMARK [2][-]{subsection.1.5.3}{Domaine environnementale:}{section.1.5}% 14
+\BOOKMARK [2][-]{subsection.1.5.4}{Domaine commercial:}{section.1.5}% 15
+\BOOKMARK [1][-]{section.1.6}{Le probl\350me majeur d\220un r\351seau de capteurs sans fil et le challenge}{chapter.1}% 16
 \BOOKMARK [1][-]{section.1.7}{Conclusion:}{chapter.1}% 17
 \BOOKMARK [0][-]{chapter.2}{ Optimisation combinatoire et m\351thodes de r\351solutions }{}% 18
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.2}{Techniques d\220optimisation combinatoire:}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.1}{M\351thodes exacte}{section.2.2}% 21
+\BOOKMARK [1][-]{section.2.2}{Techniques d\220optimisation combinatoire}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.1}{M\351thodes exacte:}{section.2.2}% 21
 \BOOKMARK [2][-]{subsection.2.2.2}{Les m\351thodes approch\351es:}{section.2.2}% 22
 \BOOKMARK [1][-]{section.2.3}{Conclusion}{chapter.2}% 23
 \BOOKMARK [0][-]{chapter.3}{ Le probl\350me de l\220arbre dominant \(DTP\) \040}{}% 24
@@ -29,8 +29,8 @@
 \BOOKMARK [2][-]{subsection.3.4.1}{Arbre couvrant de poids minimal \(MST\):}{section.3.4}% 29
 \BOOKMARK [2][-]{subsection.3.4.2}{L\220\351lagage \(Pruning\):}{section.3.4}% 30
 \BOOKMARK [1][-]{section.3.5}{Les travaux relatifs}{chapter.3}% 31
-\BOOKMARK [2][-]{subsection.3.5.1}{L\220heuristique pour le probl\350me de l\220arbre dominant \(H\137DT \)}{section.3.5}% 32
-\BOOKMARK [2][-]{subsection.3.5.2}{Colonie d'abeilles artificielle pour le DTP \(ABC\137DT\)}{section.3.5}% 33
+\BOOKMARK [2][-]{subsection.3.5.1}{L\220heuristique pour le probl\350me de l\220arbre dominant \(H\137DT \):}{section.3.5}% 32
+\BOOKMARK [2][-]{subsection.3.5.2}{Colonie d'abeilles artificielle pour le DTP \(ABC\137DT\):}{section.3.5}% 33
 \BOOKMARK [1][-]{section.3.6}{Algorithme g\351n\351tique stationnaire }{chapter.3}% 34
 \BOOKMARK [1][-]{section.3.7}{L\220algorithme \351volutionnaire avec mutation guid\351e EA/G}{chapter.3}% 35
 \BOOKMARK [1][-]{section.3.8}{Conclusion}{chapter.3}% 36
@@ -54,4 +54,4 @@
 \BOOKMARK [2][-]{subsection.5.4.1}{\311tude comparative}{section.5.4}% 54
 \BOOKMARK [2][-]{subsection.5.4.2}{Analyse graphique}{section.5.4}% 55
 \BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 56
-\BOOKMARK [0][-]{section.5.5}{Conclusion g\351n\351ral}{}% 57
+\BOOKMARK [0][-]{section.5.5}{Conclusion g\351n\351rale}{}% 57

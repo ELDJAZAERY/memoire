@@ -3,13 +3,13 @@
 
 \addtocontents{lof}{\textbf{Étude expérimentale}}
 
-\section{Introduction}
+\CustomSection{Introduction}
 Dans le chapitre précédent, nous avons présenté en détail les approches que nous avons proposées pour la résolution du problème de l’arbre dominant (DTP). Nous allons présenter dans ce qui suit une étude expérimentale effectuée pour comparer les résultats des approches proposées avec d’autres approches développées pour la résolution du DTP. Nous clôturons avec une conclusion.
 
 
-\section{Environnement de travail}
+\CustomSection{Environnement de travail}
 
-\subsection{Environnement matériel}
+\subCustomSection{Environnement matériel}
 Pour les tests effectués nous avons utilisé une machine. Les caractéristiques de  machine sont données dans la figure \ref{fig:CMU}.
 
 \begin{figure}[H]
@@ -19,17 +19,17 @@ Pour les tests effectués nous avons utilisé une machine. Les caractéristiques
 	\label{fig:CMU}
 \end{figure}
 
-\subsection{Environnement logiciel}
+\subCustomSection{Environnement logiciel}
 Nous avons opté pour le langage Java pour la programmation, car il offre une grande flexibilité et facilite l’implémentation qui est due au fait qu’il soit totalement orienté-objet.
 
 \textbf{IDE :}
 L’environnement de développement choisit est IntelliJ IDEA, spécialement dédié au développement en utilisant le langage Java. Il est proposé par l’entreprise JetBrains et est caractérisé par sa forte simplicité d’utilisation et les nombreux plugins et extensions qui lui sont dédiées.
 
-\section{Jeux de données utilisées}
+\CustomSection{Jeux de données utilisées}
 Afin de tester l'approche proposée, nous avons opté pour l'utilisation de fichiers benchmark qui vont représenter des instances du problème. Les différentes instances sur lesquelles notre étude s'est portée sont dérivées à partir des mêmes benchmarks de \cite{sundar2013new}. Une instance est considérée comme un graphe de disques, G = ( V, E ) où chaque disque représente la plage de transmission de chaque nœud. Le poids de chaque arête $e_{uv} \in E $ est défini sous la forme w ( u, v ) = $d_{uv}^2$, où $d_{uv}$  est la distance euclidienne entre deux nœuds u et v. L'hypothèse est que tous les nœuds sont répartis de manière aléatoire dans une zone de $500m * 500m $  et la plage de transmission de chaque nœud est de 100 m.
 
 
-\section{Expérimentation}
+\CustomSection{Expérimentation}
 Pour montrer l'efficacité de l'approches proposées nous ne nous sommes pas limité à des instances de problème ayant un certain nombre de nœuds.
 
 Nous nous avons effectué cela pour une large plage de nombre de nœuds (50 - 500).
@@ -40,23 +40,17 @@ Pour toutes les instances du test, nous avons opté pour 100 itérations pour ch
 
 Toutes ces valeurs de paramètres sont choisies empiriquement. Ces valeurs de paramètres donnent de bons résultats pour la majorité des instances de test.
 
-\subsection{Étude comparative}
+\subCustomSection{Étude comparative}
 Afin de mener à bien une étude comparative entre nos approches et d’autres travaux effectués pour la résolution du DTP, nous avons gardé approximativement le même nombre d’évaluations de la fonction objectif.
 
 Dans le but d’assurer l’intégrité des résultats, nous avons effectué un total de 20 exécutions pour chacune des instances. Les résultats d’exécutions de nos approches (ACO, BBO, GA et la méthode coopérative) sur les instances citées auparavant, sont illustrés dans le Tableau \ref{tab:1}.
 
-Dans le Tableau  \ref{tab:1}, les lignes correspondent aux différentes instances étudiées, quant aux colonnes, elles représentent, pour chaque approche : la meilleure solution obtenue (colonne BS), la moyenne de toutes les solutions obtenues sur les 20 exécutions (colonne AVG), le nombre d’évaluations nécessaire pour trouver la meilleure solution (colonne NBV) et la colonne qui représente le temps d’exécution de chaque métaheuristique en seconde (colonne sec). 
+Dans tous les tableaux, les lignes correspondent aux différentes instances étudiées, quant aux colonnes, elles représentent, pour chaque approche : la meilleure solution obtenue (colonne BS), la moyenne de toutes les solutions obtenues sur les 20 exécutions (colonne AVG), le nombre d’évaluations nécessaire pour trouver la meilleure solution (colonne NBV) et la colonne qui représente le temps d’exécution de chaque métaheuristique en seconde (colonne sec). 
 Notez que les meilleures valeurs sont indiquées en gras dans les tableaux comparatifs.
 
 
-\begin{table}[H]
-	\includegraphics[width=17cm,height=7cm]{Chap5/t1.png}
-	\caption{Résultats d’exécutions des  approches proposées}
-	\label{tab:1}
-\end{table}
 
-
-\subsubsection{Comparaison de la méthode coopérative avec les autres approches}
+\subsubCustomSection{Comparaison de la méthode coopérative avec les autres approches}
 Dans ce qui suit nous allons présenter une comparaison entre notre approche coopérative et les autres approches que nous avons développées. Cette comparaison a pour but de montrer l’efficacité de notre approche coopérative par rapport aux approches développées. 
 
 \begin{enumerate}[label=\alph*)]
@@ -116,7 +110,7 @@ D’après le graphe de la figure \ref{fig:DEMGAMC} et les résultats présenté
 \end{enumerate}
 
 
-\subsubsection{Comparaison de la méthode coopérative avec les travaux liés au DTP}
+\subsubCustomSection{Comparaison de la méthode coopérative avec les travaux liés au DTP}
 Afin de monter l’efficacité et la robustesse de notre approche coopérative, Nous l’avons comparé à deux techniques méta-heuristiques basées sur un essaim dans la littérature, à savoir ACO\_DT \cite{sundar2015ant} et ABC\_DT \cite{karaboga2008performance}, et une autre méta-heuristique SSGA \cite{sundar2014steady} .
 
 
@@ -155,9 +149,20 @@ Concernant les moyennes des solutions (AVG), celles obtenues par la coopération
 \end{enumerate}
 
 
-\subsection{Analyse graphique}
 
-\subsubsection{Étude comparative entre les différentes approches sur les meilleures solutions (BS) }
+le tableau \ref{tab:1} synthétise les résultats trouvés par les approches proposées.
+
+
+\begin{table}[H]
+	\includegraphics[width=17cm,height=7cm]{Chap5/t1.png}
+	\caption{Résultats d’exécutions des  approches proposées}
+	\label{tab:1}
+\end{table}
+
+
+\subCustomSection{Analyse graphique}
+
+\subsubCustomSection{Étude comparative entre les différentes approches sur les meilleures solutions (BS) }
 
 La Figure \ref{fig:DEAP} représente graphiquement les valeurs des différentes BS obtenues
 par les méta-heuristiques  ACO\_DT, BBO, GA et la méthode coopérative, pour les 18 instances. On constate que les courbes présentent la même allure pour les instances de complexité moyenne. De plus, pour les instances de 300\_2 à 500\_3, l’approche de coopération  donne des résultats avec un coût inferieur à celui des autres approches. Chose qui prouve l’efficacité de la méthode coopérative.
@@ -171,7 +176,7 @@ par les méta-heuristiques  ACO\_DT, BBO, GA et la méthode coopérative, pour l
 
 
 
-\subsubsection{Comparaison de la qualité moyenne des solutions (AVG) de l’approche coopérative  et des autres approches}
+\subsubCustomSection{Comparaison de la qualité moyenne des solutions (AVG) de l’approche coopérative  et des autres approches}
 
 La Figure \ref{fig:DQMSAP} porte sur la qualité moyenne des solutions (AVG) issues de 20 exécutions des différents algorithmes pour l’ensemble des 18 instances. On observe
 que les valeurs résultantes de l’approche coopérative avoisinent celles de ACO, BBO  et GA et il est clairement aperçu que pour les grandes instances  la coopération donne de bien meilleurs résultats que les autres approches. Ceci prouve que l’approche de coopération proposée  s'adapte bien pour les grandes instances du problème. 
@@ -185,6 +190,6 @@ que les valeurs résultantes de l’approche coopérative avoisinent celles de A
 \end{figure}
 
 
-\section{Conclusion}
+\CustomSection{Conclusion}
 A travers ce dernier chapitre, nous avons étudié les résultats expérimentaux de l’approche proposée et les avons comparées selon quelques paramètres de performances (BS,AVG), avec d’autres travaux élaborés pour la résolution du problème de l’arbre dominant. Dans l’ensemble, les approches que nous avons proposées se sont  avéré efficace en offrant de bons résultats malgré la constatation de quelques dégradations de qualité qui peut se justifier par la nature stochastique des méta-heuristiques.
 

@@ -1,0 +1,150 @@
+\documentclass{report}
+
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+\begin{document}
+
+
+\begin{algorithm}
+\caption{abc dcc}
+\LinesNumbered
+% This is to hide end and get the last vertical line straight
+\SetKwBlock{Begin}{Begin}{}
+\SetAlgoLined
+\SetKwProg{Loop}{LOOP}{}{}
+  \Begin{
+  $\mathcal{E} \leftarrow \emptyset$\;
+    \SetAlgoVlined \Loop {$ab \gets  cd$}{
+  $abcd$\\
+  $abdc  $                              }
+  }
+\end{algorithm}
+
+
+\SetNlSty{texttt}{(}{)}
+\begin{algorithm}
+  \LinesNumbered
+\setcounter{AlgoLine}{12}
+% This is to restore vline mode if you did not take the package as \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+  \SetAlgoVlined
+%This is to hide Begin keyword
+\SetKwBlock{Begin}{}{end}
+\SetKwProg{Loop}{LOOP}{}{}
+\Begin{
+  $\mathcal{E} \leftarrow \emptyset$\;
+  $\mathcal{E} \leftarrow \emptyset$\;
+    \SetAlgoVlined \Loop {$ab \gets  cd$}{
+  $abcd$\\
+  $abdc  $                              }
+  $\mathcal{E} \leftarrow \emptyset$\;
+  $\mathcal{E} \leftarrow \emptyset$\;
+  $\mathcal{E} \leftarrow \emptyset$\;     
+  }
+\end{algorithm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{algorithm}
+\caption{fbf jfjf}
+  \LinesNumbered
+% This is to restore vline mode if you did not take the package as \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+  \SetAlgoVlined
+%This is to hide Begin keyword
+\SetKwProg{Loop}{LOOP}{}{}
+\SetKwBlock{Begin}{loop3}{end}
+\Begin{
+  $\mathcal{E} \leftarrow \emptyset$\;
+  $\mathcal{E} \leftarrow \emptyset$\;
+  \SetAlgoVlined \Loop {$ab \gets  cd$}{
+  $abcd$\\
+  $abdc  $                              }
+  $\mathcal{E} \leftarrow \emptyset$\;
+  $\mathcal{E} \leftarrow \emptyset$\;
+  $\mathcal{E} \leftarrow \emptyset$\;     
+  }
+\end{algorithm}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+
+\begin{algorithm}[H]
+\label{alg3:PCGM}
+\caption{Pseudo-code de GM}
+\SetAlgoLined
+\DontPrintSemicolon
+\large
+
+
+Mettre la couleur de tous les nœuds dans V à BLANC \;
+$ DT \gets \varnothing $ \;
+\For{nœud $v \in V$ dans un ordre quelconque}{
+	Générer un nombre aléatoire $r_1$ tel que $ 0 \leq r_1 \leq 1 $ \;
+	\eIf{$ r_1 < \beta $}{
+		Générer un nombre aléatoire $r_2$ tel que $ 0 \leq r_2 \leq 1 $ \;
+		\If{ $r_2 < p v $ Et ((v est BLANC) Ou (v est GRIS avec au moins un voisin BLANC))}{
+		   Trouver le chemin le plus court SP entre le nœud v et un nœud u dans DT\;
+		   Ajouter toutes les arêtes de SP dans DT \;
+		   Colorer en NOIR tous les nœuds dans le chemin SP \;
+		   Colorer en GRIS tous les nœuds voisins BLANCs des nœuds sur le chemin SP\;
+		}
+	}{
+		\If{v est un nœud dominant dans m i et v est GRIS avec au moins un voisin 					BLANC}
+		{
+		   Trouver le chemin le plus court SP entre le nœud v et un nœud u dans DT\;
+		   Ajouter toutes les arêtes de SP dans DT \;
+		   Colorer en NOIR tous les nœuds dans le chemin SP \;
+		   Colorer en GRIS tous les nœuds voisins BLANCs des nœuds sur le chemin SP\;
+		}
+	}
+}
+
+Retourner DT \;
+
+\end{algorithm}
+
+
+
+------------------------------------------------------
+
+
+	\eIf{
+		\If{v est un nœud dominant dans m i et v est GRIS avec au moins un voisin 					BLANC}
+		{
+		   Trouver le chemin le plus court SP entre le nœud v et un nœud u dans DT\;
+		   Ajouter toutes les arêtes de SP dans DT \;
+		   Colorer en NOIR tous les nœuds dans le chemin SP \;
+		   Colorer en GRIS tous les nœuds voisins BLANCs des nœuds sur le chemin SP\;
+		}
+	}
+

@@ -3,7 +3,7 @@
 
 \addtocontents{lof}{\textbf{Optimisation combinatoire et méthodes de résolutions }}
 
-\section{Introduction}
+\CustomSection{Introduction}
 L’optimisation combinatoire occupe une place très importante dans divers domaines. En effet, elle définit un cadre formel pour de nombreux problèmes dans plusieurs secteurs tels que l’industrie, la finance ou tout simplement les problèmes de la vie quotidienne.
 La solution optimale à un problème d’optimisation ne peut que très rarement être déterminée en un temps polynomial. Il est donc souvent nécessaire de trouver des modes de résolution qui fournissent une solution de bonne qualité dans un laps de temps raisonnable. Il existe donc des méthodes de résolution exactes qui sont caractérisées par le fait qu’elles permettent d’obtenir une ou plusieurs solutions optimales, ainsi que des méthodes de résolution approchées qui fournissent des solutions de bonne qualité (proches de l’optimal mais sans garantie d’optimalité) et dont le temps de résolution sera plus faible \cite{zidi2006systeme}.
 
@@ -11,8 +11,8 @@ Ce chapitre sera structuré comme suit : d’abord, nous allons présenter briè
 
 Depuis une vingtaine d’années, les heuristiques les plus populaires, et également les plus efficaces, sont des techniques générales, appelées méta-heuristiques, qu’il s’agit de l’adapter à chaque problème dont sa complexité est NP-hard. Dans ce chapitre, nous allons définir c’est quoi une méta-heuristique, la classification des méthodes utilisées dans les méta-heuristiques. 
 
-\section{Techniques d’optimisation combinatoire:}
-L’importance de l’optimisation combinatoire se justifie d’un coté par la grande difficulté des problèmes d’optimisation et d’un autre coté par la quantité innombrable d’applications pratiques pouvant être formulées sous la forme de tels problèmes. En effet, ces derniers sont souvent faciles à formaliser ou à exprimer, mais peuvent toutefois, être très difficiles à résoudre. Néanmoins, la plupart d’entre eux ne possèdent pas à ce jour de solution efficace valable pour toutes les données. \cite{hao1999metaheuristiques}
+\CustomSection{Techniques d’optimisation combinatoire}
+L’importance de l’optimisation combinatoire se justifie d’un coté par la grande difficulté des problèmes d’optimisation et d’un autre coté par la quantité innombrable d’applications pratiques pouvant être formulées sous la forme de tels problèmes. En effet, ces derniers sont souvent faciles à formaliser ou à exprimer, mais peuvent toutefois, être très difficiles à résoudre. Néanmoins, la plupart d’entre eux ne possèdent pas à ce jour de solution efficace valable pour toutes les données \cite{hao1999metaheuristiques}.
 
 Un problème d’optimisation combinatoire est exprimé sous forme d’une fonction objectif qui est à maximiser, ou à minimiser, selon le type de problème traité. La résolution d’un tel problème revient à chercher la meilleure solution (optimum global) dans l’ensemble des solutions réalisables, sans pour autant être coincé dans des solutions intermédiaires (optimum locaux), propres à un sous-espace de recherche (voir Figure \ref{fig:DOGOL}).
 
@@ -27,7 +27,7 @@ L’élégance des problèmes d’optimisation combinatoire réside dans la poss
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm,height=13cm]{Chap2/2.png}
+	\includegraphics[width=15cm,height=11cm]{Chap2/2.png}
 	\caption{Classification des méthodes de résolution d’optimisation combinatoire}
 	\label{fig:CMROC}
 \end{figure}
@@ -36,10 +36,9 @@ De nombreuses méthodes de résolution ont été développées par la communaut�
 
 Ces méthodes sont divisées en deux grandes catégories : les méthodes exactes basées sur l’énumération de toutes les solutions réalisables, chose qui garantie la complétude de la résolution, et les méthodes approchées qui perdent en exactitude pour gagner en efficacité \cite{park2007dominating} . La figure \ref{fig:CMROC} illustre un schéma résumant la classification des différentes méthodes discutées le long du chapitre.
 
-\subsection{Méthodes exacte}
+\subCustomSection{Méthodes exacte:}
 Ces méthodes sont dites complètes ou exactes car elles permettent de trouver la solution optimale pour une instance de taille finie dans un temps limité et de prouver son optimalité \cite{puchinger2005combining} . Ces méthodes se basent généralement sur sur une recherche complètes de l’espace des combinaisons afin de trouver une solution optimale.\\
-Les algorithmes exacts les plus réussis dans la littérature: 
-
+Les algorithmes exacts les plus réussis dans la littérature:
 
 \begin{enumerate}[label=\alph*)]
 	\item \textbf{La méthode séparation et évaluation (Branch and Bound):} elle repose sur une méthode arborescente de recherche d’une solution optimale par séparations et évaluations. Le branch-and-bound est basé sur trois axes principaux: L’évaluation, la séparation, la stratégie de parcours.
@@ -52,19 +51,20 @@ Les algorithmes exacts les plus réussis dans la littérature:
 	\item \textbf{La méthode (Branch and Cut): }face aux problèmes difficiles. De même que l’algorithme du "Branch and Bound". Pour cela la méthode "Branch and Cut" qui conjugue l’effort des deux algorithmes précédemment cités est utilisée \cite{padberg1991branch,padberg1987optimization} .
 \end{enumerate}
 
-\subsection{Les méthodes approchées:}
-Ces méthodes s’appliquent sur tous les problèmes peut importe leurs complexités et vise à trouver une solution admissible en un temps raisonnable, mais ne garantissent pas  l’optimalité d’un solution. En outre, elles ont démontré leurs robustesses et efficacités face à plusieurs problèmes d’optimisation combinatoires. Elles englobent deux classes : Heuristiques et Méta- heuristiques:
-\subsubsection{Heuristiques:}
+\subCustomSection{Les méthodes approchées:}
+Ces méthodes s’appliquent sur tous les problèmes peut importe leurs complexités et vise à trouver une solution admissible en un temps raisonnable, mais ne garantissent pas  l’optimalité d’un solution. En outre, elles ont démontré leurs robustesses et efficacités face à plusieurs problèmes d’optimisation combinatoires. Elles englobent deux classes : Heuristiques et Méta- heuristiques.
+\subsubCustomSection{Heuristiques:}
 Les heuristiques sont des règles empiriques simples basées sur l'expérience, ne fournissant pas nécessairement une solution optimale. L’avantage d’utiliser une heuristique réside dans l’efficacité de calculer une solution approchée dans un temps raisonnable et ainsi accélérer le processus de résolution exact, qui peut s’avérer long pour des problèmes à large échelle. Généralement, une heuristique n’offre aucune garantie quant à la qualité de la solution. On peut distinguer une classe d’heuristique qui est les méthodes constructives.
 
-	Les approches constructives construisent une ou plusieurs combinaisons de façon incrémentale, c’est-à-dire, en partant d’une solution initiale vide, et à chaque itération, une variable est choisie (selon une heuristique ou aléatoirement) jusqu’à l’obtention d’une combinaison complète. c'est pour cela ces approches sont dites “basées sur les modèles” dans \cite{zlochin2004model} .\\
+	Les approches constructives construisent une ou plusieurs combinaisons de façon incrémentale, c’est-à-dire, en partant d’une solution initiale vide, et à chaque itération, une variable est choisie (selon une heuristique ou aléatoirement) jusqu’à l’obtention d’une combinaison complète. c'est pour cela ces approches sont dites “basées sur les modèles” dans \cite{zlochin2004model} .
+	
 Il existe différentes stratégies pour choisir les composants à ajouter à chaque itération, les plus connues étant les stratégies gloutonnes. Ces stratégies consistent à construire une solution pas à pas
 sans retour arrière, en prenant à chaque étape la solution qui semble la meilleure localement (selon une heuristique), en espérant obtenir une solution optimale. 
 
-\subsubsection{Meta-Heuristiques:}
+\subsubCustomSection{Meta-Heuristiques:}
 Une Méta-heuristique peut être définie comme une méthode algorithmique capable de guider et d’orienter le processus de recherche dans un espace de solution (souvent très grand) à des régions riches en solutions optimales dans le but de trouver des solutions, peut-être pas toujours optimales, en tout cas très proches de l’optimum, en un temps raisonnable.
 
-\subsubsection{Méthodes de voisinage (A solution unique):}
+\subsubCustomSection{Méthodes de voisinage (A solution unique):}
 Les méthodes de voisinage se basent sur la notion de voisinage. Elle a plusieurs méthodes chacune débute avec une configuration initiale, et réalise ensuite un processus itératif qui consiste à remplacer la configuration courante par l'un de ses voisins en tenant compte de la fonction de coût. Ce processus s'arrête et retourne la meilleure configuration trouvée quand la condition d'arrêt est réalisée. Cette condition d'arrêt concerne généralement une limite pour le nombre d'itérations, le temps d’exécution ou un objectif à réaliser. Présentant quelques méthodes:
 
 \begin{enumerate}[label=\alph*)]
@@ -84,6 +84,8 @@ La popularité du recuit simulé a été incontestable pendant des années. D’
 %\KwResult{la meilleure combinaison ayant appartenu à la population }
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 $ t \gets 0 $ , Initialiser la température T en fonction du schéma de refroidissement \;
 $ s\gets s_0 $ , une solution initiale \;
 $ Best \gets S $ \;
@@ -101,23 +103,19 @@ $ Best \gets S $ \;
  }
 \end{algorithm}
 
-
 	\item \textbf{Recherche tabou: } La méthode de recherche avec tabous, ou simplement recherche tabou (TS :Tabu Search) a été formalisée par Fred Glover en 1986 \cite{glover1986future} . Elle utilise explicitement l’historique de la recherche, à la fois pour échapper aux minimaux locaux et pour mettre en œuvre une stratégie d’exploration. Sa principale caractéristique est en effet basée sur  l’utilisation de mécanismes inspirés de la mémoire humaine. A l'inverse du recuit simulé qui génère de manière aléatoire une seule solution voisine s’ \( \in N(s) \) à chaque itération, la recherche tabou examine un échantillonnage de solutions de \( N(s) \) et retient la meilleure s’ même si s’ est plus mauvaise que s. La recherche tabou ne s'arrête donc pas au premier optimum trouvé.\\
 La méthode TS utilise une liste tabou, qui mémorise les dernières solutions rencontrées (ou des caractéristiques de solutions) vers lesquelles il est interdit de se déplacer. Ce procédé simple de mémoire permet de choisir le meilleur voisin non tabou, même si celui-ci dégrade la fonction-objectif f. Cependant, dans certains cas, les interdictions occasionnées par la liste tabou peuvent être jugées trop radicales. En effet, on risque d’éliminer (en les rendant tabous), certains mouvements particulièrement utiles. Pour éviter cela, on incorpore dans l’algorithme un mécanisme d’aspiration
 qui détermine des critères selon lesquels un mouvement, bien que tabou, peut quand même être
 accepté, s’il permet d’obtenir une meilleure solution que toutes celles déjà parcourues.\\
 La taille de la liste tabou contrôle la mémoire du processus de recherche. Pour favoriser l’intensification, il suffit de diminuer la taille de la liste tabou. En revanche, augmenter la taille de la liste tabou, forcera le processus de recherche à explorer des régions plus vastes, favorisant ainsi la diversification. La taille de la liste tabou peut être modifiée au cours de la recherche \cite{battiti1994reactive}.\\
 Une autre amélioration intéressante de la TS est l’utilisation de structure de mémoire à moyen et à long terme afin d’approfondir les notions d’intensification et de diversification.\\
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=13cm,height=12cm]{Chap2/4.png}
-	\caption{Organigramme illustrant le  Fonctionnement de l’algorithme TS}
-	\label{fig:OIFA}
-\end{figure}
+
 \begin{algorithm}[H]
 \caption{Recherche Taboue}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
+
 $ l \gets longueur maximale de la liste taboue $  \;
 $ n \gets number of tweaks desired to sample the gradient$ \;
 $ S \gets solution initial $ \;
@@ -147,7 +145,12 @@ Insérer s dans L \;
 
 \end{algorithm}
 
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=11cm,height=10cm]{Chap2/4.png}
+	\caption{Organigramme illustrant le  Fonctionnement de l’algorithme TS}
+	\label{fig:OIFA}
+\end{figure}
 
 	
 	\item \textbf{Recherche locale : } Pour cette méthode de recherche il suffit de tester itérativement de nouvelles solutions potentielles dans la région de la solution courante, et de prendre la meilleure dans le voisinage. La méthode est une généralisation de la méthode de la descente de gradient elle consiste à partir d’une solution s à choisir une solution s’ dans un voisinage de s, noté N(s). La nouvelle solution choisie est meilleure que la précédente sous la fonction objective. Cela nous permet d’explorer l’espace des combinaisons  de proche en proche, en partant d’une combinaison initiale et en sélectionnant à chaque itération une combinaison voisine de la combinaison courante, obtenue en lui appliquant une transformation élémentaire jusqu’à la convergence à un optimum local. L’algorithme  décrivant le principe général de la recherche locale:\\
@@ -156,6 +159,7 @@ Insérer s dans L \;
 \caption{Recherche Local}
 \SetAlgoLined
 \DontPrintSemicolon
+\small
 
 $ s \gets solution initial $ \;
 \While{ (Best est la meilleure) $\cap$ (nombre iter=max) }{
@@ -174,6 +178,7 @@ $ s \gets solution initial $ \;
 \caption{Recherche à voisinages variables (VNS)}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
 
 $ s \gets solution initial $ \;
 \Repeat{$ K = K_{Max} $}{
@@ -195,7 +200,7 @@ $ s \gets solution initial $ \;
 
 
 
-\subsubsection{Méthodes évolutives (A population):}
+\subsubCustomSection{Méthodes évolutives (A population):}
 Depuis le début des années 90, une autre famille d’ heuristiques est devenue très populaire : les Méthodes Évolutives \cite{hertz2000framework} , s’inspirant de la théorie de l’évolution «darwinienne»  tels que le croisement, la mutation et la sélection pour résoudre des problèmes divers. Contrairement à la Recherche Locale qui tente d’ améliorer itérativement une solution courante. Les Méthodes Évolutives travaillent sur une population de solutions en appliquant un processus cyclique composé d’ une phase de coopération et d’ une phase d’adaptation individuelle qui se succèdent à tour de rôle. Dans la phase de coopération, les solutions de la population courante sont comparées entre elles, puis combinées, dans le but de produire de nouvelles solutions qui héritent des bons aspects de chaque membre de la population. Dans la phase d’adaptation individuelle, chaque solution dans la population peut évoluer de manière indépendante. On peut utiliser le même type de critère d’ arrêt que dans la Recherche Locale, ou alors on peut décider de stopper une Méthode Évolutive dès que les solutions dans la population sont jugées trop similaires. Une description générale des Méthodes Évolutives est donnée ci-dessous:
 
 \begin{figure}[H]
@@ -208,20 +213,15 @@ Depuis le début des années 90, une autre famille d’ heuristiques est devenue
 Le terme Evolutionary Computation englobe une classe assez large de méta-heuristiques qui ont été développés au début des années soixante, telles que les algorithmes génétiques \cite{holland1975adaptation}, les stratégies d’évolution \cite{rechenberg1973evolutionsstrategie} , la programmation évolutive \cite{fogel1966artificial}, et la programmation génétique \cite{koza1992genetic}
 
 \begin{enumerate}[label=\alph*)]
-	\item \textbf{Algorithmes génétiques(AG):} développées par J. Holland en 1975 \cite{holland1975adaptation} comme outils de modélisation de l’adaptation et qui travaillent dans un espace de chaînes de bits. Elles ont été largement utilisé et développé par Moscato en 1989 \cite{moscato1989evolution}. Cette classe s’inspire de la théorie de l’évolution et des règles de la génétique qui expliquent la capacité des espèces de s’adapter à leurs environnement à l’ aide de l’ opérateur de mutation, alors que l’ échange d’information est gouverné par un opérateur de reproduction et un opérateur de combinaison (ou croisement). L’algorithme ci-dessous décrit ce principe général, dont les principales étapes sont détaillées ci-après.\\
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=9cm,height=10cm]{Chap2/6.png}
-	\caption{Organigramme d’un algorithme génétique}
-	\label{fig:OAG}
-\end{figure}
+	\item \textbf{Algorithmes génétiques(AG):} développées par J. Holland en 1975 \cite{holland1975adaptation} comme outils de modélisation de l’adaptation et qui travaillent dans un espace de chaînes de bits. Elles ont été largement utilisé et développé par Moscato en 1989 \cite{moscato1989evolution}. Cette classe s’inspire de la théorie de l’évolution et des règles de la génétique qui expliquent la capacité des espèces de s’adapter à leurs environnement à l’ aide de l’ opérateur de mutation, alors que l’ échange d’information est gouverné par un opérateur de reproduction et un opérateur de combinaison (ou croisement). L’algorithme ci-dessous décrit ce principe général, dont les principales étapes sont détaillées ci-après.
 
 \begin{algorithm}[H]
 \caption{Algorithme génétique}
+\large
 \KwResult{la meilleure combinaison ayant appartenu à la population }
 \SetAlgoLined
 \DontPrintSemicolon
+
 
 Initialiser la population avec un ensemble de combinaisons de E \;
 \While{critères d’arrêt non atteints}{
@@ -232,6 +232,12 @@ Initialiser la population avec un ensemble de combinaisons de E \;
 
 \end{algorithm}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=9cm,height=10cm]{Chap2/6.png}
+	\caption{Organigramme d’un algorithme génétique}
+	\label{fig:OAG}
+\end{figure}
 	
 \begin{itemize}
 	\item \textbf{Initialisation de la population: }en général, la population initiale est générée de façon aléatoire, selon une distribution uniforme assurant une bonne diversité des combinaisons. Une solution initiale est de bonne qualité, celle qui nous permet de converger vers un optimum global dans le plus court délai possible.\\
@@ -258,9 +264,11 @@ En raison de leur comportement de recherche de nourriture, les fourmis trouvent 
 
 \begin{algorithm}[H]
 \caption{L’optimisation des colonies de fourmis (ACO)}
+\large
 \KwResult{la meilleure solution trouvée}
 \SetAlgoLined
 \DontPrintSemicolon
+
 
 \tcp{Initialisation}
 initialisation de phéromones et les paramètre avec des valeurs constantes \;
@@ -297,9 +305,11 @@ Tout comme GA et PSO qui sont basés sur la biologie, BBO est un algorithme bas�
 
 \begin{algorithm}[H]
 \caption{L’algorithme à base de biogéographie (BBO)}
+\large
 \KwResult{la meilleure solution ayant appartenu à la population }
 \SetAlgoLined
 \DontPrintSemicolon
+
 
 Générer aléatoirement un ensemble de solutions initiales (îles) \;
 \While{le critère d’arrêt n’est pas atteint}{
@@ -321,6 +331,7 @@ Cette algorithme  sera suivit d’une figure qui ellustre le fonctionnement de c
 \caption{migration}
 \SetAlgoLined
 \DontPrintSemicolon
+\large
 
 \For{$i\gets1$ \KwTo $N$}{
 	Utiliser $\lambda_i$ pour décider, de manière probabiliste, d’immigrer à $X_i$ \;
@@ -365,9 +376,11 @@ D’une vue globale, l’application de cette simple modification n’influe en 
 
 \begin{algorithm}[H]
 \caption{Simple Algorithme mémétique}
+\large
 \KwResult{la meilleure solution ayant appartenu à la population }
 \SetAlgoLined
 \DontPrintSemicolon
+
 
 Initialisation : générer une population initiale $P$ de solutions de taille $| P | = n$  \;
 \Repeat{critère d'arrêt satisfait}{
@@ -391,6 +404,6 @@ Initialisation : générer une population initiale $P$ de solutions de taille $|
 \end{enumerate}
 
 
-\section{Conclusion}
+\CustomSection{Conclusion}
 Nous avons présenté dans ce chapitre l’état de l’art des méta-heuristiques pour l’optimisation des problèmes Np-difficile. Plus de détails sur le problème de l’arbre dominant qui en est un, ainsi que les méthodes utilisées pour sa résolution seront mis au clair dans le prochain chapitre.
 

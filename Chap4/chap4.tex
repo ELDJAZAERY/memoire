@@ -3,27 +3,27 @@
 
 \addtocontents{lof}{\textbf{Approche proposée}}
 
-\section{Introduction}
+\CustomSection{Introduction}
 Dans les chapitres précédents, nous avons introduit différentes techniques utilisées pour la résolution des problèmes d’optimisation combinatoire, notamment les méthodes adoptées pour la résolution du problème de l’arbre dominant DTP, dont une grande majorité a servi de source d’inspiration pour l’élaboration des approches que nous avons proposé et qui seront détaillées le long de ce chapitre.  Nous allons dans un premier présenter les structures de données utilisées pour représenter les données du problème ainsi que la solution.
 
-\section{Représentation du graphe modélisant le problème}
+\CustomSection{Représentation du graphe modélisant le problème}
 Un WSN est un graphe pondéré non orienté $G=(V,E,w)$, où $V$ est l’ensemble des nœuds du réseau, E l’ensemble des arêtes et w un poids non négatif attribué pour chaque arête $e=(u,v)$. 
 
 Nous utilisons pour représenter le WSN deux vecteurs, un vecteur de taille $|V|$ contenant des entiers représentant chaque nœud et l’autre est de taille $|V-1|$ il contient une structure d’arc (nœud 1, nœud 2 et le poids entre les deux nœuds). Nous allons dans ce qui suit présenter le codage de la solution ainsi que la méthode d'extraction du DT à partir de cette solution.
 
 
-\section{présentation d’une solution}
+\CustomSection{présentation d’une solution}
 Nous proposons de représenter une solution en utilisant le codage binaire qui est considéré dans la littérature comme un bon moyen pour manipuler les différents gène (position(bit) dans une solution) d’une solution pour une population donnée. Si le gène est égale à '1', cela veut dire que le nœud correspondant est actif, s'il vaut '0', il est inactif.
 
 
-\section{Méthode d'extraction d'un arbre dominant à partir du vecteur solution}
+\CustomSection{Méthode d'extraction d'un arbre dominant à partir du vecteur solution}
 Au départ nous avons deux vecteurs $(Vect, DN)$, où, $Vect$ contient tous les nœuds de notre graphe, $DN$ est un vecteur binaire de taille $|V|$ initialement null et contiendra par la suite l’ensemble des nœuds dominant .
 
 L’ajout des nœuds à $DN$ se fait via un processus itératif. A chaque fois un nœud est choisi d’une façon aléatoire,  et est ajouté à $DN$. Ce processus poursuit son fonctionnement tant que les nœuds appartenant à $DN$ ne couvre pas tous le graphe ou ils ne sont pas  connectés. On dit que $DN$ couvre le graphe si et seulement si tous les nœuds de notre graphe sont soit dans $DN$ soit adjacent à un autre nœud qui est dans $DN$.
 
 Pour pouvoir construire un DT, il faut d’abord vérifier  que les nœuds actifs dans $DN$  sont connectés entre eux. Dans le meilleur des cas, les nœuds actifs dans $DN$ sont connectés. Dans le cas contraire nous devons les rendre connecté en utilisant une méthode de connection décrite si après.
 
-\section{La méthode de connection}
+\CustomSection{La méthode de connection}
 Soit un vecteur DNC initialement vide qui va contenir par la suite ensemble de nœuds connecté. En premier lieu, nous retirons un nœud aléatoirement de DN et nous l’insérons dans DNC. Puis, d’une façon itérative, nous retirons tous les nœuds de DN qui ont au moins un voisin dans DNC et nous l’insérons dans DNV. En second lieu nous, devons insérer tous les nœuds actifs dans DN dans DNC en utilisant une autre fonction. Cette fonction consiste au départ, à choisir un nœud v aléatoirement dans V qui n’est pas dans DNC. S'il y a au moins deux voisins, un dans DN et l’autre dans DNC, alors nous retirons son voisins dans DN et nous l’insérons  avec v dans DNC. Si aucun nœud n’est trouvé nous procédons à une sélection par pair de nœuds où chaque nœud entre eux a soit un voisin dans DN ou dans DNC et nous refaisions le même processus de recherche dans le cas d’un seul nœud à selectionner.\\
 Nous ré-exécutons ce prceossus jusqu'à ce que DN devient null.
 
@@ -31,18 +31,19 @@ Une fois que l’ensemble DN soit null, nous appliquons la méthode d’élagage
 
 
 
-\section{Approche proposée}
+\CustomSection{Approche proposée}
 Dans ce mémoire nous avons proposé plusieurs approches pour résoudre le DTP. Nous avons proposé de le résoudre dans un premier temps en utilisant des méta-heuristiques, et en utilisant la coopération de ces méta-heuristiques dans un second temps. Nous allons structurer ce qui suit en deux parties. Dans la première partie, nous présentons chacune des méta-heuristiques utilisées, dans la seconde partie, nous présentons l'approche coopérative.
 
 
-\subsection{description des méta-heuristiques utilisées}
+\subCustomSection{description des méta-heuristiques utilisées}
 La méthode de résolution du problème de l’arbre dominant que nous avons proposée consiste à intégrer un processus de recherche locale  à la méta-heuristiques. Nous allons dans ce qui suit décrire les approches proposées. 
 
-\subsubsection{Ant colony optimisation}
+\subsubCustomSection{Ant colony optimisation}
 Nous utilisons dans cette première solution, l'algorithme des colonies de Fourmies pour résoudre le DTP. Nous allons décrire dans ce qui suit l'adaptation des operateurs de  cette métaheuristique au problème étudié. 
 
+
 \begin{enumerate}
-	\item \textbf{Les opérateurs de l’algorithme ACO}\\
+	\item \textbf{Les opérateurs de l’algorithme ACO}
 \begin{enumerate}[label=\alph*)]
 	\item \textbf{Recherche locale}\\
 	Dans la recherche locale que nous proposons, supposons que nous avons une solution. Nous parcourons le vecteur de la solution et on inverse la valeur des élément (si la valeur d’un élément est égale à 1, elle devient 0 ou inversement). A chaque fois que nous inversons  la valeur  de chaque élément nous faisons une évaluation de la fonction objectif. A tous coups où la solution est améliorée, cette dernière est sauvegardée et la recherche d’une meilleure solution se fera à partir de cette solution.
@@ -93,9 +94,10 @@ Nous allons décrire dans ce qui suit, l'approche de construction de la solution
 
 Après que tous les sommets du graphe soient étiquetés à marqué. Les fonction élagage et MST décrit dans le chapitre 3 sont appliquées.\\
 
-Le pseudo-code de ACO est donné dans l’algorithme 1 suivant:\\
+Le pseudo-code de ACO est donné dans l’algorithme 23 suivant:\\
 
 \begin{algorithm}[H]
+\label{ACODT4}
 \caption{ACO DT}
 \KwData{Un graphe général pondéré non orienté $G = (V, E, w) $}
 \KwResult{Un DT  optimal de G }
@@ -121,13 +123,11 @@ Retourner le DT avec poids minimum dans la liste \;
 \end{enumerate}
 
 
-
-\subsubsection{Algorithme génétique}
+\subsubCustomSection{Algorithme génétique}
 Nous allons décrire dans ce qui suit les opérateurs retenus dans l'approche utilisant les algorithmes génétiques. 
 
-
 \begin{enumerate}
-	\item \textbf{Les opérateurs de l’algorithme ACO}\\
+	\item \textbf{Les opérateurs de l’algorithme génétique}
 
 \begin{enumerate}[label=\alph*)]
 	\item \textbf{Génération de la Population initiale}\\
@@ -159,6 +159,7 @@ La figure \ref{fig:ECU} illustre se processus par un exemple.
 	\label{fig:RSM}
 \end{figure}
 
+\newpage
 
 	\item \textbf{Élitisme}\\
 Cet opérateurs permet de garder les meilleurs individus de chaque population. Notre méthode d’élitisme consiste à remplacer les m mauvais individus de la nouvelle population par les m meilleurs individus de la  population précédente. 
@@ -198,7 +199,7 @@ Initialiser une population d’une façon aléatoire \;
 \end{enumerate}
 
 
-\subsubsection{biogeography based optimimisation (BBO)}
+\subsubCustomSection{biogeography based optimimisation (BBO)}
 C’est une méta heuristique qui fait partie des algorithmes évolutionnaire basée sur la biogéographie. Dans ce qui suit, nous allons présenter l’approche BBO développée pour la résolution du problème de l’arbre dominant ainsi que ses opérateurs.
 
 \begin{enumerate}
@@ -206,7 +207,7 @@ C’est une méta heuristique qui fait partie des algorithmes évolutionnaire ba
 	Il est à noter que le codage d’une solution et l’initialisation de la population sont les même  que celles décrient pour l’algorithme génétique. BBO utilise principalement deux opérateurs: la migration et la mutation 
 	\begin{enumerate}[label=\alph*)]
 		\item \textbf{Migration}\\
-		Le concept générale de cet opérateur est de décider laquelle des régions de la solution migre ou non vers une autre région. La migration d’une région est le fait qu’un élément d’une solution s’interchange avec un autre élément d’une autre solution. Il est généralement utilisé pour modifier l’individu existant. L’algorithme 3 décrit le fonctionnement de l’opérateur de migration utilisé par BBO .\\
+		Le concept générale de cet opérateur est de décider laquelle des régions de la solution migre ou non vers une autre région. La migration d’une région est le fait qu’un élément d’une solution s’interchange avec un autre élément d’une autre solution. Il est généralement utilisé pour modifier l’individu existant. L’algorithme 25 décrit le fonctionnement de l’opérateur de migration utilisé par BBO .\\
 		
 \begin{algorithm}[H]
 \caption{Migration BBO DT}
@@ -294,7 +295,7 @@ Quant aux taux de la mutation est calculé en utilisant les résultats des deux 
 
 	
 	\item \textbf{Le fonctionnement de l’algorithme BBO}\\
-	L’algorithme BBO que nous avons développé peut être décrit globalement par l’algorithme \ref{alg:BBODT}. Les deux opérateurs de base qui régissent le fonctionnement de BBO sont la migration et la mutation et sont les même décries si dessus. En plus, une stratégie d’élitisme est adoptée dans l’algorithme BBO, afin de garder dans la nouvelle population la meilleure solution.\\
+	L’algorithme BBO que nous avons développé peut être décrit globalement par l’algorithme 27. Les deux opérateurs de base qui régissent le fonctionnement de BBO sont la migration et la mutation et sont les même décries si dessus. En plus, une stratégie d’élitisme est adoptée dans l’algorithme BBO, afin de garder dans la nouvelle population la meilleure solution.\\
 
 \begin{algorithm}[H]
 \label{alg:BBODT}
@@ -325,7 +326,7 @@ Initialisation de la population \;
 
 
 
-\subsection{Description de l'approche coopérative}
+\subCustomSection{Description de l'approche coopérative}
 Nous proposons une approche  coopérative entre les méta-heuristiques pour la résolution du problème de l’arbre dominant où une méta-heuristique maître contrôle plusieurs méta-heuristiques esclaves. Les points forts d'une méta-heuristique esclave compensent les points faibles d'une autre grâce à la notion de rang. Le rang est un moyen de mettre en valeur les points forts des méta-heuristiques esclaves. Il est attribué par le maître et est égale à 0 au départ. Il est mis à jour continûment par la méta-heuristique maître qui augmente le rang des méta-heuristiques esclaves ayant amélioré la solution et diminue le rang de celles qui ne l'auront pas amélioré. Cette mise à jour tend à récompenser les méta-heuristiques esclaves qui auront réussi à améliorer la solution courante. Comme conséquence, les méta-heuristiques esclaves ayant un rang élevé participeront donc davantage au développement de la solution finale.
 
 
@@ -339,7 +340,7 @@ Nous proposons une approche  coopérative entre les méta-heuristiques pour la r
 
 Comme le montre la figure \ref{fig:CMH}, nous utilisons comme méta-heuristique maître la recherche taboue, et pour les méta-heuristiques esclaves nous utilisons l’algorithme génétique, ACO ainsi que BBO. Au départ, le maître choisit une méta-heuristique esclave de manière aléatoire. A chaque fois qu' une méta-heuristique esclave améliore sa solution, elle aura comme bonus une valeur supérieure de rang, cela crée une forme de compétition entre les esclaves pour accroître son rang tout en améliorant la solution actuelle.
 
-Lorsqu'une méta-heuristique termine sa recherche, elle communique sa meilleure solution à celle qui la remplace, permettant ainsi à cette dernière de générer un bon voisinage. La sélection de la méta-heuristique remplaçante se fait par rapport à la valeur du rang (c’est-à-dire la méta-heuristique ayant le plus grand rang sera choisie pour l’amélioration de la solution courante). La méta-heuristique esclaves n’ayant pas amélioré la solution après un nombre d’itération  précis  elle sera mis dans la liste taboue. Lorsque toutes les méta-heuristiques sont dans la listes tabou la méta-heuristique maître libère l’esclave ayant un rand élevé pour contribuer à la recherche d’une meilleure solution. L'algorithme \ref{alg:MHM} présente le processus de fonctionnement de la méta-heuristique maître :\\
+Lorsqu'une méta-heuristique termine sa recherche, elle communique sa meilleure solution à celle qui la remplace, permettant ainsi à cette dernière de générer un bon voisinage. La sélection de la méta-heuristique remplaçante se fait par rapport à la valeur du rang (c’est-à-dire la méta-heuristique ayant le plus grand rang sera choisie pour l’amélioration de la solution courante). La méta-heuristique esclaves n’ayant pas amélioré la solution après un nombre d’itération  précis  elle sera mis dans la liste taboue. Lorsque toutes les méta-heuristiques sont dans la listes tabou la méta-heuristique maître libère l’esclave ayant un rand élevé pour contribuer à la recherche d’une meilleure solution. L'algorithme 28 présente le processus de fonctionnement de la méta-heuristique maître :\\
 
 
 \begin{algorithm}[H]
@@ -399,5 +400,5 @@ mise à jour du rand \;
 \end{algorithm}
 
 
-\section{Conclusion}
+\CustomSection{Conclusion}
 A travers ce chapitre, nous avons présenté de manière détaillée les méta-heuristiques que nous avons proposé pour la résolution du problème de l’arbre dominant, ainsi que les différentes méthodes et opérateurs contribuant à leurs élaborations. Nous avant aussi proposé une nouvelle approche qui consiste à faire coopérer plusieurs méta-heuristique ( esclaves ) pour travailler dans l’espace des solutions supervisés par la méta-heuristique maître qui travaille dans l’espace des méta-heuristiques. Dans le but d’évaluer la qualité de ces approches, le prochain chapitre portera sur les différents résultats obtenus à travers les expérimentations effectuées.
